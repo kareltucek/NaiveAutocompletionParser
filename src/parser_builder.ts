@@ -1,7 +1,8 @@
-import { BuilderEngine } from './builder_engine'
+import { ParserBuilderHelpers } from './parser_builder_helpers'
 import { ReferencableRule, SequenceRule } from './rule_types';
 import { groupBy } from './utils'
 import { Grammar } from './grammar';
+import { Parser } from './parser';
 
 export class ParserBuilder {
     grammar: string = "";
@@ -26,14 +27,14 @@ export class ParserBuilder {
         return this;
     }
 
-    build(): Grammar {
+    build(): Parser {
         let grammar = new Grammar;
-        let regularRules: ReferencableRule[] = BuilderEngine.processGrammar(this.grammar, this.overridenNames, this.tokenizerRegex);
+        let regularRules: ReferencableRule[] = ParserBuilderHelpers.processGrammar(this.grammar, this.overridenNames, this.tokenizerRegex);
         let overrideRules: ReferencableRule[] = [...this.overrides.values()].flat();
         let grouped = groupBy([ ...regularRules, ...overrideRules], rule => rule.name);
 
         grammar.rules = new Map(Object.entries(grouped));
 
-        return grammar;
+        return new Parser(grammar);
     }
 }

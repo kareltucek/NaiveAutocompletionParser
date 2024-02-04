@@ -1,6 +1,6 @@
 import { ParserBuilder } from "./parser_builder";
 
-export let testGrammar = `
+export let testGrammar2 = `
 BODY = //<comment>
 BODY = [LABEL:] COMMAND [//<comment>]
 COMMAND = [CONDITION|MODIFIER]* COMMAND
@@ -178,8 +178,19 @@ KEYID_ABBREV = rightAlt | rightCtrl | rightFn | rightMod | rightShift | rightSpa
 MACRONAME = <Case sensitive macro identifier as named in Agent. Identifier shall not contain spaces.(IDENTIFIER)>
 `
 
+
+export let testGrammar = `
+BODY = //<comment>
+BODY = [LABEL:] COMMAND [//<comment>]
+COMMAND = [CONDITION|MODIFIER]* COMMAND
+COMMAND = delayUnti
+COMMAND = set keystrokeDelay <time in ms, at most 65535 (INT)>
+CONDITION = {ifShift | ifAlt | ifCtrl | ifGui | ifAnyMod | ifNotShift | ifNotAlt | ifNotCtrl | ifNotGui | ifNotAnyMod}
+`
+
 let regexPattern: string = '/([^/]|\\/|\\\\)+/';
 let nonterminalPattern: string = '[A-Z0-9_]+';
+let identifierPattern: string = '[a-zA-Z0-9_]+';
 let humanPattern: string = '<([^<>]*)\\((' + nonterminalPattern + ')\\)>';
 let simpleHumanPattern: string = '<[^<>]+>'
 
@@ -199,7 +210,7 @@ regexPattern,
 simpleHumanPattern,
 '[^ ]',
 ].join('|')
-let tokenizerPattern = ' *(' + tokenPattern + ')'
+let tokenizerPattern = '^ *(' + tokenPattern + ')'
 
 function strict(pattern: string): string {
     return "^" + pattern + "$";
@@ -208,4 +219,6 @@ function strict(pattern: string): string {
 export let strictRegexRegex: RegExp = new RegExp(strict(regexPattern));
 export let strictHumanRegex: RegExp = new RegExp(strict(humanPattern));
 export let strictNonterminalRegex: RegExp = new RegExp(strict(nonterminalPattern));
+export let strictIdentifierRegex: RegExp = new RegExp(strict(identifierPattern));
+export let nonterminalRegex: RegExp = new RegExp(nonterminalPattern);
 export let tokenizerRegex: RegExp = new RegExp(tokenizerPattern);

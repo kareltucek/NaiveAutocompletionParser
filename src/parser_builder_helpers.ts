@@ -1,7 +1,7 @@
 import { RuleCompiler } from './compiler'
 import { ReferencableRule } from './rule_types';
 
-export class BuilderEngine {
+export class ParserBuilderHelpers {
     static chunkGrammar(code: string): string[] {
         let lines = code.split(new RegExp('[\n\r][\n\r]*'));
         let lastLine = "";
@@ -32,7 +32,7 @@ export class BuilderEngine {
     };
 
     static processGrammar(grammarCode: string, overridenRules: Set<string>, tokenizerRegex: RegExp): ReferencableRule[]  {
-        let chunkedRules = BuilderEngine
+        let chunkedRules = ParserBuilderHelpers
             .chunkGrammar(grammarCode)
             .filter(it => it != '')
         let compiledRules = chunkedRules
