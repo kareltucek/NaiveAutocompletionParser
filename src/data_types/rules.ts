@@ -1,5 +1,8 @@
-import { MatchResult, MatchOutcome, Pointer, PointerStack } from "./parser";
+import { PointerStack, Pointer } from "./pointers";
+import { MatchResult, MatchOutcome } from "./match_results";
 import { Grammar } from "./grammar";
+import { IterationType } from "./iteration_type";
+import { markPointersAsConsumed, escapeRegex } from "../utils";
 
 export interface Rule {
     match(expression: string, pointer: PointerStack, grammar: Grammar): MatchResult
@@ -8,14 +11,6 @@ export interface Rule {
 export interface ReferencableRule extends Rule {
     name: string;
 };
-
-function markAsConsumed(pointers: Pointer[]): Pointer[] {
-    return pointers.map ( it => new Pointer(it.rule, it.idx, true))
-}
-
-function escapeRegex(s: string) {
-    return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); 
-}
 
 export class RegexRule implements Rule {
     regex: RegExp;
@@ -33,11 +28,11 @@ export class RegexRule implements Rule {
         if (res) {
             // pop me from stack and increment string position
             let newStack = pointer.stack.slice(0, pointer.stack.length - 1);
-            let markedStack = markAsConsumed(newStack);
+            let markedStack = markPointersAsConsumed(newStack);
             let newPointer = new PointerStack(markedStack, pointer.stringPosition + res[0].length);
-            return new MatchResult([ newPointer ], MatchOutcome.Matched);
+            return new MatchResult([newPointer], MatchOutcome.Matched);
         } else {
-            return new MatchResult([ pointer ], MatchOutcome.Failed)
+            return new MatchResult([pointer], MatchOutcome.Failed)
         }
     }
 }
@@ -61,7 +56,7 @@ export class ConstantRule implements Rule {
         if (expression.substring(pointer.stringPosition).match(this.regex)) {
             // pop me from stack and increment string position
             let newStack = pointer.stack.slice(0, pointer.stack.length - 1);
-            let markedStack = markAsConsumed(newStack);
+            let markedStack = markPointersAsConsumed(newStack);
             let newPointer = new PointerStack(markedStack, pointer.stringPosition + this.token.length);
 
             if (newPointer.stringPosition == 7) {
@@ -70,10 +65,10 @@ export class ConstantRule implements Rule {
 
             console.log("matched at " + newPointer.stringPosition + ": " + this.token)
 
-            return new MatchResult([ newPointer ], MatchOutcome.Matched);
+            return new MatchResult([newPointer], MatchOutcome.Matched);
         } else {
             // fail
-            return new MatchResult([ pointer ], MatchOutcome.Failed)
+            return new MatchResult([pointer], MatchOutcome.Failed)
         }
     }
 }
@@ -97,14 +92,14 @@ export class RuleRef implements Rule {
     }
 
     isSameRuleByName(rule: Rule): boolean {
-        if (isReferencableRule(rule) && (rule as ReferencableRule).name == this.ref){
+        if (isReferencableRule(rule) && (rule as ReferencableRule).name == this.ref) {
             return true;
         }
         return false;
     }
 
     canExpandMyself(parentPointers: Pointer[]): boolean {
-        for ( let i = 0; i < parentPointers.length; i++) {
+        for (let i = 0; i < parentPointers.length; i++) {
             let pointer = parentPointers[i];
             if (!pointer.consumedSomething && this.isSameRuleByName(pointer.rule)) {
                 return false;
@@ -114,7 +109,7 @@ export class RuleRef implements Rule {
     }
 
     match(expression: string, pointer: PointerStack, grammar: Grammar): MatchResult {
-        let base = pointer.stack.slice(0, pointer.stack.length-1);
+        let base = pointer.stack.slice(0, pointer.stack.length - 1);
 
         if (this.canExpandMyself(base)) {
             let newPointers = grammar.getRule(this.ref).map(rule =>
@@ -126,7 +121,7 @@ export class RuleRef implements Rule {
             )
             return new MatchResult(newPointers, MatchOutcome.Progressing);
         } else {
-            return new MatchResult([ pointer ], MatchOutcome.Failed);
+            return new MatchResult([pointer], MatchOutcome.Failed);
         }
     }
 }
@@ -150,20 +145,20 @@ export class SequenceRule implements Rule, ReferencableRule {
     }
 
     match(expression: string, pointer: PointerStack, grammar: Grammar): MatchResult {
-        let myPointer = pointer.stack[pointer.stack.length-1]
+        let myPointer = pointer.stack[pointer.stack.length - 1]
 
-        if ( myPointer.idx < this.rules.length) {
+        if (myPointer.idx < this.rules.length) {
             // increase index and push the next rule onto stack
-            let newBase = pointer.stack.slice(0, pointer.stack.length-1)
-            newBase.push(new Pointer(myPointer.rule, myPointer.idx+1, myPointer.consumedSomething));
+            let newBase = pointer.stack.slice(0, pointer.stack.length - 1)
+            newBase.push(new Pointer(myPointer.rule, myPointer.idx + 1, myPointer.consumedSomething));
             newBase.push(new Pointer(this.rules[myPointer.idx], 0));
             let newStack = new PointerStack(newBase, pointer.stringPosition, pointer.complete);
-            return new MatchResult([ newStack ], MatchOutcome.Progressing)
+            return new MatchResult([newStack], MatchOutcome.Progressing)
         } else {
             // pop me from stack
-            let newBase = pointer.stack.slice(0, pointer.stack.length-1)
+            let newBase = pointer.stack.slice(0, pointer.stack.length - 1)
             let newStack = new PointerStack(newBase, pointer.stringPosition, pointer.complete);
-            return new MatchResult([ newStack ], MatchOutcome.Progressing)
+            return new MatchResult([newStack], MatchOutcome.Progressing)
         }
     }
 }
@@ -182,13 +177,13 @@ export class IterationRule implements Rule {
     }
 
     match(expression: string, pointer: PointerStack, grammar: Grammar): MatchResult {
-        let myPointer = pointer.stack[pointer.stack.length-1]
+        let myPointer = pointer.stack[pointer.stack.length - 1]
 
         let pushChildWithoutMe = false;
         let pushChildWithMe = false;
         let pushJustBase = false;
 
-        switch(this.iterationType) {
+        switch (this.iterationType) {
             case IterationType.One:
                 pushChildWithMe = false;
                 pushChildWithoutMe = true;
@@ -246,11 +241,4 @@ export class IterationRule implements Rule {
 
         return new MatchResult(results, MatchOutcome.Progressing);
     }
-}
-
-export enum IterationType {
-    OneOrMore,
-    ZeroOrOne,
-    ZeroOrMore,
-    One,
 }

@@ -1,4 +1,4 @@
-import { Rule } from "./rule_types";
+import { Rule } from "./rules";
 
 export class Grammar {
     rules: Map<string, Rule[]> = new Map<string, Rule[]>();

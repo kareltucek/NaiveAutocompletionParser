@@ -1,31 +1,8 @@
-import * as regexPatterns from './constants'
-import { Rule, ReferencableRule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationType, IterationRule }  from './rule_types'
+import * as regexPatterns from './data_types/constants'
+import { Rule, ReferencableRule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } from './data_types/rules'
+import { Stackable, StackToken, StackRule } from './data_types/stackables'
+import { IterationType } from './data_types/iteration_type';
 
-interface Stackable {}
-
-class StackToken implements Stackable {
-    token: string;
-
-    constructor(t: string) {
-        this.token = t
-    }
-
-    toString(): string {
-        return "token: '" + this.token + "'"
-    }
-}
-
-class StackRule implements Stackable {
-    rule: Rule;
-
-    constructor (r: Rule) {
-        this.rule = r;
-    }
-
-    toString(): string {
-        return "rule: " + this.rule.toString()
-    }
-}
 
 export class RuleCompiler {
     newRules: ReferencableRule[] = new Array<ReferencableRule>();
@@ -48,7 +25,7 @@ export class RuleCompiler {
 
     processHumanDescription(token: string): Stackable {
         let m = token.match(regexPatterns.strictHumanRegex);
-        return new StackRule( new RuleRef(m![2], m![1]));
+        return new StackRule(new RuleRef(m![2], m![1]));
     }
 
     isSequenceableAt(idx: number): boolean {
@@ -81,7 +58,7 @@ export class RuleCompiler {
     squashSequence() {
         let start = this.stack.length;
 
-        while (start > 0 && this.isSequenceableAt(start-1)) {
+        while (start > 0 && this.isSequenceableAt(start - 1)) {
             start--;
         }
 
@@ -91,11 +68,11 @@ export class RuleCompiler {
 
         let newRule = new SequenceRule();
 
-        for ( let i = start; i < this.stack.length; i++) {
+        for (let i = start; i < this.stack.length; i++) {
             newRule.rules.push((this.stack[i] as StackRule).rule);
         }
 
-        while ( this.stack.length > start) {
+        while (this.stack.length > start) {
             this.stack.pop();
         }
 
@@ -103,7 +80,7 @@ export class RuleCompiler {
     }
 
     squashChoice(name: string) {
-        let top = this.stack.length-1;
+        let top = this.stack.length - 1;
         while (top >= 0 && this.stack[top] instanceof StackRule && this.isSequenceRuleAt(top)) {
             let rule: SequenceRule = (this.stack[top] as StackRule).rule as SequenceRule;
             rule.name = name;
@@ -128,7 +105,7 @@ export class RuleCompiler {
     compile(name: string): ReferencableRule[] {
         let dbg = 666
         while (this.idx < this.tokens.length) {
-            switch(this.tokens[this.idx]) {
+            switch (this.tokens[this.idx]) {
                 case "|":
                     this.squashSequence();
                     this.idx++;
