@@ -26,7 +26,6 @@ function extractGrammar(referenceManualBody: string): string[] {
 }
 
 function buildParser(grammarText: string): Parser {
-
     let parser = new ParserBuilder()
         .setTokenizerRegex(tokenizerRegex)
         .setSubWhiteRule("EXPRESSION")
@@ -66,4 +65,12 @@ export function startUhkCli() {
         let parser = buildUhkParser(testGrammar)
         Cli.launch(parser);
     })
+}
+
+const args = process.argv.slice(2);
+
+if (args[0] && args[0] == 'start') {
+    startUhkCli();
+} else if (args[0] && args[0] != '') {
+    console.log("You can start the cli with `start` argument. E.g., `node file.js start`.") 
 }
