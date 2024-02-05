@@ -1,4 +1,4 @@
-import * as regexPatterns from './data_types/constants'
+import * as regexPatterns from './constants'
 import { Rule, ReferencableRule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } from './data_types/rules'
 import { Stackable, StackToken, StackRule } from './data_types/stackables'
 import { IterationType } from './data_types/iteration_type';
@@ -23,9 +23,16 @@ export class RuleCompiler {
         return base.toUpperCase() + "_" + tag.toUpperCase() + "_" + "ID" + id;
     }
 
-    processHumanDescription(token: string): Stackable {
+    processHumanDescription(baseName: string, token: string): Stackable {
         let m = token.match(regexPatterns.strictHumanRegex);
-        return new StackRule(new RuleRef(m![2], m![1]));
+        let ruleName = this.newName(baseName, "TAG");
+        this.newRules.push(new SequenceRule(ruleName, [new ConstantRule("<" + m![1].trim() + ">")]));
+        this.newRules.push(new SequenceRule(ruleName, [new RuleRef(m![2])]));
+        return new StackRule(new RuleRef(ruleName));
+    }
+
+    processSimpleHumanDescription(token: string): Stackable {
+        return new StackRule(new ConstantRule(token));
     }
 
     isSequenceableAt(idx: number): boolean {
@@ -140,7 +147,10 @@ export class RuleCompiler {
                     break;
                 default:
                     if (regexPatterns.strictHumanRegex.test(this.tokens[this.idx])) {
-                        this.stack.push(this.processHumanDescription(this.tokens[this.idx]));
+                        this.stack.push(this.processHumanDescription(name, this.tokens[this.idx]));
+                        this.idx++;
+                    } else if (regexPatterns.strictSimpleHumanRegex.test(this.tokens[this.idx])) {
+                        this.stack.push(this.processSimpleHumanDescription(this.tokens[this.idx]));
                         this.idx++;
                     } else if (regexPatterns.strictRegexRegex.test(this.tokens[this.idx])) {
                         let regexString = this.tokens[this.idx].substring(1, this.tokens[this.idx].length - 1);

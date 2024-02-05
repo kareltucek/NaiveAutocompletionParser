@@ -1,10 +1,13 @@
 {
+  "name": "nela-parser",
   "dependencies": {
     "@types/node": "^20.11.16",
     "lodash": "^4.17.21",
+    "prompt-sync": "^4.2.0",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.202"
+    "@types/lodash": "^4.14.202",
+    "@types/prompt-sync": "^4.2.3"
   }
 }

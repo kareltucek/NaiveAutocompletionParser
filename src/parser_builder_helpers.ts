@@ -31,6 +31,13 @@ export class ParserBuilderHelpers {
         return tokens;
     };
 
+    
+    static processOneRule(name: string, ruleString: string, tokenizationRegex: RegExp): ReferencableRule[] {
+        let tokenizedRule = this.tokenizeRule(ruleString, tokenizationRegex);
+        let compiledRules = RuleCompiler.compileRule(name, tokenizedRule);
+        return compiledRules;
+    }
+
     static processGrammar(grammarCode: string, overridenRules: Set<string>, tokenizerRegex: RegExp): ReferencableRule[] {
         let chunkedRules = ParserBuilderHelpers
             .chunkGrammar(grammarCode)
