@@ -1,13 +1,7 @@
 import { Grammar } from "../shared/grammar";
-import { Rule, ConstantRule } from "../shared/rules";
-import { nonterminalRegex, strictIdentifierRegex, globalCompletionRegex, continueRegex } from "../shared/constants";
-import { PointerStack, Pointer } from "./pointers";
-import { MatchOutcome, MatchResult } from "./match_results";
 import { Suggestion } from "./suggestion";
-import { deduplicate } from "../shared/utils";
-import { IO } from "../uhk_preset";
-import { RuleRef } from "../shared/rules";
-import exp from "constants";
+import { ParserEngine } from "./parser_engine";
+import { IO } from "../repl/io";
 
 
 export class Parser {

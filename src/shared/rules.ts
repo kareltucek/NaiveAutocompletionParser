@@ -4,8 +4,7 @@ import { Grammar } from "./grammar";
 import { IterationType } from "./iteration_type";
 import { markPointersAsConsumed, escapeRegex } from "./utils";
 import { strictIdentifierRegex, maxRecursionDepth } from "./constants";
-import { IO } from "../uhk_preset";
-import exp from "constants";
+import { IO } from "../repl/io";
 
 class StringPathResult {
     str: string;

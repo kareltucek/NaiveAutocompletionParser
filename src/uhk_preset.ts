@@ -1,7 +1,7 @@
 import { ParserBuilder } from "./compilation/parser_builder";
-import { tokenizerRegex } from "./shared/constants";
 import { Parser } from "./parsing/parser";
 import { Cli } from "./repl/cli";
+import { tokenizerRegex } from "./shared/constants";
 
 
 let simplifiedGrammar = `
@@ -55,14 +55,14 @@ function buildUhkParser(referenceManualBody: string): Parser {
     return parser
 }
 
-function retrieveGrammar(): Promise<string> {
+export function retrieveUhkGrammar(): Promise<string> {
     const res = fetch('https://raw.githubusercontent.com/UltimateHackingKeyboard/firmware/master/doc-dev/reference-manual.md')
         .then(response => response.text())
     return res
 }
 
 export function startUhkCli() {
-    retrieveGrammar().then(testGrammar => {
+    retrieveUhkGrammar().then(testGrammar => {
         let parser = buildUhkParser(testGrammar)
         Cli.launch(parser);
     })
