@@ -1,5 +1,5 @@
 import { RuleCompiler } from './rule_compiler'
-import { ReferencableRule } from './data_types/rules';
+import { ReferencableRule } from '../shared/rules';
 
 export class ParserBuilderHelpers {
     static chunkGrammar(code: string): string[] {

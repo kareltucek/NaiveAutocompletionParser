@@ -1,5 +1,5 @@
 {
-  "name": "nela-parser",
+  "name": "naive-autocompletion-parser",
   "dependencies": {
     "@types/node": "^20.11.16",
     "lodash": "^4.17.21",

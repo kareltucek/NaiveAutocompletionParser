@@ -1,9 +1,9 @@
-import { PointerStack, Pointer } from "./pointers";
-import { MatchResult, MatchOutcome } from "./match_results";
+import { PointerStack, Pointer } from "../parsing/pointers";
+import { MatchResult, MatchOutcome } from "../parsing/match_results";
 import { Grammar } from "./grammar";
 import { IterationType } from "./iteration_type";
-import { markPointersAsConsumed, escapeRegex } from "../utils";
-import { strictIdentifierRegex, maxRecursionDepth } from "../constants";
+import { markPointersAsConsumed, escapeRegex } from "./utils";
+import { strictIdentifierRegex, maxRecursionDepth } from "./constants";
 import { IO } from "../uhk_preset";
 import exp from "constants";
 

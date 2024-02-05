@@ -1,7 +1,7 @@
-import * as regexPatterns from './constants'
-import { Rule, ReferencableRule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } from './data_types/rules'
-import { Stackable, StackToken, StackRule } from './data_types/stackables'
-import { IterationType } from './data_types/iteration_type';
+import * as regexPatterns from '../shared/constants'
+import { Rule, ReferencableRule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } from '../shared/rules'
+import { Stackable, StackToken, StackRule } from './stackables'
+import { IterationType } from '../shared/iteration_type';
 
 
 export class RuleCompiler {

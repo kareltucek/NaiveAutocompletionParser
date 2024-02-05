@@ -1,4 +1,4 @@
-import { Rule, SequenceRule } from "./rules";
+import { Rule, SequenceRule } from "../shared/rules";
 
 export class Pointer {
     rule: Rule;

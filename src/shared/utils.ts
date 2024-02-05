@@ -1,4 +1,4 @@
-import { Pointer } from './data_types/pointers';
+import { Pointer } from '../parsing/pointers';
 import _ from 'lodash';
 
 export const groupBy = <T, K extends keyof any>(arr: T[], key: (i: T) => K) =>

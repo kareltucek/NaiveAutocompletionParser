@@ -1,8 +1,8 @@
 import { ParserBuilderHelpers } from './parser_builder_helpers'
-import { ReferencableRule, SequenceRule } from './data_types/rules';
-import { groupBy } from './utils'
-import { Grammar } from './data_types/grammar';
-import { Parser } from './parser';
+import { ReferencableRule, SequenceRule } from '../shared/rules';
+import { groupBy } from '../shared/utils'
+import { Grammar } from '../shared/grammar';
+import { Parser } from '../parsing/parser';
 
 export class ParserBuilder {
     grammarString: string = "";
