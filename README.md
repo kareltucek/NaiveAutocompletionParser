@@ -1,7 +1,7 @@
 ### Motivation
 This is a naive LL parser that takes an ebnf grammar, and a beginning of an expression as arguments, and produces possible completions. We use a strongly customized form of an ebnf grammar, tailored for human readability. Furthermore, the Parser allows overriding selected rules, so it is possible to use the same grammar as a documentation for the user, and then (in a slightly modified form) for actual autocompletion. 
 
-This was written mainly for the UHK macro language. Originally I attempted to write it in a generic fashion, but some aspects of the UHK grammar soaked through, especially in form of quite arbitrary regexes used all over the place.
+This was written mainly for the UHK macro language. Originally I attempted to write it in a generic fashion, but some aspects of the UHK grammar soaked through, so if you want to use this... be prepared to either have to dive deep into the code (which however is not long - around 1000 lines), or to use our ebnf notation.
 
 ### Example
 
@@ -95,4 +95,4 @@ Cli.launch(parser);
 
 Acceptable on small and unambiguous grammars that don't require deep expansions of left-recursive rules. (For convenience a rule can expand to itself, but is never allowed to be expanded multiple times on the same path unless some token was matched along the path.) On ambiguous grammars, poor performance is to be expected.
 
-Also, we do not transform the grammar into normal forms and yet prevents infinite left recursion, so nothing prevents you from shootin yourself in your foot.
+Also, we do not transform the grammar into normal forms and yet prevent infinite left recursion, so nothing prevents you from shootin yourself in your foot. (Hey, the word "naive" is right in the name!)
