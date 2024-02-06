@@ -24,8 +24,6 @@ function extractGrammar(referenceManualBody: string): string[] {
 function buildParser(grammarText: string): Parser {
     let parser = new ParserBuilder()
         .setTokenizerRegex(tokenizerRegex)
-        .setSubWhiteRule("EXPRESSION")
-        .setSubWhiteRule("MODMASK")
         .addRule(grammarText)
         .overrideRuleWithConstantString("CODE_BLOCK", "{")
         .overrideRuleWithConstantString("COMMENT", "//<comment>")

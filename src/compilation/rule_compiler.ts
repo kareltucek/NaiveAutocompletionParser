@@ -75,6 +75,14 @@ export class RuleCompiler {
 
         let newRule = new SequenceRule();
 
+        if (
+            start < this.stack.length
+            && this.stack[start] instanceof ConstantRule 
+            && (this.stack[start] as ConstantRule).token.length > 0
+        ) {
+            newRule.firstChar = (this.stack[start] as ConstantRule).token.substring(0, 1);
+        }
+
         for (let i = start; i < this.stack.length; i++) {
             newRule.rules.push((this.stack[i] as StackRule).rule);
         }

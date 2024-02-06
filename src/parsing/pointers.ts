@@ -32,7 +32,7 @@ export class PointerStack {
             " ".repeat(this.stringPosition) + "^" + "\n";
 
         let offset = 0;
-        let accumulator = [];
+        let accumulator: string[] = [];
         for (let i = 0; i < this.stack.length; i++) {
             let res = this.stack[i].rule.toStringAsPath(i == this.stack.length - 1, this.stack[i].idx, offset);
             offset = res.offset
@@ -47,25 +47,5 @@ export class PointerStack {
 
     stackTracke(): string {
         return this.stack.map(it => it.toString()).join("\n")
-    }
-
-    isSubWhitePath(): boolean {
-        for (let i = 0; i < this.stack.length; i++) {
-            let checkedRule = this.stack[i].rule;
-            if (checkedRule instanceof SequenceRule && (checkedRule as SequenceRule).isSubWhite) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    containsRuleIn(rules: Set<string>) {
-        for (let i = 0; i < this.stack.length; i++) {
-            let checkedRule = this.stack[i].rule;
-            if (checkedRule instanceof SequenceRule && rules.has((checkedRule as SequenceRule).name)) {
-                return true;
-            }
-        }
-        return false;
     }
 }

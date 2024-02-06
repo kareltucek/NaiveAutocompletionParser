@@ -47,7 +47,7 @@ export class ParserEngine {
         while (whitespaceRegex.test(expression[p.stringPosition])) {
             p.stringPosition++;
         }
-        let validPointers = [];
+        let validPointers: PointerStack[] = [];
         let currentRule = p.stack[p.stack.length - 1].rule;
         let res = currentRule.match(expression, p, grammar, io);
         switch (res.outcome) {

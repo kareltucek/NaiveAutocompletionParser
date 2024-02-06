@@ -1,10 +1,8 @@
 export function fsConstructor(): any {
-    //return require('fs');
-    return null;
+    return require('fs');
 }
 
 export function promptSyncConstructor(): any {
-    //const prompt = require('prompt-sync');
-    //return prompt();
-    return null;
+    const prompt = require('prompt-sync');
+    return prompt();
 }

@@ -162,7 +162,8 @@ export class RuleRef implements Rule {
 
         if (myPointer.idx == 0) {
             if (this.canExpandMyself(base)) {
-                let allPossibleRules = grammar.getRule(this.ref)
+                let lookahead = expression.substring(pointer.stringPosition, pointer.stringPosition+1);
+                let allPossibleRules = grammar.getRule(this.ref, lookahead)
                 let newPointers = this.askToFilterRules(allPossibleRules, io).map(rule =>
                     new PointerStack(
                         [
@@ -194,12 +195,19 @@ export class RuleRef implements Rule {
 
 export class SequenceRule implements Rule, ReferencableRule {
     name: string = "";
-    isSubWhite: boolean = false;
+    firstChar: string | undefined = undefined;
     rules: Rule[] = new Array();
 
     constructor (name: string = "", rules: Rule[] = new Array()) {
         this.name = name;
         this.rules = rules;
+        if (
+            rules.length > 0 
+            && rules[0] instanceof ConstantRule 
+            && (rules[0] as ConstantRule).token.length > 0
+        ) {
+            this.firstChar = (rules[0] as ConstantRule).token.substring(0, 1);
+        }
     }
 
     static fromRegex(n: string, r: RegExp): SequenceRule {
@@ -213,6 +221,9 @@ export class SequenceRule implements Rule, ReferencableRule {
         let newRule = new SequenceRule();
         newRule.name = n;
         newRule.rules.push(new ConstantRule(r))
+        if (r.length > 0) {
+            newRule.firstChar = r.substring(0, 1);
+        }
         return newRule;
     }
 

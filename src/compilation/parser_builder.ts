@@ -8,16 +8,10 @@ export class ParserBuilder {
     grammarString: string = "";
     overrides: ReferencableRule[] = new Array<ReferencableRule>;
     overridenNames: Set<string> = new Set<string>();
-    subWhiteRules: Set<string> = new Set<string>();
     tokenizerRegex: RegExp = RegExp('');
 
     setTokenizerRegex(regex: RegExp): ParserBuilder {
         this.tokenizerRegex = regex;
-        return this;
-    }
-
-    setSubWhiteRule(rule: string): ParserBuilder {
-        this.subWhiteRules.add(rule);
         return this;
     }
 
@@ -53,7 +47,6 @@ export class ParserBuilder {
         let regularRules: ReferencableRule[] = ParserBuilderHelpers.processGrammar(this.grammarString, this.overridenNames, this.tokenizerRegex);
         let overrideRules: ReferencableRule[] = [...this.overrides.values()].flat();
         let allRules = [...regularRules, ...overrideRules]
-            .map(it => { (it as SequenceRule).isSubWhite = this.subWhiteRules.has(it.name); return it });
         let grouped = groupBy(allRules, rule => rule.name);
 
         grammar.rules = new Map(Object.entries(grouped));

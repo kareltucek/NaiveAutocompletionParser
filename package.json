@@ -1,6 +1,6 @@
 {
   "name": "naive-autocompletion-parser",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "description": "Naive EBNF LL Autocompletion parser.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
