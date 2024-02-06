@@ -1,24 +1,29 @@
 {
   "name": "naive-autocompletion-parser",
-  "version": "0.1.21",
+  "version": "0.1.32",
   "description": "Naive EBNF LL Autocompletion parser.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": [ "/dist" ],
+  "files": [ 
+      "dist" 
+  ],
   "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/kareltucek/naive-autocompletion-parser"
   },
   "dependencies": {
-    "@types/node": "^20.11.16",
     "lodash": "^4.17.21",
-    "prompt-sync": "^4.2.0",
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@types/node": "^20.11.16",
     "@types/lodash": "^4.14.202",
-    "@types/prompt-sync": "^4.2.3"
+    "@types/prompt-sync": "^4.2.3",
+    "prompt-sync": "^4.2.0"
+  },
+  "scripts": {
+    "prepare": "node ./build_helpers/pre_publish.js"
   },
   "author": "Karel Tuček",
   "license": "MIT"

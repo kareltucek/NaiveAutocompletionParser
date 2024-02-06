@@ -1,12 +1,37 @@
-import * as fs from 'fs';
-import promptSync from 'prompt-sync';
+
+let promptSync: any | undefined = undefined;
+let fs: any | undefined = undefined;
+
+function importStuff() {
+    try {
+        import('./node_specific').then(constructors => {
+            fs = constructors.fsConstructor();
+            promptSync = constructors.promptSyncConstructor();
+        });
+    } catch (e) {
+
+    }
+}
+
+importStuff();
 
 export class IO {
-    static fileName = "/tmp/naive_ebnf_parser_state.json";
-    static prompt = promptSync();
+    static fileName: string = "/tmp/naive_ebnf_parser_state.json";
+    static prompt: any | undefined;
     map: Map<string, string>;
     questionId: number;
     cmdContext: string;
+
+    constructor() {
+        this.cmdContext = "";
+        this.map = new Map();
+        this.questionId = 0;
+        this.loadMap();
+    }
+
+    healthy(): boolean {
+        return fs && promptSync;
+    }
 
     questionHash(): string {
         return this.questionId + ":" + this.cmdContext;
@@ -18,27 +43,24 @@ export class IO {
     }
 
     saveMap() {
-        const jsonMap = JSON.stringify(Array.from(this.map.entries()));
-        fs.writeFileSync(IO.fileName, jsonMap);
+        if (fs) {
+            const jsonMap = JSON.stringify(Array.from(this.map.entries()));
+            fs.writeFileSync(IO.fileName, jsonMap);
+        }
     }
 
     loadMap() {
         try {
-            if (fs.existsSync(IO.fileName)) {
-                const loadedData = fs.readFileSync(IO.fileName, 'utf-8');
-                const loadedMap = new Map<string, string>(JSON.parse(loadedData));
-                this.map = loadedMap
-            }
+            if (fs) {
+                if (fs.existsSync(IO.fileName)) {
+                    const loadedData = fs.readFileSync(IO.fileName, 'utf-8');
+                    const loadedMap = new Map<string, string>(JSON.parse(loadedData));
+                    this.map = loadedMap
+                }
+            } 
         } catch (e) {
             this.map = new Map();
         }
-    }
-
-    constructor() {
-        this.cmdContext = "";
-        this.map = new Map();
-        this.questionId = 0;
-        this.loadMap();
     }
 
     hr() {
@@ -50,7 +72,12 @@ export class IO {
     }
 
     question(q: string, applyDefault: boolean = false): string {
-        let answer = IO.prompt( q ) ?? "";
+        let answer = "";
+        if (promptSync) {
+            answer = promptSync(q) ?? "";
+        } else {
+            console.log("Warning: interactive shell expected, but current environment does not seem to provide it!");
+        }
         if (applyDefault) {
             if (answer == "") {
                 answer = this.map.get(this.questionHash()) ?? ""

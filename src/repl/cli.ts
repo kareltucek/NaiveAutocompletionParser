@@ -5,6 +5,11 @@ export class Cli {
     static launch(parser: Parser) {
         let io: IO = new IO();
 
+        if (!io.healthy()) {
+            console.log("File system features not found. They are not present in releases. Build locally to access the shell.");
+            return;
+        }
+
         while (true) {
             let cmd = io.question('> ');
             if (cmd.startsWith("help")) {
