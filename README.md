@@ -1,7 +1,7 @@
 ### Motivation
-This is a naive LL parser that takes an ebnf grammar, and a beginning of an expression as arguments, and produces possible completions. We use a strongly customized form of an ebnf grammar, tailored for human readability. Furthermore, the Parser allows overriding selected rules, so it is possible to use the same grammar as a documentation for the user, and then (in a slightly modified form) for actual autocompletion. 
+This is a naive LL parser that takes an EBNF (Extended Backus-Naur Form) grammar and a partial expression, and produces possible completions by running all possible expansion paths of the grammar. We use a strongly customized form of an ebnf grammar, tailored for human readability. The Parser allows overriding selected rules, so it is possible to use the same (human-readability-adjusted, and partially informal) grammar as a documentation for the user, and then the same grammar (just with some overriden rules) for actual autocompletion.
 
-This was written mainly for the UHK macro language. Originally I attempted to write it in a generic fashion, but some aspects of the UHK grammar soaked through, so if you want to use this... be prepared to either have to dive deep into the code (which however is not long - around 1000 lines), or to use our ebnf notation.
+This was written mainly for the UHK macro language. Originally I attempted to write it in a generic fashion, but some aspects of the UHK grammar soaked through as assumptions, so if you want to use this... be prepared to either have to dive deep into the code (which however is not long - around 1000 lines), or to use our ebnf notation.
 
 ### Example
 
