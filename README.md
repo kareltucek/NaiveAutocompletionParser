@@ -8,6 +8,9 @@ This was written mainly for the UHK macro language. Originally I attempted to wr
 Simplified example of the actual UHK grammar:
 
 ```
+import { ParserBuilder } from 'naive-autocompletion-parser'
+
+
 let grammarText = `
 BODY = COMMENT
 BODY = [LABEL:] COMMAND [COMMENT]
@@ -88,6 +91,8 @@ feature | syntax
 Furthermore, the project has a REPL environment that has some commands for debug of the grammar. E.g., a it provides a walker that allows you to expand the rule step by step, picking expansions one by one. It can be started by:
 
 ```
+import { Cli } from 'naive-autocompletion-parser'
+
 Cli.launch(parser);
 ```
 
@@ -96,3 +101,28 @@ Cli.launch(parser);
 Acceptable on small and unambiguous grammars that don't require deep expansions of left-recursive rules. (For convenience a rule can expand to itself, but is never allowed to be expanded multiple times on the same path unless some token was matched along the path.) On ambiguous grammars, poor performance is to be expected.
 
 Also, we do not transform the grammar into normal forms and yet prevent infinite left recursion, so nothing prevents you from shootin yourself in your foot. (Hey, the word "naive" is right in the name!)
+
+### Usage
+
+We provide a vscode configuration. 
+
+From commandline, you can:
+
+```
+git clone https://github.com/kareltucek/naive-autocompletion-parser.git
+cd naive-autocompletion-parser
+tsc                              # compile the project
+node dist/uhk_preset.js start    # start the repl
+```
+
+Or from your project you can:
+
+```
+npm install naive-autocompletion-parser
+```
+
+and then
+
+```
+import { ParserBuilder, Cli, startUhkCli } from 'naive-autocompletion-parser'
+```
