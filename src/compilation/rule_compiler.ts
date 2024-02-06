@@ -110,7 +110,6 @@ export class RuleCompiler {
     }
 
     compile(name: string): ReferencableRule[] {
-        let dbg = 666
         while (this.idx < this.tokens.length) {
             switch (this.tokens[this.idx]) {
                 case "|":

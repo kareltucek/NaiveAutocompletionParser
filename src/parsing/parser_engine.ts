@@ -72,7 +72,6 @@ export class ParserEngine {
         let complete = mp.filter(it => it.complete);
         let incomplete = mp.filter(it => !it.complete);
         while (incomplete.length > 0) {
-            let d1 = 666
             let minPosition = Math.min(...incomplete.map(it => it.stringPosition));
             let needProgression = incomplete.filter(it => it.stringPosition == minPosition);
             let dontNeedProgression = incomplete.filter(it => it.stringPosition != minPosition);
@@ -80,7 +79,6 @@ export class ParserEngine {
 
             complete = [...complete, ...progressed.filter(it => it.complete)];
             incomplete = deduplicate([...dontNeedProgression, ...progressed.filter(it => !it.complete)]);
-            let d2 = 666
         }
         return complete;
     }
@@ -91,9 +89,6 @@ export class ParserEngine {
             if (top.rule instanceof ConstantRule) {
                 let remainingText = expression.substring(pointer.stringPosition)
                 let lastToken = (top.rule as ConstantRule).token;
-                if (remainingText == '') {
-                    let dbg=666
-                }
                 if (lastToken.startsWith(remainingText) && pointer.stringPosition != expression.length) {
                     return [new Suggestion(lastToken, remainingText.length)]
                 } else if (

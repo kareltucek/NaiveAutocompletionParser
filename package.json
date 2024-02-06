@@ -1,11 +1,11 @@
 {
   "name": "naive-autocompletion-parser",
-  "version": "0.1.9",
+  "version": "0.1.21",
   "description": "Naive EBNF LL Autocompletion parser.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [ "/dist" ],
-
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/kareltucek/naive-autocompletion-parser"

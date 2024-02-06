@@ -4,10 +4,6 @@ import { Cli } from "./repl/cli";
 import { tokenizerRegex } from "./shared/constants";
 
 
-let simplifiedGrammar = `
-    VARIABLE_EXPANSION = $<variable name> | $<config value name> | $currentAddress | $thisKeyId | $queuedKeyId.<queue index (INT)> | $keyId.KEYID_ABBREV
-    `
-
 function extractGrammar(referenceManualBody: string): string[] {
     let grammarText = referenceManualBody
         .substring(
@@ -47,7 +43,7 @@ function buildParser(grammarText: string): Parser {
     return parser;
 }
 
-function buildUhkParser(referenceManualBody: string): Parser {
+export function buildUhkParser(referenceManualBody: string): Parser {
     let grammarText = extractGrammar(referenceManualBody);
     let parser = buildParser(grammarText.join("\n"));
     // let parser = buildParser(simplifiedGrammar);
