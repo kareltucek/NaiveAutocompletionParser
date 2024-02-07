@@ -156,7 +156,7 @@ export class RuleRef implements Rule {
 
         if (myPointer.idx == 0) {
             if (this.canExpandMyself(base)) {
-                let lookahead = expression.substring(pointer.stringPosition, pointer.stringPosition+1);
+                let lookahead = expression.substring(0, 1);
                 let allPossibleRules = grammar.getRule(this.ref, lookahead)
                 let newPointers = this.askToFilterRules(allPossibleRules, io).map(rule =>
                     new PointerStack(

@@ -1,6 +1,5 @@
 import { ParserBuilderHelpers } from './parser_builder_helpers'
 import { SequenceRule } from '../shared/rules';
-import { groupBy } from '../shared/utils'
 import { Grammar } from '../shared/grammar';
 import { Parser } from '../parsing/parser';
 import { BnfTransform } from '../transforms/bnf_transform';

@@ -36,13 +36,16 @@ export function rulesEqual(a: Rule, b: Rule) {
     if (a instanceof ConstantRule && b instanceof ConstantRule) {
         return a.token == b.token;
     }
-    if (a instanceof SequenceRule && b instanceof SequenceRule && a.rules.length == b.rules.length) {
+    if (a instanceof SequenceRule && b instanceof SequenceRule) {
+        if (a.rules.length != b.rules.length || a.name != b.name) {
+            return false;
+        }
         for (let i = 0; i < a.rules.length; i++) {
             if (!rulesEqual(a.rules[i], b.rules[i])) {
                 return false;
             }
-            return true;
         }
+        return true;
     }
     return false;
 }
