@@ -5,6 +5,7 @@ import { IterationType } from "./iteration_type";
 import { markPointersAsConsumed, escapeRegex } from "./utils";
 import { strictIdentifierRegex, maxRecursionDepth } from "./constants";
 import { IO } from "../repl/io";
+import { RuleMath } from "./rule_math";
 
 class StringPathResult {
     str: string;
@@ -20,10 +21,6 @@ export interface Rule {
     match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult;
     toString(): string;
     toStringAsPath(isLeaf: boolean, index: number, offset: number): StringPathResult;
-};
-
-export interface ReferencableRule extends Rule {
-    name: string;
 };
 
 export class RegexRule implements Rule {
@@ -99,16 +96,15 @@ export class ConstantRule implements Rule {
     }
 }
 
-function isReferencableRule(rule: Rule): boolean {
-    // instanceof cannot match against interface :-()
-    return rule instanceof SequenceRule;
-}
-
 export class RuleRef implements Rule {
     ref: string;
 
     constructor(n: string) {
         this.ref = n;
+    }
+
+    static of(n: string): RuleRef {
+        return new RuleRef(n);
     }
 
     toString(): string {
@@ -123,7 +119,7 @@ export class RuleRef implements Rule {
     }
 
     isSameRuleByName(rule: Rule): boolean {
-        if (isReferencableRule(rule) && (rule as ReferencableRule).name == this.ref) {
+        if (rule instanceof SequenceRule && (rule as SequenceRule).name == this.ref) {
             return true;
         }
         return false;
@@ -148,8 +144,7 @@ export class RuleRef implements Rule {
                 .join("\n")
             io.write(question);
             io.write(options);
-            io.write("default: " + io.defaultAnswer());
-            let result = io.question("? ", true);
+            let result = io.ask("? ", true);
             return [rules[Number(result)]];
         } else {
             return rules;
@@ -193,7 +188,7 @@ export class RuleRef implements Rule {
     }
 }
 
-export class SequenceRule implements Rule, ReferencableRule {
+export class SequenceRule implements Rule {
     name: string = "";
     firstChar: string | undefined = undefined;
     rules: Rule[] = new Array();
@@ -210,28 +205,54 @@ export class SequenceRule implements Rule, ReferencableRule {
         }
     }
 
+    static of (name: string = "", rules: Rule[] = new Array()): SequenceRule {
+        return new SequenceRule(name, rules);
+    }
+
     static fromRegex(n: string, r: RegExp): SequenceRule {
         let newRule = new SequenceRule();
         newRule.name = n;
-        newRule.rules.push(new RegexRule(r))
+        newRule.rules.push(new RegexRule(r));
         return newRule;
     }
 
     static fromConstant(n: string, r: string): SequenceRule {
         let newRule = new SequenceRule();
         newRule.name = n;
-        newRule.rules.push(new ConstantRule(r))
+        newRule.rules.push(new ConstantRule(r));
         if (r.length > 0) {
             newRule.firstChar = r.substring(0, 1);
         }
         return newRule;
     }
 
+    firstRef(): string | undefined {
+        if (this.rules.length > 0 && this.rules[0] instanceof RuleRef) {
+            return this.rules[0].ref;
+        } else {
+            return undefined;
+        }
+    }
+
+    simpleFlatMap(transform: (rule: Rule) => Rule[]): SequenceRule {
+        let newRules = this.rules.flatMap(transform);
+        return new SequenceRule(this.name, newRules);
+    }
+
+
+    flatMap(transform: (rule: Rule) => Rule[][]): SequenceRule[] {
+        let arrayOfOptions: Rule[][][] = this.rules.map( rule => transform(rule));
+        let ruleSequences = RuleMath.produce(arrayOfOptions);
+        let namedRules = ruleSequences.map ( sequence => new SequenceRule(this.name, sequence))
+        return namedRules
+    }
+
     toString(): string {
         let sequence = this.rules
             .map(it => it.toString())
             .join(" .. ")
-        return this.name + ": " + sequence
+        // return this.name + ": " + sequence
+        return sequence + " :" + this.name;
     }
 
     toStringAsPath(isLeaf: boolean, index: number, offset: number): StringPathResult {
@@ -281,11 +302,11 @@ class IterationExpansions {
 
 export class IterationRule implements Rule {
     iterationType: IterationType = IterationType.ZeroOrMore;
-    rule: RuleRef = new RuleRef("");
+    ruleRef: RuleRef = new RuleRef("");
 
     constructor(n: string, type: IterationType) {
         this.iterationType = type;
-        this.rule = new RuleRef(n)
+        this.ruleRef = new RuleRef(n)
     }
 
     determineTypeOperator() {
@@ -302,7 +323,7 @@ export class IterationRule implements Rule {
     }
 
     toString(): string {
-        return "[" + this.rule.toString() + "]" + this.determineTypeOperator();
+        return "[" + this.ruleRef.toString() + "]" + this.determineTypeOperator();
     }
 
     toStringAsPath(isLeaf: boolean, index: number, offset: number): StringPathResult {
@@ -328,8 +349,7 @@ export class IterationRule implements Rule {
             if (expansions.pushChildWithMe) {
                 io.write("3: More");
             } 
-            io.write("default: " + io.defaultAnswer());
-            let answer = parseInt(io.question("? ", true));
+            let answer = parseInt(io.ask("? ", true));
             expansions.pushJustBase = expansions.pushJustBase && answer == 1;
             expansions.pushChildWithoutMe = expansions.pushChildWithoutMe && answer == 2;
             expansions.pushChildWithMe = expansions.pushChildWithMe && answer == 3;
@@ -385,7 +405,7 @@ export class IterationRule implements Rule {
         if (expand.pushChildWithoutMe) {
             results.push(
                 new PointerStack(
-                    [...base, new Pointer(this.rule, 0)],
+                    [...base, new Pointer(this.ruleRef, 0)],
                     pointer.stringPosition,
                     pointer.complete
                 )
@@ -395,7 +415,7 @@ export class IterationRule implements Rule {
         if (expand.pushChildWithMe) {
             results.push(
                 new PointerStack(
-                    [...base, new Pointer(myPointer.rule, 0), new Pointer(this.rule, 0)],
+                    [...base, new Pointer(myPointer.rule, 0), new Pointer(this.ruleRef, 0)],
                     pointer.stringPosition,
                     pointer.complete
                 )

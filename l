@@ -1,0 +1,6185 @@
+"." :.
+? 
+"$" .. &BIN__ID397 .. &ACTION :BIN__ID358
+"$" .. &BIN__ID397 :ADDRESS
+"$" .. &BIN__ID397 :BIN__ID167
+"$" .. &BIN__ID397 :BIN__ID168
+"$" .. &BIN__ID397 .. &BIN__ID173 :BIN__ID172
+"$" .. &BIN__ID397 .. &BIN__ID368 :BIN__ID367
+"$" .. &BIN__ID397 .. &BIN__ID369 :BIN__ID368
+"$" .. &BIN__ID397 .. &BIN__ID377 :BIN__ID376
+"$" .. &BIN__ID397 .. &BIN__ID378 :BIN__ID377
+"$" .. &BIN__ID397 .. ")" :BIN__ID393
+"$" .. &BIN__ID397 :BIN__ID394
+"$" .. &BIN__ID397 :BIN__ID395
+"$" .. &BIN__ID397 .. &BIN__ID403 :BIN__ID402
+"$" .. &BIN__ID397 .. &BIN__ID406 :BIN__ID405
+"$" .. &BIN__ID397 .. ")" :BIN__ID408
+"$" .. &BIN__ID397 .. ")" :BIN__ID409
+"$" .. &BIN__ID397 :BNF__ID144
+"$" .. &BIN__ID397 :BNF__ID145
+"$" .. &BIN__ID397 :BNF__ID146
+"$" .. &BIN__ID397 :BNF__ID149
+"$" .. &BIN__ID397 .. &BNF__ID149 :BIN__ID394
+"$" .. &BIN__ID397 .. &BNF__ID149 :BNF__ID149
+"$" .. &BIN__ID397 :BNF__ID151
+"$" .. &BIN__ID397 .. &BNF__ID151 :BIN__ID395
+"$" .. &BIN__ID397 .. &BNF__ID151 :BNF__ID151
+"$" .. &BIN__ID397 :BOOL
+"$" .. &BIN__ID397 :COMMAND_GROUP_ID19
+"$" .. &BIN__ID397 .. &COMMAND_GROUP_ID19 :BIN__ID169
+"$" .. &BIN__ID397 :COMMAND_OPTION_ID25
+"$" .. &BIN__ID397 :COMMAND_OPTION_ID28
+"$" .. &BIN__ID397 :COMMAND_OPTION_ID31
+"$" .. &BIN__ID397 :COMMAND_TAG_ID15
+"$" .. &BIN__ID397 :COMMAND_TAG_ID18
+"$" .. &BIN__ID397 :COMMAND_TAG_ID20
+"$" .. &BIN__ID397 :COMMAND_TAG_ID22
+"$" .. &BIN__ID397 :COMMAND_TAG_ID24
+"$" .. &BIN__ID397 :COMMAND_TAG_ID27
+"$" .. &BIN__ID397 :COMMAND_TAG_ID3
+"$" .. &BIN__ID397 :COMMAND_TAG_ID30
+"$" .. &BIN__ID397 :COMMAND_TAG_ID38
+"$" .. &BIN__ID397 :COMMAND_TAG_ID39
+"$" .. &BIN__ID397 :COMMAND_TAG_ID4
+"$" .. &BIN__ID397 :COMMAND_TAG_ID40
+"$" .. &BIN__ID397 :COMMAND_TAG_ID41
+"$" .. &BIN__ID397 :COMMAND_TAG_ID42
+"$" .. &BIN__ID397 :COMMAND_TAG_ID43
+"$" .. &BIN__ID397 :COMMAND_TAG_ID44
+"$" .. &BIN__ID397 :COMMAND_TAG_ID45
+"$" .. &BIN__ID397 :COMMAND_TAG_ID46
+"$" .. &BIN__ID397 :COMMAND_TAG_ID48
+"$" .. &BIN__ID397 :COMMAND_TAG_ID5
+"$" .. &BIN__ID397 :COMMAND_TAG_ID50
+"$" .. &BIN__ID397 :COMMAND_TAG_ID51
+"$" .. &BIN__ID397 :COMMAND_TAG_ID53
+"$" .. &BIN__ID397 :COMMAND_TAG_ID55
+"$" .. &BIN__ID397 :COMMAND_TAG_ID57
+"$" .. &BIN__ID397 :COMMAND_TAG_ID59
+"$" .. &BIN__ID397 :COMMAND_TAG_ID6
+"$" .. &BIN__ID397 :COMMAND_TAG_ID61
+"$" .. &BIN__ID397 :COMMAND_TAG_ID63
+"$" .. &BIN__ID397 :COMMAND_TAG_ID64
+"$" .. &BIN__ID397 :COMMAND_TAG_ID65
+"$" .. &BIN__ID397 :COMMAND_TAG_ID66
+"$" .. &BIN__ID397 :COMMAND_TAG_ID68
+"$" .. &BIN__ID397 :COMMAND_TAG_ID69
+"$" .. &BIN__ID397 :COMMAND_TAG_ID70
+"$" .. &BIN__ID397 :COMMAND_TAG_ID71
+"$" .. &BIN__ID397 :COMMAND_TAG_ID72
+"$" .. &BIN__ID397 :COMMAND_TAG_ID73
+"$" .. &BIN__ID397 :COMMAND_TAG_ID75
+"$" .. &BIN__ID397 :COMMAND_TAG_ID76
+"$" .. &BIN__ID397 :COMMAND_TAG_ID77
+"$" .. &BIN__ID397 :COMMAND_TAG_ID78
+"$" .. &BIN__ID397 .. &COMMAND_TAG_ID78 :BIN__ID369
+"$" .. &BIN__ID397 :COMMAND_TAG_ID79
+"$" .. &BIN__ID397 :COMMAND_TAG_ID80
+"$" .. &BIN__ID397 :COMMAND_TAG_ID81
+"$" .. &BIN__ID397 .. &COMMAND_TAG_ID81 :BIN__ID378
+"$" .. &BIN__ID397 :COMMAND_TAG_ID82
+"$" .. &BIN__ID397 :COMMAND_TAG_ID83
+"$" .. &BIN__ID397 :CONDITION_ITER_ID88
+"$" .. &BIN__ID397 :CONDITION_ITER_ID91
+"$" .. &BIN__ID397 :CONDITION_TAG_ID100
+"$" .. &BIN__ID397 :CONDITION_TAG_ID102
+"$" .. &BIN__ID397 :CONDITION_TAG_ID104
+"$" .. &BIN__ID397 :CONDITION_TAG_ID106
+"$" .. &BIN__ID397 :EXPRESSION
+"$" .. &BIN__ID397 :FLOAT
+"$" .. &BIN__ID397 :IFSHORTCUT_OPTIONS_TAG_ID114
+"$" .. &BIN__ID397 :IFSHORTCUT_OPTIONS_TAG_ID115
+"$" .. &BIN__ID397 :INT
+"$" .. &BIN__ID397 :KEYID
+"$" .. &BIN__ID397 .. &KEYID :BIN__ID396
+"$" .. &BIN__ID397 :KEYID_TAG_ID136
+"$" .. &BIN__ID397 .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"$" .. &BIN__ID397 .. &LRE__ID419 .. ")" :BIN__ID393
+"$" .. &BIN__ID397 .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"$" .. &BIN__ID397 .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"$" .. &BIN__ID397 .. &LRE__ID419 .. ")" :BIN__ID408
+"$" .. &BIN__ID397 .. &LRE__ID419 .. ")" :BIN__ID409
+"$" .. &BIN__ID397 .. &LRE__ID419 :EXPRESSION
+"$" .. &BIN__ID397 :MACROID
+"$" .. &BIN__ID397 :MACROID_TAG_ID120
+"$" .. &BIN__ID397 :VALUE
+"$" .. &BIN__ID397 :VARIABLE_EXPANSION
+"$" .. &BIN__ID397 :VARIABLE_EXPANSION_TAG_ID121
+"$" .. &BIN__ID399 :VARIABLE_EXPANSION
+"$" .. "<config value name>" :VARIABLE_EXPANSION
+"$" .. "currentAddress" :VARIABLE_EXPANSION
+"$" .. "thisKeyId" :VARIABLE_EXPANSION
+"$" .. "<variable name>" :VARIABLE_EXPANSION
+"<0-1 multiple of default>" :COMMAND_TAG_ID82
+"<0-2.0>" :COMMAND_TAG_ID43
+"<0-2.0>" :COMMAND_TAG_ID44
+"<0-65535>" :COMMAND_TAG_ID46
+"<[-]?[0-9]*.[0-9]+>" .. &BIN__ID173 :BIN__ID172
+/[-]?[0-9]*.[0-9]+/ .. &BIN__ID173 :BIN__ID172
+"<[-]?[0-9]*.[0-9]+>" .. ")" :BIN__ID393
+/[-]?[0-9]*.[0-9]+/ .. ")" :BIN__ID393
+"<[-]?[0-9]*.[0-9]+>" .. &BIN__ID403 :BIN__ID402
+/[-]?[0-9]*.[0-9]+/ .. &BIN__ID403 :BIN__ID402
+"<[-]?[0-9]*.[0-9]+>" .. &BIN__ID406 :BIN__ID405
+/[-]?[0-9]*.[0-9]+/ .. &BIN__ID406 :BIN__ID405
+"<[-]?[0-9]*.[0-9]+>" .. ")" :BIN__ID408
+/[-]?[0-9]*.[0-9]+/ .. ")" :BIN__ID408
+"<[-]?[0-9]*.[0-9]+>" .. ")" :BIN__ID409
+/[-]?[0-9]*.[0-9]+/ .. ")" :BIN__ID409
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_GROUP_ID19
+/[-]?[0-9]*.[0-9]+/ :COMMAND_GROUP_ID19
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID38
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID38
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID39
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID39
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID40
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID40
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID41
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID41
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID42
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID42
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID43
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID43
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID44
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID44
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID45
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID45
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID63
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID63
+"<[-]?[0-9]*.[0-9]+>" :COMMAND_TAG_ID82
+/[-]?[0-9]*.[0-9]+/ :COMMAND_TAG_ID82
+"<[-]?[0-9]*.[0-9]+>" :EXPRESSION
+/[-]?[0-9]*.[0-9]+/ :EXPRESSION
+"<[-]?[0-9]*.[0-9]+>" :FLOAT
+/[-]?[0-9]*.[0-9]+/ :FLOAT
+"<[-]?[0-9]*.[0-9]+>" .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+/[-]?[0-9]*.[0-9]+/ .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"<[-]?[0-9]*.[0-9]+>" .. &LRE__ID419 .. ")" :BIN__ID393
+/[-]?[0-9]*.[0-9]+/ .. &LRE__ID419 .. ")" :BIN__ID393
+"<[-]?[0-9]*.[0-9]+>" .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+/[-]?[0-9]*.[0-9]+/ .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"<[-]?[0-9]*.[0-9]+>" .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+/[-]?[0-9]*.[0-9]+/ .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"<[-]?[0-9]*.[0-9]+>" .. &LRE__ID419 .. ")" :BIN__ID408
+/[-]?[0-9]*.[0-9]+/ .. &LRE__ID419 .. ")" :BIN__ID408
+"<[-]?[0-9]*.[0-9]+>" .. &LRE__ID419 .. ")" :BIN__ID409
+/[-]?[0-9]*.[0-9]+/ .. &LRE__ID419 .. ")" :BIN__ID409
+"<[-]?[0-9]*.[0-9]+>" .. &LRE__ID419 :EXPRESSION
+/[-]?[0-9]*.[0-9]+/ .. &LRE__ID419 :EXPRESSION
+"<[-]?[0-9]*.[0-9]+>" :VALUE
+/[-]?[0-9]*.[0-9]+/ :VALUE
+"<[-]?[0-9]+>" .. &ACTION :BIN__ID358
+/[-]?[0-9]+/ .. &ACTION :BIN__ID358
+"<[-]?[0-9]+>" :ADDRESS
+/[-]?[0-9]+/ :ADDRESS
+"<[-]?[0-9]+>" :BIN__ID167
+/[-]?[0-9]+/ :BIN__ID167
+"<[-]?[0-9]+>" :BIN__ID168
+/[-]?[0-9]+/ :BIN__ID168
+"<[-]?[0-9]+>" .. &BIN__ID173 :BIN__ID172
+/[-]?[0-9]+/ .. &BIN__ID173 :BIN__ID172
+"<[-]?[0-9]+>" .. &BIN__ID368 :BIN__ID367
+/[-]?[0-9]+/ .. &BIN__ID368 :BIN__ID367
+"<[-]?[0-9]+>" .. &BIN__ID369 :BIN__ID368
+/[-]?[0-9]+/ .. &BIN__ID369 :BIN__ID368
+"<[-]?[0-9]+>" .. &BIN__ID377 :BIN__ID376
+/[-]?[0-9]+/ .. &BIN__ID377 :BIN__ID376
+"<[-]?[0-9]+>" .. &BIN__ID378 :BIN__ID377
+/[-]?[0-9]+/ .. &BIN__ID378 :BIN__ID377
+"<[-]?[0-9]+>" .. ")" :BIN__ID393
+/[-]?[0-9]+/ .. ")" :BIN__ID393
+"<[-]?[0-9]+>" :BIN__ID394
+/[-]?[0-9]+/ :BIN__ID394
+"<[-]?[0-9]+>" :BIN__ID395
+/[-]?[0-9]+/ :BIN__ID395
+"<[-]?[0-9]+>" .. &BIN__ID403 :BIN__ID402
+/[-]?[0-9]+/ .. &BIN__ID403 :BIN__ID402
+"<[-]?[0-9]+>" .. &BIN__ID406 :BIN__ID405
+/[-]?[0-9]+/ .. &BIN__ID406 :BIN__ID405
+"<[-]?[0-9]+>" .. ")" :BIN__ID408
+/[-]?[0-9]+/ .. ")" :BIN__ID408
+"<[-]?[0-9]+>" .. ")" :BIN__ID409
+/[-]?[0-9]+/ .. ")" :BIN__ID409
+"<[-]?[0-9]+>" :BNF__ID144
+/[-]?[0-9]+/ :BNF__ID144
+"<[-]?[0-9]+>" :BNF__ID145
+/[-]?[0-9]+/ :BNF__ID145
+"<[-]?[0-9]+>" :BNF__ID146
+/[-]?[0-9]+/ :BNF__ID146
+"<[-]?[0-9]+>" :BNF__ID149
+/[-]?[0-9]+/ :BNF__ID149
+"<[-]?[0-9]+>" .. &BNF__ID149 :BIN__ID394
+/[-]?[0-9]+/ .. &BNF__ID149 :BIN__ID394
+"<[-]?[0-9]+>" .. &BNF__ID149 :BNF__ID149
+/[-]?[0-9]+/ .. &BNF__ID149 :BNF__ID149
+"<[-]?[0-9]+>" :BNF__ID151
+/[-]?[0-9]+/ :BNF__ID151
+"<[-]?[0-9]+>" .. &BNF__ID151 :BIN__ID395
+/[-]?[0-9]+/ .. &BNF__ID151 :BIN__ID395
+"<[-]?[0-9]+>" .. &BNF__ID151 :BNF__ID151
+/[-]?[0-9]+/ .. &BNF__ID151 :BNF__ID151
+"<[-]?[0-9]+>" :COMMAND_GROUP_ID19
+/[-]?[0-9]+/ :COMMAND_GROUP_ID19
+"<[-]?[0-9]+>" .. &COMMAND_GROUP_ID19 :BIN__ID169
+/[-]?[0-9]+/ .. &COMMAND_GROUP_ID19 :BIN__ID169
+"<[-]?[0-9]+>" :COMMAND_OPTION_ID25
+/[-]?[0-9]+/ :COMMAND_OPTION_ID25
+"<[-]?[0-9]+>" :COMMAND_OPTION_ID28
+/[-]?[0-9]+/ :COMMAND_OPTION_ID28
+"<[-]?[0-9]+>" :COMMAND_OPTION_ID31
+/[-]?[0-9]+/ :COMMAND_OPTION_ID31
+"<[-]?[0-9]+>" :COMMAND_TAG_ID15
+/[-]?[0-9]+/ :COMMAND_TAG_ID15
+"<[-]?[0-9]+>" :COMMAND_TAG_ID18
+/[-]?[0-9]+/ :COMMAND_TAG_ID18
+"<[-]?[0-9]+>" :COMMAND_TAG_ID20
+/[-]?[0-9]+/ :COMMAND_TAG_ID20
+"<[-]?[0-9]+>" :COMMAND_TAG_ID22
+/[-]?[0-9]+/ :COMMAND_TAG_ID22
+"<[-]?[0-9]+>" :COMMAND_TAG_ID24
+/[-]?[0-9]+/ :COMMAND_TAG_ID24
+"<[-]?[0-9]+>" :COMMAND_TAG_ID27
+/[-]?[0-9]+/ :COMMAND_TAG_ID27
+"<[-]?[0-9]+>" :COMMAND_TAG_ID3
+/[-]?[0-9]+/ :COMMAND_TAG_ID3
+"<[-]?[0-9]+>" :COMMAND_TAG_ID30
+/[-]?[0-9]+/ :COMMAND_TAG_ID30
+"<[-]?[0-9]+>" :COMMAND_TAG_ID4
+/[-]?[0-9]+/ :COMMAND_TAG_ID4
+"<[-]?[0-9]+>" :COMMAND_TAG_ID46
+/[-]?[0-9]+/ :COMMAND_TAG_ID46
+"<[-]?[0-9]+>" :COMMAND_TAG_ID48
+/[-]?[0-9]+/ :COMMAND_TAG_ID48
+"<[-]?[0-9]+>" :COMMAND_TAG_ID5
+/[-]?[0-9]+/ :COMMAND_TAG_ID5
+"<[-]?[0-9]+>" :COMMAND_TAG_ID50
+/[-]?[0-9]+/ :COMMAND_TAG_ID50
+"<[-]?[0-9]+>" :COMMAND_TAG_ID51
+/[-]?[0-9]+/ :COMMAND_TAG_ID51
+"<[-]?[0-9]+>" :COMMAND_TAG_ID53
+/[-]?[0-9]+/ :COMMAND_TAG_ID53
+"<[-]?[0-9]+>" :COMMAND_TAG_ID55
+/[-]?[0-9]+/ :COMMAND_TAG_ID55
+"<[-]?[0-9]+>" :COMMAND_TAG_ID57
+/[-]?[0-9]+/ :COMMAND_TAG_ID57
+"<[-]?[0-9]+>" :COMMAND_TAG_ID59
+/[-]?[0-9]+/ :COMMAND_TAG_ID59
+"<[-]?[0-9]+>" :COMMAND_TAG_ID6
+/[-]?[0-9]+/ :COMMAND_TAG_ID6
+"<[-]?[0-9]+>" :COMMAND_TAG_ID61
+/[-]?[0-9]+/ :COMMAND_TAG_ID61
+"<[-]?[0-9]+>" :COMMAND_TAG_ID64
+/[-]?[0-9]+/ :COMMAND_TAG_ID64
+"<[-]?[0-9]+>" :COMMAND_TAG_ID65
+/[-]?[0-9]+/ :COMMAND_TAG_ID65
+"<[-]?[0-9]+>" :COMMAND_TAG_ID66
+/[-]?[0-9]+/ :COMMAND_TAG_ID66
+"<[-]?[0-9]+>" :COMMAND_TAG_ID68
+/[-]?[0-9]+/ :COMMAND_TAG_ID68
+"<[-]?[0-9]+>" :COMMAND_TAG_ID69
+/[-]?[0-9]+/ :COMMAND_TAG_ID69
+"<[-]?[0-9]+>" :COMMAND_TAG_ID70
+/[-]?[0-9]+/ :COMMAND_TAG_ID70
+"<[-]?[0-9]+>" :COMMAND_TAG_ID71
+/[-]?[0-9]+/ :COMMAND_TAG_ID71
+"<[-]?[0-9]+>" :COMMAND_TAG_ID72
+/[-]?[0-9]+/ :COMMAND_TAG_ID72
+"<[-]?[0-9]+>" :COMMAND_TAG_ID73
+/[-]?[0-9]+/ :COMMAND_TAG_ID73
+"<[-]?[0-9]+>" :COMMAND_TAG_ID75
+/[-]?[0-9]+/ :COMMAND_TAG_ID75
+"<[-]?[0-9]+>" :COMMAND_TAG_ID76
+/[-]?[0-9]+/ :COMMAND_TAG_ID76
+"<[-]?[0-9]+>" :COMMAND_TAG_ID77
+/[-]?[0-9]+/ :COMMAND_TAG_ID77
+"<[-]?[0-9]+>" :COMMAND_TAG_ID78
+/[-]?[0-9]+/ :COMMAND_TAG_ID78
+"<[-]?[0-9]+>" .. &COMMAND_TAG_ID78 :BIN__ID369
+/[-]?[0-9]+/ .. &COMMAND_TAG_ID78 :BIN__ID369
+"<[-]?[0-9]+>" :COMMAND_TAG_ID79
+/[-]?[0-9]+/ :COMMAND_TAG_ID79
+"<[-]?[0-9]+>" :COMMAND_TAG_ID80
+/[-]?[0-9]+/ :COMMAND_TAG_ID80
+"<[-]?[0-9]+>" :COMMAND_TAG_ID81
+/[-]?[0-9]+/ :COMMAND_TAG_ID81
+"<[-]?[0-9]+>" .. &COMMAND_TAG_ID81 :BIN__ID378
+/[-]?[0-9]+/ .. &COMMAND_TAG_ID81 :BIN__ID378
+"<[-]?[0-9]+>" :COMMAND_TAG_ID83
+/[-]?[0-9]+/ :COMMAND_TAG_ID83
+"<[-]?[0-9]+>" :CONDITION_ITER_ID88
+/[-]?[0-9]+/ :CONDITION_ITER_ID88
+"<[-]?[0-9]+>" :CONDITION_ITER_ID91
+/[-]?[0-9]+/ :CONDITION_ITER_ID91
+"<[-]?[0-9]+>" :CONDITION_TAG_ID100
+/[-]?[0-9]+/ :CONDITION_TAG_ID100
+"<[-]?[0-9]+>" :CONDITION_TAG_ID102
+/[-]?[0-9]+/ :CONDITION_TAG_ID102
+"<[-]?[0-9]+>" :CONDITION_TAG_ID104
+/[-]?[0-9]+/ :CONDITION_TAG_ID104
+"<[-]?[0-9]+>" :CONDITION_TAG_ID106
+/[-]?[0-9]+/ :CONDITION_TAG_ID106
+"<[-]?[0-9]+>" :EXPRESSION
+/[-]?[0-9]+/ :EXPRESSION
+"<[-]?[0-9]+>" :IFSHORTCUT_OPTIONS_TAG_ID114
+/[-]?[0-9]+/ :IFSHORTCUT_OPTIONS_TAG_ID114
+"<[-]?[0-9]+>" :IFSHORTCUT_OPTIONS_TAG_ID115
+/[-]?[0-9]+/ :IFSHORTCUT_OPTIONS_TAG_ID115
+"<[-]?[0-9]+>" :INT
+/[-]?[0-9]+/ :INT
+"<[-]?[0-9]+>" :KEYID
+/[-]?[0-9]+/ :KEYID
+"<[-]?[0-9]+>" .. &KEYID :BIN__ID396
+/[-]?[0-9]+/ .. &KEYID :BIN__ID396
+"<[-]?[0-9]+>" :KEYID_TAG_ID136
+/[-]?[0-9]+/ :KEYID_TAG_ID136
+"<[-]?[0-9]+>" .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+/[-]?[0-9]+/ .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"<[-]?[0-9]+>" .. &LRE__ID419 .. ")" :BIN__ID393
+/[-]?[0-9]+/ .. &LRE__ID419 .. ")" :BIN__ID393
+"<[-]?[0-9]+>" .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+/[-]?[0-9]+/ .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"<[-]?[0-9]+>" .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+/[-]?[0-9]+/ .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"<[-]?[0-9]+>" .. &LRE__ID419 .. ")" :BIN__ID408
+/[-]?[0-9]+/ .. &LRE__ID419 .. ")" :BIN__ID408
+"<[-]?[0-9]+>" .. &LRE__ID419 .. ")" :BIN__ID409
+/[-]?[0-9]+/ .. &LRE__ID419 .. ")" :BIN__ID409
+"<[-]?[0-9]+>" .. &LRE__ID419 :EXPRESSION
+/[-]?[0-9]+/ .. &LRE__ID419 :EXPRESSION
+"<[-]?[0-9]+>" :MACROID
+/[-]?[0-9]+/ :MACROID
+"<[-]?[0-9]+>" :MACROID_TAG_ID120
+/[-]?[0-9]+/ :MACROID_TAG_ID120
+"<[-]?[0-9]+>" :VALUE
+/[-]?[0-9]+/ :VALUE
+"<[-]?[0-9]+>" :VARIABLE_EXPANSION_TAG_ID121
+/[-]?[0-9]+/ :VARIABLE_EXPANSION_TAG_ID121
+"0" .. &ACTION :BIN__ID358
+"0" :BIN__ID167
+"0" :BIN__ID168
+"0" .. &BIN__ID173 :BIN__ID172
+"0" .. &BIN__ID377 :BIN__ID376
+"0" .. ")" :BIN__ID393
+"0" :BIN__ID394
+"0" :BIN__ID395
+"0" .. &BIN__ID403 :BIN__ID402
+"0" .. &BIN__ID406 :BIN__ID405
+"0" .. ")" :BIN__ID408
+"0" .. ")" :BIN__ID409
+"0" :BNF__ID149
+"0" .. &BNF__ID149 :BIN__ID394
+"0" .. &BNF__ID149 :BNF__ID149
+"0" :BNF__ID151
+"0" .. &BNF__ID151 :BIN__ID395
+"0" .. &BNF__ID151 :BNF__ID151
+"0" :BOOL
+"0" :COMMAND_GROUP_ID19
+"0" :CONDITION_ITER_ID88
+"0" :CONDITION_ITER_ID91
+"0" :EXPRESSION
+"0" :KEYID
+"0" :KEYID_ABBREV
+"0" :KEYID_TAG_ID137
+"0" .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"0" .. &LRE__ID419 .. ")" :BIN__ID393
+"0" .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"0" .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"0" .. &LRE__ID419 .. ")" :BIN__ID408
+"0" .. &LRE__ID419 .. ")" :BIN__ID409
+"0" .. &LRE__ID419 :EXPRESSION
+"0" :VALUE
+"<1-100>" :COMMAND_TAG_ID41
+"<1-100>" :COMMAND_TAG_ID42
+"<1-100>" :COMMAND_TAG_ID45
+"1" .. &ACTION :BIN__ID358
+"1" :BIN__ID167
+"1" :BIN__ID168
+"1" .. &BIN__ID173 :BIN__ID172
+"1" .. &BIN__ID377 :BIN__ID376
+"1" .. ")" :BIN__ID393
+"1" :BIN__ID394
+"1" :BIN__ID395
+"1" .. &BIN__ID403 :BIN__ID402
+"1" .. &BIN__ID406 :BIN__ID405
+"1" .. ")" :BIN__ID408
+"1" .. ")" :BIN__ID409
+"1" :BNF__ID149
+"1" .. &BNF__ID149 :BIN__ID394
+"1" .. &BNF__ID149 :BNF__ID149
+"1" :BNF__ID151
+"1" .. &BNF__ID151 :BIN__ID395
+"1" .. &BNF__ID151 :BNF__ID151
+"1" :BOOL
+"1" :COMMAND_GROUP_ID19
+"1" :CONDITION_ITER_ID88
+"1" :CONDITION_ITER_ID91
+"1" :EXPRESSION
+"1" :KEYID
+"1" :KEYID_ABBREV
+"1" :KEYID_TAG_ID137
+"1" .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"1" .. &LRE__ID419 .. ")" :BIN__ID393
+"1" .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"1" .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"1" .. &LRE__ID419 .. ")" :BIN__ID408
+"1" .. &LRE__ID419 .. ")" :BIN__ID409
+"1" .. &LRE__ID419 :EXPRESSION
+"1" :VALUE
+"2" .. &ACTION :BIN__ID358
+"2" :BIN__ID167
+"2" :BIN__ID168
+"2" .. &BIN__ID377 :BIN__ID376
+"2" :BIN__ID394
+"2" :BIN__ID395
+"2" :BNF__ID149
+"2" .. &BNF__ID149 :BIN__ID394
+"2" .. &BNF__ID149 :BNF__ID149
+"2" :BNF__ID151
+"2" .. &BNF__ID151 :BIN__ID395
+"2" .. &BNF__ID151 :BNF__ID151
+"2" :CONDITION_ITER_ID88
+"2" :CONDITION_ITER_ID91
+"2" :KEYID
+"2" :KEYID_ABBREV
+"2" :KEYID_TAG_ID137
+"3" .. &ACTION :BIN__ID358
+"3" :BIN__ID167
+"3" :BIN__ID168
+"3" .. &BIN__ID377 :BIN__ID376
+"3" :BIN__ID394
+"3" :BIN__ID395
+"3" :BNF__ID149
+"3" .. &BNF__ID149 :BIN__ID394
+"3" .. &BNF__ID149 :BNF__ID149
+"3" :BNF__ID151
+"3" .. &BNF__ID151 :BIN__ID395
+"3" .. &BNF__ID151 :BNF__ID151
+"3" :CONDITION_ITER_ID88
+"3" :CONDITION_ITER_ID91
+"3" :KEYID
+"3" :KEYID_ABBREV
+"3" :KEYID_TAG_ID137
+"4" .. &ACTION :BIN__ID358
+"4" :BIN__ID167
+"4" :BIN__ID168
+"4" .. &BIN__ID377 :BIN__ID376
+"4" :BIN__ID394
+"4" :BIN__ID395
+"4" :BNF__ID149
+"4" .. &BNF__ID149 :BIN__ID394
+"4" .. &BNF__ID149 :BNF__ID149
+"4" :BNF__ID151
+"4" .. &BNF__ID151 :BIN__ID395
+"4" .. &BNF__ID151 :BNF__ID151
+"4" :CONDITION_ITER_ID88
+"4" :CONDITION_ITER_ID91
+"4" :KEYID
+"4" :KEYID_ABBREV
+"4" :KEYID_TAG_ID137
+"5" .. &ACTION :BIN__ID358
+"5" :BIN__ID167
+"5" :BIN__ID168
+"5" .. &BIN__ID377 :BIN__ID376
+"5" :BIN__ID394
+"5" :BIN__ID395
+"5" :BNF__ID149
+"5" .. &BNF__ID149 :BIN__ID394
+"5" .. &BNF__ID149 :BNF__ID149
+"5" :BNF__ID151
+"5" .. &BNF__ID151 :BIN__ID395
+"5" .. &BNF__ID151 :BNF__ID151
+"5" :CONDITION_ITER_ID88
+"5" :CONDITION_ITER_ID91
+"5" :KEYID
+"5" :KEYID_ABBREV
+"5" :KEYID_TAG_ID137
+"6" .. &ACTION :BIN__ID358
+"6" :BIN__ID167
+"6" :BIN__ID168
+"6" .. &BIN__ID377 :BIN__ID376
+"6" :BIN__ID394
+"6" :BIN__ID395
+"6" :BNF__ID149
+"6" .. &BNF__ID149 :BIN__ID394
+"6" .. &BNF__ID149 :BNF__ID149
+"6" :BNF__ID151
+"6" .. &BNF__ID151 :BIN__ID395
+"6" .. &BNF__ID151 :BNF__ID151
+"6" :CONDITION_ITER_ID88
+"6" :CONDITION_ITER_ID91
+"6" :KEYID
+"6" :KEYID_ABBREV
+"6" :KEYID_TAG_ID137
+"7" .. &ACTION :BIN__ID358
+"7" :BIN__ID167
+"7" :BIN__ID168
+"7" .. &BIN__ID377 :BIN__ID376
+"7" :BIN__ID394
+"7" :BIN__ID395
+"7" :BNF__ID149
+"7" .. &BNF__ID149 :BIN__ID394
+"7" .. &BNF__ID149 :BNF__ID149
+"7" :BNF__ID151
+"7" .. &BNF__ID151 :BIN__ID395
+"7" .. &BNF__ID151 :BNF__ID151
+"7" :CONDITION_ITER_ID88
+"7" :CONDITION_ITER_ID91
+"7" :KEYID
+"7" :KEYID_ABBREV
+"7" :KEYID_TAG_ID137
+"8" .. &ACTION :BIN__ID358
+"8" :BIN__ID167
+"8" :BIN__ID168
+"8" .. &BIN__ID377 :BIN__ID376
+"8" :BIN__ID394
+"8" :BIN__ID395
+"8" :BNF__ID149
+"8" .. &BNF__ID149 :BIN__ID394
+"8" .. &BNF__ID149 :BNF__ID149
+"8" :BNF__ID151
+"8" .. &BNF__ID151 :BIN__ID395
+"8" .. &BNF__ID151 :BNF__ID151
+"8" :CONDITION_ITER_ID88
+"8" :CONDITION_ITER_ID91
+"8" :KEYID
+"8" :KEYID_ABBREV
+"8" :KEYID_TAG_ID137
+"9" .. &ACTION :BIN__ID358
+"9" :BIN__ID167
+"9" :BIN__ID168
+"9" .. &BIN__ID377 :BIN__ID376
+"9" :BIN__ID394
+"9" :BIN__ID395
+"9" :BNF__ID149
+"9" .. &BNF__ID149 :BIN__ID394
+"9" .. &BNF__ID149 :BNF__ID149
+"9" :BNF__ID151
+"9" .. &BNF__ID151 :BIN__ID395
+"9" .. &BNF__ID151 :BNF__ID151
+"9" :CONDITION_ITER_ID88
+"9" :CONDITION_ITER_ID91
+"9" :KEYID
+"9" :KEYID_ABBREV
+"9" :KEYID_TAG_ID137
+"a" .. &ACTION :BIN__ID358
+"a" :BIN__ID167
+"a" :BIN__ID168
+"a" .. &BIN__ID377 :BIN__ID376
+"a" :BIN__ID394
+"a" :BIN__ID395
+"A" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"A" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"A" :BNF__ID147
+"a" :BNF__ID149
+"a" .. &BNF__ID149 :BIN__ID394
+"a" .. &BNF__ID149 :BNF__ID149
+"a" :BNF__ID151
+"a" .. &BNF__ID151 :BIN__ID395
+"a" .. &BNF__ID151 :BNF__ID151
+"A" :BNF__ID156
+"A" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"A" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"A" .. &BNF__ID156 :BNF__ID147
+"A" .. &BNF__ID156 :BNF__ID156
+"A" .. &BNF__ID156 :COMMAND_ITER_ID37
+"A" .. &BNF__ID156 :LRE__ID420
+"A" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"A" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"A" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"A" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"A" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"A" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"A" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"A" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"A" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"A" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"A" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"A" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"A" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"A" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"A" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"A" .. &BNF__ID156 :MODMASK
+"A" .. &BNF__ID156 :MODMASK_ITER_ID125
+"A" .. &BNF__ID156 :SHORTCUT
+"A" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"accelerate" :COMMAND_GROUP_ID33
+"acceleratedSpeed" .. &COMMAND_TAG_ID61 :BIN__ID329
+"A" :COMMAND_ITER_ID37
+"a" :CONDITION_ITER_ID88
+"a" :CONDITION_ITER_ID91
+"<action adr>" :COMMAND_TAG_ID22
+"'" .. &ACTION :BIN__ID358
+"," .. &ACTION :BIN__ID358
+"-" .. &ACTION :BIN__ID358
+"." .. &ACTION :BIN__ID358
+";" .. &ACTION :BIN__ID358
+"=" .. &ACTION :BIN__ID358
+"`" .. &ACTION :BIN__ID358
+/\// .. &ACTION :BIN__ID358
+/\[/ .. &ACTION :BIN__ID358
+/\]/ .. &ACTION :BIN__ID358
+"activateKeyPostponed" .. &BIN__ID167 :BIN__ID157
+"activateKeyPostponed" .. &BIN__ID167 .. &BNF__ID140 :BIN__ID157
+"activateKeyPostponed" .. &BIN__ID167 .. &BNF__ID140 :BODY
+"activateKeyPostponed" .. &BIN__ID167 :BODY
+"activateKeyPostponed" .. &BIN__ID167 :COMMAND
+"advanced" .. &BIN__ID268 :BIN__ID267
+"advanced" .. &BIN__ID273 :BIN__ID272
+"advanced" .. &BIN__ID278 :BIN__ID277
+"advanced" .. &BIN__ID283 :BIN__ID282
+"advanced" .. &BIN__ID288 :BIN__ID287
+"advanced" .. &BIN__ID293 :BIN__ID292
+"advanced" .. &BIN__ID298 :BIN__ID297
+"advanced" .. &BIN__ID303 :BIN__ID302
+"advanced" :COMMAND_GROUP_ID47
+"advancedStrategy" :BNF__ID152
+"advancedStrategy" :CONDITION_OPTION_ID93
+"again" :BNF__ID147
+"again" .. &BNF__ID147 :BNF__ID147
+"again" :COMMAND_ITER_ID37
+"again" :SCANCODE
+"again" :SCANCODE_ABBREV
+"again" :SCANCODE_TAG_ID132
+"again" :SHORTCUT
+"again" :SHORTCUT_TAG_ID134
+"a" :KEYID
+"a" :KEYID_ABBREV
+"a" :KEYID_ABBREV
+"a" :KEYID_TAG_ID137
+"A" :LRE__ID420
+"alt" .. &BIN__ID164 :BIN__ID163
+"alt" .. &BIN__ID166 :BIN__ID165
+"alt" .. &BIN__ID357 :BIN__ID356
+"alt" .. &BIN__ID375 :BIN__ID374
+"alt" :COMMAND_GROUP_ID84
+"alt" .. &COMMAND_GROUP_ID85 :BIN__ID390
+"alt" :COMMAND_TAG_ID10
+"alt" :COMMAND_TAG_ID12
+"alt" .. &COMMAND_TAG_ID5 :BIN__ID159
+"alt" .. &COMMAND_TAG_ID6 :BIN__ID162
+"alt" :COMMAND_TAG_ID7
+"alt" :COMMAND_TAG_ID9
+"alternateErase" :BNF__ID147
+"alternateErase" .. &BNF__ID147 :BNF__ID147
+"alternateErase" :COMMAND_ITER_ID37
+"alternateErase" :SCANCODE
+"alternateErase" :SCANCODE_ABBREV
+"alternateErase" :SCANCODE_TAG_ID132
+"alternateErase" :SHORTCUT
+"alternateErase" :SHORTCUT_TAG_ID134
+"alt" :LAYERID
+"alt" :LAYERID_GROUP_ID117
+"always" :COMMAND_GROUP_ID67
+"A" :MODMASK
+"A" :MODMASK_GROUP_ID127
+"A" :MODMASK_ITER_ID125
+"<any nonwhite ascii char>" :BNF__ID144
+"<any nonwhite ascii char>" :BNF__ID145
+"<any nonwhite ascii char>" :BNF__ID146
+"<any nonwhite ascii char>" :BNF__ID147
+"<any nonwhite ascii char>" .. &BNF__ID147 :BNF__ID147
+"<any nonwhite ascii char>" :CHAR
+"<any nonwhite ascii char>" :COMMAND_ITER_ID37
+"<any nonwhite ascii char>" :COMMAND_OPTION_ID25
+"<any nonwhite ascii char>" :COMMAND_OPTION_ID28
+"<any nonwhite ascii char>" :COMMAND_OPTION_ID31
+"<any nonwhite ascii char>" :COMMAND_TAG_ID24
+"<any nonwhite ascii char>" :COMMAND_TAG_ID27
+"<any nonwhite ascii char>" :COMMAND_TAG_ID30
+"<any nonwhite ascii char>" :MACROID
+"<any nonwhite ascii char>" :MACROID_TAG_ID119
+"<any nonwhite ascii char>" :SCANCODE
+"<any nonwhite ascii char>" :SCANCODE_TAG_ID131
+"<any nonwhite ascii char>" :SHORTCUT
+"<any nonwhite ascii char>" :SHORTCUT_TAG_ID134
+"anyOrder" :BNF__ID148
+"anyOrder" .. &BNF__ID148 :BNF__ID148
+"anyOrder" .. &BNF__ID148 .. &BNF__ID149 :BIN__ID394
+"anyOrder" .. &BNF__ID149 :BIN__ID394
+"anyOrder" :BNF__ID150
+"anyOrder" .. &BNF__ID150 :BNF__ID150
+"anyOrder" .. &BNF__ID150 .. &BNF__ID151 :BIN__ID395
+"anyOrder" .. &BNF__ID151 :BIN__ID395
+"anyOrder" :CONDITION_ITER_ID87
+"anyOrder" :CONDITION_ITER_ID90
+"anyOrder" :IFSHORTCUT_OPTIONS
+"apostropheAndQuote" .. &ACTION :BIN__ID358
+"apostropheAndQuote" :BIN__ID167
+"apostropheAndQuote" :BIN__ID168
+"apostropheAndQuote" .. &BIN__ID377 :BIN__ID376
+"apostropheAndQuote" :BIN__ID394
+"apostropheAndQuote" :BIN__ID395
+"apostropheAndQuote" :BNF__ID147
+"apostropheAndQuote" .. &BNF__ID147 :BNF__ID147
+"apostropheAndQuote" :BNF__ID149
+"apostropheAndQuote" .. &BNF__ID149 :BIN__ID394
+"apostropheAndQuote" .. &BNF__ID149 :BNF__ID149
+"apostropheAndQuote" :BNF__ID151
+"apostropheAndQuote" .. &BNF__ID151 :BIN__ID395
+"apostropheAndQuote" .. &BNF__ID151 :BNF__ID151
+"apostropheAndQuote" :COMMAND_ITER_ID37
+"apostropheAndQuote" :CONDITION_ITER_ID88
+"apostropheAndQuote" :CONDITION_ITER_ID91
+"apostropheAndQuote" :KEYID
+"apostropheAndQuote" :KEYID_ABBREV
+"apostropheAndQuote" :KEYID_TAG_ID137
+"apostropheAndQuote" :SCANCODE
+"apostropheAndQuote" :SCANCODE_ABBREV
+"apostropheAndQuote" :SCANCODE_TAG_ID132
+"apostropheAndQuote" :SHORTCUT
+"apostropheAndQuote" :SHORTCUT_TAG_ID134
+"append" :BNF__ID143
+"append" :COMMAND_OPTION_ID14
+"append" .. &KEYID :BIN__ID167
+"append" .. &KEYID :BIN__ID168
+"application" :BNF__ID147
+"application" .. &BNF__ID147 :BNF__ID147
+"application" :COMMAND_ITER_ID37
+"application" :SCANCODE
+"application" :SCANCODE_ABBREV
+"application" :SCANCODE_TAG_ID132
+"application" :SHORTCUT
+"application" :SHORTCUT_TAG_ID134
+"A" :SHORTCUT
+"A" :SHORTCUT_TAG_ID135
+"atLayer" .. &LAYERID .. &BIN__ID168 :BIN__ID167
+"atLayer" .. &LAYERID :BNF__ID142
+"atLayer" .. &LAYERID :COMMAND_OPTION_ID13
+"autoRepeat" :BNF__ID141
+"autoRepeat" .. &BNF__ID141 :BNF__ID141
+"autoRepeat" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"autoRepeat" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"autoRepeat" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"autoRepeat" .. &BNF__ID141 .. &COMMAND :BODY
+"autoRepeat" .. &BNF__ID141 .. &COMMAND :COMMAND
+"autoRepeat" .. &COMMAND :BIN__ID157
+"autoRepeat" .. &COMMAND :BODY
+"autoRepeat" .. &COMMAND :COMMAND
+"autoRepeat" :COMMAND_ITER_ID2
+"autoRepeatDelay" .. &COMMAND_TAG_ID71 :BIN__ID343
+"autoRepeat" :MODIFIER
+"autoRepeatRate" .. &COMMAND_TAG_ID72 :BIN__ID344
+"autoShiftDelay" .. &COMMAND_TAG_ID66 :BIN__ID338
+"axisLockFirstTickSkew" .. &COMMAND_TAG_ID44 :BIN__ID216
+"axisLockSkew" .. &COMMAND_TAG_ID43 :BIN__ID211
+"axisSkew" .. &COMMAND_TAG_ID63 :BIN__ID334
+"<[a-zA-Z0-9_]*>" :ADDRESS
+/[a-zA-Z0-9_]*/ :ADDRESS
+"<[a-zA-Z0-9_]*>" .. ":" .. &BIN__ID157 :BODY
+/[a-zA-Z0-9_]*/ .. ":" .. &BIN__ID157 :BODY
+"<[a-zA-Z0-9_]*>" .. ":" :BNF__ID139
+/[a-zA-Z0-9_]*/ .. ":" :BNF__ID139
+"<[a-zA-Z0-9_]*>" .. ":" :BODY_OPTION_ID0
+/[a-zA-Z0-9_]*/ .. ":" :BODY_OPTION_ID0
+"<[a-zA-Z0-9_]*>" :COMMAND_TAG_ID20
+/[a-zA-Z0-9_]*/ :COMMAND_TAG_ID20
+"<[a-zA-Z0-9_]*>" :COMMAND_TAG_ID21
+/[a-zA-Z0-9_]*/ :COMMAND_TAG_ID21
+"<[a-zA-Z0-9_]*>" :COMMAND_TAG_ID22
+/[a-zA-Z0-9_]*/ :COMMAND_TAG_ID22
+"<[a-zA-Z0-9_]*>" .. &COMMAND_TAG_ID22 :BIN__ID170
+/[a-zA-Z0-9_]*/ .. &COMMAND_TAG_ID22 :BIN__ID170
+"<[a-zA-Z0-9_]*>" :COMMAND_TAG_ID34
+/[a-zA-Z0-9_]*/ :COMMAND_TAG_ID34
+"<[a-zA-Z0-9_]*>" .. &COMMAND_TAG_ID35 :BIN__ID174
+/[a-zA-Z0-9_]*/ .. &COMMAND_TAG_ID35 :BIN__ID174
+"<[a-zA-Z0-9_]*>" :IDENTIFIER
+/[a-zA-Z0-9_]*/ :IDENTIFIER
+"<[a-zA-Z0-9_]*>" :LABEL
+/[a-zA-Z0-9_]*/ :LABEL
+"<[a-zA-Z0-9_]*>" :LABEL_TAG_ID124
+/[a-zA-Z0-9_]*/ :LABEL_TAG_ID124
+"<[a-zA-Z0-9_]*>" :MACRONAME
+/[a-zA-Z0-9_]*/ :MACRONAME
+"<[a-zA-Z0-9_]*>" :MACRONAME_TAG_ID138
+/[a-zA-Z0-9_]*/ :MACRONAME_TAG_ID138
+"backlight" .. &BIN__ID360 :BIN__ID359
+"backlight" .. &BIN__ID363 :BIN__ID362
+"backlight" .. &BIN__ID371 :BIN__ID370
+"backslashAndPipe" :BNF__ID147
+"backslashAndPipe" .. &BNF__ID147 :BNF__ID147
+"backslashAndPipe" :COMMAND_ITER_ID37
+"backslashAndPipeIso" :BNF__ID147
+"backslashAndPipeIso" .. &BNF__ID147 :BNF__ID147
+"backslashAndPipeIso" :COMMAND_ITER_ID37
+"backslashAndPipeIso" :SCANCODE
+"backslashAndPipeIso" :SCANCODE_ABBREV
+"backslashAndPipeIso" :SCANCODE_TAG_ID132
+"backslashAndPipeIso" :SHORTCUT
+"backslashAndPipeIso" :SHORTCUT_TAG_ID134
+"backslashAndPipe" :SCANCODE
+"backslashAndPipe" :SCANCODE_ABBREV
+"backslashAndPipe" :SCANCODE_TAG_ID132
+"backslashAndPipe" :SHORTCUT
+"backslashAndPipe" :SHORTCUT_TAG_ID134
+"backspace" .. &ACTION :BIN__ID358
+"backspace" :BIN__ID167
+"backspace" :BIN__ID168
+"backspace" .. &BIN__ID377 :BIN__ID376
+"backspace" :BIN__ID394
+"backspace" :BIN__ID395
+"backspace" :BNF__ID147
+"backspace" .. &BNF__ID147 :BNF__ID147
+"backspace" :BNF__ID149
+"backspace" .. &BNF__ID149 :BIN__ID394
+"backspace" .. &BNF__ID149 :BNF__ID149
+"backspace" :BNF__ID151
+"backspace" .. &BNF__ID151 :BIN__ID395
+"backspace" .. &BNF__ID151 :BNF__ID151
+"backspace" :COMMAND_ITER_ID37
+"backspace" :CONDITION_ITER_ID88
+"backspace" :CONDITION_ITER_ID91
+"backspace" :KEYID
+"backspace" :KEYID_ABBREV
+"backspace" :KEYID_TAG_ID137
+"backspace" :SCANCODE
+"backspace" :SCANCODE_ABBREV
+"backspace" :SCANCODE_TAG_ID132
+"backspace" :SHORTCUT
+"backspace" :SHORTCUT_TAG_ID134
+"b" .. &ACTION :BIN__ID358
+"base" .. &BIN__ID164 :BIN__ID163
+"base" .. &BIN__ID166 :BIN__ID165
+"base" .. &BIN__ID357 :BIN__ID356
+"base" .. &BIN__ID375 :BIN__ID374
+"base" :COMMAND_TAG_ID10
+"base" :COMMAND_TAG_ID12
+"base" .. &COMMAND_TAG_ID5 :BIN__ID159
+"base" .. &COMMAND_TAG_ID6 :BIN__ID162
+"base" :COMMAND_TAG_ID7
+"base" :COMMAND_TAG_ID9
+"base" :LAYERID
+"base" :LAYERID_BASIC
+"base" :LAYERID_BASIC_GROUP_ID118
+"base" :LAYERID_GROUP_ID117
+"base" .. &NAVIGATION_MODE :BIN__ID181
+"baseSpeed" .. &COMMAND_TAG_ID38 :BIN__ID186
+"baseSpeed" .. &COMMAND_TAG_ID55 :BIN__ID314
+"batchSize" .. "<number of commands to execute per one update cycle INT>" :BIN__ID348
+"<baud rate, default 100000>" :COMMAND_TAG_ID64
+"b" :BIN__ID167
+"b" :BIN__ID168
+"b" .. &BIN__ID377 :BIN__ID376
+"b" :BIN__ID394
+"b" :BIN__ID395
+"b" :BNF__ID149
+"b" .. &BNF__ID149 :BIN__ID394
+"b" .. &BNF__ID149 :BNF__ID149
+"b" :BNF__ID151
+"b" .. &BNF__ID151 :BIN__ID395
+"b" .. &BNF__ID151 :BNF__ID151
+"b" :CONDITION_ITER_ID88
+"b" :CONDITION_ITER_ID91
+"{" :BIN__ID157
+"'" :BIN__ID167
+"," :BIN__ID167
+"-" :BIN__ID167
+"." :BIN__ID167
+";" :BIN__ID167
+"=" :BIN__ID167
+"`" :BIN__ID167
+/\// :BIN__ID167
+/\[/ :BIN__ID167
+/\]/ :BIN__ID167
+"'" :BIN__ID168
+"," :BIN__ID168
+"-" :BIN__ID168
+"." :BIN__ID168
+";" :BIN__ID168
+"=" :BIN__ID168
+"`" :BIN__ID168
+/\// :BIN__ID168
+/\[/ :BIN__ID168
+/\]/ :BIN__ID168
+"(" .. &BIN__ID172 :BIN__ID171
+"." .. &BIN__ID177 :BIN__ID176
+"." .. &BIN__ID179 :BIN__ID178
+"." .. &BIN__ID181 :BIN__ID180
+"." .. &BIN__ID184 :BIN__ID183
+"." .. &BIN__ID186 :BIN__ID185
+"." .. &BIN__ID189 :BIN__ID188
+"." .. &BIN__ID191 :BIN__ID190
+"." .. &BIN__ID194 :BIN__ID193
+"." .. &BIN__ID196 :BIN__ID195
+"." .. &BIN__ID199 :BIN__ID198
+"." .. &BIN__ID201 :BIN__ID200
+"." .. &BIN__ID204 :BIN__ID203
+"." .. &BIN__ID206 :BIN__ID205
+"." .. &BIN__ID209 :BIN__ID208
+"." .. &BIN__ID211 :BIN__ID210
+"." .. &BIN__ID214 :BIN__ID213
+"." .. &BIN__ID216 :BIN__ID215
+"." .. &BIN__ID219 :BIN__ID218
+"." .. &BIN__ID221 :BIN__ID220
+"." .. &BIN__ID224 :BIN__ID223
+"." .. &BIN__ID226 :BIN__ID225
+"." .. &BIN__ID229 :BIN__ID228
+"." .. &BIN__ID231 :BIN__ID230
+"." .. &BIN__ID234 :BIN__ID233
+"." .. &BIN__ID236 :BIN__ID235
+"." .. &BIN__ID239 :BIN__ID238
+"." .. &BIN__ID241 :BIN__ID240
+"." .. &BIN__ID244 :BIN__ID243
+"." .. &BIN__ID246 :BIN__ID245
+"." .. &BIN__ID249 :BIN__ID248
+"." .. &BIN__ID251 :BIN__ID250
+"." .. &BIN__ID254 :BIN__ID253
+"." .. &BIN__ID256 :BIN__ID255
+"." .. &BIN__ID259 :BIN__ID258
+"." .. &BIN__ID261 :BIN__ID260
+"." .. &BIN__ID264 :BIN__ID263
+"." .. &BIN__ID267 :BIN__ID266
+"." .. &BIN__ID269 :BIN__ID268
+"." .. &BIN__ID272 :BIN__ID271
+"." .. &BIN__ID274 :BIN__ID273
+"." .. &BIN__ID277 :BIN__ID276
+"." .. &BIN__ID279 :BIN__ID278
+"." .. &BIN__ID282 :BIN__ID281
+"." .. &BIN__ID284 :BIN__ID283
+"." .. &BIN__ID287 :BIN__ID286
+"." .. &BIN__ID289 :BIN__ID288
+"." .. &BIN__ID292 :BIN__ID291
+"." .. &BIN__ID294 :BIN__ID293
+"." .. &BIN__ID297 :BIN__ID296
+"." .. &BIN__ID299 :BIN__ID298
+"." .. &BIN__ID302 :BIN__ID301
+"." .. &BIN__ID304 :BIN__ID303
+"." .. &BIN__ID307 :BIN__ID306
+"." .. &BIN__ID309 :BIN__ID308
+"." .. &BIN__ID312 :BIN__ID311
+"." .. &BIN__ID314 :BIN__ID313
+"." .. &BIN__ID317 :BIN__ID316
+"." .. &BIN__ID319 :BIN__ID318
+"." .. &BIN__ID322 :BIN__ID321
+"." .. &BIN__ID324 :BIN__ID323
+"." .. &BIN__ID327 :BIN__ID326
+"." .. &BIN__ID329 :BIN__ID328
+"." .. &BIN__ID332 :BIN__ID331
+"." .. &BIN__ID334 :BIN__ID333
+"." .. &BIN__ID348 :BIN__ID347
+"." .. &BIN__ID351 :BIN__ID350
+"." .. &BIN__ID353 :BIN__ID352
+"." .. &BIN__ID356 :BIN__ID355
+"." .. &BIN__ID358 :BIN__ID357
+"." .. &BIN__ID361 :BIN__ID360
+"." .. &BIN__ID364 :BIN__ID363
+"." .. &BIN__ID366 :BIN__ID365
+"." .. &BIN__ID372 :BIN__ID371
+"." .. &BIN__ID374 :BIN__ID373
+"." .. &BIN__ID376 :BIN__ID375
+"'" .. &BIN__ID377 :BIN__ID376
+"," .. &BIN__ID377 :BIN__ID376
+"-" .. &BIN__ID377 :BIN__ID376
+"." .. &BIN__ID377 :BIN__ID376
+";" .. &BIN__ID377 :BIN__ID376
+"=" .. &BIN__ID377 :BIN__ID376
+"`" .. &BIN__ID377 :BIN__ID376
+/\// .. &BIN__ID377 :BIN__ID376
+/\[/ .. &BIN__ID377 :BIN__ID376
+/\]/ .. &BIN__ID377 :BIN__ID376
+"." .. &BIN__ID381 :BIN__ID380
+"." .. &BIN__ID384 :BIN__ID383
+"." .. &BIN__ID387 :BIN__ID386
+"." .. &BIN__ID390 :BIN__ID389
+"(" .. &BIN__ID393 :BIN__ID392
+"'" :BIN__ID394
+"," :BIN__ID394
+"-" :BIN__ID394
+"." :BIN__ID394
+";" :BIN__ID394
+"=" :BIN__ID394
+"`" :BIN__ID394
+/\// :BIN__ID394
+/\[/ :BIN__ID394
+/\]/ :BIN__ID394
+"'" :BIN__ID395
+"," :BIN__ID395
+"-" :BIN__ID395
+"." :BIN__ID395
+";" :BIN__ID395
+"=" :BIN__ID395
+"`" :BIN__ID395
+/\// :BIN__ID395
+/\[/ :BIN__ID395
+/\]/ :BIN__ID395
+"(" .. &BIN__ID402 :BIN__ID401
+"(" .. &BIN__ID405 :BIN__ID404
+"(" .. &BIN__ID408 .. &BIN__ID173 :BIN__ID172
+"(" .. &BIN__ID408 .. ")" :BIN__ID393
+"(" .. &BIN__ID408 .. &BIN__ID403 :BIN__ID402
+"(" .. &BIN__ID408 .. &BIN__ID406 :BIN__ID405
+"(" .. &BIN__ID408 .. ")" :BIN__ID408
+"(" .. &BIN__ID408 .. ")" :BIN__ID409
+"(" .. &BIN__ID408 :EXPRESSION
+"(" .. &BIN__ID408 .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"(" .. &BIN__ID408 .. &LRE__ID419 .. ")" :BIN__ID393
+"(" .. &BIN__ID408 .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"(" .. &BIN__ID408 .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"(" .. &BIN__ID408 .. &LRE__ID419 .. ")" :BIN__ID408
+"(" .. &BIN__ID408 .. &LRE__ID419 .. ")" :BIN__ID409
+"(" .. &BIN__ID408 .. &LRE__ID419 :EXPRESSION
+"(" .. &BIN__ID409 .. &ACTION :BIN__ID358
+"(" .. &BIN__ID409 :ADDRESS
+"(" .. &BIN__ID409 :BIN__ID167
+"(" .. &BIN__ID409 :BIN__ID168
+"(" .. &BIN__ID409 .. &BIN__ID368 :BIN__ID367
+"(" .. &BIN__ID409 .. &BIN__ID369 :BIN__ID368
+"(" .. &BIN__ID409 .. &BIN__ID377 :BIN__ID376
+"(" .. &BIN__ID409 .. &BIN__ID378 :BIN__ID377
+"(" .. &BIN__ID409 :BIN__ID394
+"(" .. &BIN__ID409 :BIN__ID395
+"(" .. &BIN__ID409 :BNF__ID144
+"(" .. &BIN__ID409 :BNF__ID145
+"(" .. &BIN__ID409 :BNF__ID146
+"(" .. &BIN__ID409 :BNF__ID149
+"(" .. &BIN__ID409 .. &BNF__ID149 :BIN__ID394
+"(" .. &BIN__ID409 .. &BNF__ID149 :BNF__ID149
+"(" .. &BIN__ID409 :BNF__ID151
+"(" .. &BIN__ID409 .. &BNF__ID151 :BIN__ID395
+"(" .. &BIN__ID409 .. &BNF__ID151 :BNF__ID151
+"(" .. &BIN__ID409 :BOOL
+"(" .. &BIN__ID409 :COMMAND_GROUP_ID19
+"(" .. &BIN__ID409 .. &COMMAND_GROUP_ID19 :BIN__ID169
+"(" .. &BIN__ID409 :COMMAND_OPTION_ID25
+"(" .. &BIN__ID409 :COMMAND_OPTION_ID28
+"(" .. &BIN__ID409 :COMMAND_OPTION_ID31
+"(" .. &BIN__ID409 :COMMAND_TAG_ID15
+"(" .. &BIN__ID409 :COMMAND_TAG_ID18
+"(" .. &BIN__ID409 :COMMAND_TAG_ID20
+"(" .. &BIN__ID409 :COMMAND_TAG_ID22
+"(" .. &BIN__ID409 :COMMAND_TAG_ID24
+"(" .. &BIN__ID409 :COMMAND_TAG_ID27
+"(" .. &BIN__ID409 :COMMAND_TAG_ID3
+"(" .. &BIN__ID409 :COMMAND_TAG_ID30
+"(" .. &BIN__ID409 :COMMAND_TAG_ID35
+"(" .. &BIN__ID409 :COMMAND_TAG_ID38
+"(" .. &BIN__ID409 :COMMAND_TAG_ID39
+"(" .. &BIN__ID409 :COMMAND_TAG_ID4
+"(" .. &BIN__ID409 :COMMAND_TAG_ID40
+"(" .. &BIN__ID409 :COMMAND_TAG_ID41
+"(" .. &BIN__ID409 :COMMAND_TAG_ID42
+"(" .. &BIN__ID409 :COMMAND_TAG_ID43
+"(" .. &BIN__ID409 :COMMAND_TAG_ID44
+"(" .. &BIN__ID409 :COMMAND_TAG_ID45
+"(" .. &BIN__ID409 :COMMAND_TAG_ID46
+"(" .. &BIN__ID409 :COMMAND_TAG_ID48
+"(" .. &BIN__ID409 :COMMAND_TAG_ID5
+"(" .. &BIN__ID409 :COMMAND_TAG_ID50
+"(" .. &BIN__ID409 :COMMAND_TAG_ID51
+"(" .. &BIN__ID409 :COMMAND_TAG_ID53
+"(" .. &BIN__ID409 :COMMAND_TAG_ID55
+"(" .. &BIN__ID409 :COMMAND_TAG_ID57
+"(" .. &BIN__ID409 :COMMAND_TAG_ID59
+"(" .. &BIN__ID409 :COMMAND_TAG_ID6
+"(" .. &BIN__ID409 :COMMAND_TAG_ID61
+"(" .. &BIN__ID409 :COMMAND_TAG_ID63
+"(" .. &BIN__ID409 :COMMAND_TAG_ID64
+"(" .. &BIN__ID409 :COMMAND_TAG_ID65
+"(" .. &BIN__ID409 :COMMAND_TAG_ID66
+"(" .. &BIN__ID409 :COMMAND_TAG_ID68
+"(" .. &BIN__ID409 :COMMAND_TAG_ID69
+"(" .. &BIN__ID409 :COMMAND_TAG_ID70
+"(" .. &BIN__ID409 :COMMAND_TAG_ID71
+"(" .. &BIN__ID409 :COMMAND_TAG_ID72
+"(" .. &BIN__ID409 :COMMAND_TAG_ID73
+"(" .. &BIN__ID409 :COMMAND_TAG_ID75
+"(" .. &BIN__ID409 :COMMAND_TAG_ID76
+"(" .. &BIN__ID409 :COMMAND_TAG_ID77
+"(" .. &BIN__ID409 :COMMAND_TAG_ID78
+"(" .. &BIN__ID409 .. &COMMAND_TAG_ID78 :BIN__ID369
+"(" .. &BIN__ID409 :COMMAND_TAG_ID79
+"(" .. &BIN__ID409 :COMMAND_TAG_ID80
+"(" .. &BIN__ID409 :COMMAND_TAG_ID81
+"(" .. &BIN__ID409 .. &COMMAND_TAG_ID81 :BIN__ID378
+"(" .. &BIN__ID409 :COMMAND_TAG_ID82
+"(" .. &BIN__ID409 :COMMAND_TAG_ID83
+"(" .. &BIN__ID409 :CONDITION_ITER_ID88
+"(" .. &BIN__ID409 :CONDITION_ITER_ID91
+"(" .. &BIN__ID409 :CONDITION_TAG_ID100
+"(" .. &BIN__ID409 :CONDITION_TAG_ID102
+"(" .. &BIN__ID409 :CONDITION_TAG_ID104
+"(" .. &BIN__ID409 :CONDITION_TAG_ID106
+"(" .. &BIN__ID409 :FLOAT
+"(" .. &BIN__ID409 :IFSHORTCUT_OPTIONS_TAG_ID114
+"(" .. &BIN__ID409 :IFSHORTCUT_OPTIONS_TAG_ID115
+"(" .. &BIN__ID409 :INT
+"(" .. &BIN__ID409 :KEYID
+"(" .. &BIN__ID409 .. &KEYID :BIN__ID396
+"(" .. &BIN__ID409 :KEYID_TAG_ID136
+"(" .. &BIN__ID409 :MACROID
+"(" .. &BIN__ID409 :MACROID_TAG_ID120
+"(" .. &BIN__ID409 :PARENTHESSED_EXPRESSION
+"(" .. &BIN__ID409 :VALUE
+"(" .. &BIN__ID409 :VARIABLE_EXPANSION_TAG_ID121
+"b" :KEYID
+"b" :KEYID_ABBREV
+"b" :KEYID_TAG_ID137
+/\/\/.*/ :BNF__ID140
+"{" .. &BNF__ID140 :BIN__ID157
+"{" .. &BNF__ID140 :BODY
+"'" :BNF__ID149
+"," :BNF__ID149
+"-" :BNF__ID149
+"." :BNF__ID149
+";" :BNF__ID149
+"=" :BNF__ID149
+"`" :BNF__ID149
+/\// :BNF__ID149
+/\[/ :BNF__ID149
+/\]/ :BNF__ID149
+"'" .. &BNF__ID149 :BIN__ID394
+"," .. &BNF__ID149 :BIN__ID394
+"-" .. &BNF__ID149 :BIN__ID394
+"." .. &BNF__ID149 :BIN__ID394
+";" .. &BNF__ID149 :BIN__ID394
+"=" .. &BNF__ID149 :BIN__ID394
+"`" .. &BNF__ID149 :BIN__ID394
+/\// .. &BNF__ID149 :BIN__ID394
+/\[/ .. &BNF__ID149 :BIN__ID394
+/\]/ .. &BNF__ID149 :BIN__ID394
+"'" .. &BNF__ID149 :BNF__ID149
+"," .. &BNF__ID149 :BNF__ID149
+"-" .. &BNF__ID149 :BNF__ID149
+"." .. &BNF__ID149 :BNF__ID149
+";" .. &BNF__ID149 :BNF__ID149
+"=" .. &BNF__ID149 :BNF__ID149
+"`" .. &BNF__ID149 :BNF__ID149
+/\// .. &BNF__ID149 :BNF__ID149
+/\[/ .. &BNF__ID149 :BNF__ID149
+/\]/ .. &BNF__ID149 :BNF__ID149
+"'" :BNF__ID151
+"," :BNF__ID151
+"-" :BNF__ID151
+"." :BNF__ID151
+";" :BNF__ID151
+"=" :BNF__ID151
+"`" :BNF__ID151
+/\// :BNF__ID151
+/\[/ :BNF__ID151
+/\]/ :BNF__ID151
+"'" .. &BNF__ID151 :BIN__ID395
+"," .. &BNF__ID151 :BIN__ID395
+"-" .. &BNF__ID151 :BIN__ID395
+"." .. &BNF__ID151 :BIN__ID395
+";" .. &BNF__ID151 :BIN__ID395
+"=" .. &BNF__ID151 :BIN__ID395
+"`" .. &BNF__ID151 :BIN__ID395
+/\// .. &BNF__ID151 :BIN__ID395
+/\[/ .. &BNF__ID151 :BIN__ID395
+/\]/ .. &BNF__ID151 :BIN__ID395
+"'" .. &BNF__ID151 :BNF__ID151
+"," .. &BNF__ID151 :BNF__ID151
+"-" .. &BNF__ID151 :BNF__ID151
+"." .. &BNF__ID151 :BNF__ID151
+";" .. &BNF__ID151 :BNF__ID151
+"=" .. &BNF__ID151 :BNF__ID151
+"`" .. &BNF__ID151 :BNF__ID151
+/\// .. &BNF__ID151 :BNF__ID151
+/\[/ .. &BNF__ID151 :BNF__ID151
+/\]/ .. &BNF__ID151 :BNF__ID151
+"{" :BODY
+/\/\/.*/ :BODY
+/\/\/.*/ :BODY_OPTION_ID1
+"both" :COMMAND_GROUP_ID85
+"break" :BIN__ID157
+"break" .. &BNF__ID140 :BIN__ID157
+"break" .. &BNF__ID140 :BODY
+"break" :BODY
+"break" :COMMAND
+"brightness" .. &COMMAND_TAG_ID82 :BIN__ID384
+"c" .. &ACTION :BIN__ID358
+"call" :COMMAND_GROUP_ID17
+"call" .. &MACRONAME :BIN__ID157
+"call" .. &MACRONAME .. &BNF__ID140 :BIN__ID157
+"call" .. &MACRONAME .. &BNF__ID140 :BODY
+"call" .. &MACRONAME :BODY
+"call" .. &MACRONAME :COMMAND
+"cancel" :BNF__ID147
+"cancel" .. &BNF__ID147 :BNF__ID147
+"cancel" :COMMAND_ITER_ID37
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 :BNF__ID148
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 .. &BNF__ID148 :BNF__ID148
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 .. &BNF__ID148 .. &BNF__ID149 :BIN__ID394
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 .. &BNF__ID149 :BIN__ID394
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 :BNF__ID150
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 .. &BNF__ID150 :BNF__ID150
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 .. &BNF__ID150 .. &BNF__ID151 :BIN__ID395
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 .. &BNF__ID151 :BIN__ID395
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 :CONDITION_ITER_ID87
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 :CONDITION_ITER_ID90
+"cancelIn" .. &IFSHORTCUT_OPTIONS_TAG_ID115 :IFSHORTCUT_OPTIONS
+"cancel" :SCANCODE
+"cancel" :SCANCODE_ABBREV
+"cancel" :SCANCODE_TAG_ID132
+"cancel" :SHORTCUT
+"cancel" :SHORTCUT_TAG_ID134
+"capsLock" .. &ACTION :BIN__ID358
+"capsLock" :BIN__ID167
+"capsLock" :BIN__ID168
+"capsLock" .. &BIN__ID377 :BIN__ID376
+"capsLock" :BIN__ID394
+"capsLock" :BIN__ID395
+"capsLock" :BNF__ID147
+"capsLock" .. &BNF__ID147 :BNF__ID147
+"capsLock" :BNF__ID149
+"capsLock" .. &BNF__ID149 :BIN__ID394
+"capsLock" .. &BNF__ID149 :BNF__ID149
+"capsLock" :BNF__ID151
+"capsLock" .. &BNF__ID151 :BIN__ID395
+"capsLock" .. &BNF__ID151 :BNF__ID151
+"capsLock" :COMMAND_ITER_ID37
+"capsLock" :CONDITION_ITER_ID88
+"capsLock" :CONDITION_ITER_ID91
+"capsLock" :KEYID
+"capsLock" :KEYID_ABBREV
+"capsLock" :KEYID_TAG_ID137
+"capsLock" :SCANCODE
+"capsLock" :SCANCODE_ABBREV
+"capsLock" :SCANCODE_TAG_ID132
+"capsLock" :SHORTCUT
+"capsLock" :SHORTCUT_TAG_ID134
+"caretAxisLock" .. &BOOL :BIN__ID231
+"caret" .. &BIN__ID352 :BIN__ID351
+"caret" :NAVIGATION_MODE
+"caret" :NAVIGATION_MODE_CUSTOM
+"caretSpeedDivisor" .. &COMMAND_TAG_ID41 :BIN__ID201
+"c" :BIN__ID167
+"c" :BIN__ID168
+"c" .. &BIN__ID377 :BIN__ID376
+"c" :BIN__ID394
+"c" :BIN__ID395
+"C" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"C" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"C" :BNF__ID147
+"c" :BNF__ID149
+"c" .. &BNF__ID149 :BIN__ID394
+"c" .. &BNF__ID149 :BNF__ID149
+"c" :BNF__ID151
+"c" .. &BNF__ID151 :BIN__ID395
+"c" .. &BNF__ID151 :BNF__ID151
+"C" :BNF__ID156
+"C" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"C" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"C" .. &BNF__ID156 :BNF__ID147
+"C" .. &BNF__ID156 :BNF__ID156
+"C" .. &BNF__ID156 :COMMAND_ITER_ID37
+"C" .. &BNF__ID156 :LRE__ID420
+"C" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"C" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"C" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"C" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"C" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"C" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"C" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"C" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"C" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"C" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"C" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"C" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"C" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"C" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"C" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"C" .. &BNF__ID156 :MODMASK
+"C" .. &BNF__ID156 :MODMASK_ITER_ID125
+"C" .. &BNF__ID156 :SHORTCUT
+"C" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"C" :COMMAND_ITER_ID37
+"c" :CONDITION_ITER_ID88
+"c" :CONDITION_ITER_ID91
+"chordingDelay" .. &COMMAND_TAG_ID65 :BIN__ID337
+"c" :KEYID
+"c" :KEYID_ABBREV
+"c" :KEYID_TAG_ID137
+"clearAndAgain" :BNF__ID147
+"clearAndAgain" .. &BNF__ID147 :BNF__ID147
+"clearAndAgain" :COMMAND_ITER_ID37
+"clearAndAgain" :SCANCODE
+"clearAndAgain" :SCANCODE_ABBREV
+"clearAndAgain" :SCANCODE_TAG_ID132
+"clearAndAgain" :SHORTCUT
+"clearAndAgain" :SHORTCUT_TAG_ID134
+"clear" :BNF__ID147
+"clear" .. &BNF__ID147 :BNF__ID147
+"clear" :COMMAND_ITER_ID37
+"clear" :SCANCODE
+"clear" :SCANCODE_ABBREV
+"clear" :SCANCODE_TAG_ID132
+"clear" :SHORTCUT
+"clear" :SHORTCUT_TAG_ID134
+"clearStatus" :BIN__ID157
+"clearStatus" .. &BNF__ID140 :BIN__ID157
+"clearStatus" .. &BNF__ID140 :BODY
+"clearStatus" :BODY
+"clearStatus" :COMMAND
+"closingBracketAndClosingBrace" .. &ACTION :BIN__ID358
+"closingBracketAndClosingBrace" :BIN__ID167
+"closingBracketAndClosingBrace" :BIN__ID168
+"closingBracketAndClosingBrace" .. &BIN__ID377 :BIN__ID376
+"closingBracketAndClosingBrace" :BIN__ID394
+"closingBracketAndClosingBrace" :BIN__ID395
+"closingBracketAndClosingBrace" :BNF__ID147
+"closingBracketAndClosingBrace" .. &BNF__ID147 :BNF__ID147
+"closingBracketAndClosingBrace" :BNF__ID149
+"closingBracketAndClosingBrace" .. &BNF__ID149 :BIN__ID394
+"closingBracketAndClosingBrace" .. &BNF__ID149 :BNF__ID149
+"closingBracketAndClosingBrace" :BNF__ID151
+"closingBracketAndClosingBrace" .. &BNF__ID151 :BIN__ID395
+"closingBracketAndClosingBrace" .. &BNF__ID151 :BNF__ID151
+"closingBracketAndClosingBrace" :COMMAND_ITER_ID37
+"closingBracketAndClosingBrace" :CONDITION_ITER_ID88
+"closingBracketAndClosingBrace" :CONDITION_ITER_ID91
+"closingBracketAndClosingBrace" :KEYID
+"closingBracketAndClosingBrace" :KEYID_ABBREV
+"closingBracketAndClosingBrace" :KEYID_TAG_ID137
+"closingBracketAndClosingBrace" :SCANCODE
+"closingBracketAndClosingBrace" :SCANCODE_ABBREV
+"closingBracketAndClosingBrace" :SCANCODE_TAG_ID132
+"closingBracketAndClosingBrace" :SHORTCUT
+"closingBracketAndClosingBrace" :SHORTCUT_TAG_ID134
+"C" :LRE__ID420
+"C" :MODMASK
+"C" :MODMASK_GROUP_ID127
+"C" :MODMASK_ITER_ID125
+"{" :CODE_BLOCK
+"commaAndLessThanSign" .. &ACTION :BIN__ID358
+"commaAndLessThanSign" :BIN__ID167
+"commaAndLessThanSign" :BIN__ID168
+"commaAndLessThanSign" .. &BIN__ID377 :BIN__ID376
+"commaAndLessThanSign" :BIN__ID394
+"commaAndLessThanSign" :BIN__ID395
+"commaAndLessThanSign" :BNF__ID147
+"commaAndLessThanSign" .. &BNF__ID147 :BNF__ID147
+"commaAndLessThanSign" :BNF__ID149
+"commaAndLessThanSign" .. &BNF__ID149 :BIN__ID394
+"commaAndLessThanSign" .. &BNF__ID149 :BNF__ID149
+"commaAndLessThanSign" :BNF__ID151
+"commaAndLessThanSign" .. &BNF__ID151 :BIN__ID395
+"commaAndLessThanSign" .. &BNF__ID151 :BNF__ID151
+"commaAndLessThanSign" :COMMAND_ITER_ID37
+"commaAndLessThanSign" :CONDITION_ITER_ID88
+"commaAndLessThanSign" :CONDITION_ITER_ID91
+"commaAndLessThanSign" :KEYID
+"commaAndLessThanSign" :KEYID_ABBREV
+"commaAndLessThanSign" :KEYID_TAG_ID137
+"commaAndLessThanSign" :SCANCODE
+"commaAndLessThanSign" :SCANCODE_ABBREV
+"commaAndLessThanSign" :SCANCODE_TAG_ID132
+"commaAndLessThanSign" :SHORTCUT
+"commaAndLessThanSign" :SHORTCUT_TAG_ID134
+"{" :COMMAND
+")" .. &COMMAND :BIN__ID173
+/\/\/.*/ :COMMENT
+"//<comment>" :BNF__ID140
+"//<comment>" :BODY
+"//<comment>" :BODY_OPTION_ID1
+"//<comment>" :COMMENT
+"'" :CONDITION_ITER_ID88
+"," :CONDITION_ITER_ID88
+"-" :CONDITION_ITER_ID88
+"." :CONDITION_ITER_ID88
+";" :CONDITION_ITER_ID88
+"=" :CONDITION_ITER_ID88
+"`" :CONDITION_ITER_ID88
+/\// :CONDITION_ITER_ID88
+/\[/ :CONDITION_ITER_ID88
+/\]/ :CONDITION_ITER_ID88
+"'" :CONDITION_ITER_ID91
+"," :CONDITION_ITER_ID91
+"-" :CONDITION_ITER_ID91
+"." :CONDITION_ITER_ID91
+";" :CONDITION_ITER_ID91
+"=" :CONDITION_ITER_ID91
+"`" :CONDITION_ITER_ID91
+/\// :CONDITION_ITER_ID91
+/\[/ :CONDITION_ITER_ID91
+/\]/ :CONDITION_ITER_ID91
+"constantRgb" .. &BIN__ID365 :BIN__ID364
+"constantRgb" :COMMAND_GROUP_ID74
+"consumePending" .. &COMMAND_TAG_ID15 :BIN__ID157
+"consumePending" .. &COMMAND_TAG_ID15 .. &BNF__ID140 :BIN__ID157
+"consumePending" .. &COMMAND_TAG_ID15 .. &BNF__ID140 :BODY
+"consumePending" .. &COMMAND_TAG_ID15 :BODY
+"consumePending" .. &COMMAND_TAG_ID15 :COMMAND
+"copy" :BNF__ID147
+"copy" .. &BNF__ID147 :BNF__ID147
+"copy" :COMMAND_ITER_ID37
+"copy" :SCANCODE
+"copy" :SCANCODE_ABBREV
+"copy" :SCANCODE_TAG_ID132
+"copy" :SHORTCUT
+"copy" :SHORTCUT_TAG_ID134
+"crselAndProps" :BNF__ID147
+"crselAndProps" .. &BNF__ID147 :BNF__ID147
+"crselAndProps" :COMMAND_ITER_ID37
+"crselAndProps" :SCANCODE
+"crselAndProps" :SCANCODE_ABBREV
+"crselAndProps" :SCANCODE_TAG_ID132
+"crselAndProps" :SHORTCUT
+"crselAndProps" :SHORTCUT_TAG_ID134
+"C" :SHORTCUT
+"C" :SHORTCUT_TAG_ID135
+"ctrl" .. &BIN__ID164 :BIN__ID163
+"ctrl" .. &BIN__ID166 :BIN__ID165
+"ctrl" .. &BIN__ID357 :BIN__ID356
+"ctrl" .. &BIN__ID375 :BIN__ID374
+"ctrl" :COMMAND_GROUP_ID84
+"ctrl" .. &COMMAND_GROUP_ID85 :BIN__ID390
+"ctrl" :COMMAND_TAG_ID10
+"ctrl" :COMMAND_TAG_ID12
+"ctrl" .. &COMMAND_TAG_ID5 :BIN__ID159
+"ctrl" .. &COMMAND_TAG_ID6 :BIN__ID162
+"ctrl" :COMMAND_TAG_ID7
+"ctrl" :COMMAND_TAG_ID9
+"ctrl" :LAYERID
+"ctrl" :LAYERID_GROUP_ID117
+"currencySubUnit" :BNF__ID147
+"currencySubUnit" .. &BNF__ID147 :BNF__ID147
+"currencySubUnit" :COMMAND_ITER_ID37
+"currencySubUnit" :SCANCODE
+"currencySubUnit" :SCANCODE_ABBREV
+"currencySubUnit" :SCANCODE_TAG_ID132
+"currencySubUnit" :SHORTCUT
+"currencySubUnit" :SHORTCUT_TAG_ID134
+"currencyUnit" :BNF__ID147
+"currencyUnit" .. &BNF__ID147 :BNF__ID147
+"currencyUnit" :COMMAND_ITER_ID37
+"currencyUnit" :SCANCODE
+"currencyUnit" :SCANCODE_ABBREV
+"currencyUnit" :SCANCODE_TAG_ID132
+"currencyUnit" :SHORTCUT
+"currencyUnit" :SHORTCUT_TAG_ID134
+"cursorAxisLock" .. &BOOL :BIN__ID226
+"cursor" :NAVIGATION_MODE
+"cut" :BNF__ID147
+"cut" .. &BNF__ID147 :BNF__ID147
+"cut" :COMMAND_ITER_ID37
+"cut" :SCANCODE
+"cut" :SCANCODE_ABBREV
+"cut" :SCANCODE_TAG_ID132
+"cut" :SHORTCUT
+"cut" :SHORTCUT_TAG_ID134
+"d" .. &ACTION :BIN__ID358
+"d" :BIN__ID167
+"d" :BIN__ID168
+"d" .. &BIN__ID377 :BIN__ID376
+"d" :BIN__ID394
+"d" :BIN__ID395
+"d" :BNF__ID149
+"d" .. &BNF__ID149 :BIN__ID394
+"d" .. &BNF__ID149 :BNF__ID149
+"d" :BNF__ID151
+"d" .. &BNF__ID151 :BIN__ID395
+"d" .. &BNF__ID151 :BNF__ID151
+"d" :CONDITION_ITER_ID88
+"d" :CONDITION_ITER_ID91
+"debounceDelay" .. &COMMAND_TAG_ID68 :BIN__ID340
+"decelerate" :COMMAND_GROUP_ID33
+"deceleratedSpeed" .. &COMMAND_TAG_ID59 :BIN__ID324
+"decimalSeparator" :BNF__ID147
+"decimalSeparator" .. &BNF__ID147 :BNF__ID147
+"decimalSeparator" :COMMAND_ITER_ID37
+"decimalSeparator" :SCANCODE
+"decimalSeparator" :SCANCODE_ABBREV
+"decimalSeparator" :SCANCODE_TAG_ID132
+"decimalSeparator" :SHORTCUT
+"decimalSeparator" :SHORTCUT_TAG_ID134
+"defaultStrategy" .. &COMMAND_GROUP_ID47 :BIN__ID264
+Default: y
+"delayUntil" .. &COMMAND_TAG_ID3 :BIN__ID157
+"delayUntil" .. &COMMAND_TAG_ID3 .. &BNF__ID140 :BIN__ID157
+"delayUntil" .. &COMMAND_TAG_ID3 .. &BNF__ID140 :BODY
+"delayUntil" .. &COMMAND_TAG_ID3 :BODY
+"delayUntil" .. &COMMAND_TAG_ID3 :COMMAND
+"delayUntilRelease" :BIN__ID157
+"delayUntilRelease" .. &BNF__ID140 :BIN__ID157
+"delayUntilRelease" .. &BNF__ID140 :BODY
+"delayUntilRelease" :BODY
+"delayUntilRelease" :COMMAND
+"delayUntilReleaseMax" .. &COMMAND_TAG_ID4 :BIN__ID157
+"delayUntilReleaseMax" .. &COMMAND_TAG_ID4 .. &BNF__ID140 :BIN__ID157
+"delayUntilReleaseMax" .. &COMMAND_TAG_ID4 .. &BNF__ID140 :BODY
+"delayUntilReleaseMax" .. &COMMAND_TAG_ID4 :BODY
+"delayUntilReleaseMax" .. &COMMAND_TAG_ID4 :COMMAND
+"delete" :BNF__ID147
+"delete" .. &BNF__ID147 :BNF__ID147
+"delete" :COMMAND_ITER_ID37
+"delete" :SCANCODE
+"delete" :SCANCODE_ABBREV
+"delete" :SCANCODE_TAG_ID132
+"delete" :SHORTCUT
+"delete" :SHORTCUT_TAG_ID134
+"diagnose" :BIN__ID157
+"diagnose" .. &BNF__ID140 :BIN__ID157
+"diagnose" .. &BNF__ID140 :BODY
+"diagnose" :BODY
+"diagnose" :COMMAND
+"diagonalSpeedCompensation" .. &BOOL :BIN__ID336
+"d" :KEYID
+"d" :KEYID_ABBREV
+"d" :KEYID_TAG_ID137
+"dotAndGreaterThanSign" .. &ACTION :BIN__ID358
+"dotAndGreaterThanSign" :BIN__ID167
+"dotAndGreaterThanSign" :BIN__ID168
+"dotAndGreaterThanSign" .. &BIN__ID377 :BIN__ID376
+"dotAndGreaterThanSign" :BIN__ID394
+"dotAndGreaterThanSign" :BIN__ID395
+"dotAndGreaterThanSign" :BNF__ID147
+"dotAndGreaterThanSign" .. &BNF__ID147 :BNF__ID147
+"dotAndGreaterThanSign" :BNF__ID149
+"dotAndGreaterThanSign" .. &BNF__ID149 :BIN__ID394
+"dotAndGreaterThanSign" .. &BNF__ID149 :BNF__ID149
+"dotAndGreaterThanSign" :BNF__ID151
+"dotAndGreaterThanSign" .. &BNF__ID151 :BIN__ID395
+"dotAndGreaterThanSign" .. &BNF__ID151 :BNF__ID151
+"dotAndGreaterThanSign" :COMMAND_ITER_ID37
+"dotAndGreaterThanSign" :CONDITION_ITER_ID88
+"dotAndGreaterThanSign" :CONDITION_ITER_ID91
+"dotAndGreaterThanSign" :KEYID
+"dotAndGreaterThanSign" :KEYID_ABBREV
+"dotAndGreaterThanSign" :KEYID_TAG_ID137
+"dotAndGreaterThanSign" :SCANCODE
+"dotAndGreaterThanSign" :SCANCODE_ABBREV
+"dotAndGreaterThanSign" :SCANCODE_TAG_ID132
+"dotAndGreaterThanSign" :SHORTCUT
+"dotAndGreaterThanSign" :SHORTCUT_TAG_ID134
+"doubletapTime" .. &COMMAND_TAG_ID51 :BIN__ID304
+"doubletapTimeout" .. &COMMAND_TAG_ID69 :BIN__ID341
+"doubletapToPrimary" .. &BOOL :BIN__ID299
+"down" .. &ACTION :BIN__ID353
+"downArrow" :BNF__ID147
+"downArrow" .. &BNF__ID147 :BNF__ID147
+"downArrow" :COMMAND_ITER_ID37
+"downArrow" :SCANCODE
+"downArrow" :SCANCODE_ABBREV
+"downArrow" :SCANCODE_TAG_ID132
+"downArrow" :SHORTCUT
+"downArrow" :SHORTCUT_TAG_ID134
+"down" :BNF__ID147
+"down" .. &BNF__ID147 :BNF__ID147
+"down" :COMMAND_ITER_ID37
+"down" :DIRECTION
+"down" :DIRECTION_GROUP_ID116
+"down" :SCANCODE
+"down" :SCANCODE_ABBREV
+"down" :SCANCODE_TAG_ID132
+"down" :SHORTCUT
+"down" :SHORTCUT_TAG_ID134
+"e" .. &ACTION :BIN__ID358
+"e" :BIN__ID167
+"e" :BIN__ID168
+"e" .. &BIN__ID377 :BIN__ID376
+"e" :BIN__ID394
+"e" :BIN__ID395
+"e" :BNF__ID149
+"e" .. &BNF__ID149 :BIN__ID394
+"e" .. &BNF__ID149 :BNF__ID149
+"e" :BNF__ID151
+"e" .. &BNF__ID151 :BIN__ID395
+"e" .. &BNF__ID151 :BNF__ID151
+"e" :CONDITION_ITER_ID88
+"e" :CONDITION_ITER_ID91
+"e" :KEYID
+"e" :KEYID_ABBREV
+"e" :KEYID_TAG_ID137
+"else" :BNF__ID141
+"else" .. &BNF__ID141 :BNF__ID141
+"else" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"else" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"else" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"else" .. &BNF__ID141 .. &COMMAND :BODY
+"else" .. &BNF__ID141 .. &COMMAND :COMMAND
+"else" .. &COMMAND :BIN__ID157
+"else" .. &COMMAND :BODY
+"else" .. &COMMAND :COMMAND
+"else" :COMMAND_ITER_ID2
+"else" :CONDITION
+"enabled" .. &BOOL :BIN__ID381
+"end" :BNF__ID147
+"end" .. &BNF__ID147 :BNF__ID147
+"end" :COMMAND_ITER_ID37
+"end" :SCANCODE
+"end" :SCANCODE_ABBREV
+"end" :SCANCODE_TAG_ID132
+"end" :SHORTCUT
+"end" :SHORTCUT_TAG_ID134
+"enter" .. &ACTION :BIN__ID358
+"enter" :BIN__ID167
+"enter" :BIN__ID168
+"enter" .. &BIN__ID377 :BIN__ID376
+"enter" :BIN__ID394
+"enter" :BIN__ID395
+"enter" :BNF__ID147
+"enter" .. &BNF__ID147 :BNF__ID147
+"enter" :BNF__ID149
+"enter" .. &BNF__ID149 :BIN__ID394
+"enter" .. &BNF__ID149 :BNF__ID149
+"enter" :BNF__ID151
+"enter" .. &BNF__ID151 :BIN__ID395
+"enter" .. &BNF__ID151 :BNF__ID151
+"enter" :COMMAND_ITER_ID37
+"enter" :CONDITION_ITER_ID88
+"enter" :CONDITION_ITER_ID91
+"enter" :KEYID
+"enter" :KEYID_ABBREV
+"enter" :KEYID_TAG_ID137
+"enter" :SCANCODE
+"enter" :SCANCODE_ABBREV
+"enter" :SCANCODE_TAG_ID132
+"enter" :SHORTCUT
+"enter" :SHORTCUT_TAG_ID134
+"<en-US character>" :BNF__ID147
+"<en-US character>" .. &BNF__ID147 :BNF__ID147
+"<en-US character>" :COMMAND_ITER_ID37
+"<en-US character>" :SCANCODE
+"<en-US character>" :SCANCODE_TAG_ID131
+"<en-US character>" :SHORTCUT
+"<en-US character>" :SHORTCUT_TAG_ID134
+"equalAndPlus" .. &ACTION :BIN__ID358
+"equalAndPlus" :BIN__ID167
+"equalAndPlus" :BIN__ID168
+"equalAndPlus" .. &BIN__ID377 :BIN__ID376
+"equalAndPlus" :BIN__ID394
+"equalAndPlus" :BIN__ID395
+"equalAndPlus" :BNF__ID147
+"equalAndPlus" .. &BNF__ID147 :BNF__ID147
+"equalAndPlus" :BNF__ID149
+"equalAndPlus" .. &BNF__ID149 :BIN__ID394
+"equalAndPlus" .. &BNF__ID149 :BNF__ID149
+"equalAndPlus" :BNF__ID151
+"equalAndPlus" .. &BNF__ID151 :BIN__ID395
+"equalAndPlus" .. &BNF__ID151 :BNF__ID151
+"equalAndPlus" :COMMAND_ITER_ID37
+"equalAndPlus" :CONDITION_ITER_ID88
+"equalAndPlus" :CONDITION_ITER_ID91
+"equalAndPlus" :KEYID
+"equalAndPlus" :KEYID_ABBREV
+"equalAndPlus" :KEYID_TAG_ID137
+"equalAndPlus" :SCANCODE
+"equalAndPlus" :SCANCODE_ABBREV
+"equalAndPlus" :SCANCODE_TAG_ID132
+"equalAndPlus" :SHORTCUT
+"equalAndPlus" :SHORTCUT_TAG_ID134
+"escape" :BNF__ID147
+"escape" .. &BNF__ID147 :BNF__ID147
+"escape" :COMMAND_ITER_ID37
+"escape" :SCANCODE
+"escape" :SCANCODE_ABBREV
+"escape" :SCANCODE_TAG_ID132
+"escape" :SHORTCUT
+"escape" :SHORTCUT_TAG_ID134
+"exec" :COMMAND_GROUP_ID17
+"exec" .. &MACRONAME :BIN__ID157
+"exec" .. &MACRONAME .. &BNF__ID140 :BIN__ID157
+"exec" .. &MACRONAME .. &BNF__ID140 :BODY
+"exec" .. &MACRONAME :BODY
+"exec" .. &MACRONAME :COMMAND
+"execute" :BNF__ID147
+"execute" .. &BNF__ID147 :BNF__ID147
+"execute" :COMMAND_ITER_ID37
+"execute" :SCANCODE
+"execute" :SCANCODE_ABBREV
+"execute" :SCANCODE_TAG_ID132
+"execute" :SHORTCUT
+"execute" :SHORTCUT_TAG_ID134
+"exit" :BIN__ID157
+"exit" .. &BNF__ID140 :BIN__ID157
+"exit" .. &BNF__ID140 :BODY
+"exit" :BODY
+"exit" :COMMAND
+"<exponent 0-1.0>" :COMMAND_TAG_ID40
+"!" .. &EXPRESSION .. &BIN__ID173 :BIN__ID172
+"!" .. &EXPRESSION .. ")" :BIN__ID393
+"," .. &EXPRESSION .. ")" :BIN__ID403
+"!" .. &EXPRESSION .. &BIN__ID403 :BIN__ID402
+"," .. &EXPRESSION .. ")" :BIN__ID406
+"!" .. &EXPRESSION .. &BIN__ID406 :BIN__ID405
+"!=" .. &EXPRESSION :BIN__ID407
+"%" .. &EXPRESSION :BIN__ID407
+"&&" .. &EXPRESSION :BIN__ID407
+"*" .. &EXPRESSION :BIN__ID407
+"+" .. &EXPRESSION :BIN__ID407
+"-" .. &EXPRESSION :BIN__ID407
+"<" .. &EXPRESSION :BIN__ID407
+"<=" .. &EXPRESSION :BIN__ID407
+"==" .. &EXPRESSION :BIN__ID407
+">" .. &EXPRESSION :BIN__ID407
+">=" .. &EXPRESSION :BIN__ID407
+/\// .. &EXPRESSION :BIN__ID407
+/\|\|/ .. &EXPRESSION :BIN__ID407
+"!" .. &EXPRESSION .. ")" :BIN__ID408
+"!" .. &EXPRESSION .. ")" :BIN__ID409
+"," .. &EXPRESSION :BNF__ID153
+"," .. &EXPRESSION .. &BNF__ID153 .. ")" :BIN__ID403
+"," .. &EXPRESSION .. &BNF__ID153 :BNF__ID153
+"," .. &EXPRESSION :BNF__ID154
+"," .. &EXPRESSION .. &BNF__ID154 .. ")" :BIN__ID406
+"," .. &EXPRESSION .. &BNF__ID154 :BNF__ID154
+"!" .. &EXPRESSION :EXPRESSION
+"," .. &EXPRESSION :EXPRESSION_ITER_ID122
+"," .. &EXPRESSION :EXPRESSION_ITER_ID123
+"!=" .. &EXPRESSION :LRE__ID419
+"%" .. &EXPRESSION :LRE__ID419
+"&&" .. &EXPRESSION :LRE__ID419
+"*" .. &EXPRESSION :LRE__ID419
+"+" .. &EXPRESSION :LRE__ID419
+"-" .. &EXPRESSION :LRE__ID419
+"<" .. &EXPRESSION :LRE__ID419
+"<=" .. &EXPRESSION :LRE__ID419
+"==" .. &EXPRESSION :LRE__ID419
+">" .. &EXPRESSION :LRE__ID419
+">=" .. &EXPRESSION :LRE__ID419
+/\// .. &EXPRESSION :LRE__ID419
+/\|\|/ .. &EXPRESSION :LRE__ID419
+"!" .. &EXPRESSION .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"!" .. &EXPRESSION .. &LRE__ID419 .. ")" :BIN__ID393
+"!" .. &EXPRESSION .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"!" .. &EXPRESSION .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"!" .. &EXPRESSION .. &LRE__ID419 .. ")" :BIN__ID408
+"!" .. &EXPRESSION .. &LRE__ID419 .. ")" :BIN__ID409
+"!" .. &EXPRESSION .. &LRE__ID419 :EXPRESSION
+"!=" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"%" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"&&" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"*" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"+" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"-" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"<" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"<=" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"==" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+">" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+">=" .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+/\// .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+/\|\|/ .. &EXPRESSION .. &LRE__ID419 :LRE__ID419
+"exsel" :BNF__ID147
+"exsel" .. &BNF__ID147 :BNF__ID147
+"exsel" :COMMAND_ITER_ID37
+"exsel" :SCANCODE
+"exsel" :SCANCODE_ABBREV
+"exsel" :SCANCODE_TAG_ID132
+"exsel" :SHORTCUT
+"exsel" :SHORTCUT_TAG_ID134
+"f10" :BNF__ID147
+"f10" .. &BNF__ID147 :BNF__ID147
+"f10" :COMMAND_ITER_ID37
+"f10" :SCANCODE
+"f10" :SCANCODE_ABBREV
+"f10" :SCANCODE_TAG_ID132
+"f10" :SHORTCUT
+"f10" :SHORTCUT_TAG_ID134
+"f11" :BNF__ID147
+"f11" .. &BNF__ID147 :BNF__ID147
+"f11" :COMMAND_ITER_ID37
+"f11" :SCANCODE
+"f11" :SCANCODE_ABBREV
+"f11" :SCANCODE_TAG_ID132
+"f11" :SHORTCUT
+"f11" :SHORTCUT_TAG_ID134
+"f12" :BNF__ID147
+"f12" .. &BNF__ID147 :BNF__ID147
+"f12" :COMMAND_ITER_ID37
+"f12" :SCANCODE
+"f12" :SCANCODE_ABBREV
+"f12" :SCANCODE_TAG_ID132
+"f12" :SHORTCUT
+"f12" :SHORTCUT_TAG_ID134
+"f13" :BNF__ID147
+"f13" .. &BNF__ID147 :BNF__ID147
+"f13" :COMMAND_ITER_ID37
+"f13" :SCANCODE
+"f13" :SCANCODE_ABBREV
+"f13" :SCANCODE_TAG_ID132
+"f13" :SHORTCUT
+"f13" :SHORTCUT_TAG_ID134
+"f14" :BNF__ID147
+"f14" .. &BNF__ID147 :BNF__ID147
+"f14" :COMMAND_ITER_ID37
+"f14" :SCANCODE
+"f14" :SCANCODE_ABBREV
+"f14" :SCANCODE_TAG_ID132
+"f14" :SHORTCUT
+"f14" :SHORTCUT_TAG_ID134
+"f15" :BNF__ID147
+"f15" .. &BNF__ID147 :BNF__ID147
+"f15" :COMMAND_ITER_ID37
+"f15" :SCANCODE
+"f15" :SCANCODE_ABBREV
+"f15" :SCANCODE_TAG_ID132
+"f15" :SHORTCUT
+"f15" :SHORTCUT_TAG_ID134
+"f16" :BNF__ID147
+"f16" .. &BNF__ID147 :BNF__ID147
+"f16" :COMMAND_ITER_ID37
+"f16" :SCANCODE
+"f16" :SCANCODE_ABBREV
+"f16" :SCANCODE_TAG_ID132
+"f16" :SHORTCUT
+"f16" :SHORTCUT_TAG_ID134
+"f17" :BNF__ID147
+"f17" .. &BNF__ID147 :BNF__ID147
+"f17" :COMMAND_ITER_ID37
+"f17" :SCANCODE
+"f17" :SCANCODE_ABBREV
+"f17" :SCANCODE_TAG_ID132
+"f17" :SHORTCUT
+"f17" :SHORTCUT_TAG_ID134
+"f18" :BNF__ID147
+"f18" .. &BNF__ID147 :BNF__ID147
+"f18" :COMMAND_ITER_ID37
+"f18" :SCANCODE
+"f18" :SCANCODE_ABBREV
+"f18" :SCANCODE_TAG_ID132
+"f18" :SHORTCUT
+"f18" :SHORTCUT_TAG_ID134
+"f19" :BNF__ID147
+"f19" .. &BNF__ID147 :BNF__ID147
+"f19" :COMMAND_ITER_ID37
+"f19" :SCANCODE
+"f19" :SCANCODE_ABBREV
+"f19" :SCANCODE_TAG_ID132
+"f19" :SHORTCUT
+"f19" :SHORTCUT_TAG_ID134
+"f1" :BNF__ID147
+"f1" .. &BNF__ID147 :BNF__ID147
+"f1" :COMMAND_ITER_ID37
+"f1" :SCANCODE
+"f1" :SCANCODE_ABBREV
+"f1" :SCANCODE_TAG_ID132
+"f1" :SHORTCUT
+"f1" :SHORTCUT_TAG_ID134
+"f20" :BNF__ID147
+"f20" .. &BNF__ID147 :BNF__ID147
+"f20" :COMMAND_ITER_ID37
+"f20" :SCANCODE
+"f20" :SCANCODE_ABBREV
+"f20" :SCANCODE_TAG_ID132
+"f20" :SHORTCUT
+"f20" :SHORTCUT_TAG_ID134
+"f21" :BNF__ID147
+"f21" .. &BNF__ID147 :BNF__ID147
+"f21" :COMMAND_ITER_ID37
+"f21" :SCANCODE
+"f21" :SCANCODE_ABBREV
+"f21" :SCANCODE_TAG_ID132
+"f21" :SHORTCUT
+"f21" :SHORTCUT_TAG_ID134
+"f22" :BNF__ID147
+"f22" .. &BNF__ID147 :BNF__ID147
+"f22" :COMMAND_ITER_ID37
+"f22" :SCANCODE
+"f22" :SCANCODE_ABBREV
+"f22" :SCANCODE_TAG_ID132
+"f22" :SHORTCUT
+"f22" :SHORTCUT_TAG_ID134
+"f23" :BNF__ID147
+"f23" .. &BNF__ID147 :BNF__ID147
+"f23" :COMMAND_ITER_ID37
+"f23" :SCANCODE
+"f23" :SCANCODE_ABBREV
+"f23" :SCANCODE_TAG_ID132
+"f23" :SHORTCUT
+"f23" :SHORTCUT_TAG_ID134
+"f24" :BNF__ID147
+"f24" .. &BNF__ID147 :BNF__ID147
+"f24" :COMMAND_ITER_ID37
+"f24" :SCANCODE
+"f24" :SCANCODE_ABBREV
+"f24" :SCANCODE_TAG_ID132
+"f24" :SHORTCUT
+"f24" :SHORTCUT_TAG_ID134
+"f2" :BNF__ID147
+"f2" .. &BNF__ID147 :BNF__ID147
+"f2" :COMMAND_ITER_ID37
+"f2" :SCANCODE
+"f2" :SCANCODE_ABBREV
+"f2" :SCANCODE_TAG_ID132
+"f2" :SHORTCUT
+"f2" :SHORTCUT_TAG_ID134
+"f3" :BNF__ID147
+"f3" .. &BNF__ID147 :BNF__ID147
+"f3" :COMMAND_ITER_ID37
+"f3" :SCANCODE
+"f3" :SCANCODE_ABBREV
+"f3" :SCANCODE_TAG_ID132
+"f3" :SHORTCUT
+"f3" :SHORTCUT_TAG_ID134
+"f4" :BNF__ID147
+"f4" .. &BNF__ID147 :BNF__ID147
+"f4" :COMMAND_ITER_ID37
+"f4" :SCANCODE
+"f4" :SCANCODE_ABBREV
+"f4" :SCANCODE_TAG_ID132
+"f4" :SHORTCUT
+"f4" :SHORTCUT_TAG_ID134
+"f5" :BNF__ID147
+"f5" .. &BNF__ID147 :BNF__ID147
+"f5" :COMMAND_ITER_ID37
+"f5" :SCANCODE
+"f5" :SCANCODE_ABBREV
+"f5" :SCANCODE_TAG_ID132
+"f5" :SHORTCUT
+"f5" :SHORTCUT_TAG_ID134
+"f6" :BNF__ID147
+"f6" .. &BNF__ID147 :BNF__ID147
+"f6" :COMMAND_ITER_ID37
+"f6" :SCANCODE
+"f6" :SCANCODE_ABBREV
+"f6" :SCANCODE_TAG_ID132
+"f6" :SHORTCUT
+"f6" :SHORTCUT_TAG_ID134
+"f7" :BNF__ID147
+"f7" .. &BNF__ID147 :BNF__ID147
+"f7" :COMMAND_ITER_ID37
+"f7" :SCANCODE
+"f7" :SCANCODE_ABBREV
+"f7" :SCANCODE_TAG_ID132
+"f7" :SHORTCUT
+"f7" :SHORTCUT_TAG_ID134
+"f8" :BNF__ID147
+"f8" .. &BNF__ID147 :BNF__ID147
+"f8" :COMMAND_ITER_ID37
+"f8" :SCANCODE
+"f8" :SCANCODE_ABBREV
+"f8" :SCANCODE_TAG_ID132
+"f8" :SHORTCUT
+"f8" :SHORTCUT_TAG_ID134
+"f9" :BNF__ID147
+"f9" .. &BNF__ID147 :BNF__ID147
+"f9" :COMMAND_ITER_ID37
+"f9" :SCANCODE
+"f9" :SCANCODE_ABBREV
+"f9" :SCANCODE_TAG_ID132
+"f9" :SHORTCUT
+"f9" :SHORTCUT_TAG_ID134
+"f" .. &ACTION :BIN__ID358
+"fadeTimeout" .. &COMMAND_TAG_ID83 :BIN__ID387
+"false" .. &BIN__ID173 :BIN__ID172
+"false" .. ")" :BIN__ID393
+"false" .. &BIN__ID403 :BIN__ID402
+"false" .. &BIN__ID406 :BIN__ID405
+"false" .. ")" :BIN__ID408
+"false" .. ")" :BIN__ID409
+"false" :BOOL
+"false" :COMMAND_GROUP_ID19
+"false" :EXPRESSION
+"false" .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"false" .. &LRE__ID419 .. ")" :BIN__ID393
+"false" .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"false" .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"false" .. &LRE__ID419 .. ")" :BIN__ID408
+"false" .. &LRE__ID419 .. ")" :BIN__ID409
+"false" .. &LRE__ID419 :EXPRESSION
+"false" :VALUE
+"f" :BIN__ID167
+"f" :BIN__ID168
+"f" .. &BIN__ID377 :BIN__ID376
+"f" :BIN__ID394
+"f" :BIN__ID395
+"f" :BNF__ID149
+"f" .. &BNF__ID149 :BIN__ID394
+"f" .. &BNF__ID149 :BNF__ID149
+"f" :BNF__ID151
+"f" .. &BNF__ID151 :BIN__ID395
+"f" .. &BNF__ID151 :BNF__ID151
+"f" :CONDITION_ITER_ID88
+"f" :CONDITION_ITER_ID91
+"final" :BNF__ID141
+"final" .. &BNF__ID141 :BNF__ID141
+"final" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"final" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"final" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"final" .. &BNF__ID141 .. &COMMAND :BODY
+"final" .. &BNF__ID141 .. &COMMAND :COMMAND
+"final" .. &COMMAND :BIN__ID157
+"final" .. &COMMAND :BODY
+"final" .. &COMMAND :COMMAND
+"final" :COMMAND_ITER_ID2
+"final" :MODIFIER
+"find" :BNF__ID147
+"find" .. &BNF__ID147 :BNF__ID147
+"find" :COMMAND_ITER_ID37
+"find" :SCANCODE
+"find" :SCANCODE_ABBREV
+"find" :SCANCODE_TAG_ID132
+"find" :SHORTCUT
+"find" :SHORTCUT_TAG_ID134
+"f" :KEYID
+"f" :KEYID_ABBREV
+"f" :KEYID_TAG_ID137
+"fn2" .. &BIN__ID164 :BIN__ID163
+"fn2" .. &BIN__ID166 :BIN__ID165
+"fn2" .. &BIN__ID357 :BIN__ID356
+"fn2" .. &BIN__ID375 :BIN__ID374
+"fn2" :COMMAND_TAG_ID10
+"fn2" :COMMAND_TAG_ID12
+"fn2" .. &COMMAND_TAG_ID5 :BIN__ID159
+"fn2" .. &COMMAND_TAG_ID6 :BIN__ID162
+"fn2" :COMMAND_TAG_ID7
+"fn2" :COMMAND_TAG_ID9
+"fn2" :LAYERID
+"fn2" :LAYERID_BASIC
+"fn2" :LAYERID_BASIC_GROUP_ID118
+"fn2" :LAYERID_GROUP_ID117
+"fn2" .. &NAVIGATION_MODE :BIN__ID181
+"fn3" .. &BIN__ID164 :BIN__ID163
+"fn3" .. &BIN__ID166 :BIN__ID165
+"fn3" .. &BIN__ID357 :BIN__ID356
+"fn3" .. &BIN__ID375 :BIN__ID374
+"fn3" :COMMAND_TAG_ID10
+"fn3" :COMMAND_TAG_ID12
+"fn3" .. &COMMAND_TAG_ID5 :BIN__ID159
+"fn3" .. &COMMAND_TAG_ID6 :BIN__ID162
+"fn3" :COMMAND_TAG_ID7
+"fn3" :COMMAND_TAG_ID9
+"fn3" :LAYERID
+"fn3" :LAYERID_BASIC
+"fn3" :LAYERID_BASIC_GROUP_ID118
+"fn3" :LAYERID_GROUP_ID117
+"fn3" .. &NAVIGATION_MODE :BIN__ID181
+"fn4" .. &BIN__ID164 :BIN__ID163
+"fn4" .. &BIN__ID166 :BIN__ID165
+"fn4" .. &BIN__ID357 :BIN__ID356
+"fn4" .. &BIN__ID375 :BIN__ID374
+"fn4" :COMMAND_TAG_ID10
+"fn4" :COMMAND_TAG_ID12
+"fn4" .. &COMMAND_TAG_ID5 :BIN__ID159
+"fn4" .. &COMMAND_TAG_ID6 :BIN__ID162
+"fn4" :COMMAND_TAG_ID7
+"fn4" :COMMAND_TAG_ID9
+"fn4" :LAYERID
+"fn4" :LAYERID_BASIC
+"fn4" :LAYERID_BASIC_GROUP_ID118
+"fn4" :LAYERID_GROUP_ID117
+"fn4" .. &NAVIGATION_MODE :BIN__ID181
+"fn5" .. &BIN__ID164 :BIN__ID163
+"fn5" .. &BIN__ID166 :BIN__ID165
+"fn5" .. &BIN__ID357 :BIN__ID356
+"fn5" .. &BIN__ID375 :BIN__ID374
+"fn5" :COMMAND_TAG_ID10
+"fn5" :COMMAND_TAG_ID12
+"fn5" .. &COMMAND_TAG_ID5 :BIN__ID159
+"fn5" .. &COMMAND_TAG_ID6 :BIN__ID162
+"fn5" :COMMAND_TAG_ID7
+"fn5" :COMMAND_TAG_ID9
+"fn5" :LAYERID
+"fn5" :LAYERID_BASIC
+"fn5" :LAYERID_BASIC_GROUP_ID118
+"fn5" :LAYERID_GROUP_ID117
+"fn5" .. &NAVIGATION_MODE :BIN__ID181
+"fn" .. &BIN__ID164 :BIN__ID163
+"fn" .. &BIN__ID166 :BIN__ID165
+"fn" .. &BIN__ID357 :BIN__ID356
+"fn" .. &BIN__ID375 :BIN__ID374
+"fn" :COMMAND_TAG_ID10
+"fn" :COMMAND_TAG_ID12
+"fn" .. &COMMAND_TAG_ID5 :BIN__ID159
+"fn" .. &COMMAND_TAG_ID6 :BIN__ID162
+"fn" :COMMAND_TAG_ID7
+"fn" :COMMAND_TAG_ID9
+"fn" :LAYERID
+"fn" :LAYERID_BASIC
+"fn" :LAYERID_BASIC_GROUP_ID118
+"fn" :LAYERID_GROUP_ID117
+"fn" .. &NAVIGATION_MODE :BIN__ID181
+"fork" :COMMAND_GROUP_ID17
+"fork" .. &MACRONAME :BIN__ID157
+"fork" .. &MACRONAME .. &BNF__ID140 :BIN__ID157
+"fork" .. &MACRONAME .. &BNF__ID140 :BODY
+"fork" .. &MACRONAME :BODY
+"fork" .. &MACRONAME :COMMAND
+"functional" :COMMAND_GROUP_ID74
+"g" .. &ACTION :BIN__ID358
+"g" :BIN__ID167
+"g" :BIN__ID168
+"g" .. &BIN__ID377 :BIN__ID376
+"g" :BIN__ID394
+"g" :BIN__ID395
+"G" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"G" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"G" :BNF__ID147
+"g" :BNF__ID149
+"g" .. &BNF__ID149 :BIN__ID394
+"g" .. &BNF__ID149 :BNF__ID149
+"g" :BNF__ID151
+"g" .. &BNF__ID151 :BIN__ID395
+"g" .. &BNF__ID151 :BNF__ID151
+"G" :BNF__ID156
+"G" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"G" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"G" .. &BNF__ID156 :BNF__ID147
+"G" .. &BNF__ID156 :BNF__ID156
+"G" .. &BNF__ID156 :COMMAND_ITER_ID37
+"G" .. &BNF__ID156 :LRE__ID420
+"G" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"G" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"G" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"G" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"G" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"G" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"G" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"G" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"G" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"G" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"G" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"G" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"G" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"G" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"G" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"G" .. &BNF__ID156 :MODMASK
+"G" .. &BNF__ID156 :MODMASK_ITER_ID125
+"G" .. &BNF__ID156 :SHORTCUT
+"G" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"G" :COMMAND_ITER_ID37
+"g" :CONDITION_ITER_ID88
+"g" :CONDITION_ITER_ID91
+"g" :KEYID
+"g" :KEYID_ABBREV
+"g" :KEYID_TAG_ID137
+"G" :LRE__ID420
+"G" :MODMASK
+"G" :MODMASK_GROUP_ID127
+"G" :MODMASK_ITER_ID125
+"goTo" .. &COMMAND_TAG_ID20 :BIN__ID157
+"goTo" .. &COMMAND_TAG_ID20 .. &BNF__ID140 :BIN__ID157
+"goTo" .. &COMMAND_TAG_ID20 .. &BNF__ID140 :BODY
+"goTo" .. &COMMAND_TAG_ID20 :BODY
+"goTo" .. &COMMAND_TAG_ID20 :COMMAND
+"graveAccentAndTilde" .. &ACTION :BIN__ID358
+"graveAccentAndTilde" :BIN__ID167
+"graveAccentAndTilde" :BIN__ID168
+"graveAccentAndTilde" .. &BIN__ID377 :BIN__ID376
+"graveAccentAndTilde" :BIN__ID394
+"graveAccentAndTilde" :BIN__ID395
+"graveAccentAndTilde" :BNF__ID147
+"graveAccentAndTilde" .. &BNF__ID147 :BNF__ID147
+"graveAccentAndTilde" :BNF__ID149
+"graveAccentAndTilde" .. &BNF__ID149 :BIN__ID394
+"graveAccentAndTilde" .. &BNF__ID149 :BNF__ID149
+"graveAccentAndTilde" :BNF__ID151
+"graveAccentAndTilde" .. &BNF__ID151 :BIN__ID395
+"graveAccentAndTilde" .. &BNF__ID151 :BNF__ID151
+"graveAccentAndTilde" :COMMAND_ITER_ID37
+"graveAccentAndTilde" :CONDITION_ITER_ID88
+"graveAccentAndTilde" :CONDITION_ITER_ID91
+"graveAccentAndTilde" :KEYID
+"graveAccentAndTilde" :KEYID_ABBREV
+"graveAccentAndTilde" :KEYID_TAG_ID137
+"graveAccentAndTilde" :SCANCODE
+"graveAccentAndTilde" :SCANCODE_ABBREV
+"graveAccentAndTilde" :SCANCODE_TAG_ID132
+"graveAccentAndTilde" :SHORTCUT
+"graveAccentAndTilde" :SHORTCUT_TAG_ID134
+"G" :SHORTCUT
+"G" :SHORTCUT_TAG_ID135
+"h" .. &ACTION :BIN__ID358
+"h" :BIN__ID167
+"h" :BIN__ID168
+"h" .. &BIN__ID377 :BIN__ID376
+"h" :BIN__ID394
+"h" :BIN__ID395
+"h" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"h" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"h" :BNF__ID147
+"h" :BNF__ID149
+"h" .. &BNF__ID149 :BIN__ID394
+"h" .. &BNF__ID149 :BNF__ID149
+"h" :BNF__ID151
+"h" .. &BNF__ID151 :BIN__ID395
+"h" .. &BNF__ID151 :BNF__ID151
+"h" :BNF__ID156
+"h" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"h" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"h" .. &BNF__ID156 :BNF__ID147
+"h" .. &BNF__ID156 :BNF__ID156
+"h" .. &BNF__ID156 :COMMAND_ITER_ID37
+"h" .. &BNF__ID156 :LRE__ID420
+"h" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"h" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"h" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"h" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"h" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"h" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"h" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"h" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"h" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"h" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"h" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"h" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"h" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"h" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"h" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"h" .. &BNF__ID156 :MODMASK
+"h" .. &BNF__ID156 :MODMASK_ITER_ID125
+"h" .. &BNF__ID156 :SHORTCUT
+"h" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"h" :COMMAND_ITER_ID37
+"h" :CONDITION_ITER_ID88
+"h" :CONDITION_ITER_ID91
+"help" :BNF__ID147
+"help" .. &BNF__ID147 :BNF__ID147
+"help" :COMMAND_ITER_ID37
+"help" :SCANCODE
+"help" :SCANCODE_ABBREV
+"help" :SCANCODE_TAG_ID132
+"help" :SHORTCUT
+"help" :SHORTCUT_TAG_ID134
+"h" :KEYID
+"h" :KEYID_ABBREV
+"h" :KEYID_TAG_ID137
+"h" :LRE__ID420
+"h" :MODMASK
+"h" :MODMASK_GROUP_ID128
+"h" :MODMASK_ITER_ID125
+"holdContinuationTimeout" .. &COMMAND_TAG_ID46 :BIN__ID261
+"holdKey" :COMMAND_GROUP_ID36
+"holdKeymapLayer" .. &BIN__ID160 :BIN__ID157
+"holdKeymapLayer" .. &BIN__ID160 .. &BNF__ID140 :BIN__ID157
+"holdKeymapLayer" .. &BIN__ID160 .. &BNF__ID140 :BODY
+"holdKeymapLayer" .. &BIN__ID160 :BODY
+"holdKeymapLayer" .. &BIN__ID160 :COMMAND
+"holdKeymapLayerMax" .. &BIN__ID161 :BIN__ID157
+"holdKeymapLayerMax" .. &BIN__ID161 .. &BNF__ID140 :BIN__ID157
+"holdKeymapLayerMax" .. &BIN__ID161 .. &BNF__ID140 :BODY
+"holdKeymapLayerMax" .. &BIN__ID161 :BODY
+"holdKeymapLayerMax" .. &BIN__ID161 :COMMAND
+"holdKey" .. &SHORTCUT :BIN__ID157
+"holdKey" .. &SHORTCUT .. &BNF__ID140 :BIN__ID157
+"holdKey" .. &SHORTCUT .. &BNF__ID140 :BODY
+"holdKey" .. &SHORTCUT :BODY
+"holdKey" .. &SHORTCUT :COMMAND
+"holdLayer" .. &LAYERID :BIN__ID157
+"holdLayer" .. &LAYERID .. &BNF__ID140 :BIN__ID157
+"holdLayer" .. &LAYERID .. &BNF__ID140 :BODY
+"holdLayer" .. &LAYERID :BODY
+"holdLayer" .. &LAYERID :COMMAND
+"holdLayerMax" .. &BIN__ID159 :BIN__ID157
+"holdLayerMax" .. &BIN__ID159 .. &BNF__ID140 :BIN__ID157
+"holdLayerMax" .. &BIN__ID159 .. &BNF__ID140 :BODY
+"holdLayerMax" .. &BIN__ID159 :BODY
+"holdLayerMax" .. &BIN__ID159 :COMMAND
+"home" :BNF__ID147
+"home" .. &BNF__ID147 :BNF__ID147
+"home" :COMMAND_ITER_ID37
+"home" :SCANCODE
+"home" :SCANCODE_ABBREV
+"home" :SCANCODE_TAG_ID132
+"home" :SHORTCUT
+"home" :SHORTCUT_TAG_ID134
+"h" :SHORTCUT
+"h" :SHORTCUT_TAG_ID135
+"i2cBaudRate" .. &COMMAND_TAG_ID64 :BIN__ID335
+"i" .. &ACTION :BIN__ID358
+"i" :BIN__ID167
+"i" :BIN__ID168
+"i" .. &BIN__ID377 :BIN__ID376
+"i" :BIN__ID394
+"i" :BIN__ID395
+"i" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"i" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"i" :BNF__ID147
+"i" :BNF__ID149
+"i" .. &BNF__ID149 :BIN__ID394
+"i" .. &BNF__ID149 :BNF__ID149
+"i" :BNF__ID151
+"i" .. &BNF__ID151 :BIN__ID395
+"i" .. &BNF__ID151 :BNF__ID151
+"i" :BNF__ID156
+"i" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"i" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"i" .. &BNF__ID156 :BNF__ID147
+"i" .. &BNF__ID156 :BNF__ID156
+"i" .. &BNF__ID156 :COMMAND_ITER_ID37
+"i" .. &BNF__ID156 :LRE__ID420
+"i" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"i" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"i" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"i" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"i" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"i" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"i" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"i" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"i" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"i" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"i" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"i" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"i" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"i" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"i" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"i" .. &BNF__ID156 :MODMASK
+"i" .. &BNF__ID156 :MODMASK_ITER_ID125
+"i" .. &BNF__ID156 :SHORTCUT
+"i" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"i" :COMMAND_ITER_ID37
+"i" :CONDITION_ITER_ID88
+"i" :CONDITION_ITER_ID91
+"<idx in buffer>" :CONDITION_TAG_ID100
+"<idx in buffer>" .. &KEYID :BIN__ID396
+"ifAlt" :BNF__ID141
+"ifAlt" .. &BNF__ID141 :BNF__ID141
+"ifAlt" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifAlt" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifAlt" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifAlt" .. &BNF__ID141 .. &COMMAND :BODY
+"ifAlt" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifAlt" .. &COMMAND :BIN__ID157
+"ifAlt" .. &COMMAND :BODY
+"ifAlt" .. &COMMAND :COMMAND
+"ifAlt" :COMMAND_ITER_ID2
+"ifAlt" :CONDITION
+"ifAlt" :CONDITION_GROUP_ID107
+"ifAnyMod" :BNF__ID141
+"ifAnyMod" .. &BNF__ID141 :BNF__ID141
+"ifAnyMod" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifAnyMod" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifAnyMod" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifAnyMod" .. &BNF__ID141 .. &COMMAND :BODY
+"ifAnyMod" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifAnyMod" .. &COMMAND :BIN__ID157
+"ifAnyMod" .. &COMMAND :BODY
+"ifAnyMod" .. &COMMAND :COMMAND
+"ifAnyMod" :COMMAND_ITER_ID2
+"ifAnyMod" :CONDITION
+"ifAnyMod" :CONDITION_GROUP_ID107
+"if" .. &BIN__ID392 :BNF__ID141
+"if" .. &BIN__ID392 .. &BNF__ID141 :BNF__ID141
+"if" .. &BIN__ID392 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"if" .. &BIN__ID392 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"if" .. &BIN__ID392 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"if" .. &BIN__ID392 .. &BNF__ID141 .. &COMMAND :BODY
+"if" .. &BIN__ID392 .. &BNF__ID141 .. &COMMAND :COMMAND
+"if" .. &BIN__ID392 .. &COMMAND :BIN__ID157
+"if" .. &BIN__ID392 .. &COMMAND :BODY
+"if" .. &BIN__ID392 .. &COMMAND :COMMAND
+"if" .. &BIN__ID392 :COMMAND_ITER_ID2
+"if" .. &BIN__ID392 :CONDITION
+"ifCapsLockOn" :BNF__ID141
+"ifCapsLockOn" .. &BNF__ID141 :BNF__ID141
+"ifCapsLockOn" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifCapsLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifCapsLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifCapsLockOn" .. &BNF__ID141 .. &COMMAND :BODY
+"ifCapsLockOn" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifCapsLockOn" .. &COMMAND :BIN__ID157
+"ifCapsLockOn" .. &COMMAND :BODY
+"ifCapsLockOn" .. &COMMAND :COMMAND
+"ifCapsLockOn" :COMMAND_ITER_ID2
+"ifCapsLockOn" :CONDITION
+"ifCapsLockOn" :CONDITION_GROUP_ID108
+"ifCtrl" :BNF__ID141
+"ifCtrl" .. &BNF__ID141 :BNF__ID141
+"ifCtrl" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifCtrl" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifCtrl" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifCtrl" .. &BNF__ID141 .. &COMMAND :BODY
+"ifCtrl" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifCtrl" .. &COMMAND :BIN__ID157
+"ifCtrl" .. &COMMAND :BODY
+"ifCtrl" .. &COMMAND :COMMAND
+"ifCtrl" :COMMAND_ITER_ID2
+"ifCtrl" :CONDITION
+"ifCtrl" :CONDITION_GROUP_ID107
+"ifDoubletap" :BNF__ID141
+"ifDoubletap" .. &BNF__ID141 :BNF__ID141
+"ifDoubletap" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifDoubletap" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifDoubletap" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifDoubletap" .. &BNF__ID141 .. &COMMAND :BODY
+"ifDoubletap" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifDoubletap" .. &COMMAND :BIN__ID157
+"ifDoubletap" .. &COMMAND :BODY
+"ifDoubletap" .. &COMMAND :COMMAND
+"ifDoubletap" :COMMAND_ITER_ID2
+"ifDoubletap" :CONDITION
+"ifDoubletap" :CONDITION_GROUP_ID94
+"ifGesture" .. &BIN__ID395 :BNF__ID141
+"ifGesture" .. &BIN__ID395 .. &BNF__ID141 :BNF__ID141
+"ifGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND :BODY
+"ifGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifGesture" .. &BIN__ID395 .. &COMMAND :BIN__ID157
+"ifGesture" .. &BIN__ID395 .. &COMMAND :BODY
+"ifGesture" .. &BIN__ID395 .. &COMMAND :COMMAND
+"ifGesture" .. &BIN__ID395 :COMMAND_ITER_ID2
+"ifGesture" .. &BIN__ID395 :CONDITION
+"ifGesture" :CONDITION_GROUP_ID89
+"ifGui" :BNF__ID141
+"ifGui" .. &BNF__ID141 :BNF__ID141
+"ifGui" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifGui" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifGui" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifGui" .. &BNF__ID141 .. &COMMAND :BODY
+"ifGui" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifGui" .. &COMMAND :BIN__ID157
+"ifGui" .. &COMMAND :BODY
+"ifGui" .. &COMMAND :COMMAND
+"ifGui" :COMMAND_ITER_ID2
+"ifGui" :CONDITION
+"ifGui" :CONDITION_GROUP_ID107
+"ifInterrupted" :BNF__ID141
+"ifInterrupted" .. &BNF__ID141 :BNF__ID141
+"ifInterrupted" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifInterrupted" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifInterrupted" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifInterrupted" .. &BNF__ID141 .. &COMMAND :BODY
+"ifInterrupted" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifInterrupted" .. &COMMAND :BIN__ID157
+"ifInterrupted" .. &COMMAND :BODY
+"ifInterrupted" .. &COMMAND :COMMAND
+"ifInterrupted" :COMMAND_ITER_ID2
+"ifInterrupted" :CONDITION
+"ifInterrupted" :CONDITION_GROUP_ID95
+"ifKeyActive" :CONDITION_GROUP_ID97
+"ifKeyActive" .. &KEYID :BNF__ID141
+"ifKeyActive" .. &KEYID .. &BNF__ID141 :BNF__ID141
+"ifKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND :BODY
+"ifKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifKeyActive" .. &KEYID .. &COMMAND :BIN__ID157
+"ifKeyActive" .. &KEYID .. &COMMAND :BODY
+"ifKeyActive" .. &KEYID .. &COMMAND :COMMAND
+"ifKeyActive" .. &KEYID :COMMAND_ITER_ID2
+"ifKeyActive" .. &KEYID :CONDITION
+"ifKeyDefined" :CONDITION_GROUP_ID98
+"ifKeyDefined" .. &KEYID :BNF__ID141
+"ifKeyDefined" .. &KEYID .. &BNF__ID141 :BNF__ID141
+"ifKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND :BODY
+"ifKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifKeyDefined" .. &KEYID .. &COMMAND :BIN__ID157
+"ifKeyDefined" .. &KEYID .. &COMMAND :BODY
+"ifKeyDefined" .. &KEYID .. &COMMAND :COMMAND
+"ifKeyDefined" .. &KEYID :COMMAND_ITER_ID2
+"ifKeyDefined" .. &KEYID :CONDITION
+"ifKeymap" :CONDITION_GROUP_ID109
+"ifKeymap" .. &KEYMAPID :BNF__ID141
+"ifKeymap" .. &KEYMAPID .. &BNF__ID141 :BNF__ID141
+"ifKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND :BODY
+"ifKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifKeymap" .. &KEYMAPID .. &COMMAND :BIN__ID157
+"ifKeymap" .. &KEYMAPID .. &COMMAND :BODY
+"ifKeymap" .. &KEYMAPID .. &COMMAND :COMMAND
+"ifKeymap" .. &KEYMAPID :COMMAND_ITER_ID2
+"ifKeymap" .. &KEYMAPID :CONDITION
+"ifKeyPendingAt" .. &BIN__ID396 :BNF__ID141
+"ifKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 :BNF__ID141
+"ifKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND :BODY
+"ifKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifKeyPendingAt" .. &BIN__ID396 .. &COMMAND :BIN__ID157
+"ifKeyPendingAt" .. &BIN__ID396 .. &COMMAND :BODY
+"ifKeyPendingAt" .. &BIN__ID396 .. &COMMAND :COMMAND
+"ifKeyPendingAt" .. &BIN__ID396 :COMMAND_ITER_ID2
+"ifKeyPendingAt" .. &BIN__ID396 :CONDITION
+"ifKeyPendingAt" :CONDITION_GROUP_ID99
+"ifLayer" :CONDITION_GROUP_ID110
+"ifLayer" .. &LAYERID :BNF__ID141
+"ifLayer" .. &LAYERID .. &BNF__ID141 :BNF__ID141
+"ifLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND :BODY
+"ifLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifLayer" .. &LAYERID .. &COMMAND :BIN__ID157
+"ifLayer" .. &LAYERID .. &COMMAND :BODY
+"ifLayer" .. &LAYERID .. &COMMAND :COMMAND
+"ifLayer" .. &LAYERID :COMMAND_ITER_ID2
+"ifLayer" .. &LAYERID :CONDITION
+"ifModuleConnected" :CONDITION_GROUP_ID113
+"ifModuleConnected" .. &MODULEID :BNF__ID141
+"ifModuleConnected" .. &MODULEID .. &BNF__ID141 :BNF__ID141
+"ifModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND :BODY
+"ifModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifModuleConnected" .. &MODULEID .. &COMMAND :BIN__ID157
+"ifModuleConnected" .. &MODULEID .. &COMMAND :BODY
+"ifModuleConnected" .. &MODULEID .. &COMMAND :COMMAND
+"ifModuleConnected" .. &MODULEID :COMMAND_ITER_ID2
+"ifModuleConnected" .. &MODULEID :CONDITION
+"ifNotAlt" :BNF__ID141
+"ifNotAlt" .. &BNF__ID141 :BNF__ID141
+"ifNotAlt" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotAlt" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotAlt" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotAlt" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotAlt" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotAlt" .. &COMMAND :BIN__ID157
+"ifNotAlt" .. &COMMAND :BODY
+"ifNotAlt" .. &COMMAND :COMMAND
+"ifNotAlt" :COMMAND_ITER_ID2
+"ifNotAlt" :CONDITION
+"ifNotAlt" :CONDITION_GROUP_ID107
+"ifNotAnyMod" :BNF__ID141
+"ifNotAnyMod" .. &BNF__ID141 :BNF__ID141
+"ifNotAnyMod" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotAnyMod" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotAnyMod" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotAnyMod" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotAnyMod" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotAnyMod" .. &COMMAND :BIN__ID157
+"ifNotAnyMod" .. &COMMAND :BODY
+"ifNotAnyMod" .. &COMMAND :COMMAND
+"ifNotAnyMod" :COMMAND_ITER_ID2
+"ifNotAnyMod" :CONDITION
+"ifNotAnyMod" :CONDITION_GROUP_ID107
+"ifNotCapsLockOn" :BNF__ID141
+"ifNotCapsLockOn" .. &BNF__ID141 :BNF__ID141
+"ifNotCapsLockOn" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotCapsLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotCapsLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotCapsLockOn" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotCapsLockOn" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotCapsLockOn" .. &COMMAND :BIN__ID157
+"ifNotCapsLockOn" .. &COMMAND :BODY
+"ifNotCapsLockOn" .. &COMMAND :COMMAND
+"ifNotCapsLockOn" :COMMAND_ITER_ID2
+"ifNotCapsLockOn" :CONDITION
+"ifNotCapsLockOn" :CONDITION_GROUP_ID108
+"ifNotCtrl" :BNF__ID141
+"ifNotCtrl" .. &BNF__ID141 :BNF__ID141
+"ifNotCtrl" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotCtrl" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotCtrl" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotCtrl" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotCtrl" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotCtrl" .. &COMMAND :BIN__ID157
+"ifNotCtrl" .. &COMMAND :BODY
+"ifNotCtrl" .. &COMMAND :COMMAND
+"ifNotCtrl" :COMMAND_ITER_ID2
+"ifNotCtrl" :CONDITION
+"ifNotCtrl" :CONDITION_GROUP_ID107
+"ifNotDoubletap" :BNF__ID141
+"ifNotDoubletap" .. &BNF__ID141 :BNF__ID141
+"ifNotDoubletap" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotDoubletap" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotDoubletap" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotDoubletap" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotDoubletap" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotDoubletap" .. &COMMAND :BIN__ID157
+"ifNotDoubletap" .. &COMMAND :BODY
+"ifNotDoubletap" .. &COMMAND :COMMAND
+"ifNotDoubletap" :COMMAND_ITER_ID2
+"ifNotDoubletap" :CONDITION
+"ifNotDoubletap" :CONDITION_GROUP_ID94
+"ifNotGesture" .. &BIN__ID395 :BNF__ID141
+"ifNotGesture" .. &BIN__ID395 .. &BNF__ID141 :BNF__ID141
+"ifNotGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotGesture" .. &BIN__ID395 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotGesture" .. &BIN__ID395 .. &COMMAND :BIN__ID157
+"ifNotGesture" .. &BIN__ID395 .. &COMMAND :BODY
+"ifNotGesture" .. &BIN__ID395 .. &COMMAND :COMMAND
+"ifNotGesture" .. &BIN__ID395 :COMMAND_ITER_ID2
+"ifNotGesture" .. &BIN__ID395 :CONDITION
+"ifNotGesture" :CONDITION_GROUP_ID89
+"ifNotGui" :BNF__ID141
+"ifNotGui" .. &BNF__ID141 :BNF__ID141
+"ifNotGui" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotGui" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotGui" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotGui" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotGui" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotGui" .. &COMMAND :BIN__ID157
+"ifNotGui" .. &COMMAND :BODY
+"ifNotGui" .. &COMMAND :COMMAND
+"ifNotGui" :COMMAND_ITER_ID2
+"ifNotGui" :CONDITION
+"ifNotGui" :CONDITION_GROUP_ID107
+"ifNotInterrupted" :BNF__ID141
+"ifNotInterrupted" .. &BNF__ID141 :BNF__ID141
+"ifNotInterrupted" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotInterrupted" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotInterrupted" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotInterrupted" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotInterrupted" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotInterrupted" .. &COMMAND :BIN__ID157
+"ifNotInterrupted" .. &COMMAND :BODY
+"ifNotInterrupted" .. &COMMAND :COMMAND
+"ifNotInterrupted" :COMMAND_ITER_ID2
+"ifNotInterrupted" :CONDITION
+"ifNotInterrupted" :CONDITION_GROUP_ID95
+"ifNotKeyActive" :CONDITION_GROUP_ID97
+"ifNotKeyActive" .. &KEYID :BNF__ID141
+"ifNotKeyActive" .. &KEYID .. &BNF__ID141 :BNF__ID141
+"ifNotKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotKeyActive" .. &KEYID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotKeyActive" .. &KEYID .. &COMMAND :BIN__ID157
+"ifNotKeyActive" .. &KEYID .. &COMMAND :BODY
+"ifNotKeyActive" .. &KEYID .. &COMMAND :COMMAND
+"ifNotKeyActive" .. &KEYID :COMMAND_ITER_ID2
+"ifNotKeyActive" .. &KEYID :CONDITION
+"ifNotKeyDefined" :CONDITION_GROUP_ID98
+"ifNotKeyDefined" .. &KEYID :BNF__ID141
+"ifNotKeyDefined" .. &KEYID .. &BNF__ID141 :BNF__ID141
+"ifNotKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotKeyDefined" .. &KEYID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotKeyDefined" .. &KEYID .. &COMMAND :BIN__ID157
+"ifNotKeyDefined" .. &KEYID .. &COMMAND :BODY
+"ifNotKeyDefined" .. &KEYID .. &COMMAND :COMMAND
+"ifNotKeyDefined" .. &KEYID :COMMAND_ITER_ID2
+"ifNotKeyDefined" .. &KEYID :CONDITION
+"ifNotKeymap" :CONDITION_GROUP_ID109
+"ifNotKeymap" .. &KEYMAPID :BNF__ID141
+"ifNotKeymap" .. &KEYMAPID .. &BNF__ID141 :BNF__ID141
+"ifNotKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotKeymap" .. &KEYMAPID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotKeymap" .. &KEYMAPID .. &COMMAND :BIN__ID157
+"ifNotKeymap" .. &KEYMAPID .. &COMMAND :BODY
+"ifNotKeymap" .. &KEYMAPID .. &COMMAND :COMMAND
+"ifNotKeymap" .. &KEYMAPID :COMMAND_ITER_ID2
+"ifNotKeymap" .. &KEYMAPID :CONDITION
+"ifNotKeyPendingAt" .. &BIN__ID396 :BNF__ID141
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 :BNF__ID141
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &COMMAND :BIN__ID157
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &COMMAND :BODY
+"ifNotKeyPendingAt" .. &BIN__ID396 .. &COMMAND :COMMAND
+"ifNotKeyPendingAt" .. &BIN__ID396 :COMMAND_ITER_ID2
+"ifNotKeyPendingAt" .. &BIN__ID396 :CONDITION
+"ifNotKeyPendingAt" :CONDITION_GROUP_ID99
+"ifNotLayer" :CONDITION_GROUP_ID110
+"ifNotLayer" .. &LAYERID :BNF__ID141
+"ifNotLayer" .. &LAYERID .. &BNF__ID141 :BNF__ID141
+"ifNotLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotLayer" .. &LAYERID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotLayer" .. &LAYERID .. &COMMAND :BIN__ID157
+"ifNotLayer" .. &LAYERID .. &COMMAND :BODY
+"ifNotLayer" .. &LAYERID .. &COMMAND :COMMAND
+"ifNotLayer" .. &LAYERID :COMMAND_ITER_ID2
+"ifNotLayer" .. &LAYERID :CONDITION
+"ifNotModuleConnected" :CONDITION_GROUP_ID113
+"ifNotModuleConnected" .. &MODULEID :BNF__ID141
+"ifNotModuleConnected" .. &MODULEID .. &BNF__ID141 :BNF__ID141
+"ifNotModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotModuleConnected" .. &MODULEID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotModuleConnected" .. &MODULEID .. &COMMAND :BIN__ID157
+"ifNotModuleConnected" .. &MODULEID .. &COMMAND :BODY
+"ifNotModuleConnected" .. &MODULEID .. &COMMAND :COMMAND
+"ifNotModuleConnected" .. &MODULEID :COMMAND_ITER_ID2
+"ifNotModuleConnected" .. &MODULEID :CONDITION
+"ifNotNumLockOn" :BNF__ID141
+"ifNotNumLockOn" .. &BNF__ID141 :BNF__ID141
+"ifNotNumLockOn" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotNumLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotNumLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotNumLockOn" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotNumLockOn" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotNumLockOn" .. &COMMAND :BIN__ID157
+"ifNotNumLockOn" .. &COMMAND :BODY
+"ifNotNumLockOn" .. &COMMAND :COMMAND
+"ifNotNumLockOn" :COMMAND_ITER_ID2
+"ifNotNumLockOn" :CONDITION
+"ifNotNumLockOn" :CONDITION_GROUP_ID108
+"ifNotPending" :CONDITION_GROUP_ID101
+"ifNotPending" .. &CONDITION_TAG_ID102 :BNF__ID141
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 :BNF__ID141
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &COMMAND :BIN__ID157
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &COMMAND :BODY
+"ifNotPending" .. &CONDITION_TAG_ID102 .. &COMMAND :COMMAND
+"ifNotPending" .. &CONDITION_TAG_ID102 :COMMAND_ITER_ID2
+"ifNotPending" .. &CONDITION_TAG_ID102 :CONDITION
+"ifNotPendingKeyReleased" :CONDITION_GROUP_ID103
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 :BNF__ID141
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 :BNF__ID141
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &COMMAND :BIN__ID157
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &COMMAND :BODY
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &COMMAND :COMMAND
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 :COMMAND_ITER_ID2
+"ifNotPendingKeyReleased" .. &CONDITION_TAG_ID104 :CONDITION
+"ifNotPlaytime" :CONDITION_GROUP_ID105
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 :BNF__ID141
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 :BNF__ID141
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &COMMAND :BIN__ID157
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &COMMAND :BODY
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 .. &COMMAND :COMMAND
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 :COMMAND_ITER_ID2
+"ifNotPlaytime" .. &CONDITION_TAG_ID106 :CONDITION
+"ifNotRecording" :BNF__ID141
+"ifNotRecording" .. &BNF__ID141 :BNF__ID141
+"ifNotRecording" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotRecording" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotRecording" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotRecording" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotRecording" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotRecording" .. &COMMAND :BIN__ID157
+"ifNotRecording" .. &COMMAND :BODY
+"ifNotRecording" .. &COMMAND :COMMAND
+"ifNotRecording" :COMMAND_ITER_ID2
+"ifNotRecording" :CONDITION
+"ifNotRecording" :CONDITION_GROUP_ID111
+"ifNotRecordingId" :CONDITION_GROUP_ID112
+"ifNotRecordingId" .. &MACROID :BNF__ID141
+"ifNotRecordingId" .. &MACROID .. &BNF__ID141 :BNF__ID141
+"ifNotRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotRecordingId" .. &MACROID .. &COMMAND :BIN__ID157
+"ifNotRecordingId" .. &MACROID .. &COMMAND :BODY
+"ifNotRecordingId" .. &MACROID .. &COMMAND :COMMAND
+"ifNotRecordingId" .. &MACROID :COMMAND_ITER_ID2
+"ifNotRecordingId" .. &MACROID :CONDITION
+"ifNotReleased" :BNF__ID141
+"ifNotReleased" .. &BNF__ID141 :BNF__ID141
+"ifNotReleased" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotReleased" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotReleased" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotReleased" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotReleased" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotReleased" .. &COMMAND :BIN__ID157
+"ifNotReleased" .. &COMMAND :BODY
+"ifNotReleased" .. &COMMAND :COMMAND
+"ifNotReleased" :COMMAND_ITER_ID2
+"ifNotReleased" :CONDITION
+"ifNotReleased" :CONDITION_GROUP_ID96
+"ifNotScrollLockOn" :BNF__ID141
+"ifNotScrollLockOn" .. &BNF__ID141 :BNF__ID141
+"ifNotScrollLockOn" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotScrollLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotScrollLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotScrollLockOn" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotScrollLockOn" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotScrollLockOn" .. &COMMAND :BIN__ID157
+"ifNotScrollLockOn" .. &COMMAND :BODY
+"ifNotScrollLockOn" .. &COMMAND :COMMAND
+"ifNotScrollLockOn" :COMMAND_ITER_ID2
+"ifNotScrollLockOn" :CONDITION
+"ifNotScrollLockOn" :CONDITION_GROUP_ID108
+"ifNotShift" :BNF__ID141
+"ifNotShift" .. &BNF__ID141 :BNF__ID141
+"ifNotShift" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotShift" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotShift" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotShift" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotShift" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotShift" .. &COMMAND :BIN__ID157
+"ifNotShift" .. &COMMAND :BODY
+"ifNotShift" .. &COMMAND :COMMAND
+"ifNotShift" :COMMAND_ITER_ID2
+"ifNotShift" :CONDITION
+"ifNotShift" :CONDITION_GROUP_ID107
+"ifNotShortcut" .. &BIN__ID394 :BNF__ID141
+"ifNotShortcut" .. &BIN__ID394 .. &BNF__ID141 :BNF__ID141
+"ifNotShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNotShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNotShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNotShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND :BODY
+"ifNotShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNotShortcut" .. &BIN__ID394 .. &COMMAND :BIN__ID157
+"ifNotShortcut" .. &BIN__ID394 .. &COMMAND :BODY
+"ifNotShortcut" .. &BIN__ID394 .. &COMMAND :COMMAND
+"ifNotShortcut" .. &BIN__ID394 :COMMAND_ITER_ID2
+"ifNotShortcut" .. &BIN__ID394 :CONDITION
+"ifNotShortcut" :CONDITION_GROUP_ID86
+"ifNumLockOn" :BNF__ID141
+"ifNumLockOn" .. &BNF__ID141 :BNF__ID141
+"ifNumLockOn" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifNumLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifNumLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifNumLockOn" .. &BNF__ID141 .. &COMMAND :BODY
+"ifNumLockOn" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifNumLockOn" .. &COMMAND :BIN__ID157
+"ifNumLockOn" .. &COMMAND :BODY
+"ifNumLockOn" .. &COMMAND :COMMAND
+"ifNumLockOn" :COMMAND_ITER_ID2
+"ifNumLockOn" :CONDITION
+"ifNumLockOn" :CONDITION_GROUP_ID108
+"ifPending" :CONDITION_GROUP_ID101
+"ifPending" .. &CONDITION_TAG_ID102 :BNF__ID141
+"ifPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 :BNF__ID141
+"ifPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND :BODY
+"ifPending" .. &CONDITION_TAG_ID102 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifPending" .. &CONDITION_TAG_ID102 .. &COMMAND :BIN__ID157
+"ifPending" .. &CONDITION_TAG_ID102 .. &COMMAND :BODY
+"ifPending" .. &CONDITION_TAG_ID102 .. &COMMAND :COMMAND
+"ifPending" .. &CONDITION_TAG_ID102 :COMMAND_ITER_ID2
+"ifPending" .. &CONDITION_TAG_ID102 :CONDITION
+"ifPendingKeyReleased" :CONDITION_GROUP_ID103
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 :BNF__ID141
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 :BNF__ID141
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND :BODY
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &COMMAND :BIN__ID157
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &COMMAND :BODY
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 .. &COMMAND :COMMAND
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 :COMMAND_ITER_ID2
+"ifPendingKeyReleased" .. &CONDITION_TAG_ID104 :CONDITION
+"ifPlaytime" :CONDITION_GROUP_ID105
+"ifPlaytime" .. &CONDITION_TAG_ID106 :BNF__ID141
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 :BNF__ID141
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND :BODY
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &COMMAND :BIN__ID157
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &COMMAND :BODY
+"ifPlaytime" .. &CONDITION_TAG_ID106 .. &COMMAND :COMMAND
+"ifPlaytime" .. &CONDITION_TAG_ID106 :COMMAND_ITER_ID2
+"ifPlaytime" .. &CONDITION_TAG_ID106 :CONDITION
+"ifPrimary" :BNF__ID141
+"ifPrimary" .. &BNF__ID152 :BNF__ID141
+"ifPrimary" .. &BNF__ID152 .. &BNF__ID141 :BNF__ID141
+"ifPrimary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifPrimary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifPrimary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifPrimary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND :BODY
+"ifPrimary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifPrimary" .. &BNF__ID152 .. &COMMAND :BIN__ID157
+"ifPrimary" .. &BNF__ID152 .. &COMMAND :BODY
+"ifPrimary" .. &BNF__ID152 .. &COMMAND :COMMAND
+"ifPrimary" .. &BNF__ID152 :COMMAND_ITER_ID2
+"ifPrimary" .. &BNF__ID152 :CONDITION
+"ifPrimary" .. &COMMAND :BIN__ID157
+"ifPrimary" .. &COMMAND :BODY
+"ifPrimary" .. &COMMAND :COMMAND
+"ifPrimary" :COMMAND_ITER_ID2
+"ifPrimary" :CONDITION
+"ifPrimary" :CONDITION_GROUP_ID92
+"ifRecording" :BNF__ID141
+"ifRecording" .. &BNF__ID141 :BNF__ID141
+"ifRecording" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifRecording" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifRecording" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifRecording" .. &BNF__ID141 .. &COMMAND :BODY
+"ifRecording" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifRecording" .. &COMMAND :BIN__ID157
+"ifRecording" .. &COMMAND :BODY
+"ifRecording" .. &COMMAND :COMMAND
+"ifRecording" :COMMAND_ITER_ID2
+"ifRecording" :CONDITION
+"ifRecording" :CONDITION_GROUP_ID111
+"ifRecordingId" :CONDITION_GROUP_ID112
+"ifRecordingId" .. &MACROID :BNF__ID141
+"ifRecordingId" .. &MACROID .. &BNF__ID141 :BNF__ID141
+"ifRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND :BODY
+"ifRecordingId" .. &MACROID .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifRecordingId" .. &MACROID .. &COMMAND :BIN__ID157
+"ifRecordingId" .. &MACROID .. &COMMAND :BODY
+"ifRecordingId" .. &MACROID .. &COMMAND :COMMAND
+"ifRecordingId" .. &MACROID :COMMAND_ITER_ID2
+"ifRecordingId" .. &MACROID :CONDITION
+"ifReleased" :BNF__ID141
+"ifReleased" .. &BNF__ID141 :BNF__ID141
+"ifReleased" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifReleased" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifReleased" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifReleased" .. &BNF__ID141 .. &COMMAND :BODY
+"ifReleased" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifReleased" .. &COMMAND :BIN__ID157
+"ifReleased" .. &COMMAND :BODY
+"ifReleased" .. &COMMAND :COMMAND
+"ifReleased" :COMMAND_ITER_ID2
+"ifReleased" :CONDITION
+"ifReleased" :CONDITION_GROUP_ID96
+"ifScrollLockOn" :BNF__ID141
+"ifScrollLockOn" .. &BNF__ID141 :BNF__ID141
+"ifScrollLockOn" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifScrollLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifScrollLockOn" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifScrollLockOn" .. &BNF__ID141 .. &COMMAND :BODY
+"ifScrollLockOn" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifScrollLockOn" .. &COMMAND :BIN__ID157
+"ifScrollLockOn" .. &COMMAND :BODY
+"ifScrollLockOn" .. &COMMAND :COMMAND
+"ifScrollLockOn" :COMMAND_ITER_ID2
+"ifScrollLockOn" :CONDITION
+"ifScrollLockOn" :CONDITION_GROUP_ID108
+"ifSecondary" :BNF__ID141
+"ifSecondary" .. &BNF__ID152 :BNF__ID141
+"ifSecondary" .. &BNF__ID152 .. &BNF__ID141 :BNF__ID141
+"ifSecondary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifSecondary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifSecondary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifSecondary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND :BODY
+"ifSecondary" .. &BNF__ID152 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifSecondary" .. &BNF__ID152 .. &COMMAND :BIN__ID157
+"ifSecondary" .. &BNF__ID152 .. &COMMAND :BODY
+"ifSecondary" .. &BNF__ID152 .. &COMMAND :COMMAND
+"ifSecondary" .. &BNF__ID152 :COMMAND_ITER_ID2
+"ifSecondary" .. &BNF__ID152 :CONDITION
+"ifSecondary" .. &COMMAND :BIN__ID157
+"ifSecondary" .. &COMMAND :BODY
+"ifSecondary" .. &COMMAND :COMMAND
+"ifSecondary" :COMMAND_ITER_ID2
+"ifSecondary" :CONDITION
+"ifSecondary" :CONDITION_GROUP_ID92
+"ifShift" :BNF__ID141
+"ifShift" .. &BNF__ID141 :BNF__ID141
+"ifShift" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifShift" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifShift" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifShift" .. &BNF__ID141 .. &COMMAND :BODY
+"ifShift" .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifShift" .. &COMMAND :BIN__ID157
+"ifShift" .. &COMMAND :BODY
+"ifShift" .. &COMMAND :COMMAND
+"ifShift" :COMMAND_ITER_ID2
+"ifShift" :CONDITION
+"ifShift" :CONDITION_GROUP_ID107
+"ifShortcut" .. &BIN__ID394 :BNF__ID141
+"ifShortcut" .. &BIN__ID394 .. &BNF__ID141 :BNF__ID141
+"ifShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"ifShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"ifShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"ifShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND :BODY
+"ifShortcut" .. &BIN__ID394 .. &BNF__ID141 .. &COMMAND :COMMAND
+"ifShortcut" .. &BIN__ID394 .. &COMMAND :BIN__ID157
+"ifShortcut" .. &BIN__ID394 .. &COMMAND :BODY
+"ifShortcut" .. &BIN__ID394 .. &COMMAND :COMMAND
+"ifShortcut" .. &BIN__ID394 :COMMAND_ITER_ID2
+"ifShortcut" .. &BIN__ID394 :CONDITION
+"ifShortcut" :CONDITION_GROUP_ID86
+"i" :KEYID
+"i" :KEYID_ABBREV
+"i" :KEYID_TAG_ID137
+"i" :LRE__ID420
+"i" :MODMASK
+"i" :MODMASK_GROUP_ID129
+"i" :MODMASK_ITER_ID125
+"<index>" :COMMAND_TAG_ID20
+"initialAcceleration" .. &COMMAND_TAG_ID57 :BIN__ID319
+"initialSpeed" .. &COMMAND_TAG_ID53 :BIN__ID309
+"insert" :BNF__ID147
+"insert" .. &BNF__ID147 :BNF__ID147
+"insert" :COMMAND_ITER_ID37
+"insert" :SCANCODE
+"insert" :SCANCODE_ABBREV
+"insert" :SCANCODE_TAG_ID132
+"insert" :SHORTCUT
+"insert" :SHORTCUT_TAG_ID134
+"international1" :BNF__ID147
+"international1" .. &BNF__ID147 :BNF__ID147
+"international1" :COMMAND_ITER_ID37
+"international1" :SCANCODE
+"international1" :SCANCODE_ABBREV
+"international1" :SCANCODE_TAG_ID132
+"international1" :SHORTCUT
+"international1" :SHORTCUT_TAG_ID134
+"international2" :BNF__ID147
+"international2" .. &BNF__ID147 :BNF__ID147
+"international2" :COMMAND_ITER_ID37
+"international2" :SCANCODE
+"international2" :SCANCODE_ABBREV
+"international2" :SCANCODE_TAG_ID132
+"international2" :SHORTCUT
+"international2" :SHORTCUT_TAG_ID134
+"international3" :BNF__ID147
+"international3" .. &BNF__ID147 :BNF__ID147
+"international3" :COMMAND_ITER_ID37
+"international3" :SCANCODE
+"international3" :SCANCODE_ABBREV
+"international3" :SCANCODE_TAG_ID132
+"international3" :SHORTCUT
+"international3" :SHORTCUT_TAG_ID134
+"international4" :BNF__ID147
+"international4" .. &BNF__ID147 :BNF__ID147
+"international4" :COMMAND_ITER_ID37
+"international4" :SCANCODE
+"international4" :SCANCODE_ABBREV
+"international4" :SCANCODE_TAG_ID132
+"international4" :SHORTCUT
+"international4" :SHORTCUT_TAG_ID134
+"international5" :BNF__ID147
+"international5" .. &BNF__ID147 :BNF__ID147
+"international5" :COMMAND_ITER_ID37
+"international5" :SCANCODE
+"international5" :SCANCODE_ABBREV
+"international5" :SCANCODE_TAG_ID132
+"international5" :SHORTCUT
+"international5" :SHORTCUT_TAG_ID134
+"international6" :BNF__ID147
+"international6" .. &BNF__ID147 :BNF__ID147
+"international6" :COMMAND_ITER_ID37
+"international6" :SCANCODE
+"international6" :SCANCODE_ABBREV
+"international6" :SCANCODE_TAG_ID132
+"international6" :SHORTCUT
+"international6" :SHORTCUT_TAG_ID134
+"international7" :BNF__ID147
+"international7" .. &BNF__ID147 :BNF__ID147
+"international7" :COMMAND_ITER_ID37
+"international7" :SCANCODE
+"international7" :SCANCODE_ABBREV
+"international7" :SCANCODE_TAG_ID132
+"international7" :SHORTCUT
+"international7" :SHORTCUT_TAG_ID134
+"international8" :BNF__ID147
+"international8" .. &BNF__ID147 :BNF__ID147
+"international8" :COMMAND_ITER_ID37
+"international8" :SCANCODE
+"international8" :SCANCODE_ABBREV
+"international8" :SCANCODE_TAG_ID132
+"international8" :SHORTCUT
+"international8" :SHORTCUT_TAG_ID134
+"international9" :BNF__ID147
+"international9" .. &BNF__ID147 :BNF__ID147
+"international9" :COMMAND_ITER_ID37
+"international9" :SCANCODE
+"international9" :SCANCODE_ABBREV
+"international9" :SCANCODE_TAG_ID132
+"international9" :SHORTCUT
+"international9" :SHORTCUT_TAG_ID134
+""<interpolated string>"" :COMMAND_GROUP_ID19
+""<interpolated string>"" :STRING
+"invertScrollDirectionX" .. &BOOL :BIN__ID241
+"invertScrollDirectionY" .. &BOOL :BIN__ID246
+"i" :SHORTCUT
+"i" :SHORTCUT_TAG_ID135
+"isoKey" .. &ACTION :BIN__ID358
+"isoKey" :BIN__ID167
+"isoKey" :BIN__ID168
+"isoKey" .. &BIN__ID377 :BIN__ID376
+"isoKey" :BIN__ID394
+"isoKey" :BIN__ID395
+"isoKey" :BNF__ID149
+"isoKey" .. &BNF__ID149 :BIN__ID394
+"isoKey" .. &BNF__ID149 :BNF__ID149
+"isoKey" :BNF__ID151
+"isoKey" .. &BNF__ID151 :BIN__ID395
+"isoKey" .. &BNF__ID151 :BNF__ID151
+"isoKey" :CONDITION_ITER_ID88
+"isoKey" :CONDITION_ITER_ID91
+"isoKey" :KEYID
+"isoKey" :KEYID_ABBREV
+"isoKey" :KEYID_TAG_ID137
+"j" .. &ACTION :BIN__ID358
+"j" :BIN__ID167
+"j" :BIN__ID168
+"j" .. &BIN__ID377 :BIN__ID376
+"j" :BIN__ID394
+"j" :BIN__ID395
+"j" :BNF__ID149
+"j" .. &BNF__ID149 :BIN__ID394
+"j" .. &BNF__ID149 :BNF__ID149
+"j" :BNF__ID151
+"j" .. &BNF__ID151 :BIN__ID395
+"j" .. &BNF__ID151 :BNF__ID151
+"j" :CONDITION_ITER_ID88
+"j" :CONDITION_ITER_ID91
+"j" :KEYID
+"j" :KEYID_ABBREV
+"j" :KEYID_TAG_ID137
+"k" .. &ACTION :BIN__ID358
+"k" :BIN__ID167
+"k" :BIN__ID168
+"k" .. &BIN__ID377 :BIN__ID376
+"k" :BIN__ID394
+"k" :BIN__ID395
+"k" :BNF__ID149
+"k" .. &BNF__ID149 :BIN__ID394
+"k" .. &BNF__ID149 :BNF__ID149
+"k" :BNF__ID151
+"k" .. &BNF__ID151 :BIN__ID395
+"k" .. &BNF__ID151 :BNF__ID151
+"k" :CONDITION_ITER_ID88
+"k" :CONDITION_ITER_ID91
+"." .. "key1" :BIN__ID416
+"." .. "key2" :BIN__ID415
+"." .. "key3" :BIN__ID414
+"keycluster" .. &BIN__ID178 :BIN__ID177
+"keycluster" .. &BIN__ID185 :BIN__ID184
+"keycluster" .. &BIN__ID190 :BIN__ID189
+"keycluster" .. &BIN__ID195 :BIN__ID194
+"keycluster" .. &BIN__ID200 :BIN__ID199
+"keycluster" .. &BIN__ID205 :BIN__ID204
+"keycluster" .. &BIN__ID210 :BIN__ID209
+"keycluster" .. &BIN__ID215 :BIN__ID214
+"keycluster" .. &BIN__ID220 :BIN__ID219
+"keycluster" .. &BIN__ID225 :BIN__ID224
+"keycluster" .. &BIN__ID230 :BIN__ID229
+"keycluster" .. &BIN__ID235 :BIN__ID234
+"keycluster" .. &BIN__ID240 :BIN__ID239
+"keycluster" .. &BIN__ID245 :BIN__ID244
+"keycluster" :MODULEID
+"'" :KEYID
+"," :KEYID
+"-" :KEYID
+"." :KEYID
+";" :KEYID
+"=" :KEYID
+"`" :KEYID
+/\// :KEYID
+/\[/ :KEYID
+/\]/ :KEYID
+"'" :KEYID_ABBREV
+"," :KEYID_ABBREV
+"-" :KEYID_ABBREV
+"." :KEYID_ABBREV
+";" :KEYID_ABBREV
+"=" :KEYID_ABBREV
+"`" :KEYID_ABBREV
+/\// :KEYID_ABBREV
+/\[/ :KEYID_ABBREV
+/\]/ :KEYID_ABBREV
+"." .. &KEYID_ABBREV :BIN__ID398
+"<keyid abbreviation>" .. &ACTION :BIN__ID358
+"<keyid abbreviation>" :BIN__ID167
+"<keyid abbreviation>" :BIN__ID168
+"<keyid abbreviation>" .. &BIN__ID377 :BIN__ID376
+"<keyid abbreviation>" :BIN__ID394
+"<keyid abbreviation>" :BIN__ID395
+"<keyid abbreviation>" :BNF__ID149
+"<keyid abbreviation>" .. &BNF__ID149 :BIN__ID394
+"<keyid abbreviation>" .. &BNF__ID149 :BNF__ID149
+"<keyid abbreviation>" :BNF__ID151
+"<keyid abbreviation>" .. &BNF__ID151 :BIN__ID395
+"<keyid abbreviation>" .. &BNF__ID151 :BNF__ID151
+"<keyid abbreviation>" :CONDITION_ITER_ID88
+"<keyid abbreviation>" :CONDITION_ITER_ID91
+"<keyid abbreviation>" :KEYID
+"<keyid abbreviation>" :KEYID_TAG_ID137
+"keyId" .. &BIN__ID398 :BIN__ID397
+"'" :KEYID_TAG_ID137
+"," :KEYID_TAG_ID137
+"-" :KEYID_TAG_ID137
+"." :KEYID_TAG_ID137
+";" :KEYID_TAG_ID137
+"=" :KEYID_TAG_ID137
+"`" :KEYID_TAG_ID137
+/\// :KEYID_TAG_ID137
+/\[/ :KEYID_TAG_ID137
+/\]/ :KEYID_TAG_ID137
+"keymapAction" .. &BIN__ID355 :BIN__ID354
+"keypad000" :BNF__ID147
+"keypad000" .. &BNF__ID147 :BNF__ID147
+"keypad000" :COMMAND_ITER_ID37
+"keypad000" :SCANCODE
+"keypad000" :SCANCODE_ABBREV
+"keypad000" :SCANCODE_TAG_ID132
+"keypad000" :SHORTCUT
+"keypad000" :SHORTCUT_TAG_ID134
+"keypad00" :BNF__ID147
+"keypad00" .. &BNF__ID147 :BNF__ID147
+"keypad00" :COMMAND_ITER_ID37
+"keypad00" :SCANCODE
+"keypad00" :SCANCODE_ABBREV
+"keypad00" :SCANCODE_TAG_ID132
+"keypad00" :SHORTCUT
+"keypad00" :SHORTCUT_TAG_ID134
+"keypad0AndInsert" :BNF__ID147
+"keypad0AndInsert" .. &BNF__ID147 :BNF__ID147
+"keypad0AndInsert" :COMMAND_ITER_ID37
+"keypad0AndInsert" :SCANCODE
+"keypad0AndInsert" :SCANCODE_ABBREV
+"keypad0AndInsert" :SCANCODE_TAG_ID132
+"keypad0AndInsert" :SHORTCUT
+"keypad0AndInsert" :SHORTCUT_TAG_ID134
+"keypad1AndEnd" :BNF__ID147
+"keypad1AndEnd" .. &BNF__ID147 :BNF__ID147
+"keypad1AndEnd" :COMMAND_ITER_ID37
+"keypad1AndEnd" :SCANCODE
+"keypad1AndEnd" :SCANCODE_ABBREV
+"keypad1AndEnd" :SCANCODE_TAG_ID132
+"keypad1AndEnd" :SHORTCUT
+"keypad1AndEnd" :SHORTCUT_TAG_ID134
+"keypad2AndDownArrow" :BNF__ID147
+"keypad2AndDownArrow" .. &BNF__ID147 :BNF__ID147
+"keypad2AndDownArrow" :COMMAND_ITER_ID37
+"keypad2AndDownArrow" :SCANCODE
+"keypad2AndDownArrow" :SCANCODE_ABBREV
+"keypad2AndDownArrow" :SCANCODE_TAG_ID132
+"keypad2AndDownArrow" :SHORTCUT
+"keypad2AndDownArrow" :SHORTCUT_TAG_ID134
+"keypad3AndPageDown" :BNF__ID147
+"keypad3AndPageDown" .. &BNF__ID147 :BNF__ID147
+"keypad3AndPageDown" :COMMAND_ITER_ID37
+"keypad3AndPageDown" :SCANCODE
+"keypad3AndPageDown" :SCANCODE_ABBREV
+"keypad3AndPageDown" :SCANCODE_TAG_ID132
+"keypad3AndPageDown" :SHORTCUT
+"keypad3AndPageDown" :SHORTCUT_TAG_ID134
+"keypad4AndLeftArrow" :BNF__ID147
+"keypad4AndLeftArrow" .. &BNF__ID147 :BNF__ID147
+"keypad4AndLeftArrow" :COMMAND_ITER_ID37
+"keypad4AndLeftArrow" :SCANCODE
+"keypad4AndLeftArrow" :SCANCODE_ABBREV
+"keypad4AndLeftArrow" :SCANCODE_TAG_ID132
+"keypad4AndLeftArrow" :SHORTCUT
+"keypad4AndLeftArrow" :SHORTCUT_TAG_ID134
+"keypad5" :BNF__ID147
+"keypad5" .. &BNF__ID147 :BNF__ID147
+"keypad5" :COMMAND_ITER_ID37
+"keypad5" :SCANCODE
+"keypad5" :SCANCODE_ABBREV
+"keypad5" :SCANCODE_TAG_ID132
+"keypad5" :SHORTCUT
+"keypad5" :SHORTCUT_TAG_ID134
+"keypad6AndRightArrow" :BNF__ID147
+"keypad6AndRightArrow" .. &BNF__ID147 :BNF__ID147
+"keypad6AndRightArrow" :COMMAND_ITER_ID37
+"keypad6AndRightArrow" :SCANCODE
+"keypad6AndRightArrow" :SCANCODE_ABBREV
+"keypad6AndRightArrow" :SCANCODE_TAG_ID132
+"keypad6AndRightArrow" :SHORTCUT
+"keypad6AndRightArrow" :SHORTCUT_TAG_ID134
+"keypad7AndHome" :BNF__ID147
+"keypad7AndHome" .. &BNF__ID147 :BNF__ID147
+"keypad7AndHome" :COMMAND_ITER_ID37
+"keypad7AndHome" :SCANCODE
+"keypad7AndHome" :SCANCODE_ABBREV
+"keypad7AndHome" :SCANCODE_TAG_ID132
+"keypad7AndHome" :SHORTCUT
+"keypad7AndHome" :SHORTCUT_TAG_ID134
+"keypad8AndUpArrow" :BNF__ID147
+"keypad8AndUpArrow" .. &BNF__ID147 :BNF__ID147
+"keypad8AndUpArrow" :COMMAND_ITER_ID37
+"keypad8AndUpArrow" :SCANCODE
+"keypad8AndUpArrow" :SCANCODE_ABBREV
+"keypad8AndUpArrow" :SCANCODE_TAG_ID132
+"keypad8AndUpArrow" :SHORTCUT
+"keypad8AndUpArrow" :SHORTCUT_TAG_ID134
+"keypad9AndPageUp" :BNF__ID147
+"keypad9AndPageUp" .. &BNF__ID147 :BNF__ID147
+"keypad9AndPageUp" :COMMAND_ITER_ID37
+"keypad9AndPageUp" :SCANCODE
+"keypad9AndPageUp" :SCANCODE_ABBREV
+"keypad9AndPageUp" :SCANCODE_TAG_ID132
+"keypad9AndPageUp" :SHORTCUT
+"keypad9AndPageUp" :SHORTCUT_TAG_ID134
+"keypadA" :BNF__ID147
+"keypadA" .. &BNF__ID147 :BNF__ID147
+"keypadA" :COMMAND_ITER_ID37
+"keypadAmpAmp" :BNF__ID147
+"keypadAmpAmp" .. &BNF__ID147 :BNF__ID147
+"keypadAmpAmp" :COMMAND_ITER_ID37
+"keypadAmpAmp" :SCANCODE
+"keypadAmpAmp" :SCANCODE_ABBREV
+"keypadAmpAmp" :SCANCODE_TAG_ID132
+"keypadAmpAmp" :SHORTCUT
+"keypadAmpAmp" :SHORTCUT_TAG_ID134
+"keypadAmp" :BNF__ID147
+"keypadAmp" .. &BNF__ID147 :BNF__ID147
+"keypadAmp" :COMMAND_ITER_ID37
+"keypadAmp" :SCANCODE
+"keypadAmp" :SCANCODE_ABBREV
+"keypadAmp" :SCANCODE_TAG_ID132
+"keypadAmp" :SHORTCUT
+"keypadAmp" :SHORTCUT_TAG_ID134
+"keypadA" :SCANCODE
+"keypadA" :SCANCODE_ABBREV
+"keypadA" :SCANCODE_TAG_ID132
+"keypadA" :SHORTCUT
+"keypadA" :SHORTCUT_TAG_ID134
+"keypadAsterisk" :BNF__ID147
+"keypadAsterisk" .. &BNF__ID147 :BNF__ID147
+"keypadAsterisk" :COMMAND_ITER_ID37
+"keypadAsterisk" :SCANCODE
+"keypadAsterisk" :SCANCODE_ABBREV
+"keypadAsterisk" :SCANCODE_TAG_ID132
+"keypadAsterisk" :SHORTCUT
+"keypadAsterisk" :SHORTCUT_TAG_ID134
+"keypadAt" :BNF__ID147
+"keypadAt" .. &BNF__ID147 :BNF__ID147
+"keypadAt" :COMMAND_ITER_ID37
+"keypadAt" :SCANCODE
+"keypadAt" :SCANCODE_ABBREV
+"keypadAt" :SCANCODE_TAG_ID132
+"keypadAt" :SHORTCUT
+"keypadAt" :SHORTCUT_TAG_ID134
+"keypadBackspace" :BNF__ID147
+"keypadBackspace" .. &BNF__ID147 :BNF__ID147
+"keypadBackspace" :COMMAND_ITER_ID37
+"keypadBackspace" :SCANCODE
+"keypadBackspace" :SCANCODE_ABBREV
+"keypadBackspace" :SCANCODE_TAG_ID132
+"keypadBackspace" :SHORTCUT
+"keypadBackspace" :SHORTCUT_TAG_ID134
+"keypadB" :BNF__ID147
+"keypadB" .. &BNF__ID147 :BNF__ID147
+"keypadB" :COMMAND_ITER_ID37
+"keypadBinary" :BNF__ID147
+"keypadBinary" .. &BNF__ID147 :BNF__ID147
+"keypadBinary" :COMMAND_ITER_ID37
+"keypadBinary" :SCANCODE
+"keypadBinary" :SCANCODE_ABBREV
+"keypadBinary" :SCANCODE_TAG_ID132
+"keypadBinary" :SHORTCUT
+"keypadBinary" :SHORTCUT_TAG_ID134
+"keypadB" :SCANCODE
+"keypadB" :SCANCODE_ABBREV
+"keypadB" :SCANCODE_TAG_ID132
+"keypadB" :SHORTCUT
+"keypadB" :SHORTCUT_TAG_ID134
+"keypadCaret" :BNF__ID147
+"keypadCaret" .. &BNF__ID147 :BNF__ID147
+"keypadCaret" :COMMAND_ITER_ID37
+"keypadCaret" :SCANCODE
+"keypadCaret" :SCANCODE_ABBREV
+"keypadCaret" :SCANCODE_TAG_ID132
+"keypadCaret" :SHORTCUT
+"keypadCaret" :SHORTCUT_TAG_ID134
+"keypadC" :BNF__ID147
+"keypadC" .. &BNF__ID147 :BNF__ID147
+"keypadC" :COMMAND_ITER_ID37
+"keypadClear" :BNF__ID147
+"keypadClear" .. &BNF__ID147 :BNF__ID147
+"keypadClear" :COMMAND_ITER_ID37
+"keypadClearEntry" :BNF__ID147
+"keypadClearEntry" .. &BNF__ID147 :BNF__ID147
+"keypadClearEntry" :COMMAND_ITER_ID37
+"keypadClearEntry" :SCANCODE
+"keypadClearEntry" :SCANCODE_ABBREV
+"keypadClearEntry" :SCANCODE_TAG_ID132
+"keypadClearEntry" :SHORTCUT
+"keypadClearEntry" :SHORTCUT_TAG_ID134
+"keypadClear" :SCANCODE
+"keypadClear" :SCANCODE_ABBREV
+"keypadClear" :SCANCODE_TAG_ID132
+"keypadClear" :SHORTCUT
+"keypadClear" :SHORTCUT_TAG_ID134
+"keypadClosingBrace" :BNF__ID147
+"keypadClosingBrace" .. &BNF__ID147 :BNF__ID147
+"keypadClosingBrace" :COMMAND_ITER_ID37
+"keypadClosingBrace" :SCANCODE
+"keypadClosingBrace" :SCANCODE_ABBREV
+"keypadClosingBrace" :SCANCODE_TAG_ID132
+"keypadClosingBrace" :SHORTCUT
+"keypadClosingBrace" :SHORTCUT_TAG_ID134
+"keypadClosingParenthesis" :BNF__ID147
+"keypadClosingParenthesis" .. &BNF__ID147 :BNF__ID147
+"keypadClosingParenthesis" :COMMAND_ITER_ID37
+"keypadClosingParenthesis" :SCANCODE
+"keypadClosingParenthesis" :SCANCODE_ABBREV
+"keypadClosingParenthesis" :SCANCODE_TAG_ID132
+"keypadClosingParenthesis" :SHORTCUT
+"keypadClosingParenthesis" :SHORTCUT_TAG_ID134
+"keypadColon" :BNF__ID147
+"keypadColon" .. &BNF__ID147 :BNF__ID147
+"keypadColon" :COMMAND_ITER_ID37
+"keypadColon" :SCANCODE
+"keypadColon" :SCANCODE_ABBREV
+"keypadColon" :SCANCODE_TAG_ID132
+"keypadColon" :SHORTCUT
+"keypadColon" :SHORTCUT_TAG_ID134
+"keypadComma" :BNF__ID147
+"keypadComma" .. &BNF__ID147 :BNF__ID147
+"keypadComma" :COMMAND_ITER_ID37
+"keypadComma" :SCANCODE
+"keypadComma" :SCANCODE_ABBREV
+"keypadComma" :SCANCODE_TAG_ID132
+"keypadComma" :SHORTCUT
+"keypadComma" :SHORTCUT_TAG_ID134
+"keypadC" :SCANCODE
+"keypadC" :SCANCODE_ABBREV
+"keypadC" :SCANCODE_TAG_ID132
+"keypadC" :SHORTCUT
+"keypadC" :SHORTCUT_TAG_ID134
+"keypadD" :BNF__ID147
+"keypadD" .. &BNF__ID147 :BNF__ID147
+"keypadD" :COMMAND_ITER_ID37
+"keypadDecimal" :BNF__ID147
+"keypadDecimal" .. &BNF__ID147 :BNF__ID147
+"keypadDecimal" :COMMAND_ITER_ID37
+"keypadDecimal" :SCANCODE
+"keypadDecimal" :SCANCODE_ABBREV
+"keypadDecimal" :SCANCODE_TAG_ID132
+"keypadDecimal" :SHORTCUT
+"keypadDecimal" :SHORTCUT_TAG_ID134
+"keypadDotAndDelete" :BNF__ID147
+"keypadDotAndDelete" .. &BNF__ID147 :BNF__ID147
+"keypadDotAndDelete" :COMMAND_ITER_ID37
+"keypadDotAndDelete" :SCANCODE
+"keypadDotAndDelete" :SCANCODE_ABBREV
+"keypadDotAndDelete" :SCANCODE_TAG_ID132
+"keypadDotAndDelete" :SHORTCUT
+"keypadDotAndDelete" :SHORTCUT_TAG_ID134
+"keypadD" :SCANCODE
+"keypadD" :SCANCODE_ABBREV
+"keypadD" :SCANCODE_TAG_ID132
+"keypadD" :SHORTCUT
+"keypadD" :SHORTCUT_TAG_ID134
+"keypadE" :BNF__ID147
+"keypadE" .. &BNF__ID147 :BNF__ID147
+"keypadE" :COMMAND_ITER_ID37
+"keypadEnter" :BNF__ID147
+"keypadEnter" .. &BNF__ID147 :BNF__ID147
+"keypadEnter" :COMMAND_ITER_ID37
+"keypadEnter" :SCANCODE
+"keypadEnter" :SCANCODE_ABBREV
+"keypadEnter" :SCANCODE_TAG_ID132
+"keypadEnter" :SHORTCUT
+"keypadEnter" :SHORTCUT_TAG_ID134
+"keypadEqualSignAs400" :BNF__ID147
+"keypadEqualSignAs400" .. &BNF__ID147 :BNF__ID147
+"keypadEqualSignAs400" :COMMAND_ITER_ID37
+"keypadEqualSignAs400" :SCANCODE
+"keypadEqualSignAs400" :SCANCODE_ABBREV
+"keypadEqualSignAs400" :SCANCODE_TAG_ID132
+"keypadEqualSignAs400" :SHORTCUT
+"keypadEqualSignAs400" :SHORTCUT_TAG_ID134
+"keypadEqualSign" :BNF__ID147
+"keypadEqualSign" .. &BNF__ID147 :BNF__ID147
+"keypadEqualSign" :COMMAND_ITER_ID37
+"keypadEqualSign" :SCANCODE
+"keypadEqualSign" :SCANCODE_ABBREV
+"keypadEqualSign" :SCANCODE_TAG_ID132
+"keypadEqualSign" :SHORTCUT
+"keypadEqualSign" :SHORTCUT_TAG_ID134
+"keypadE" :SCANCODE
+"keypadE" :SCANCODE_ABBREV
+"keypadE" :SCANCODE_TAG_ID132
+"keypadE" :SHORTCUT
+"keypadE" :SHORTCUT_TAG_ID134
+"keypadExclamationSign" :BNF__ID147
+"keypadExclamationSign" .. &BNF__ID147 :BNF__ID147
+"keypadExclamationSign" :COMMAND_ITER_ID37
+"keypadExclamationSign" :SCANCODE
+"keypadExclamationSign" :SCANCODE_ABBREV
+"keypadExclamationSign" :SCANCODE_TAG_ID132
+"keypadExclamationSign" :SHORTCUT
+"keypadExclamationSign" :SHORTCUT_TAG_ID134
+"keypadF" :BNF__ID147
+"keypadF" .. &BNF__ID147 :BNF__ID147
+"keypadF" :COMMAND_ITER_ID37
+"keypadF" :SCANCODE
+"keypadF" :SCANCODE_ABBREV
+"keypadF" :SCANCODE_TAG_ID132
+"keypadF" :SHORTCUT
+"keypadF" :SHORTCUT_TAG_ID134
+"keypadGreaterThanSign" :BNF__ID147
+"keypadGreaterThanSign" .. &BNF__ID147 :BNF__ID147
+"keypadGreaterThanSign" :COMMAND_ITER_ID37
+"keypadGreaterThanSign" :SCANCODE
+"keypadGreaterThanSign" :SCANCODE_ABBREV
+"keypadGreaterThanSign" :SCANCODE_TAG_ID132
+"keypadGreaterThanSign" :SHORTCUT
+"keypadGreaterThanSign" :SHORTCUT_TAG_ID134
+"keypadHashmark" :BNF__ID147
+"keypadHashmark" .. &BNF__ID147 :BNF__ID147
+"keypadHashmark" :COMMAND_ITER_ID37
+"keypadHashmark" :SCANCODE
+"keypadHashmark" :SCANCODE_ABBREV
+"keypadHashmark" :SCANCODE_TAG_ID132
+"keypadHashmark" :SHORTCUT
+"keypadHashmark" :SHORTCUT_TAG_ID134
+"keypadHexadecimal" :BNF__ID147
+"keypadHexadecimal" .. &BNF__ID147 :BNF__ID147
+"keypadHexadecimal" :COMMAND_ITER_ID37
+"keypadHexadecimal" :SCANCODE
+"keypadHexadecimal" :SCANCODE_ABBREV
+"keypadHexadecimal" :SCANCODE_TAG_ID132
+"keypadHexadecimal" :SHORTCUT
+"keypadHexadecimal" :SHORTCUT_TAG_ID134
+"keypadLessThanSign" :BNF__ID147
+"keypadLessThanSign" .. &BNF__ID147 :BNF__ID147
+"keypadLessThanSign" :COMMAND_ITER_ID37
+"keypadLessThanSign" :SCANCODE
+"keypadLessThanSign" :SCANCODE_ABBREV
+"keypadLessThanSign" :SCANCODE_TAG_ID132
+"keypadLessThanSign" :SHORTCUT
+"keypadLessThanSign" :SHORTCUT_TAG_ID134
+"keypadMemoryAdd" :BNF__ID147
+"keypadMemoryAdd" .. &BNF__ID147 :BNF__ID147
+"keypadMemoryAdd" :COMMAND_ITER_ID37
+"keypadMemoryAdd" :SCANCODE
+"keypadMemoryAdd" :SCANCODE_ABBREV
+"keypadMemoryAdd" :SCANCODE_TAG_ID132
+"keypadMemoryAdd" :SHORTCUT
+"keypadMemoryAdd" :SHORTCUT_TAG_ID134
+"keypadMemoryClear" :BNF__ID147
+"keypadMemoryClear" .. &BNF__ID147 :BNF__ID147
+"keypadMemoryClear" :COMMAND_ITER_ID37
+"keypadMemoryClear" :SCANCODE
+"keypadMemoryClear" :SCANCODE_ABBREV
+"keypadMemoryClear" :SCANCODE_TAG_ID132
+"keypadMemoryClear" :SHORTCUT
+"keypadMemoryClear" :SHORTCUT_TAG_ID134
+"keypadMemoryDivide" :BNF__ID147
+"keypadMemoryDivide" .. &BNF__ID147 :BNF__ID147
+"keypadMemoryDivide" :COMMAND_ITER_ID37
+"keypadMemoryDivide" :SCANCODE
+"keypadMemoryDivide" :SCANCODE_ABBREV
+"keypadMemoryDivide" :SCANCODE_TAG_ID132
+"keypadMemoryDivide" :SHORTCUT
+"keypadMemoryDivide" :SHORTCUT_TAG_ID134
+"keypadMemoryMultiply" :BNF__ID147
+"keypadMemoryMultiply" .. &BNF__ID147 :BNF__ID147
+"keypadMemoryMultiply" :COMMAND_ITER_ID37
+"keypadMemoryMultiply" :SCANCODE
+"keypadMemoryMultiply" :SCANCODE_ABBREV
+"keypadMemoryMultiply" :SCANCODE_TAG_ID132
+"keypadMemoryMultiply" :SHORTCUT
+"keypadMemoryMultiply" :SHORTCUT_TAG_ID134
+"keypadMemoryRecall" :BNF__ID147
+"keypadMemoryRecall" .. &BNF__ID147 :BNF__ID147
+"keypadMemoryRecall" :COMMAND_ITER_ID37
+"keypadMemoryRecall" :SCANCODE
+"keypadMemoryRecall" :SCANCODE_ABBREV
+"keypadMemoryRecall" :SCANCODE_TAG_ID132
+"keypadMemoryRecall" :SHORTCUT
+"keypadMemoryRecall" :SHORTCUT_TAG_ID134
+"keypadMemoryStore" :BNF__ID147
+"keypadMemoryStore" .. &BNF__ID147 :BNF__ID147
+"keypadMemoryStore" :COMMAND_ITER_ID37
+"keypadMemoryStore" :SCANCODE
+"keypadMemoryStore" :SCANCODE_ABBREV
+"keypadMemoryStore" :SCANCODE_TAG_ID132
+"keypadMemoryStore" :SHORTCUT
+"keypadMemoryStore" :SHORTCUT_TAG_ID134
+"keypadMemorySubtract" :BNF__ID147
+"keypadMemorySubtract" .. &BNF__ID147 :BNF__ID147
+"keypadMemorySubtract" :COMMAND_ITER_ID37
+"keypadMemorySubtract" :SCANCODE
+"keypadMemorySubtract" :SCANCODE_ABBREV
+"keypadMemorySubtract" :SCANCODE_TAG_ID132
+"keypadMemorySubtract" :SHORTCUT
+"keypadMemorySubtract" :SHORTCUT_TAG_ID134
+"keypadMinus" :BNF__ID147
+"keypadMinus" .. &BNF__ID147 :BNF__ID147
+"keypadMinus" :COMMAND_ITER_ID37
+"keypadMinus" :SCANCODE
+"keypadMinus" :SCANCODE_ABBREV
+"keypadMinus" :SCANCODE_TAG_ID132
+"keypadMinus" :SHORTCUT
+"keypadMinus" :SHORTCUT_TAG_ID134
+"keypadOctal" :BNF__ID147
+"keypadOctal" .. &BNF__ID147 :BNF__ID147
+"keypadOctal" :COMMAND_ITER_ID37
+"keypadOctal" :SCANCODE
+"keypadOctal" :SCANCODE_ABBREV
+"keypadOctal" :SCANCODE_TAG_ID132
+"keypadOctal" :SHORTCUT
+"keypadOctal" :SHORTCUT_TAG_ID134
+"keypadOpeningBrace" :BNF__ID147
+"keypadOpeningBrace" .. &BNF__ID147 :BNF__ID147
+"keypadOpeningBrace" :COMMAND_ITER_ID37
+"keypadOpeningBrace" :SCANCODE
+"keypadOpeningBrace" :SCANCODE_ABBREV
+"keypadOpeningBrace" :SCANCODE_TAG_ID132
+"keypadOpeningBrace" :SHORTCUT
+"keypadOpeningBrace" :SHORTCUT_TAG_ID134
+"keypadOpeningParenthesis" :BNF__ID147
+"keypadOpeningParenthesis" .. &BNF__ID147 :BNF__ID147
+"keypadOpeningParenthesis" :COMMAND_ITER_ID37
+"keypadOpeningParenthesis" :SCANCODE
+"keypadOpeningParenthesis" :SCANCODE_ABBREV
+"keypadOpeningParenthesis" :SCANCODE_TAG_ID132
+"keypadOpeningParenthesis" :SHORTCUT
+"keypadOpeningParenthesis" :SHORTCUT_TAG_ID134
+"keypadPercentage" :BNF__ID147
+"keypadPercentage" .. &BNF__ID147 :BNF__ID147
+"keypadPercentage" :COMMAND_ITER_ID37
+"keypadPercentage" :SCANCODE
+"keypadPercentage" :SCANCODE_ABBREV
+"keypadPercentage" :SCANCODE_TAG_ID132
+"keypadPercentage" :SHORTCUT
+"keypadPercentage" :SHORTCUT_TAG_ID134
+"keypadPipe" :BNF__ID147
+"keypadPipe" .. &BNF__ID147 :BNF__ID147
+"keypadPipe" :COMMAND_ITER_ID37
+"keypadPipePipe" :BNF__ID147
+"keypadPipePipe" .. &BNF__ID147 :BNF__ID147
+"keypadPipePipe" :COMMAND_ITER_ID37
+"keypadPipePipe" :SCANCODE
+"keypadPipePipe" :SCANCODE_ABBREV
+"keypadPipePipe" :SCANCODE_TAG_ID132
+"keypadPipePipe" :SHORTCUT
+"keypadPipePipe" :SHORTCUT_TAG_ID134
+"keypadPipe" :SCANCODE
+"keypadPipe" :SCANCODE_ABBREV
+"keypadPipe" :SCANCODE_TAG_ID132
+"keypadPipe" :SHORTCUT
+"keypadPipe" :SHORTCUT_TAG_ID134
+"keypadPlusAndMinus" :BNF__ID147
+"keypadPlusAndMinus" .. &BNF__ID147 :BNF__ID147
+"keypadPlusAndMinus" :COMMAND_ITER_ID37
+"keypadPlusAndMinus" :SCANCODE
+"keypadPlusAndMinus" :SCANCODE_ABBREV
+"keypadPlusAndMinus" :SCANCODE_TAG_ID132
+"keypadPlusAndMinus" :SHORTCUT
+"keypadPlusAndMinus" :SHORTCUT_TAG_ID134
+"keypadPlus" :BNF__ID147
+"keypadPlus" .. &BNF__ID147 :BNF__ID147
+"keypadPlus" :COMMAND_ITER_ID37
+"keypadPlus" :SCANCODE
+"keypadPlus" :SCANCODE_ABBREV
+"keypadPlus" :SCANCODE_TAG_ID132
+"keypadPlus" :SHORTCUT
+"keypadPlus" :SHORTCUT_TAG_ID134
+"keypadSlash" :BNF__ID147
+"keypadSlash" .. &BNF__ID147 :BNF__ID147
+"keypadSlash" :COMMAND_ITER_ID37
+"keypadSlash" :SCANCODE
+"keypadSlash" :SCANCODE_ABBREV
+"keypadSlash" :SCANCODE_TAG_ID132
+"keypadSlash" :SHORTCUT
+"keypadSlash" :SHORTCUT_TAG_ID134
+"keypadSpace" :BNF__ID147
+"keypadSpace" .. &BNF__ID147 :BNF__ID147
+"keypadSpace" :COMMAND_ITER_ID37
+"keypadSpace" :SCANCODE
+"keypadSpace" :SCANCODE_ABBREV
+"keypadSpace" :SCANCODE_TAG_ID132
+"keypadSpace" :SHORTCUT
+"keypadSpace" :SHORTCUT_TAG_ID134
+"keypadTab" :BNF__ID147
+"keypadTab" .. &BNF__ID147 :BNF__ID147
+"keypadTab" :COMMAND_ITER_ID37
+"keypadTab" :SCANCODE
+"keypadTab" :SCANCODE_ABBREV
+"keypadTab" :SCANCODE_TAG_ID132
+"keypadTab" :SHORTCUT
+"keypadTab" :SHORTCUT_TAG_ID134
+"keypadXor" :BNF__ID147
+"keypadXor" .. &BNF__ID147 :BNF__ID147
+"keypadXor" :COMMAND_ITER_ID37
+"keypadXor" :SCANCODE
+"keypadXor" :SCANCODE_ABBREV
+"keypadXor" :SCANCODE_TAG_ID132
+"keypadXor" :SHORTCUT
+"keypadXor" :SHORTCUT_TAG_ID134
+"keyRgb" .. &BIN__ID373 :BIN__ID372
+"keystrokeDelay" .. &COMMAND_TAG_ID70 :BIN__ID342
+"keystroke" .. &SHORTCUT :ACTION
+"keystroke" .. &SHORTCUT :ACTION_GROUP_ID130
+"k" :KEYID
+"k" :KEYID_ABBREV
+"k" :KEYID_TAG_ID137
+"<label>" :ADDRESS
+"<label>" .. ":" .. &BIN__ID157 :BODY
+"<label>" .. ":" :BNF__ID139
+"<label>" .. ":" :BODY_OPTION_ID0
+"<label>" :COMMAND_TAG_ID20
+"<label>" :COMMAND_TAG_ID22
+"<label>" :LABEL
+"<label>" :LABEL_TAG_ID124
+"l" .. &ACTION :BIN__ID358
+"lang1" :BNF__ID147
+"lang1" .. &BNF__ID147 :BNF__ID147
+"lang1" :COMMAND_ITER_ID37
+"lang1" :SCANCODE
+"lang1" :SCANCODE_ABBREV
+"lang1" :SCANCODE_TAG_ID132
+"lang1" :SHORTCUT
+"lang1" :SHORTCUT_TAG_ID134
+"lang2" :BNF__ID147
+"lang2" .. &BNF__ID147 :BNF__ID147
+"lang2" :COMMAND_ITER_ID37
+"lang2" :SCANCODE
+"lang2" :SCANCODE_ABBREV
+"lang2" :SCANCODE_TAG_ID132
+"lang2" :SHORTCUT
+"lang2" :SHORTCUT_TAG_ID134
+"lang3" :BNF__ID147
+"lang3" .. &BNF__ID147 :BNF__ID147
+"lang3" :COMMAND_ITER_ID37
+"lang3" :SCANCODE
+"lang3" :SCANCODE_ABBREV
+"lang3" :SCANCODE_TAG_ID132
+"lang3" :SHORTCUT
+"lang3" :SHORTCUT_TAG_ID134
+"lang4" :BNF__ID147
+"lang4" .. &BNF__ID147 :BNF__ID147
+"lang4" :COMMAND_ITER_ID37
+"lang4" :SCANCODE
+"lang4" :SCANCODE_ABBREV
+"lang4" :SCANCODE_TAG_ID132
+"lang4" :SHORTCUT
+"lang4" :SHORTCUT_TAG_ID134
+"lang5" :BNF__ID147
+"lang5" .. &BNF__ID147 :BNF__ID147
+"lang5" :COMMAND_ITER_ID37
+"lang5" :SCANCODE
+"lang5" :SCANCODE_ABBREV
+"lang5" :SCANCODE_TAG_ID132
+"lang5" :SHORTCUT
+"lang5" :SHORTCUT_TAG_ID134
+"lang6" :BNF__ID147
+"lang6" .. &BNF__ID147 :BNF__ID147
+"lang6" :COMMAND_ITER_ID37
+"lang6" :SCANCODE
+"lang6" :SCANCODE_ABBREV
+"lang6" :SCANCODE_TAG_ID132
+"lang6" :SHORTCUT
+"lang6" :SHORTCUT_TAG_ID134
+"lang7" :BNF__ID147
+"lang7" .. &BNF__ID147 :BNF__ID147
+"lang7" :COMMAND_ITER_ID37
+"lang7" :SCANCODE
+"lang7" :SCANCODE_ABBREV
+"lang7" :SCANCODE_TAG_ID132
+"lang7" :SHORTCUT
+"lang7" :SHORTCUT_TAG_ID134
+"lang8" :BNF__ID147
+"lang8" .. &BNF__ID147 :BNF__ID147
+"lang8" :COMMAND_ITER_ID37
+"lang8" :SCANCODE
+"lang8" :SCANCODE_ABBREV
+"lang8" :SCANCODE_TAG_ID132
+"lang8" :SHORTCUT
+"lang8" :SHORTCUT_TAG_ID134
+"lang9" :BNF__ID147
+"lang9" .. &BNF__ID147 :BNF__ID147
+"lang9" :COMMAND_ITER_ID37
+"lang9" :SCANCODE
+"lang9" :SCANCODE_ABBREV
+"lang9" :SCANCODE_TAG_ID132
+"lang9" :SHORTCUT
+"lang9" :SHORTCUT_TAG_ID134
+"last" .. &BIN__ID162 :BIN__ID161
+"last" .. &BIN__ID164 :BIN__ID163
+"last" .. &BIN__ID166 :BIN__ID165
+"last" .. &BIN__ID357 :BIN__ID356
+"last" .. &BIN__ID375 :BIN__ID374
+"last" :BNF__ID144
+"last" :BNF__ID145
+"last" :BNF__ID146
+"last" :COMMAND_OPTION_ID25
+"last" :COMMAND_OPTION_ID28
+"last" :COMMAND_OPTION_ID31
+"last" :COMMAND_TAG_ID10
+"last" :COMMAND_TAG_ID11
+"last" :COMMAND_TAG_ID12
+"last" .. &COMMAND_TAG_ID12 :BIN__ID166
+"last" :COMMAND_TAG_ID24
+"last" :COMMAND_TAG_ID27
+"last" :COMMAND_TAG_ID30
+"last" .. &COMMAND_TAG_ID5 :BIN__ID159
+"last" .. &COMMAND_TAG_ID6 :BIN__ID162
+"last" :COMMAND_TAG_ID7
+"last" :COMMAND_TAG_ID8
+"last" :COMMAND_TAG_ID9
+"last" .. &COMMAND_TAG_ID9 :BIN__ID164
+"last" :KEYMAPID
+"last" :LAYERID
+"last" .. &LAYERID :BIN__ID158
+"last" .. &LAYERID :BIN__ID160
+"last" :MACROID
+"l" :BIN__ID167
+"l" :BIN__ID168
+"l" .. &BIN__ID377 :BIN__ID376
+"l" :BIN__ID394
+"l" :BIN__ID395
+"l" :BNF__ID149
+"l" .. &BNF__ID149 :BIN__ID394
+"l" .. &BNF__ID149 :BNF__ID149
+"l" :BNF__ID151
+"l" .. &BNF__ID151 :BIN__ID395
+"l" .. &BNF__ID151 :BNF__ID151
+"L" :BNF__ID155
+"l" :CONDITION_ITER_ID88
+"l" :CONDITION_ITER_ID91
+"leds" .. &BIN__ID380 :BIN__ID379
+"leds" .. &BIN__ID383 :BIN__ID382
+"leds" .. &BIN__ID386 :BIN__ID385
+"left" .. &ACTION :BIN__ID353
+"leftAlt" .. &ACTION :BIN__ID358
+"leftAlt" :BIN__ID167
+"leftAlt" :BIN__ID168
+"leftAlt" .. &BIN__ID377 :BIN__ID376
+"leftAlt" :BIN__ID394
+"leftAlt" :BIN__ID395
+"leftAlt" :BNF__ID147
+"leftAlt" .. &BNF__ID147 :BNF__ID147
+"leftAlt" :BNF__ID149
+"leftAlt" .. &BNF__ID149 :BIN__ID394
+"leftAlt" .. &BNF__ID149 :BNF__ID149
+"leftAlt" :BNF__ID151
+"leftAlt" .. &BNF__ID151 :BIN__ID395
+"leftAlt" .. &BNF__ID151 :BNF__ID151
+"leftAlt" :COMMAND_ITER_ID37
+"leftAlt" :CONDITION_ITER_ID88
+"leftAlt" :CONDITION_ITER_ID91
+"leftAlt" :KEYID
+"leftAlt" :KEYID_ABBREV
+"leftAlt" :KEYID_TAG_ID137
+"leftAlt" :SCANCODE
+"leftAlt" :SCANCODE_ABBREV
+"leftAlt" :SCANCODE_TAG_ID132
+"leftAlt" :SHORTCUT
+"leftAlt" :SHORTCUT_TAG_ID134
+"leftArrow" :BNF__ID147
+"leftArrow" .. &BNF__ID147 :BNF__ID147
+"leftArrow" :COMMAND_ITER_ID37
+"leftArrow" :SCANCODE
+"leftArrow" :SCANCODE_ABBREV
+"leftArrow" :SCANCODE_TAG_ID132
+"leftArrow" :SHORTCUT
+"leftArrow" :SHORTCUT_TAG_ID134
+"left" :BNF__ID147
+"left" .. &BNF__ID147 :BNF__ID147
+"." .. "leftButton" :BIN__ID413
+"." .. "leftButton" :BIN__ID418
+"left" :COMMAND_GROUP_ID85
+"left" :COMMAND_ITER_ID37
+"leftControl" :BNF__ID147
+"leftControl" .. &BNF__ID147 :BNF__ID147
+"leftControl" :COMMAND_ITER_ID37
+"leftControl" :SCANCODE
+"leftControl" :SCANCODE_ABBREV
+"leftControl" :SCANCODE_TAG_ID132
+"leftControl" :SHORTCUT
+"leftControl" :SHORTCUT_TAG_ID134
+"leftCtrl" .. &ACTION :BIN__ID358
+"leftCtrl" :BIN__ID167
+"leftCtrl" :BIN__ID168
+"leftCtrl" .. &BIN__ID377 :BIN__ID376
+"leftCtrl" :BIN__ID394
+"leftCtrl" :BIN__ID395
+"leftCtrl" :BNF__ID149
+"leftCtrl" .. &BNF__ID149 :BIN__ID394
+"leftCtrl" .. &BNF__ID149 :BNF__ID149
+"leftCtrl" :BNF__ID151
+"leftCtrl" .. &BNF__ID151 :BIN__ID395
+"leftCtrl" .. &BNF__ID151 :BNF__ID151
+"leftCtrl" :CONDITION_ITER_ID88
+"leftCtrl" :CONDITION_ITER_ID91
+"leftCtrl" :KEYID
+"leftCtrl" :KEYID_ABBREV
+"leftCtrl" :KEYID_TAG_ID137
+"left" :DIRECTION
+"left" :DIRECTION_GROUP_ID116
+"leftFn" .. &ACTION :BIN__ID358
+"leftFn" :BIN__ID167
+"leftFn" :BIN__ID168
+"leftFn" .. &BIN__ID377 :BIN__ID376
+"leftFn" :BIN__ID394
+"leftFn" :BIN__ID395
+"leftFn" :BNF__ID149
+"leftFn" .. &BNF__ID149 :BIN__ID394
+"leftFn" .. &BNF__ID149 :BNF__ID149
+"leftFn" :BNF__ID151
+"leftFn" .. &BNF__ID151 :BIN__ID395
+"leftFn" .. &BNF__ID151 :BNF__ID151
+"leftFn" :CONDITION_ITER_ID88
+"leftFn" :CONDITION_ITER_ID91
+"leftFn" :KEYID
+"leftFn" :KEYID_ABBREV
+"leftFn" :KEYID_TAG_ID137
+"leftGui" :BNF__ID147
+"leftGui" .. &BNF__ID147 :BNF__ID147
+"leftGui" :COMMAND_ITER_ID37
+"leftGui" :SCANCODE
+"leftGui" :SCANCODE_ABBREV
+"leftGui" :SCANCODE_TAG_ID132
+"leftGui" :SHORTCUT
+"leftGui" :SHORTCUT_TAG_ID134
+"leftMod" .. &ACTION :BIN__ID358
+"leftMod" :BIN__ID167
+"leftMod" :BIN__ID168
+"leftMod" .. &BIN__ID377 :BIN__ID376
+"leftMod" :BIN__ID394
+"leftMod" :BIN__ID395
+"leftMod" :BNF__ID149
+"leftMod" .. &BNF__ID149 :BIN__ID394
+"leftMod" .. &BNF__ID149 :BNF__ID149
+"leftMod" :BNF__ID151
+"leftMod" .. &BNF__ID151 :BIN__ID395
+"leftMod" .. &BNF__ID151 :BNF__ID151
+"leftMod" :CONDITION_ITER_ID88
+"leftMod" :CONDITION_ITER_ID91
+"leftMod" :KEYID
+"leftMod" :KEYID_ABBREV
+"leftMod" :KEYID_TAG_ID137
+"leftModule" .. &BIN__ID411 .. &ACTION :BIN__ID358
+"leftModule" .. &BIN__ID411 :BIN__ID167
+"leftModule" .. &BIN__ID411 :BIN__ID168
+"leftModule" .. &BIN__ID411 .. &BIN__ID377 :BIN__ID376
+"leftModule" .. &BIN__ID411 :BIN__ID394
+"leftModule" .. &BIN__ID411 :BIN__ID395
+"leftModule" .. &BIN__ID411 :BNF__ID149
+"leftModule" .. &BIN__ID411 .. &BNF__ID149 :BIN__ID394
+"leftModule" .. &BIN__ID411 .. &BNF__ID149 :BNF__ID149
+"leftModule" .. &BIN__ID411 :BNF__ID151
+"leftModule" .. &BIN__ID411 .. &BNF__ID151 :BIN__ID395
+"leftModule" .. &BIN__ID411 .. &BNF__ID151 :BNF__ID151
+"leftModule" .. &BIN__ID411 :CONDITION_ITER_ID88
+"leftModule" .. &BIN__ID411 :CONDITION_ITER_ID91
+"leftModule" .. &BIN__ID411 :KEYID
+"leftModule" .. &BIN__ID411 :KEYID_ABBREV
+"leftModule" .. &BIN__ID411 :KEYID_TAG_ID137
+"leftModule" .. &BIN__ID412 :KEYID_ABBREV
+"leftModule" .. &BIN__ID413 :KEYID_ABBREV
+"leftModule" .. &BIN__ID414 :KEYID_ABBREV
+"leftModule" .. &BIN__ID415 :KEYID_ABBREV
+"leftModule" .. &BIN__ID416 :KEYID_ABBREV
+"leftMouse" .. &ACTION :BIN__ID358
+"leftMouse" :BIN__ID167
+"leftMouse" :BIN__ID168
+"leftMouse" .. &BIN__ID377 :BIN__ID376
+"leftMouse" :BIN__ID394
+"leftMouse" :BIN__ID395
+"leftMouse" :BNF__ID149
+"leftMouse" .. &BNF__ID149 :BIN__ID394
+"leftMouse" .. &BNF__ID149 :BNF__ID149
+"leftMouse" :BNF__ID151
+"leftMouse" .. &BNF__ID151 :BIN__ID395
+"leftMouse" .. &BNF__ID151 :BNF__ID151
+"leftMouse" :CONDITION_ITER_ID88
+"leftMouse" :CONDITION_ITER_ID91
+"leftMouse" :KEYID
+"leftMouse" :KEYID_ABBREV
+"leftMouse" :KEYID_TAG_ID137
+"left" :SCANCODE
+"left" :SCANCODE_ABBREV
+"left" :SCANCODE_TAG_ID132
+"leftShift" .. &ACTION :BIN__ID358
+"leftShift" :BIN__ID167
+"leftShift" :BIN__ID168
+"leftShift" .. &BIN__ID377 :BIN__ID376
+"leftShift" :BIN__ID394
+"leftShift" :BIN__ID395
+"leftShift" :BNF__ID147
+"leftShift" .. &BNF__ID147 :BNF__ID147
+"leftShift" :BNF__ID149
+"leftShift" .. &BNF__ID149 :BIN__ID394
+"leftShift" .. &BNF__ID149 :BNF__ID149
+"leftShift" :BNF__ID151
+"leftShift" .. &BNF__ID151 :BIN__ID395
+"leftShift" .. &BNF__ID151 :BNF__ID151
+"leftShift" :COMMAND_ITER_ID37
+"leftShift" :CONDITION_ITER_ID88
+"leftShift" :CONDITION_ITER_ID91
+"leftShift" :KEYID
+"leftShift" :KEYID_ABBREV
+"leftShift" :KEYID_TAG_ID137
+"leftShift" :SCANCODE
+"leftShift" :SCANCODE_ABBREV
+"leftShift" :SCANCODE_TAG_ID132
+"leftShift" :SHORTCUT
+"leftShift" :SHORTCUT_TAG_ID134
+"left" :SHORTCUT
+"left" :SHORTCUT_TAG_ID134
+"leftSpace" .. &ACTION :BIN__ID358
+"leftSpace" :BIN__ID167
+"leftSpace" :BIN__ID168
+"leftSpace" .. &BIN__ID377 :BIN__ID376
+"leftSpace" :BIN__ID394
+"leftSpace" :BIN__ID395
+"leftSpace" :BNF__ID149
+"leftSpace" .. &BNF__ID149 :BIN__ID394
+"leftSpace" .. &BNF__ID149 :BNF__ID149
+"leftSpace" :BNF__ID151
+"leftSpace" .. &BNF__ID151 :BIN__ID395
+"leftSpace" .. &BNF__ID151 :BNF__ID151
+"leftSpace" :CONDITION_ITER_ID88
+"leftSpace" :CONDITION_ITER_ID91
+"leftSpace" :KEYID
+"leftSpace" :KEYID_ABBREV
+"leftSpace" :KEYID_TAG_ID137
+"leftSuper" .. &ACTION :BIN__ID358
+"leftSuper" :BIN__ID167
+"leftSuper" :BIN__ID168
+"leftSuper" .. &BIN__ID377 :BIN__ID376
+"leftSuper" :BIN__ID394
+"leftSuper" :BIN__ID395
+"leftSuper" :BNF__ID149
+"leftSuper" .. &BNF__ID149 :BIN__ID394
+"leftSuper" .. &BNF__ID149 :BNF__ID149
+"leftSuper" :BNF__ID151
+"leftSuper" .. &BNF__ID151 :BIN__ID395
+"leftSuper" .. &BNF__ID151 :BNF__ID151
+"leftSuper" :CONDITION_ITER_ID88
+"leftSuper" :CONDITION_ITER_ID91
+"leftSuper" :KEYID
+"leftSuper" :KEYID_ABBREV
+"leftSuper" :KEYID_TAG_ID137
+"'<literal string>'" :COMMAND_GROUP_ID19
+"'<literal string>'" :STRING
+"l" :KEYID
+"l" :KEYID_ABBREV
+"l" :KEYID_TAG_ID137
+"L" .. &MODMASK_GROUP_ID127 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"L" .. &MODMASK_GROUP_ID127 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"L" .. &MODMASK_GROUP_ID127 :BNF__ID147
+"L" .. &MODMASK_GROUP_ID127 :BNF__ID156
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :BNF__ID147
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :BNF__ID156
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :COMMAND_ITER_ID37
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :LRE__ID420
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :MODMASK
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :MODMASK_ITER_ID125
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :SHORTCUT
+"L" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"L" .. &MODMASK_GROUP_ID127 :COMMAND_ITER_ID37
+"L" .. &MODMASK_GROUP_ID127 :LRE__ID420
+"L" .. &MODMASK_GROUP_ID127 :MODMASK
+"L" .. &MODMASK_GROUP_ID127 :MODMASK_ITER_ID125
+"L" .. &MODMASK_GROUP_ID127 :SHORTCUT
+"L" .. &MODMASK_GROUP_ID127 :SHORTCUT_TAG_ID135
+"L" :MODMASK_OPTION_ID126
+"lockingCapsLock" :BNF__ID147
+"lockingCapsLock" .. &BNF__ID147 :BNF__ID147
+"lockingCapsLock" :COMMAND_ITER_ID37
+"lockingCapsLock" :SCANCODE
+"lockingCapsLock" :SCANCODE_ABBREV
+"lockingCapsLock" :SCANCODE_TAG_ID132
+"lockingCapsLock" :SHORTCUT
+"lockingCapsLock" :SHORTCUT_TAG_ID134
+"lockingNumLock" :BNF__ID147
+"lockingNumLock" .. &BNF__ID147 :BNF__ID147
+"lockingNumLock" :COMMAND_ITER_ID37
+"lockingNumLock" :SCANCODE
+"lockingNumLock" :SCANCODE_ABBREV
+"lockingNumLock" :SCANCODE_TAG_ID132
+"lockingNumLock" :SHORTCUT
+"lockingNumLock" :SHORTCUT_TAG_ID134
+"lockingScrollLock" :BNF__ID147
+"lockingScrollLock" .. &BNF__ID147 :BNF__ID147
+"lockingScrollLock" :COMMAND_ITER_ID37
+"lockingScrollLock" :SCANCODE
+"lockingScrollLock" :SCANCODE_ABBREV
+"lockingScrollLock" :SCANCODE_TAG_ID132
+"lockingScrollLock" :SHORTCUT
+"lockingScrollLock" :SHORTCUT_TAG_ID134
+"macroEngine" .. &BIN__ID347 :BIN__ID346
+"macro" .. &MACROID :ACTION
+"macro" .. &MACROID :ACTION_GROUP_ID130
+"<macro name>" :MACRONAME
+"<macro name>" :MACRONAME_TAG_ID138
+"m" .. &ACTION :BIN__ID358
+"max" .. &BIN__ID401 .. &BIN__ID173 :BIN__ID172
+"max" .. &BIN__ID401 .. ")" :BIN__ID393
+"max" .. &BIN__ID401 .. &BIN__ID403 :BIN__ID402
+"max" .. &BIN__ID401 .. &BIN__ID406 :BIN__ID405
+"max" .. &BIN__ID401 .. ")" :BIN__ID408
+"max" .. &BIN__ID401 .. ")" :BIN__ID409
+"max" .. &BIN__ID401 :EXPRESSION
+"max" .. &BIN__ID401 .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"max" .. &BIN__ID401 .. &LRE__ID419 .. ")" :BIN__ID393
+"max" .. &BIN__ID401 .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"max" .. &BIN__ID401 .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"max" .. &BIN__ID401 .. &LRE__ID419 .. ")" :BIN__ID408
+"max" .. &BIN__ID401 .. &LRE__ID419 .. ")" :BIN__ID409
+"max" .. &BIN__ID401 .. &LRE__ID419 :EXPRESSION
+"m" :BIN__ID167
+"m" :BIN__ID168
+"m" .. &BIN__ID377 :BIN__ID376
+"m" :BIN__ID394
+"m" :BIN__ID395
+"m" :BNF__ID149
+"m" .. &BNF__ID149 :BIN__ID394
+"m" .. &BNF__ID149 :BNF__ID149
+"m" :BNF__ID151
+"m" .. &BNF__ID151 :BIN__ID395
+"m" .. &BNF__ID151 :BNF__ID151
+"m" :CONDITION_ITER_ID88
+"m" :CONDITION_ITER_ID91
+"media" .. &BIN__ID352 :BIN__ID351
+"mediaFastForward" :BNF__ID147
+"mediaFastForward" .. &BNF__ID147 :BNF__ID147
+"mediaFastForward" :COMMAND_ITER_ID37
+"mediaFastForward" :SCANCODE
+"mediaFastForward" :SCANCODE_ABBREV
+"mediaFastForward" :SCANCODE_TAG_ID132
+"mediaFastForward" :SHORTCUT
+"mediaFastForward" :SHORTCUT_TAG_ID134
+"media" :NAVIGATION_MODE
+"media" :NAVIGATION_MODE_CUSTOM
+"mediaNext" :BNF__ID147
+"mediaNext" .. &BNF__ID147 :BNF__ID147
+"mediaNext" :COMMAND_ITER_ID37
+"mediaNext" :SCANCODE
+"mediaNext" :SCANCODE_ABBREV
+"mediaNext" :SCANCODE_TAG_ID132
+"mediaNext" :SHORTCUT
+"mediaNext" :SHORTCUT_TAG_ID134
+"mediaPause" :BNF__ID147
+"mediaPause" .. &BNF__ID147 :BNF__ID147
+"mediaPause" :COMMAND_ITER_ID37
+"mediaPause" :SCANCODE
+"mediaPause" :SCANCODE_ABBREV
+"mediaPause" :SCANCODE_TAG_ID132
+"mediaPause" :SHORTCUT
+"mediaPause" :SHORTCUT_TAG_ID134
+"mediaPlayPause" :BNF__ID147
+"mediaPlayPause" .. &BNF__ID147 :BNF__ID147
+"mediaPlayPause" :COMMAND_ITER_ID37
+"mediaPlayPause" :SCANCODE
+"mediaPlayPause" :SCANCODE_ABBREV
+"mediaPlayPause" :SCANCODE_TAG_ID132
+"mediaPlayPause" :SHORTCUT
+"mediaPlayPause" :SHORTCUT_TAG_ID134
+"mediaPrevious" :BNF__ID147
+"mediaPrevious" .. &BNF__ID147 :BNF__ID147
+"mediaPrevious" :COMMAND_ITER_ID37
+"mediaPrevious" :SCANCODE
+"mediaPrevious" :SCANCODE_ABBREV
+"mediaPrevious" :SCANCODE_TAG_ID132
+"mediaPrevious" :SHORTCUT
+"mediaPrevious" :SHORTCUT_TAG_ID134
+"mediaRecord" :BNF__ID147
+"mediaRecord" .. &BNF__ID147 :BNF__ID147
+"mediaRecord" :COMMAND_ITER_ID37
+"mediaRecord" :SCANCODE
+"mediaRecord" :SCANCODE_ABBREV
+"mediaRecord" :SCANCODE_TAG_ID132
+"mediaRecord" :SHORTCUT
+"mediaRecord" :SHORTCUT_TAG_ID134
+"mediaRewind" :BNF__ID147
+"mediaRewind" .. &BNF__ID147 :BNF__ID147
+"mediaRewind" :COMMAND_ITER_ID37
+"mediaRewind" :SCANCODE
+"mediaRewind" :SCANCODE_ABBREV
+"mediaRewind" :SCANCODE_TAG_ID132
+"mediaRewind" :SHORTCUT
+"mediaRewind" :SHORTCUT_TAG_ID134
+"mediaStop" :BNF__ID147
+"mediaStop" .. &BNF__ID147 :BNF__ID147
+"mediaStop" :COMMAND_ITER_ID37
+"mediaStop" :SCANCODE
+"mediaStop" :SCANCODE_ABBREV
+"mediaStop" :SCANCODE_TAG_ID132
+"mediaStop" :SHORTCUT
+"mediaStop" :SHORTCUT_TAG_ID134
+"mediaVolumeDown" :BNF__ID147
+"mediaVolumeDown" .. &BNF__ID147 :BNF__ID147
+"mediaVolumeDown" :COMMAND_ITER_ID37
+"mediaVolumeDown" :SCANCODE
+"mediaVolumeDown" :SCANCODE_ABBREV
+"mediaVolumeDown" :SCANCODE_TAG_ID132
+"mediaVolumeDown" :SHORTCUT
+"mediaVolumeDown" :SHORTCUT_TAG_ID134
+"mediaVolumeMute" :BNF__ID147
+"mediaVolumeMute" .. &BNF__ID147 :BNF__ID147
+"mediaVolumeMute" :COMMAND_ITER_ID37
+"mediaVolumeMute" :SCANCODE
+"mediaVolumeMute" :SCANCODE_ABBREV
+"mediaVolumeMute" :SCANCODE_TAG_ID132
+"mediaVolumeMute" :SHORTCUT
+"mediaVolumeMute" :SHORTCUT_TAG_ID134
+"mediaVolumeUp" :BNF__ID147
+"mediaVolumeUp" .. &BNF__ID147 :BNF__ID147
+"mediaVolumeUp" :COMMAND_ITER_ID37
+"mediaVolumeUp" :SCANCODE
+"mediaVolumeUp" :SCANCODE_ABBREV
+"mediaVolumeUp" :SCANCODE_TAG_ID132
+"mediaVolumeUp" :SHORTCUT
+"mediaVolumeUp" :SHORTCUT_TAG_ID134
+"menu" :BNF__ID147
+"menu" .. &BNF__ID147 :BNF__ID147
+"menu" :COMMAND_ITER_ID37
+"menu" :SCANCODE
+"menu" :SCANCODE_ABBREV
+"menu" :SCANCODE_TAG_ID132
+"menu" :SHORTCUT
+"menu" :SHORTCUT_TAG_ID134
+"." .. "middleButton" :BIN__ID412
+"min" .. &BIN__ID404 .. &BIN__ID173 :BIN__ID172
+"min" .. &BIN__ID404 .. ")" :BIN__ID393
+"min" .. &BIN__ID404 .. &BIN__ID403 :BIN__ID402
+"min" .. &BIN__ID404 .. &BIN__ID406 :BIN__ID405
+"min" .. &BIN__ID404 .. ")" :BIN__ID408
+"min" .. &BIN__ID404 .. ")" :BIN__ID409
+"min" .. &BIN__ID404 :EXPRESSION
+"min" .. &BIN__ID404 .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"min" .. &BIN__ID404 .. &LRE__ID419 .. ")" :BIN__ID393
+"min" .. &BIN__ID404 .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"min" .. &BIN__ID404 .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"min" .. &BIN__ID404 .. &LRE__ID419 .. ")" :BIN__ID408
+"min" .. &BIN__ID404 .. &LRE__ID419 .. ")" :BIN__ID409
+"min" .. &BIN__ID404 .. &LRE__ID419 :EXPRESSION
+"minusAndUnderscore" .. &ACTION :BIN__ID358
+"minusAndUnderscore" :BIN__ID167
+"minusAndUnderscore" :BIN__ID168
+"minusAndUnderscore" .. &BIN__ID377 :BIN__ID376
+"minusAndUnderscore" :BIN__ID394
+"minusAndUnderscore" :BIN__ID395
+"minusAndUnderscore" :BNF__ID147
+"minusAndUnderscore" .. &BNF__ID147 :BNF__ID147
+"minusAndUnderscore" :BNF__ID149
+"minusAndUnderscore" .. &BNF__ID149 :BIN__ID394
+"minusAndUnderscore" .. &BNF__ID149 :BNF__ID149
+"minusAndUnderscore" :BNF__ID151
+"minusAndUnderscore" .. &BNF__ID151 :BIN__ID395
+"minusAndUnderscore" .. &BNF__ID151 :BNF__ID151
+"minusAndUnderscore" :COMMAND_ITER_ID37
+"minusAndUnderscore" :CONDITION_ITER_ID88
+"minusAndUnderscore" :CONDITION_ITER_ID91
+"minusAndUnderscore" :KEYID
+"minusAndUnderscore" :KEYID_ABBREV
+"minusAndUnderscore" :KEYID_TAG_ID137
+"minusAndUnderscore" :SCANCODE
+"minusAndUnderscore" :SCANCODE_ABBREV
+"minusAndUnderscore" :SCANCODE_TAG_ID132
+"minusAndUnderscore" :SHORTCUT
+"minusAndUnderscore" :SHORTCUT_TAG_ID134
+"m" :KEYID
+"m" :KEYID_ABBREV
+"m" :KEYID_TAG_ID137
+"mod" .. &BIN__ID164 :BIN__ID163
+"mod" .. &BIN__ID166 :BIN__ID165
+"mod" .. &BIN__ID357 :BIN__ID356
+"mod" .. &BIN__ID375 :BIN__ID374
+"mod" :COMMAND_TAG_ID10
+"mod" :COMMAND_TAG_ID12
+"mod" .. &COMMAND_TAG_ID5 :BIN__ID159
+"mod" .. &COMMAND_TAG_ID6 :BIN__ID162
+"mod" :COMMAND_TAG_ID7
+"mod" :COMMAND_TAG_ID9
+"modifierLayerTriggers" .. &BIN__ID389 :BIN__ID388
+"<modifier mask, e.g. LS for left shift>" :BNF__ID147
+"<modifier mask, e.g. LS for left shift>" .. &BNF__ID147 :BNF__ID147
+"<modifier mask, e.g. LS for left shift>" :COMMAND_ITER_ID37
+"<modifier mask, e.g. LS for left shift>" :SHORTCUT
+"<modifier mask, e.g. LS for left shift>" :SHORTCUT_TAG_ID135
+"mod" :LAYERID
+"mod" :LAYERID_BASIC
+"mod" :LAYERID_BASIC_GROUP_ID118
+"mod" :LAYERID_GROUP_ID117
+"<MODMASK-SCANCODE, e.g. LC-c>" :BNF__ID147
+"<MODMASK-SCANCODE, e.g. LC-c>" .. &BNF__ID147 :BNF__ID147
+"<MODMASK-SCANCODE, e.g. LC-c>" :COMMAND_ITER_ID37
+"<MODMASK-SCANCODE, e.g. LC-c>" :SHORTCUT
+"<MODMASK-SCANCODE, e.g. LC-c>" :SHORTCUT_TAG_ID133
+"mod" .. &NAVIGATION_MODE :BIN__ID181
+"module" .. &BIN__ID176 :BIN__ID175
+"module" .. &BIN__ID183 :BIN__ID182
+"module" .. &BIN__ID188 :BIN__ID187
+"module" .. &BIN__ID193 :BIN__ID192
+"module" .. &BIN__ID198 :BIN__ID197
+"module" .. &BIN__ID203 :BIN__ID202
+"module" .. &BIN__ID208 :BIN__ID207
+"module" .. &BIN__ID213 :BIN__ID212
+"module" .. &BIN__ID218 :BIN__ID217
+"module" .. &BIN__ID223 :BIN__ID222
+"module" .. &BIN__ID228 :BIN__ID227
+"module" .. &BIN__ID233 :BIN__ID232
+"module" .. &BIN__ID238 :BIN__ID237
+"module" .. &BIN__ID243 :BIN__ID242
+"module" .. &BIN__ID248 :BIN__ID247
+"module" .. &BIN__ID253 :BIN__ID252
+"module" .. &BIN__ID258 :BIN__ID257
+"mouse" .. &BIN__ID164 :BIN__ID163
+"mouse" .. &BIN__ID166 :BIN__ID165
+"mouse" .. &BIN__ID357 :BIN__ID356
+"mouse" .. &BIN__ID375 :BIN__ID374
+"mouseBtn4" :BNF__ID147
+"mouseBtn4" .. &BNF__ID147 :BNF__ID147
+"mouseBtn4" :COMMAND_ITER_ID37
+"mouseBtn4" :SCANCODE
+"mouseBtn4" :SCANCODE_ABBREV
+"mouseBtn4" :SCANCODE_TAG_ID132
+"mouseBtn4" :SHORTCUT
+"mouseBtn4" :SHORTCUT_TAG_ID134
+"mouseBtn5" :BNF__ID147
+"mouseBtn5" .. &BNF__ID147 :BNF__ID147
+"mouseBtn5" :COMMAND_ITER_ID37
+"mouseBtn5" :SCANCODE
+"mouseBtn5" :SCANCODE_ABBREV
+"mouseBtn5" :SCANCODE_TAG_ID132
+"mouseBtn5" :SHORTCUT
+"mouseBtn5" :SHORTCUT_TAG_ID134
+"mouseBtn6" :BNF__ID147
+"mouseBtn6" .. &BNF__ID147 :BNF__ID147
+"mouseBtn6" :COMMAND_ITER_ID37
+"mouseBtn6" :SCANCODE
+"mouseBtn6" :SCANCODE_ABBREV
+"mouseBtn6" :SCANCODE_TAG_ID132
+"mouseBtn6" :SHORTCUT
+"mouseBtn6" :SHORTCUT_TAG_ID134
+"mouseBtn7" :BNF__ID147
+"mouseBtn7" .. &BNF__ID147 :BNF__ID147
+"mouseBtn7" :COMMAND_ITER_ID37
+"mouseBtn7" :SCANCODE
+"mouseBtn7" :SCANCODE_ABBREV
+"mouseBtn7" :SCANCODE_TAG_ID132
+"mouseBtn7" :SHORTCUT
+"mouseBtn7" :SHORTCUT_TAG_ID134
+"mouseBtn8" :BNF__ID147
+"mouseBtn8" .. &BNF__ID147 :BNF__ID147
+"mouseBtn8" :COMMAND_ITER_ID37
+"mouseBtn8" :SCANCODE
+"mouseBtn8" :SCANCODE_ABBREV
+"mouseBtn8" :SCANCODE_TAG_ID132
+"mouseBtn8" :SHORTCUT
+"mouseBtn8" :SHORTCUT_TAG_ID134
+"mouseBtnLeft" :BNF__ID147
+"mouseBtnLeft" .. &BNF__ID147 :BNF__ID147
+"mouseBtnLeft" :COMMAND_ITER_ID37
+"mouseBtnLeft" :SCANCODE
+"mouseBtnLeft" :SCANCODE_ABBREV
+"mouseBtnLeft" :SCANCODE_TAG_ID132
+"mouseBtnLeft" :SHORTCUT
+"mouseBtnLeft" :SHORTCUT_TAG_ID134
+"mouseBtnMiddle" :BNF__ID147
+"mouseBtnMiddle" .. &BNF__ID147 :BNF__ID147
+"mouseBtnMiddle" :COMMAND_ITER_ID37
+"mouseBtnMiddle" :SCANCODE
+"mouseBtnMiddle" :SCANCODE_ABBREV
+"mouseBtnMiddle" :SCANCODE_TAG_ID132
+"mouseBtnMiddle" :SHORTCUT
+"mouseBtnMiddle" :SHORTCUT_TAG_ID134
+"mouseBtnRight" :BNF__ID147
+"mouseBtnRight" .. &BNF__ID147 :BNF__ID147
+"mouseBtnRight" :COMMAND_ITER_ID37
+"mouseBtnRight" :SCANCODE
+"mouseBtnRight" :SCANCODE_ABBREV
+"mouseBtnRight" :SCANCODE_TAG_ID132
+"mouseBtnRight" :SHORTCUT
+"mouseBtnRight" :SHORTCUT_TAG_ID134
+"mouse" :COMMAND_TAG_ID10
+"mouse" :COMMAND_TAG_ID12
+"mouse" .. &COMMAND_TAG_ID5 :BIN__ID159
+"mouse" .. &COMMAND_TAG_ID6 :BIN__ID162
+"mouse" :COMMAND_TAG_ID7
+"mouse" :COMMAND_TAG_ID9
+"mouseKeys" .. &BIN__ID306 :BIN__ID305
+"mouseKeys" .. &BIN__ID311 :BIN__ID310
+"mouseKeys" .. &BIN__ID316 :BIN__ID315
+"mouseKeys" .. &BIN__ID321 :BIN__ID320
+"mouseKeys" .. &BIN__ID326 :BIN__ID325
+"mouseKeys" .. &BIN__ID331 :BIN__ID330
+"mouse" :LAYERID
+"mouse" :LAYERID_BASIC
+"mouse" :LAYERID_BASIC_GROUP_ID118
+"mouse" :LAYERID_GROUP_ID117
+"mouse" .. &NAVIGATION_MODE :BIN__ID181
+"move" .. &BIN__ID308 :BIN__ID307
+"move" .. &BIN__ID313 :BIN__ID312
+"move" .. &BIN__ID318 :BIN__ID317
+"move" .. &BIN__ID323 :BIN__ID322
+"move" .. &BIN__ID328 :BIN__ID327
+"move" .. &BIN__ID333 :BIN__ID332
+"move" :COMMAND_GROUP_ID52
+"move" :COMMAND_GROUP_ID54
+"move" :COMMAND_GROUP_ID56
+"move" :COMMAND_GROUP_ID58
+"move" :COMMAND_GROUP_ID60
+"move" :COMMAND_GROUP_ID62
+"move" .. &DIRECTION :COMMAND_GROUP_ID33
+"<ms, 0-500>" :COMMAND_TAG_ID48
+"<ms, 0-500>" :COMMAND_TAG_ID51
+"<ms, -50-50>" :COMMAND_TAG_ID50
+"<multiplier, 0.5-2.0>" :COMMAND_TAG_ID63
+"mute" :BNF__ID147
+"mute" .. &BNF__ID147 :BNF__ID147
+"mute" :COMMAND_ITER_ID37
+"mute" :SCANCODE
+"mute" :SCANCODE_ABBREV
+"mute" :SCANCODE_TAG_ID132
+"mute" :SHORTCUT
+"mute" :SHORTCUT_TAG_ID134
+"n" .. &ACTION :BIN__ID358
+"navigationModeAction" .. &BIN__ID350 :BIN__ID349
+"navigationMode" .. &BIN__ID180 :BIN__ID179
+"n" :BIN__ID167
+"n" :BIN__ID168
+"n" .. &BIN__ID377 :BIN__ID376
+"n" :BIN__ID394
+"n" :BIN__ID395
+"n" :BNF__ID149
+"n" .. &BNF__ID149 :BIN__ID394
+"n" .. &BNF__ID149 :BNF__ID149
+"n" :BNF__ID151
+"n" .. &BNF__ID151 :BIN__ID395
+"n" .. &BNF__ID151 :BNF__ID151
+"n" :CONDITION_ITER_ID88
+"n" :CONDITION_ITER_ID91
+"<n>" :CONDITION_TAG_ID102
+"never" :COMMAND_GROUP_ID67
+"n" :KEYID
+"n" :KEYID_ABBREV
+"n" :KEYID_TAG_ID137
+"noConsume" :BNF__ID148
+"noConsume" .. &BNF__ID148 :BNF__ID148
+"noConsume" .. &BNF__ID148 .. &BNF__ID149 :BIN__ID394
+"noConsume" .. &BNF__ID149 :BIN__ID394
+"noConsume" :BNF__ID150
+"noConsume" .. &BNF__ID150 :BNF__ID150
+"noConsume" .. &BNF__ID150 .. &BNF__ID151 :BIN__ID395
+"noConsume" .. &BNF__ID151 :BIN__ID395
+"noConsume" :CONDITION_ITER_ID87
+"noConsume" :CONDITION_ITER_ID90
+"noConsume" :IFSHORTCUT_OPTIONS
+"none" :ACTION
+"none" :ACTION_GROUP_ID130
+"none" :NAVIGATION_MODE
+"nonUsBackslashAndPipe" :BNF__ID147
+"nonUsBackslashAndPipe" .. &BNF__ID147 :BNF__ID147
+"nonUsBackslashAndPipe" :COMMAND_ITER_ID37
+"nonUsBackslashAndPipe" :SCANCODE
+"nonUsBackslashAndPipe" :SCANCODE_ABBREV
+"nonUsBackslashAndPipe" :SCANCODE_TAG_ID132
+"nonUsBackslashAndPipe" :SHORTCUT
+"nonUsBackslashAndPipe" :SHORTCUT_TAG_ID134
+"nonUsHashmarkAndTilde" :BNF__ID147
+"nonUsHashmarkAndTilde" .. &BNF__ID147 :BNF__ID147
+"nonUsHashmarkAndTilde" :COMMAND_ITER_ID37
+"nonUsHashmarkAndTilde" :SCANCODE
+"nonUsHashmarkAndTilde" :SCANCODE_ABBREV
+"nonUsHashmarkAndTilde" :SCANCODE_TAG_ID132
+"nonUsHashmarkAndTilde" :SHORTCUT
+"nonUsHashmarkAndTilde" :SHORTCUT_TAG_ID134
+"noOp" :BIN__ID157
+"noOp" .. &BNF__ID140 :BIN__ID157
+"noOp" .. &BNF__ID140 :BODY
+"noOp" :BODY
+"noOp" :COMMAND
+"np0" :BNF__ID147
+"np0" .. &BNF__ID147 :BNF__ID147
+"np0" :COMMAND_ITER_ID37
+"np0" :SCANCODE
+"np0" :SCANCODE_ABBREV
+"np0" :SCANCODE_TAG_ID132
+"np0" :SHORTCUT
+"np0" :SHORTCUT_TAG_ID134
+"np1" :BNF__ID147
+"np1" .. &BNF__ID147 :BNF__ID147
+"np1" :COMMAND_ITER_ID37
+"np1" :SCANCODE
+"np1" :SCANCODE_ABBREV
+"np1" :SCANCODE_TAG_ID132
+"np1" :SHORTCUT
+"np1" :SHORTCUT_TAG_ID134
+"np2" :BNF__ID147
+"np2" .. &BNF__ID147 :BNF__ID147
+"np2" :COMMAND_ITER_ID37
+"np2" :SCANCODE
+"np2" :SCANCODE_ABBREV
+"np2" :SCANCODE_TAG_ID132
+"np2" :SHORTCUT
+"np2" :SHORTCUT_TAG_ID134
+"np3" :BNF__ID147
+"np3" .. &BNF__ID147 :BNF__ID147
+"np3" :COMMAND_ITER_ID37
+"np3" :SCANCODE
+"np3" :SCANCODE_ABBREV
+"np3" :SCANCODE_TAG_ID132
+"np3" :SHORTCUT
+"np3" :SHORTCUT_TAG_ID134
+"np4" :BNF__ID147
+"np4" .. &BNF__ID147 :BNF__ID147
+"np4" :COMMAND_ITER_ID37
+"np4" :SCANCODE
+"np4" :SCANCODE_ABBREV
+"np4" :SCANCODE_TAG_ID132
+"np4" :SHORTCUT
+"np4" :SHORTCUT_TAG_ID134
+"np5" :BNF__ID147
+"np5" .. &BNF__ID147 :BNF__ID147
+"np5" :COMMAND_ITER_ID37
+"np5" :SCANCODE
+"np5" :SCANCODE_ABBREV
+"np5" :SCANCODE_TAG_ID132
+"np5" :SHORTCUT
+"np5" :SHORTCUT_TAG_ID134
+"np6" :BNF__ID147
+"np6" .. &BNF__ID147 :BNF__ID147
+"np6" :COMMAND_ITER_ID37
+"np6" :SCANCODE
+"np6" :SCANCODE_ABBREV
+"np6" :SCANCODE_TAG_ID132
+"np6" :SHORTCUT
+"np6" :SHORTCUT_TAG_ID134
+"np7" :BNF__ID147
+"np7" .. &BNF__ID147 :BNF__ID147
+"np7" :COMMAND_ITER_ID37
+"np7" :SCANCODE
+"np7" :SCANCODE_ABBREV
+"np7" :SCANCODE_TAG_ID132
+"np7" :SHORTCUT
+"np7" :SHORTCUT_TAG_ID134
+"np8" :BNF__ID147
+"np8" .. &BNF__ID147 :BNF__ID147
+"np8" :COMMAND_ITER_ID37
+"np8" :SCANCODE
+"np8" :SCANCODE_ABBREV
+"np8" :SCANCODE_TAG_ID132
+"np8" :SHORTCUT
+"np8" :SHORTCUT_TAG_ID134
+"np9" :BNF__ID147
+"np9" .. &BNF__ID147 :BNF__ID147
+"np9" :COMMAND_ITER_ID37
+"np9" :SCANCODE
+"np9" :SCANCODE_ABBREV
+"np9" :SCANCODE_TAG_ID132
+"np9" :SHORTCUT
+"np9" :SHORTCUT_TAG_ID134
+"<number 0-255>" .. &BIN__ID368 :BIN__ID367
+"<number 0-255>" .. &BIN__ID369 :BIN__ID368
+"<number 0-255>" .. &BIN__ID378 :BIN__ID377
+"<number 0-255>" :COMMAND_TAG_ID75
+"<number 0-255>" :COMMAND_TAG_ID76
+"<number 0-255>" :COMMAND_TAG_ID77
+"<number 0-255>" :COMMAND_TAG_ID78
+"<number 0-255>" .. &COMMAND_TAG_ID78 :BIN__ID369
+"<number 0-255>" :COMMAND_TAG_ID79
+"<number 0-255>" :COMMAND_TAG_ID80
+"<number 0-255>" :COMMAND_TAG_ID81
+"<number 0-255>" .. &COMMAND_TAG_ID81 :BIN__ID378
+"<number of commands>" :COMMAND_TAG_ID16
+"<number of keys>" :COMMAND_TAG_ID15
+"<numeric keyid>" .. &ACTION :BIN__ID358
+"<numeric keyid>" :BIN__ID167
+"<numeric keyid>" :BIN__ID168
+"<numeric keyid>" .. &BIN__ID377 :BIN__ID376
+"<numeric keyid>" :BIN__ID394
+"<numeric keyid>" :BIN__ID395
+"<numeric keyid>" :BNF__ID149
+"<numeric keyid>" .. &BNF__ID149 :BIN__ID394
+"<numeric keyid>" .. &BNF__ID149 :BNF__ID149
+"<numeric keyid>" :BNF__ID151
+"<numeric keyid>" .. &BNF__ID151 :BIN__ID395
+"<numeric keyid>" .. &BNF__ID151 :BNF__ID151
+"<numeric keyid>" :CONDITION_ITER_ID88
+"<numeric keyid>" :CONDITION_ITER_ID91
+"<numeric keyid>" :KEYID
+"<numeric keyid>" :KEYID_TAG_ID136
+"numLock" :BNF__ID147
+"numLock" .. &BNF__ID147 :BNF__ID147
+"numLock" :COMMAND_ITER_ID37
+"numLock" :SCANCODE
+"numLock" :SCANCODE_ABBREV
+"numLock" :SCANCODE_TAG_ID132
+"numLock" :SHORTCUT
+"numLock" :SHORTCUT_TAG_ID134
+"o" .. &ACTION :BIN__ID358
+"o" :BIN__ID167
+"o" :BIN__ID168
+"o" .. &BIN__ID377 :BIN__ID376
+"o" :BIN__ID394
+"o" :BIN__ID395
+"o" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"o" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"o" :BNF__ID147
+"o" :BNF__ID149
+"o" .. &BNF__ID149 :BIN__ID394
+"o" .. &BNF__ID149 :BNF__ID149
+"o" :BNF__ID151
+"o" .. &BNF__ID151 :BIN__ID395
+"o" .. &BNF__ID151 :BNF__ID151
+"o" :BNF__ID156
+"o" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"o" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"o" .. &BNF__ID156 :BNF__ID147
+"o" .. &BNF__ID156 :BNF__ID156
+"o" .. &BNF__ID156 :COMMAND_ITER_ID37
+"o" .. &BNF__ID156 :LRE__ID420
+"o" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"o" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"o" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"o" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"o" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"o" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"o" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"o" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"o" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"o" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"o" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"o" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"o" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"o" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"o" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"o" .. &BNF__ID156 :MODMASK
+"o" .. &BNF__ID156 :MODMASK_ITER_ID125
+"o" .. &BNF__ID156 :SHORTCUT
+"o" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"o" :COMMAND_ITER_ID37
+"o" :CONDITION_ITER_ID88
+"o" :CONDITION_ITER_ID91
+"o" :KEYID
+"o" :KEYID_ABBREV
+"o" :KEYID_TAG_ID137
+"o" :LRE__ID420
+"o" :MODMASK
+"o" :MODMASK_GROUP_ID129
+"o" :MODMASK_ITER_ID125
+"oneShot" :BNF__ID141
+"oneShot" .. &BNF__ID141 :BNF__ID141
+"oneShot" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"oneShot" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"oneShot" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"oneShot" .. &BNF__ID141 .. &COMMAND :BODY
+"oneShot" .. &BNF__ID141 .. &COMMAND :COMMAND
+"oneShot" .. &COMMAND :BIN__ID157
+"oneShot" .. &COMMAND :BODY
+"oneShot" .. &COMMAND :COMMAND
+"oneShot" :COMMAND_ITER_ID2
+"oneShot" :MODIFIER
+"oneShotTimeout" .. &COMMAND_TAG_ID73 :BIN__ID345
+"openingBracketAndOpeningBrace" .. &ACTION :BIN__ID358
+"openingBracketAndOpeningBrace" :BIN__ID167
+"openingBracketAndOpeningBrace" :BIN__ID168
+"openingBracketAndOpeningBrace" .. &BIN__ID377 :BIN__ID376
+"openingBracketAndOpeningBrace" :BIN__ID394
+"openingBracketAndOpeningBrace" :BIN__ID395
+"openingBracketAndOpeningBrace" :BNF__ID147
+"openingBracketAndOpeningBrace" .. &BNF__ID147 :BNF__ID147
+"openingBracketAndOpeningBrace" :BNF__ID149
+"openingBracketAndOpeningBrace" .. &BNF__ID149 :BIN__ID394
+"openingBracketAndOpeningBrace" .. &BNF__ID149 :BNF__ID149
+"openingBracketAndOpeningBrace" :BNF__ID151
+"openingBracketAndOpeningBrace" .. &BNF__ID151 :BIN__ID395
+"openingBracketAndOpeningBrace" .. &BNF__ID151 :BNF__ID151
+"openingBracketAndOpeningBrace" :COMMAND_ITER_ID37
+"openingBracketAndOpeningBrace" :CONDITION_ITER_ID88
+"openingBracketAndOpeningBrace" :CONDITION_ITER_ID91
+"openingBracketAndOpeningBrace" :KEYID
+"openingBracketAndOpeningBrace" :KEYID_ABBREV
+"openingBracketAndOpeningBrace" :KEYID_TAG_ID137
+"openingBracketAndOpeningBrace" :SCANCODE
+"openingBracketAndOpeningBrace" :SCANCODE_ABBREV
+"openingBracketAndOpeningBrace" :SCANCODE_TAG_ID132
+"openingBracketAndOpeningBrace" :SHORTCUT
+"openingBracketAndOpeningBrace" :SHORTCUT_TAG_ID134
+"!=" :OPERATOR
+"%" :OPERATOR
+"&&" :OPERATOR
+"*" :OPERATOR
+"+" :OPERATOR
+"-" :OPERATOR
+"<" :OPERATOR
+"<=" :OPERATOR
+"==" :OPERATOR
+">" :OPERATOR
+">=" :OPERATOR
+/\// :OPERATOR
+/\|\|/ :OPERATOR
+"oper" :BNF__ID147
+"oper" .. &BNF__ID147 :BNF__ID147
+"oper" :COMMAND_ITER_ID37
+"oper" :SCANCODE
+"oper" :SCANCODE_ABBREV
+"oper" :SCANCODE_TAG_ID132
+"oper" :SHORTCUT
+"oper" :SHORTCUT_TAG_ID134
+"orGate" :BNF__ID148
+"orGate" .. &BNF__ID148 :BNF__ID148
+"orGate" .. &BNF__ID148 .. &BNF__ID149 :BIN__ID394
+"orGate" .. &BNF__ID149 :BIN__ID394
+"orGate" :BNF__ID150
+"orGate" .. &BNF__ID150 :BNF__ID150
+"orGate" .. &BNF__ID150 .. &BNF__ID151 :BIN__ID395
+"orGate" .. &BNF__ID151 :BIN__ID395
+"orGate" :CONDITION_ITER_ID87
+"orGate" :CONDITION_ITER_ID90
+"orGate" :IFSHORTCUT_OPTIONS
+"o" :SHORTCUT
+"o" :SHORTCUT_TAG_ID135
+"out" :BNF__ID147
+"out" .. &BNF__ID147 :BNF__ID147
+"out" :COMMAND_ITER_ID37
+"out" :SCANCODE
+"out" :SCANCODE_ABBREV
+"out" :SCANCODE_TAG_ID132
+"out" :SHORTCUT
+"out" :SHORTCUT_TAG_ID134
+"overlayKeymap" .. &KEYMAPID :BIN__ID157
+"overlayKeymap" .. &KEYMAPID .. &BNF__ID140 :BIN__ID157
+"overlayKeymap" .. &KEYMAPID .. &BNF__ID140 :BODY
+"overlayKeymap" .. &KEYMAPID :BODY
+"overlayKeymap" .. &KEYMAPID :COMMAND
+"overlayLayer" .. &BIN__ID163 :BIN__ID157
+"overlayLayer" .. &BIN__ID163 .. &BNF__ID140 :BIN__ID157
+"overlayLayer" .. &BIN__ID163 .. &BNF__ID140 :BODY
+"overlayLayer" .. &BIN__ID163 :BODY
+"overlayLayer" .. &BIN__ID163 :COMMAND
+"p" .. &ACTION :BIN__ID358
+"pageDown" :BNF__ID147
+"pageDown" .. &BNF__ID147 :BNF__ID147
+"pageDown" :COMMAND_ITER_ID37
+"pageDown" :SCANCODE
+"pageDown" :SCANCODE_ABBREV
+"pageDown" :SCANCODE_TAG_ID132
+"pageDown" :SHORTCUT
+"pageDown" :SHORTCUT_TAG_ID134
+"pageUp" :BNF__ID147
+"pageUp" .. &BNF__ID147 :BNF__ID147
+"pageUp" :COMMAND_ITER_ID37
+"pageUp" :SCANCODE
+"pageUp" :SCANCODE_ABBREV
+"pageUp" :SCANCODE_TAG_ID132
+"pageUp" :SHORTCUT
+"pageUp" :SHORTCUT_TAG_ID134
+"paste" :BNF__ID147
+"paste" .. &BNF__ID147 :BNF__ID147
+"paste" :COMMAND_ITER_ID37
+"paste" :SCANCODE
+"paste" :SCANCODE_ABBREV
+"paste" :SCANCODE_TAG_ID132
+"paste" :SHORTCUT
+"paste" :SHORTCUT_TAG_ID134
+"pause" :BNF__ID147
+"pause" .. &BNF__ID147 :BNF__ID147
+"pause" :COMMAND_ITER_ID37
+"pause" :SCANCODE
+"pause" :SCANCODE_ABBREV
+"pause" :SCANCODE_TAG_ID132
+"pause" :SHORTCUT
+"pause" :SHORTCUT_TAG_ID134
+"p" :BIN__ID167
+"p" :BIN__ID168
+"p" .. &BIN__ID377 :BIN__ID376
+"p" :BIN__ID394
+"p" :BIN__ID395
+"p" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"p" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"p" :BNF__ID147
+"p" :BNF__ID149
+"p" .. &BNF__ID149 :BIN__ID394
+"p" .. &BNF__ID149 :BNF__ID149
+"p" :BNF__ID151
+"p" .. &BNF__ID151 :BIN__ID395
+"p" .. &BNF__ID151 :BNF__ID151
+"p" :BNF__ID156
+"p" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"p" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"p" .. &BNF__ID156 :BNF__ID147
+"p" .. &BNF__ID156 :BNF__ID156
+"p" .. &BNF__ID156 :COMMAND_ITER_ID37
+"p" .. &BNF__ID156 :LRE__ID420
+"p" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"p" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"p" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"p" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"p" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"p" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"p" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"p" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"p" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"p" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"p" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"p" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"p" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"p" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"p" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"p" .. &BNF__ID156 :MODMASK
+"p" .. &BNF__ID156 :MODMASK_ITER_ID125
+"p" .. &BNF__ID156 :SHORTCUT
+"p" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"p" :COMMAND_ITER_ID37
+"p" :CONDITION_ITER_ID88
+"p" :CONDITION_ITER_ID91
+Perform standard transformations? (y)
+"perKeyRgb" :COMMAND_GROUP_ID74
+"pinchZoomDivisor" .. &COMMAND_TAG_ID45 :BIN__ID251
+"pinchZoomMode" .. &NAVIGATION_MODE :BIN__ID256
+"p" :KEYID
+"p" :KEYID_ABBREV
+"p" :KEYID_TAG_ID137
+"playMacro" :BIN__ID157
+"playMacro" .. &BNF__ID146 :BIN__ID157
+"playMacro" .. &BNF__ID146 .. &BNF__ID140 :BIN__ID157
+"playMacro" .. &BNF__ID146 .. &BNF__ID140 :BODY
+"playMacro" .. &BNF__ID146 :BODY
+"playMacro" .. &BNF__ID146 :COMMAND
+"playMacro" :BODY
+"playMacro" :COMMAND
+"p" :LRE__ID420
+"p" :MODMASK
+"p" :MODMASK_GROUP_ID128
+"p" :MODMASK_ITER_ID125
+"postponeKeys" :BNF__ID141
+"postponeKeys" .. &BNF__ID141 :BNF__ID141
+"postponeKeys" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"postponeKeys" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"postponeKeys" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"postponeKeys" .. &BNF__ID141 .. &COMMAND :BODY
+"postponeKeys" .. &BNF__ID141 .. &COMMAND :COMMAND
+"postponeKeys" .. &COMMAND :BIN__ID157
+"postponeKeys" .. &COMMAND :BODY
+"postponeKeys" .. &COMMAND :COMMAND
+"postponeKeys" :COMMAND_ITER_ID2
+"postponeKeys" :MODIFIER
+"postponeNext" .. &COMMAND_TAG_ID16 :BIN__ID157
+"postponeNext" .. &COMMAND_TAG_ID16 .. &BNF__ID140 :BIN__ID157
+"postponeNext" .. &COMMAND_TAG_ID16 .. &BNF__ID140 :BODY
+"postponeNext" .. &COMMAND_TAG_ID16 :BODY
+"postponeNext" .. &COMMAND_TAG_ID16 :COMMAND
+"power" :BNF__ID147
+"power" .. &BNF__ID147 :BNF__ID147
+"power" :COMMAND_ITER_ID37
+"power" :SCANCODE
+"power" :SCANCODE_ABBREV
+"power" :SCANCODE_TAG_ID132
+"power" :SHORTCUT
+"power" :SHORTCUT_TAG_ID134
+"prepend" :BNF__ID143
+"prepend" :COMMAND_OPTION_ID14
+"prepend" .. &KEYID :BIN__ID167
+"prepend" .. &KEYID :BIN__ID168
+"pressKey" :COMMAND_GROUP_ID36
+"pressKey" .. &SHORTCUT :BIN__ID157
+"pressKey" .. &SHORTCUT .. &BNF__ID140 :BIN__ID157
+"pressKey" .. &SHORTCUT .. &BNF__ID140 :BODY
+"pressKey" .. &SHORTCUT :BODY
+"pressKey" .. &SHORTCUT :COMMAND
+"previous" .. &BIN__ID164 :BIN__ID163
+"previous" .. &BIN__ID166 :BIN__ID165
+"previous" .. &BIN__ID357 :BIN__ID356
+"previous" .. &BIN__ID375 :BIN__ID374
+"previous" :COMMAND_TAG_ID10
+"previous" :COMMAND_TAG_ID12
+"previous" .. &COMMAND_TAG_ID5 :BIN__ID159
+"previous" .. &COMMAND_TAG_ID6 :BIN__ID162
+"previous" :COMMAND_TAG_ID7
+"previous" :COMMAND_TAG_ID9
+"previous" :LAYERID
+"primary" :COMMAND_GROUP_ID49
+"printScreen" :BNF__ID147
+"printScreen" .. &BNF__ID147 :BNF__ID147
+"printScreen" :COMMAND_ITER_ID37
+"printScreen" :SCANCODE
+"printScreen" :SCANCODE_ABBREV
+"printScreen" :SCANCODE_TAG_ID132
+"printScreen" :SHORTCUT
+"printScreen" :SHORTCUT_TAG_ID134
+"printStatus" :BIN__ID157
+"printStatus" .. &BNF__ID140 :BIN__ID157
+"printStatus" .. &BNF__ID140 :BODY
+"printStatus" :BODY
+"printStatus" :COMMAND
+"prior" :BNF__ID147
+"prior" .. &BNF__ID147 :BNF__ID147
+"prior" :COMMAND_ITER_ID37
+"prior" :SCANCODE
+"prior" :SCANCODE_ABBREV
+"prior" :SCANCODE_TAG_ID132
+"prior" :SHORTCUT
+"prior" :SHORTCUT_TAG_ID134
+"progressHue" :BIN__ID157
+"progressHue" .. &BNF__ID140 :BIN__ID157
+"progressHue" .. &BNF__ID140 :BODY
+"progressHue" :BODY
+"progressHue" :COMMAND
+"p" :SHORTCUT
+"p" :SHORTCUT_TAG_ID135
+"<px/s, -100/20>" :COMMAND_TAG_ID53
+"<px/s, ~1600/50>" :COMMAND_TAG_ID61
+"<px/s, ~1700/20>" :COMMAND_TAG_ID57
+"<px/s, ~200/10>" :COMMAND_TAG_ID59
+"<px/s, -800/20>" :COMMAND_TAG_ID55
+"q" .. &ACTION :BIN__ID358
+"q" :BIN__ID167
+"q" :BIN__ID168
+"q" .. &BIN__ID377 :BIN__ID376
+"q" :BIN__ID394
+"q" :BIN__ID395
+"q" :BNF__ID149
+"q" .. &BNF__ID149 :BIN__ID394
+"q" .. &BNF__ID149 :BNF__ID149
+"q" :BNF__ID151
+"q" .. &BNF__ID151 :BIN__ID395
+"q" .. &BNF__ID151 :BNF__ID151
+"q" :CONDITION_ITER_ID88
+"q" :CONDITION_ITER_ID91
+"q" :KEYID
+"q" :KEYID_ABBREV
+"q" :KEYID_TAG_ID137
+"queuedKeyId" .. &BIN__ID400 :BIN__ID399
+"<queue idx>" :CONDITION_TAG_ID104
+"<queue index>" :VARIABLE_EXPANSION_TAG_ID121
+"r" .. &ACTION :BIN__ID358
+"r" :BIN__ID167
+"r" :BIN__ID168
+"r" .. &BIN__ID377 :BIN__ID376
+"r" :BIN__ID394
+"r" :BIN__ID395
+"r" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"r" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"r" :BNF__ID147
+"r" :BNF__ID149
+"r" .. &BNF__ID149 :BIN__ID394
+"r" .. &BNF__ID149 :BNF__ID149
+"r" :BNF__ID151
+"r" .. &BNF__ID151 :BIN__ID395
+"r" .. &BNF__ID151 :BNF__ID151
+"R" :BNF__ID155
+"r" :BNF__ID156
+"r" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"r" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"r" .. &BNF__ID156 :BNF__ID147
+"r" .. &BNF__ID156 :BNF__ID156
+"r" .. &BNF__ID156 :COMMAND_ITER_ID37
+"r" .. &BNF__ID156 :LRE__ID420
+"r" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"r" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"r" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"r" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"r" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"r" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"r" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"r" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"r" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"r" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"r" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"r" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"r" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"r" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"r" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"r" .. &BNF__ID156 :MODMASK
+"r" .. &BNF__ID156 :MODMASK_ITER_ID125
+"r" .. &BNF__ID156 :SHORTCUT
+"r" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"r" :COMMAND_ITER_ID37
+"r" :CONDITION_ITER_ID88
+"r" :CONDITION_ITER_ID91
+"recordMacro" :BIN__ID157
+"recordMacroBlind" :BIN__ID157
+"recordMacroBlind" .. &BNF__ID145 :BIN__ID157
+"recordMacroBlind" .. &BNF__ID145 .. &BNF__ID140 :BIN__ID157
+"recordMacroBlind" .. &BNF__ID145 .. &BNF__ID140 :BODY
+"recordMacroBlind" .. &BNF__ID145 :BODY
+"recordMacroBlind" .. &BNF__ID145 :COMMAND
+"recordMacroBlind" :BODY
+"recordMacroBlind" :COMMAND
+"recordMacroBlind" :COMMAND_GROUP_ID26
+"recordMacro" .. &BNF__ID145 :BIN__ID157
+"recordMacro" .. &BNF__ID145 .. &BNF__ID140 :BIN__ID157
+"recordMacro" .. &BNF__ID145 .. &BNF__ID140 :BODY
+"recordMacro" .. &BNF__ID145 :BODY
+"recordMacro" .. &BNF__ID145 :COMMAND
+"recordMacro" :BODY
+"recordMacro" :COMMAND
+"recordMacro" :COMMAND_GROUP_ID26
+"recordMacroDelay" :BIN__ID157
+"recordMacroDelay" .. &BNF__ID140 :BIN__ID157
+"recordMacroDelay" .. &BNF__ID140 :BODY
+"recordMacroDelay" :BODY
+"recordMacroDelay" :COMMAND
+"releaseKey" :COMMAND_GROUP_ID36
+"releaseKey" .. &SHORTCUT :BIN__ID157
+"releaseKey" .. &SHORTCUT .. &BNF__ID140 :BIN__ID157
+"releaseKey" .. &SHORTCUT .. &BNF__ID140 :BODY
+"releaseKey" .. &SHORTCUT :BODY
+"releaseKey" .. &SHORTCUT :COMMAND
+"repeatFor" .. &BIN__ID170 :BIN__ID157
+"repeatFor" .. &BIN__ID170 .. &BNF__ID140 :BIN__ID157
+"repeatFor" .. &BIN__ID170 .. &BNF__ID140 :BODY
+"repeatFor" .. &BIN__ID170 :BODY
+"repeatFor" .. &BIN__ID170 :COMMAND
+"replaceLayer" .. &BIN__ID165 :BIN__ID157
+"replaceLayer" .. &BIN__ID165 .. &BNF__ID140 :BIN__ID157
+"replaceLayer" .. &BIN__ID165 .. &BNF__ID140 :BODY
+"replaceLayer" .. &BIN__ID165 :BODY
+"replaceLayer" .. &BIN__ID165 :COMMAND
+"resetTrackpoint" :BIN__ID157
+"resetTrackpoint" .. &BNF__ID140 :BIN__ID157
+"resetTrackpoint" .. &BNF__ID140 :BODY
+"resetTrackpoint" :BODY
+"resetTrackpoint" :COMMAND
+"resolveNextKeyId" :BIN__ID157
+"resolveNextKeyId" .. &BNF__ID140 :BIN__ID157
+"resolveNextKeyId" .. &BNF__ID140 :BODY
+"resolveNextKeyId" :BODY
+"resolveNextKeyId" :COMMAND
+"return" :BNF__ID147
+"return" .. &BNF__ID147 :BNF__ID147
+"return" :COMMAND_ITER_ID37
+"return" :SCANCODE
+"return" :SCANCODE_ABBREV
+"return" :SCANCODE_TAG_ID132
+"return" :SHORTCUT
+"return" :SHORTCUT_TAG_ID134
+"rgb" .. &BIN__ID367 :BIN__ID366
+"right" .. &ACTION :BIN__ID353
+"rightAlt" .. &ACTION :BIN__ID358
+"rightAlt" :BIN__ID167
+"rightAlt" :BIN__ID168
+"rightAlt" .. &BIN__ID377 :BIN__ID376
+"rightAlt" :BIN__ID394
+"rightAlt" :BIN__ID395
+"rightAlt" :BNF__ID147
+"rightAlt" .. &BNF__ID147 :BNF__ID147
+"rightAlt" :BNF__ID149
+"rightAlt" .. &BNF__ID149 :BIN__ID394
+"rightAlt" .. &BNF__ID149 :BNF__ID149
+"rightAlt" :BNF__ID151
+"rightAlt" .. &BNF__ID151 :BIN__ID395
+"rightAlt" .. &BNF__ID151 :BNF__ID151
+"rightAlt" :COMMAND_ITER_ID37
+"rightAlt" :CONDITION_ITER_ID88
+"rightAlt" :CONDITION_ITER_ID91
+"rightAlt" :KEYID
+"rightAlt" :KEYID_ABBREV
+"rightAlt" :KEYID_TAG_ID137
+"rightAlt" :SCANCODE
+"rightAlt" :SCANCODE_ABBREV
+"rightAlt" :SCANCODE_TAG_ID132
+"rightAlt" :SHORTCUT
+"rightAlt" :SHORTCUT_TAG_ID134
+"rightArrow" :BNF__ID147
+"rightArrow" .. &BNF__ID147 :BNF__ID147
+"rightArrow" :COMMAND_ITER_ID37
+"rightArrow" :SCANCODE
+"rightArrow" :SCANCODE_ABBREV
+"rightArrow" :SCANCODE_TAG_ID132
+"rightArrow" :SHORTCUT
+"rightArrow" :SHORTCUT_TAG_ID134
+"right" :BNF__ID147
+"right" .. &BNF__ID147 :BNF__ID147
+"." .. "rightButton" :BIN__ID411
+"." .. "rightButton" :BIN__ID417
+"right" :COMMAND_GROUP_ID85
+"right" :COMMAND_ITER_ID37
+"rightControl" :BNF__ID147
+"rightControl" .. &BNF__ID147 :BNF__ID147
+"rightControl" :COMMAND_ITER_ID37
+"rightControl" :SCANCODE
+"rightControl" :SCANCODE_ABBREV
+"rightControl" :SCANCODE_TAG_ID132
+"rightControl" :SHORTCUT
+"rightControl" :SHORTCUT_TAG_ID134
+"rightCtrl" .. &ACTION :BIN__ID358
+"rightCtrl" :BIN__ID167
+"rightCtrl" :BIN__ID168
+"rightCtrl" .. &BIN__ID377 :BIN__ID376
+"rightCtrl" :BIN__ID394
+"rightCtrl" :BIN__ID395
+"rightCtrl" :BNF__ID149
+"rightCtrl" .. &BNF__ID149 :BIN__ID394
+"rightCtrl" .. &BNF__ID149 :BNF__ID149
+"rightCtrl" :BNF__ID151
+"rightCtrl" .. &BNF__ID151 :BIN__ID395
+"rightCtrl" .. &BNF__ID151 :BNF__ID151
+"rightCtrl" :CONDITION_ITER_ID88
+"rightCtrl" :CONDITION_ITER_ID91
+"rightCtrl" :KEYID
+"rightCtrl" :KEYID_ABBREV
+"rightCtrl" :KEYID_TAG_ID137
+"right" :DIRECTION
+"right" :DIRECTION_GROUP_ID116
+"rightFn" .. &ACTION :BIN__ID358
+"rightFn" :BIN__ID167
+"rightFn" :BIN__ID168
+"rightFn" .. &BIN__ID377 :BIN__ID376
+"rightFn" :BIN__ID394
+"rightFn" :BIN__ID395
+"rightFn" :BNF__ID149
+"rightFn" .. &BNF__ID149 :BIN__ID394
+"rightFn" .. &BNF__ID149 :BNF__ID149
+"rightFn" :BNF__ID151
+"rightFn" .. &BNF__ID151 :BIN__ID395
+"rightFn" .. &BNF__ID151 :BNF__ID151
+"rightFn" :CONDITION_ITER_ID88
+"rightFn" :CONDITION_ITER_ID91
+"rightFn" :KEYID
+"rightFn" :KEYID_ABBREV
+"rightFn" :KEYID_TAG_ID137
+"rightGui" :BNF__ID147
+"rightGui" .. &BNF__ID147 :BNF__ID147
+"rightGui" :COMMAND_ITER_ID37
+"rightGui" :SCANCODE
+"rightGui" :SCANCODE_ABBREV
+"rightGui" :SCANCODE_TAG_ID132
+"rightGui" :SHORTCUT
+"rightGui" :SHORTCUT_TAG_ID134
+"rightMod" .. &ACTION :BIN__ID358
+"rightMod" :BIN__ID167
+"rightMod" :BIN__ID168
+"rightMod" .. &BIN__ID377 :BIN__ID376
+"rightMod" :BIN__ID394
+"rightMod" :BIN__ID395
+"rightMod" :BNF__ID149
+"rightMod" .. &BNF__ID149 :BIN__ID394
+"rightMod" .. &BNF__ID149 :BNF__ID149
+"rightMod" :BNF__ID151
+"rightMod" .. &BNF__ID151 :BIN__ID395
+"rightMod" .. &BNF__ID151 :BNF__ID151
+"rightMod" :CONDITION_ITER_ID88
+"rightMod" :CONDITION_ITER_ID91
+"rightMod" :KEYID
+"rightMod" :KEYID_ABBREV
+"rightMod" :KEYID_TAG_ID137
+"rightModule" .. &BIN__ID417 .. &ACTION :BIN__ID358
+"rightModule" .. &BIN__ID417 :BIN__ID167
+"rightModule" .. &BIN__ID417 :BIN__ID168
+"rightModule" .. &BIN__ID417 .. &BIN__ID377 :BIN__ID376
+"rightModule" .. &BIN__ID417 :BIN__ID394
+"rightModule" .. &BIN__ID417 :BIN__ID395
+"rightModule" .. &BIN__ID417 :BNF__ID149
+"rightModule" .. &BIN__ID417 .. &BNF__ID149 :BIN__ID394
+"rightModule" .. &BIN__ID417 .. &BNF__ID149 :BNF__ID149
+"rightModule" .. &BIN__ID417 :BNF__ID151
+"rightModule" .. &BIN__ID417 .. &BNF__ID151 :BIN__ID395
+"rightModule" .. &BIN__ID417 .. &BNF__ID151 :BNF__ID151
+"rightModule" .. &BIN__ID417 :CONDITION_ITER_ID88
+"rightModule" .. &BIN__ID417 :CONDITION_ITER_ID91
+"rightModule" .. &BIN__ID417 :KEYID
+"rightModule" .. &BIN__ID417 :KEYID_ABBREV
+"rightModule" .. &BIN__ID417 :KEYID_TAG_ID137
+"rightModule" .. &BIN__ID418 :KEYID_ABBREV
+"right" :SCANCODE
+"right" :SCANCODE_ABBREV
+"right" :SCANCODE_TAG_ID132
+"rightShift" .. &ACTION :BIN__ID358
+"rightShift" :BIN__ID167
+"rightShift" :BIN__ID168
+"rightShift" .. &BIN__ID377 :BIN__ID376
+"rightShift" :BIN__ID394
+"rightShift" :BIN__ID395
+"rightShift" :BNF__ID147
+"rightShift" .. &BNF__ID147 :BNF__ID147
+"rightShift" :BNF__ID149
+"rightShift" .. &BNF__ID149 :BIN__ID394
+"rightShift" .. &BNF__ID149 :BNF__ID149
+"rightShift" :BNF__ID151
+"rightShift" .. &BNF__ID151 :BIN__ID395
+"rightShift" .. &BNF__ID151 :BNF__ID151
+"rightShift" :COMMAND_ITER_ID37
+"rightShift" :CONDITION_ITER_ID88
+"rightShift" :CONDITION_ITER_ID91
+"rightShift" :KEYID
+"rightShift" :KEYID_ABBREV
+"rightShift" :KEYID_TAG_ID137
+"rightShift" :SCANCODE
+"rightShift" :SCANCODE_ABBREV
+"rightShift" :SCANCODE_TAG_ID132
+"rightShift" :SHORTCUT
+"rightShift" :SHORTCUT_TAG_ID134
+"right" :SHORTCUT
+"right" :SHORTCUT_TAG_ID134
+"rightSpace" .. &ACTION :BIN__ID358
+"rightSpace" :BIN__ID167
+"rightSpace" :BIN__ID168
+"rightSpace" .. &BIN__ID377 :BIN__ID376
+"rightSpace" :BIN__ID394
+"rightSpace" :BIN__ID395
+"rightSpace" :BNF__ID149
+"rightSpace" .. &BNF__ID149 :BIN__ID394
+"rightSpace" .. &BNF__ID149 :BNF__ID149
+"rightSpace" :BNF__ID151
+"rightSpace" .. &BNF__ID151 :BIN__ID395
+"rightSpace" .. &BNF__ID151 :BNF__ID151
+"rightSpace" :CONDITION_ITER_ID88
+"rightSpace" :CONDITION_ITER_ID91
+"rightSpace" :KEYID
+"rightSpace" :KEYID_ABBREV
+"rightSpace" :KEYID_TAG_ID137
+"rightSuper" .. &ACTION :BIN__ID358
+"rightSuper" :BIN__ID167
+"rightSuper" :BIN__ID168
+"rightSuper" .. &BIN__ID377 :BIN__ID376
+"rightSuper" :BIN__ID394
+"rightSuper" :BIN__ID395
+"rightSuper" :BNF__ID149
+"rightSuper" .. &BNF__ID149 :BIN__ID394
+"rightSuper" .. &BNF__ID149 :BNF__ID149
+"rightSuper" :BNF__ID151
+"rightSuper" .. &BNF__ID151 :BIN__ID395
+"rightSuper" .. &BNF__ID151 :BNF__ID151
+"rightSuper" :CONDITION_ITER_ID88
+"rightSuper" :CONDITION_ITER_ID91
+"rightSuper" :KEYID
+"rightSuper" :KEYID_ABBREV
+"rightSuper" :KEYID_TAG_ID137
+"r" :KEYID
+"r" :KEYID_ABBREV
+"r" :KEYID_TAG_ID137
+"r" :LRE__ID420
+"r" :MODMASK
+"R" .. &MODMASK_GROUP_ID127 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"R" .. &MODMASK_GROUP_ID127 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"R" .. &MODMASK_GROUP_ID127 :BNF__ID147
+"R" .. &MODMASK_GROUP_ID127 :BNF__ID156
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :BNF__ID147
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :BNF__ID156
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :COMMAND_ITER_ID37
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :LRE__ID420
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :MODMASK
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :MODMASK_ITER_ID125
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :SHORTCUT
+"R" .. &MODMASK_GROUP_ID127 .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"R" .. &MODMASK_GROUP_ID127 :COMMAND_ITER_ID37
+"R" .. &MODMASK_GROUP_ID127 :LRE__ID420
+"R" .. &MODMASK_GROUP_ID127 :MODMASK
+"R" .. &MODMASK_GROUP_ID127 :MODMASK_ITER_ID125
+"R" .. &MODMASK_GROUP_ID127 :SHORTCUT
+"R" .. &MODMASK_GROUP_ID127 :SHORTCUT_TAG_ID135
+"r" :MODMASK_GROUP_ID128
+"r" :MODMASK_ITER_ID125
+"R" :MODMASK_OPTION_ID126
+"r" :SHORTCUT
+"r" :SHORTCUT_TAG_ID135
+> [s[2K[0G> e[4G[s[2K[0G> ex[5G[s[2K[0G> exi[6G[s[2K[0G> exit[7G[s[2K[0G> exit;[8G[2D[s[2K[0G> exit[7G
+> [s[2K[0G> r[4G[s[2K[0G> ru[5G[s[2K[0G> rul[6G[s[2K[0G> rule[7G[s[2K[0G> rules[8G
+"s" .. &ACTION :BIN__ID358
+"safetyMargin" .. &COMMAND_TAG_ID50 :BIN__ID279
+"s" :BIN__ID167
+"s" :BIN__ID168
+"s" .. &BIN__ID377 :BIN__ID376
+"s" :BIN__ID394
+"s" :BIN__ID395
+"s" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"S" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"s" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"S" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"s" :BNF__ID147
+"S" :BNF__ID147
+"s" :BNF__ID149
+"s" .. &BNF__ID149 :BIN__ID394
+"s" .. &BNF__ID149 :BNF__ID149
+"s" :BNF__ID151
+"s" .. &BNF__ID151 :BIN__ID395
+"s" .. &BNF__ID151 :BNF__ID151
+"s" :BNF__ID156
+"S" :BNF__ID156
+"s" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"S" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"s" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"S" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"s" .. &BNF__ID156 :BNF__ID147
+"S" .. &BNF__ID156 :BNF__ID147
+"s" .. &BNF__ID156 :BNF__ID156
+"S" .. &BNF__ID156 :BNF__ID156
+"s" .. &BNF__ID156 :COMMAND_ITER_ID37
+"S" .. &BNF__ID156 :COMMAND_ITER_ID37
+"s" .. &BNF__ID156 :LRE__ID420
+"S" .. &BNF__ID156 :LRE__ID420
+"s" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"S" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"s" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"S" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"s" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"S" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"s" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"S" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"s" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"S" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"s" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"S" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"s" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"S" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"s" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"S" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"s" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"S" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"s" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"S" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"s" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"S" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"s" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"S" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"s" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"S" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"s" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"S" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"s" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"S" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"s" .. &BNF__ID156 :MODMASK
+"S" .. &BNF__ID156 :MODMASK
+"s" .. &BNF__ID156 :MODMASK_ITER_ID125
+"S" .. &BNF__ID156 :MODMASK_ITER_ID125
+"s" .. &BNF__ID156 :SHORTCUT
+"S" .. &BNF__ID156 :SHORTCUT
+"s" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"S" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"<scancode abbreviation>" :BNF__ID147
+"<scancode abbreviation>" .. &BNF__ID147 :BNF__ID147
+"<scancode abbreviation>" :COMMAND_ITER_ID37
+"<scancode abbreviation>" :SCANCODE
+"<scancode abbreviation>" :SCANCODE_TAG_ID132
+"<scancode abbreviation>" :SHORTCUT
+"<scancode abbreviation>" :SHORTCUT_TAG_ID134
+"-" .. &SCANCODE :BIN__ID410
+"s" :COMMAND_ITER_ID37
+"S" :COMMAND_ITER_ID37
+"s" :CONDITION_ITER_ID88
+"s" :CONDITION_ITER_ID91
+"scrollAxisLock" .. &BOOL :BIN__ID221
+"scroll" .. &BIN__ID308 :BIN__ID307
+"scroll" .. &BIN__ID313 :BIN__ID312
+"scroll" .. &BIN__ID318 :BIN__ID317
+"scroll" .. &BIN__ID323 :BIN__ID322
+"scroll" .. &BIN__ID328 :BIN__ID327
+"scroll" .. &BIN__ID333 :BIN__ID332
+"scroll" :COMMAND_GROUP_ID52
+"scroll" :COMMAND_GROUP_ID54
+"scroll" :COMMAND_GROUP_ID56
+"scroll" :COMMAND_GROUP_ID58
+"scroll" :COMMAND_GROUP_ID60
+"scroll" :COMMAND_GROUP_ID62
+"scroll" .. &DIRECTION :COMMAND_GROUP_ID33
+"scrollLock" :BNF__ID147
+"scrollLock" .. &BNF__ID147 :BNF__ID147
+"scrollLock" :COMMAND_ITER_ID37
+"scrollLock" :SCANCODE
+"scrollLock" :SCANCODE_ABBREV
+"scrollLock" :SCANCODE_TAG_ID132
+"scrollLock" :SHORTCUT
+"scrollLock" :SHORTCUT_TAG_ID134
+"scroll" :NAVIGATION_MODE
+"scrollSpeedDivisor" .. &COMMAND_TAG_ID42 :BIN__ID206
+"secondary" :COMMAND_GROUP_ID49
+"secondaryRole" .. &BIN__ID263 :BIN__ID262
+"secondaryRole" .. &BIN__ID266 :BIN__ID265
+"secondaryRole" .. &BIN__ID271 :BIN__ID270
+"secondaryRole" .. &BIN__ID276 :BIN__ID275
+"secondaryRole" .. &BIN__ID281 :BIN__ID280
+"secondaryRole" .. &BIN__ID286 :BIN__ID285
+"secondaryRole" .. &BIN__ID291 :BIN__ID290
+"secondaryRole" .. &BIN__ID296 :BIN__ID295
+"secondaryRole" .. &BIN__ID301 :BIN__ID300
+"<seconds to fade after>" :COMMAND_TAG_ID83
+"select" :BNF__ID147
+"select" .. &BNF__ID147 :BNF__ID147
+"select" :COMMAND_ITER_ID37
+"select" :SCANCODE
+"select" :SCANCODE_ABBREV
+"select" :SCANCODE_TAG_ID132
+"select" :SHORTCUT
+"select" :SHORTCUT_TAG_ID134
+"semicolonAndColon" .. &ACTION :BIN__ID358
+"semicolonAndColon" :BIN__ID167
+"semicolonAndColon" :BIN__ID168
+"semicolonAndColon" .. &BIN__ID377 :BIN__ID376
+"semicolonAndColon" :BIN__ID394
+"semicolonAndColon" :BIN__ID395
+"semicolonAndColon" :BNF__ID147
+"semicolonAndColon" .. &BNF__ID147 :BNF__ID147
+"semicolonAndColon" :BNF__ID149
+"semicolonAndColon" .. &BNF__ID149 :BIN__ID394
+"semicolonAndColon" .. &BNF__ID149 :BNF__ID149
+"semicolonAndColon" :BNF__ID151
+"semicolonAndColon" .. &BNF__ID151 :BIN__ID395
+"semicolonAndColon" .. &BNF__ID151 :BNF__ID151
+"semicolonAndColon" :COMMAND_ITER_ID37
+"semicolonAndColon" :CONDITION_ITER_ID88
+"semicolonAndColon" :CONDITION_ITER_ID91
+"semicolonAndColon" :KEYID
+"semicolonAndColon" :KEYID_ABBREV
+"semicolonAndColon" :KEYID_TAG_ID137
+"semicolonAndColon" :SCANCODE
+"semicolonAndColon" :SCANCODE_ABBREV
+"semicolonAndColon" :SCANCODE_TAG_ID132
+"semicolonAndColon" :SHORTCUT
+"semicolonAndColon" :SHORTCUT_TAG_ID134
+"separator" :BNF__ID147
+"separator" .. &BNF__ID147 :BNF__ID147
+"separator" :COMMAND_ITER_ID37
+"separator" :SCANCODE
+"separator" :SCANCODE_ABBREV
+"separator" :SCANCODE_TAG_ID132
+"separator" :SHORTCUT
+"separator" :SHORTCUT_TAG_ID134
+"set" .. &BIN__ID175 :BIN__ID157
+"set" .. &BIN__ID175 .. &BNF__ID140 :BIN__ID157
+"set" .. &BIN__ID175 .. &BNF__ID140 :BODY
+"set" .. &BIN__ID175 :BODY
+"set" .. &BIN__ID175 :COMMAND
+"set" .. &BIN__ID182 :COMMAND
+"set" .. &BIN__ID187 :COMMAND
+"set" .. &BIN__ID192 :COMMAND
+"set" .. &BIN__ID197 :COMMAND
+"set" .. &BIN__ID202 :COMMAND
+"set" .. &BIN__ID207 :COMMAND
+"set" .. &BIN__ID212 :COMMAND
+"set" .. &BIN__ID217 :COMMAND
+"set" .. &BIN__ID222 :COMMAND
+"set" .. &BIN__ID227 :COMMAND
+"set" .. &BIN__ID232 :COMMAND
+"set" .. &BIN__ID237 :COMMAND
+"set" .. &BIN__ID242 :COMMAND
+"set" .. &BIN__ID247 :COMMAND
+"set" .. &BIN__ID252 :COMMAND
+"set" .. &BIN__ID257 :COMMAND
+"set" .. &BIN__ID262 :COMMAND
+"set" .. &BIN__ID265 :COMMAND
+"set" .. &BIN__ID270 :COMMAND
+"set" .. &BIN__ID275 :COMMAND
+"set" .. &BIN__ID280 :COMMAND
+"set" .. &BIN__ID285 :COMMAND
+"set" .. &BIN__ID290 :COMMAND
+"set" .. &BIN__ID295 :COMMAND
+"set" .. &BIN__ID300 :COMMAND
+"set" .. &BIN__ID305 :COMMAND
+"set" .. &BIN__ID310 :COMMAND
+"set" .. &BIN__ID315 :COMMAND
+"set" .. &BIN__ID320 :COMMAND
+"set" .. &BIN__ID325 :COMMAND
+"set" .. &BIN__ID330 :COMMAND
+"set" .. &BIN__ID335 :COMMAND
+"set" .. &BIN__ID336 :COMMAND
+"set" .. &BIN__ID337 :COMMAND
+"set" .. &BIN__ID338 :COMMAND
+"set" .. &BIN__ID339 :COMMAND
+"set" .. &BIN__ID340 :COMMAND
+"set" .. &BIN__ID341 :COMMAND
+"set" .. &BIN__ID342 :COMMAND
+"set" .. &BIN__ID343 :COMMAND
+"set" .. &BIN__ID344 :COMMAND
+"set" .. &BIN__ID345 :COMMAND
+"set" .. &BIN__ID346 :COMMAND
+"set" .. &BIN__ID349 :COMMAND
+"set" .. &BIN__ID354 :COMMAND
+"set" .. &BIN__ID359 :COMMAND
+"set" .. &BIN__ID362 :COMMAND
+"set" .. &BIN__ID370 :COMMAND
+"set" .. &BIN__ID379 :COMMAND
+"set" .. &BIN__ID382 :COMMAND
+"set" .. &BIN__ID385 :COMMAND
+"set" .. &BIN__ID388 :COMMAND
+"set" .. &BIN__ID391 :COMMAND
+"setEmergencyKey" .. &KEYID :BIN__ID391
+"setLedTxt" .. &BIN__ID169 :BIN__ID157
+"setLedTxt" .. &BIN__ID169 .. &BNF__ID140 :BIN__ID157
+"setLedTxt" .. &BIN__ID169 .. &BNF__ID140 :BODY
+"setLedTxt" .. &BIN__ID169 :BODY
+"setLedTxt" .. &BIN__ID169 :COMMAND
+"setStatus" .. "<custom text>" :BIN__ID157
+"setStatus" .. "<custom text>" .. &BNF__ID140 :BIN__ID157
+"setStatus" .. "<custom text>" .. &BNF__ID140 :BODY
+"setStatus" .. "<custom text>" :BODY
+"setStatus" .. "<custom text>" :COMMAND
+"setVar" .. &BIN__ID174 :BIN__ID157
+"setVar" .. &BIN__ID174 .. &BNF__ID140 :BIN__ID157
+"setVar" .. &BIN__ID174 .. &BNF__ID140 :BODY
+"setVar" .. &BIN__ID174 :BODY
+"setVar" .. &BIN__ID174 :COMMAND
+"shift" .. &BIN__ID164 :BIN__ID163
+"shift" .. &BIN__ID166 :BIN__ID165
+"shift" .. &BIN__ID357 :BIN__ID356
+"shift" .. &BIN__ID375 :BIN__ID374
+"shift" :COMMAND_GROUP_ID84
+"shift" .. &COMMAND_GROUP_ID85 :BIN__ID390
+"shift" :COMMAND_TAG_ID10
+"shift" :COMMAND_TAG_ID12
+"shift" .. &COMMAND_TAG_ID5 :BIN__ID159
+"shift" .. &COMMAND_TAG_ID6 :BIN__ID162
+"shift" :COMMAND_TAG_ID7
+"shift" :COMMAND_TAG_ID9
+"shift" :LAYERID
+"shift" :LAYERID_GROUP_ID117
+"<short keymap abbreviation>" .. &BIN__ID162 :BIN__ID161
+"<short keymap abbreviation>" :COMMAND_TAG_ID11
+"<short keymap abbreviation>" .. &COMMAND_TAG_ID12 :BIN__ID166
+"<short keymap abbreviation>" :COMMAND_TAG_ID8
+"<short keymap abbreviation>" .. &COMMAND_TAG_ID9 :BIN__ID164
+"<short keymap abbreviation>" :KEYMAPID
+"<short keymap abbreviation>" .. &LAYERID :BIN__ID158
+"<short keymap abbreviation>" .. &LAYERID :BIN__ID160
+"simple" :COMMAND_GROUP_ID47
+"simpleStrategy" :BNF__ID152
+"simpleStrategy" :CONDITION_OPTION_ID93
+"<single char identifier>" :BNF__ID144
+"<single char identifier>" :BNF__ID145
+"<single char identifier>" :BNF__ID146
+"<single char identifier>" :COMMAND_OPTION_ID25
+"<single char identifier>" :COMMAND_OPTION_ID28
+"<single char identifier>" :COMMAND_OPTION_ID31
+"<single char identifier>" :COMMAND_TAG_ID24
+"<single char identifier>" :COMMAND_TAG_ID27
+"<single char identifier>" :COMMAND_TAG_ID30
+"<single char identifier>" :MACROID
+"<single char identifier>" :MACROID_TAG_ID119
+"<single number identifier>" :BNF__ID144
+"<single number identifier>" :BNF__ID145
+"<single number identifier>" :BNF__ID146
+"<single number identifier>" :COMMAND_OPTION_ID25
+"<single number identifier>" :COMMAND_OPTION_ID28
+"<single number identifier>" :COMMAND_OPTION_ID31
+"<single number identifier>" :COMMAND_TAG_ID24
+"<single number identifier>" :COMMAND_TAG_ID27
+"<single number identifier>" :COMMAND_TAG_ID30
+"<single number identifier>" :MACROID
+"<single number identifier>" :MACROID_TAG_ID120
+Size of grammar is 1148
+Size of grammar is 6176
+Size of grammar is 850
+Size of grammar is 886
+"s" :KEYID
+"s" :KEYID_ABBREV
+"s" :KEYID_TAG_ID137
+"slashAndQuestionMark" .. &ACTION :BIN__ID358
+"slashAndQuestionMark" :BIN__ID167
+"slashAndQuestionMark" :BIN__ID168
+"slashAndQuestionMark" .. &BIN__ID377 :BIN__ID376
+"slashAndQuestionMark" :BIN__ID394
+"slashAndQuestionMark" :BIN__ID395
+"slashAndQuestionMark" :BNF__ID147
+"slashAndQuestionMark" .. &BNF__ID147 :BNF__ID147
+"slashAndQuestionMark" :BNF__ID149
+"slashAndQuestionMark" .. &BNF__ID149 :BIN__ID394
+"slashAndQuestionMark" .. &BNF__ID149 :BNF__ID149
+"slashAndQuestionMark" :BNF__ID151
+"slashAndQuestionMark" .. &BNF__ID151 :BIN__ID395
+"slashAndQuestionMark" .. &BNF__ID151 :BNF__ID151
+"slashAndQuestionMark" :COMMAND_ITER_ID37
+"slashAndQuestionMark" :CONDITION_ITER_ID88
+"slashAndQuestionMark" :CONDITION_ITER_ID91
+"slashAndQuestionMark" :KEYID
+"slashAndQuestionMark" :KEYID_ABBREV
+"slashAndQuestionMark" :KEYID_TAG_ID137
+"slashAndQuestionMark" :SCANCODE
+"slashAndQuestionMark" :SCANCODE_ABBREV
+"slashAndQuestionMark" :SCANCODE_TAG_ID132
+"slashAndQuestionMark" :SHORTCUT
+"slashAndQuestionMark" :SHORTCUT_TAG_ID134
+"<slot identifier>" :BNF__ID144
+"<slot identifier>" :BNF__ID145
+"<slot identifier>" :BNF__ID146
+"<slot identifier>" :COMMAND_OPTION_ID25
+"<slot identifier>" :COMMAND_OPTION_ID28
+"<slot identifier>" :COMMAND_OPTION_ID31
+"<slot identifier>" :COMMAND_TAG_ID24
+"<slot identifier>" :COMMAND_TAG_ID27
+"<slot identifier>" :COMMAND_TAG_ID30
+"s" :LRE__ID420
+"S" :LRE__ID420
+"smart" :COMMAND_GROUP_ID67
+"s" :MODMASK
+"S" :MODMASK
+"S" :MODMASK_GROUP_ID127
+"s" :MODMASK_GROUP_ID129
+"s" :MODMASK_ITER_ID125
+"S" :MODMASK_ITER_ID125
+"<source keymap>" :COMMAND_TAG_ID11
+"<source keymap>" .. &COMMAND_TAG_ID12 :BIN__ID166
+"<source keymap>" :COMMAND_TAG_ID8
+"<source keymap>" .. &COMMAND_TAG_ID9 :BIN__ID164
+"<source layer>" :COMMAND_TAG_ID12
+"<source layer>" :COMMAND_TAG_ID9
+"space" :BNF__ID147
+"space" .. &BNF__ID147 :BNF__ID147
+"space" :COMMAND_ITER_ID37
+"space" :SCANCODE
+"space" :SCANCODE_ABBREV
+"space" :SCANCODE_TAG_ID132
+"space" :SHORTCUT
+"space" :SHORTCUT_TAG_ID134
+"speed" .. &COMMAND_TAG_ID39 :BIN__ID191
+"<speed multiplier part that always applies, 0-10.0>" :COMMAND_TAG_ID38
+"<speed multiplier part that is affected by xceleration, 0-10.0>" :COMMAND_TAG_ID39
+"s" :SHORTCUT
+"S" :SHORTCUT
+"s" :SHORTCUT_TAG_ID135
+"S" :SHORTCUT_TAG_ID135
+"startMouse" :COMMAND_GROUP_ID32
+"startMouse" .. &COMMAND_GROUP_ID33 :BIN__ID157
+"startMouse" .. &COMMAND_GROUP_ID33 .. &BNF__ID140 :BIN__ID157
+"startMouse" .. &COMMAND_GROUP_ID33 .. &BNF__ID140 :BODY
+"startMouse" .. &COMMAND_GROUP_ID33 :BODY
+"startMouse" .. &COMMAND_GROUP_ID33 :COMMAND
+"startRecording" :BIN__ID157
+"startRecordingBlind" :BIN__ID157
+"startRecordingBlind" .. &BNF__ID144 :BIN__ID157
+"startRecordingBlind" .. &BNF__ID144 .. &BNF__ID140 :BIN__ID157
+"startRecordingBlind" .. &BNF__ID144 .. &BNF__ID140 :BODY
+"startRecordingBlind" .. &BNF__ID144 :BODY
+"startRecordingBlind" .. &BNF__ID144 :COMMAND
+"startRecordingBlind" :BODY
+"startRecordingBlind" :COMMAND
+"startRecordingBlind" :COMMAND_GROUP_ID23
+"startRecording" .. &BNF__ID144 :BIN__ID157
+"startRecording" .. &BNF__ID144 .. &BNF__ID140 :BIN__ID157
+"startRecording" .. &BNF__ID144 .. &BNF__ID140 :BODY
+"startRecording" .. &BNF__ID144 :BODY
+"startRecording" .. &BNF__ID144 :COMMAND
+"startRecording" :BODY
+"startRecording" :COMMAND
+"startRecording" :COMMAND_GROUP_ID23
+"statsActiveKeys" :BIN__ID157
+"statsActiveKeys" .. &BNF__ID140 :BIN__ID157
+"statsActiveKeys" .. &BNF__ID140 :BODY
+"statsActiveKeys" :BODY
+"statsActiveKeys" :COMMAND
+"statsActiveMacros" :BIN__ID157
+"statsActiveMacros" .. &BNF__ID140 :BIN__ID157
+"statsActiveMacros" .. &BNF__ID140 :BODY
+"statsActiveMacros" :BODY
+"statsActiveMacros" :COMMAND
+"statsLayerStack" :BIN__ID157
+"statsLayerStack" .. &BNF__ID140 :BIN__ID157
+"statsLayerStack" .. &BNF__ID140 :BODY
+"statsLayerStack" :BODY
+"statsLayerStack" :COMMAND
+"statsPostponerStack" :BIN__ID157
+"statsPostponerStack" .. &BNF__ID140 :BIN__ID157
+"statsPostponerStack" .. &BNF__ID140 :BODY
+"statsPostponerStack" :BODY
+"statsPostponerStack" :COMMAND
+"statsRecordKeyTiming" :BIN__ID157
+"statsRecordKeyTiming" .. &BNF__ID140 :BIN__ID157
+"statsRecordKeyTiming" .. &BNF__ID140 :BODY
+"statsRecordKeyTiming" :BODY
+"statsRecordKeyTiming" :COMMAND
+"statsRuntime" :BIN__ID157
+"statsRuntime" .. &BNF__ID140 :BIN__ID157
+"statsRuntime" .. &BNF__ID140 :BODY
+"statsRuntime" :BODY
+"statsRuntime" :COMMAND
+"stickyModifiers" .. &COMMAND_GROUP_ID67 :BIN__ID339
+"stopAllMacros" :BIN__ID157
+"stopAllMacros" .. &BNF__ID140 :BIN__ID157
+"stopAllMacros" .. &BNF__ID140 :BODY
+"stopAllMacros" :BODY
+"stopAllMacros" :COMMAND
+"stop" :BNF__ID147
+"stop" .. &BNF__ID147 :BNF__ID147
+"stop" :COMMAND_ITER_ID37
+"stopMouse" :COMMAND_GROUP_ID32
+"stopMouse" .. &COMMAND_GROUP_ID33 :BIN__ID157
+"stopMouse" .. &COMMAND_GROUP_ID33 .. &BNF__ID140 :BIN__ID157
+"stopMouse" .. &COMMAND_GROUP_ID33 .. &BNF__ID140 :BODY
+"stopMouse" .. &COMMAND_GROUP_ID33 :BODY
+"stopMouse" .. &COMMAND_GROUP_ID33 :COMMAND
+"stopRecording" :BIN__ID157
+"stopRecordingBlind" :BIN__ID157
+"stopRecordingBlind" .. &BNF__ID140 :BIN__ID157
+"stopRecordingBlind" .. &BNF__ID140 :BODY
+"stopRecordingBlind" :BODY
+"stopRecordingBlind" :COMMAND
+"stopRecordingBlind" :COMMAND_GROUP_ID29
+"stopRecording" .. &BNF__ID140 :BIN__ID157
+"stopRecording" .. &BNF__ID140 :BODY
+"stopRecording" :BODY
+"stopRecording" :COMMAND
+"stopRecording" :COMMAND_GROUP_ID29
+"stop" :SCANCODE
+"stop" :SCANCODE_ABBREV
+"stop" :SCANCODE_TAG_ID132
+"stop" :SHORTCUT
+"stop" :SHORTCUT_TAG_ID134
+"strategy" .. &COMMAND_GROUP_ID74 :BIN__ID361
+"super" .. &BIN__ID164 :BIN__ID163
+"super" .. &BIN__ID166 :BIN__ID165
+"super" .. &BIN__ID357 :BIN__ID356
+"super" .. &BIN__ID375 :BIN__ID374
+"super" :COMMAND_GROUP_ID84
+"super" .. &COMMAND_GROUP_ID85 :BIN__ID390
+"super" :COMMAND_TAG_ID10
+"super" :COMMAND_TAG_ID12
+"super" .. &COMMAND_TAG_ID5 :BIN__ID159
+"super" .. &COMMAND_TAG_ID6 :BIN__ID162
+"super" :COMMAND_TAG_ID7
+"super" :COMMAND_TAG_ID9
+"super" :LAYERID
+"super" :LAYERID_GROUP_ID117
+"suppressMods" :BNF__ID141
+"suppressMods" .. &BNF__ID141 :BNF__ID141
+"suppressMods" .. &BNF__ID141 .. &COMMAND :BIN__ID157
+"suppressMods" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BIN__ID157
+"suppressMods" .. &BNF__ID141 .. &COMMAND .. &BNF__ID140 :BODY
+"suppressMods" .. &BNF__ID141 .. &COMMAND :BODY
+"suppressMods" .. &BNF__ID141 .. &COMMAND :COMMAND
+"suppressMods" .. &COMMAND :BIN__ID157
+"suppressMods" .. &COMMAND :BODY
+"suppressMods" .. &COMMAND :COMMAND
+"suppressMods" :COMMAND_ITER_ID2
+"suppressMods" :MODIFIER
+"swapAxes" .. &BOOL :BIN__ID236
+"switchKeymap" .. &KEYMAPID :BIN__ID157
+"switchKeymap" .. &KEYMAPID .. &BNF__ID140 :BIN__ID157
+"switchKeymap" .. &KEYMAPID .. &BNF__ID140 :BODY
+"switchKeymap" .. &KEYMAPID :BODY
+"switchKeymap" .. &KEYMAPID :COMMAND
+"sysreq" :BNF__ID147
+"sysreq" .. &BNF__ID147 :BNF__ID147
+"sysreq" :COMMAND_ITER_ID37
+"sysreq" :SCANCODE
+"sysreq" :SCANCODE_ABBREV
+"sysreq" :SCANCODE_TAG_ID132
+"sysreq" :SHORTCUT
+"sysreq" :SHORTCUT_TAG_ID134
+"systemPowerDown" :BNF__ID147
+"systemPowerDown" .. &BNF__ID147 :BNF__ID147
+"systemPowerDown" :COMMAND_ITER_ID37
+"systemPowerDown" :SCANCODE
+"systemPowerDown" :SCANCODE_ABBREV
+"systemPowerDown" :SCANCODE_TAG_ID132
+"systemPowerDown" :SHORTCUT
+"systemPowerDown" :SHORTCUT_TAG_ID134
+"systemSleep" :BNF__ID147
+"systemSleep" .. &BNF__ID147 :BNF__ID147
+"systemSleep" :COMMAND_ITER_ID37
+"systemSleep" :SCANCODE
+"systemSleep" :SCANCODE_ABBREV
+"systemSleep" :SCANCODE_TAG_ID132
+"systemSleep" :SHORTCUT
+"systemSleep" :SHORTCUT_TAG_ID134
+"systemWakeUp" :BNF__ID147
+"systemWakeUp" .. &BNF__ID147 :BNF__ID147
+"systemWakeUp" :COMMAND_ITER_ID37
+"systemWakeUp" :SCANCODE
+"systemWakeUp" :SCANCODE_ABBREV
+"systemWakeUp" :SCANCODE_TAG_ID132
+"systemWakeUp" :SHORTCUT
+"systemWakeUp" :SHORTCUT_TAG_ID134
+"tab" .. &ACTION :BIN__ID358
+"tab" :BIN__ID167
+"tab" :BIN__ID168
+"tab" .. &BIN__ID377 :BIN__ID376
+"tab" :BIN__ID394
+"tab" :BIN__ID395
+"tab" :BNF__ID147
+"tab" .. &BNF__ID147 :BNF__ID147
+"tab" :BNF__ID149
+"tab" .. &BNF__ID149 :BIN__ID394
+"tab" .. &BNF__ID149 :BNF__ID149
+"tab" :BNF__ID151
+"tab" .. &BNF__ID151 :BIN__ID395
+"tab" .. &BNF__ID151 :BNF__ID151
+"tab" :COMMAND_ITER_ID37
+"tab" :CONDITION_ITER_ID88
+"tab" :CONDITION_ITER_ID91
+"tab" :KEYID
+"tab" :KEYID_ABBREV
+"tab" :KEYID_TAG_ID137
+"tab" :SCANCODE
+"tab" :SCANCODE_ABBREV
+"tab" :SCANCODE_TAG_ID132
+"tab" :SHORTCUT
+"tab" :SHORTCUT_TAG_ID134
+"t" .. &ACTION :BIN__ID358
+"tapKey" :COMMAND_GROUP_ID36
+"tapKeySeq" .. &BNF__ID147 :BIN__ID157
+"tapKeySeq" .. &BNF__ID147 .. &BNF__ID140 :BIN__ID157
+"tapKeySeq" .. &BNF__ID147 .. &BNF__ID140 :BODY
+"tapKeySeq" .. &BNF__ID147 :BODY
+"tapKeySeq" .. &BNF__ID147 :COMMAND
+"tapKey" .. &SHORTCUT :BIN__ID157
+"tapKey" .. &SHORTCUT .. &BNF__ID140 :BIN__ID157
+"tapKey" .. &SHORTCUT .. &BNF__ID140 :BODY
+"tapKey" .. &SHORTCUT :BODY
+"tapKey" .. &SHORTCUT :COMMAND
+"<target layer>" .. &BIN__ID164 :BIN__ID163
+"<target layer>" .. &BIN__ID166 :BIN__ID165
+"<target layer>" :COMMAND_TAG_ID10
+"<target layer>" :COMMAND_TAG_ID7
+"t" :BIN__ID167
+"t" :BIN__ID168
+"t" .. &BIN__ID377 :BIN__ID376
+"t" :BIN__ID394
+"t" :BIN__ID395
+"t" .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"t" .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"t" :BNF__ID147
+"t" :BNF__ID149
+"t" .. &BNF__ID149 :BIN__ID394
+"t" .. &BNF__ID149 :BNF__ID149
+"t" :BNF__ID151
+"t" .. &BNF__ID151 :BIN__ID395
+"t" .. &BNF__ID151 :BNF__ID151
+"t" :BNF__ID156
+"t" .. &BNF__ID156 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"t" .. &BNF__ID156 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"t" .. &BNF__ID156 :BNF__ID147
+"t" .. &BNF__ID156 :BNF__ID156
+"t" .. &BNF__ID156 :COMMAND_ITER_ID37
+"t" .. &BNF__ID156 :LRE__ID420
+"t" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :BNF__ID147
+"t" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 .. &BNF__ID147 :BNF__ID147
+"t" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMMAND_ITER_ID37
+"t" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :COMPOSITE_SHORTCUT
+"t" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT
+"t" .. &BNF__ID156 .. &LRE__ID420 .. &BIN__ID410 :SHORTCUT_TAG_ID133
+"t" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID147
+"t" .. &BNF__ID156 .. &LRE__ID420 :BNF__ID156
+"t" .. &BNF__ID156 .. &LRE__ID420 :COMMAND_ITER_ID37
+"t" .. &BNF__ID156 .. &LRE__ID420 :LRE__ID420
+"t" .. &BNF__ID156 .. &LRE__ID420 .. &LRE__ID420 :LRE__ID420
+"t" .. &BNF__ID156 .. &LRE__ID420 :MODMASK
+"t" .. &BNF__ID156 .. &LRE__ID420 :MODMASK_ITER_ID125
+"t" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT
+"t" .. &BNF__ID156 .. &LRE__ID420 :SHORTCUT_TAG_ID135
+"t" .. &BNF__ID156 :MODMASK
+"t" .. &BNF__ID156 :MODMASK_ITER_ID125
+"t" .. &BNF__ID156 :SHORTCUT
+"t" .. &BNF__ID156 :SHORTCUT_TAG_ID135
+"t" :COMMAND_ITER_ID37
+"t" :CONDITION_ITER_ID88
+"t" :CONDITION_ITER_ID91
+"thousandsSeparator" :BNF__ID147
+"thousandsSeparator" .. &BNF__ID147 :BNF__ID147
+"thousandsSeparator" :COMMAND_ITER_ID37
+"thousandsSeparator" :SCANCODE
+"thousandsSeparator" :SCANCODE_ABBREV
+"thousandsSeparator" :SCANCODE_TAG_ID132
+"thousandsSeparator" :SHORTCUT
+"thousandsSeparator" :SHORTCUT_TAG_ID134
+"<time in ms, at most 250>" :COMMAND_TAG_ID68
+"<time in ms, at most 65535>" :COMMAND_TAG_ID69
+"<time in ms, at most 65535>" :COMMAND_TAG_ID70
+"<time in ms, at most 65535>" :COMMAND_TAG_ID71
+"<time in ms, at most 65535>" :COMMAND_TAG_ID72
+"<time in ms, at most 65535>" :COMMAND_TAG_ID73
+"<time in ms>" :COMMAND_TAG_ID5
+"<time in ms>" :COMMAND_TAG_ID6
+"<time in ms>" :COMMAND_TAG_ID65
+"<time in ms>" :COMMAND_TAG_ID66
+"<time in ms>" :IFSHORTCUT_OPTIONS_TAG_ID114
+"<time in ms>" :IFSHORTCUT_OPTIONS_TAG_ID115
+"timeoutAction" .. &COMMAND_GROUP_ID49 :BIN__ID274
+"<timeout>" .. &COMMAND_GROUP_ID19 :BIN__ID169
+"<timeout>" :COMMAND_TAG_ID18
+"<timeout>" :COMMAND_TAG_ID3
+"<timeout>" :COMMAND_TAG_ID4
+"timeout" .. &COMMAND_TAG_ID48 :BIN__ID269
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 :BNF__ID148
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 .. &BNF__ID148 :BNF__ID148
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 .. &BNF__ID148 .. &BNF__ID149 :BIN__ID394
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 .. &BNF__ID149 :BIN__ID394
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 :BNF__ID150
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 .. &BNF__ID150 :BNF__ID150
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 .. &BNF__ID150 .. &BNF__ID151 :BIN__ID395
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 .. &BNF__ID151 :BIN__ID395
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 :CONDITION_ITER_ID87
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 :CONDITION_ITER_ID90
+"timeoutIn" .. &IFSHORTCUT_OPTIONS_TAG_ID114 :IFSHORTCUT_OPTIONS
+"<timeout in ms>" :CONDITION_TAG_ID106
+"t" :KEYID
+"t" :KEYID_ABBREV
+"t" :KEYID_TAG_ID137
+"t" :LRE__ID420
+"t" :MODMASK
+"t" :MODMASK_GROUP_ID128
+"t" :MODMASK_ITER_ID125
+"toggleKeymapLayer" .. &BIN__ID158 :BIN__ID157
+"toggleKeymapLayer" .. &BIN__ID158 .. &BNF__ID140 :BIN__ID157
+"toggleKeymapLayer" .. &BIN__ID158 .. &BNF__ID140 :BODY
+"toggleKeymapLayer" .. &BIN__ID158 :BODY
+"toggleKeymapLayer" .. &BIN__ID158 :COMMAND
+"toggleLayer" .. &LAYERID :BIN__ID157
+"toggleLayer" .. &LAYERID .. &BNF__ID140 :BIN__ID157
+"toggleLayer" .. &LAYERID .. &BNF__ID140 :BODY
+"toggleLayer" .. &LAYERID :BODY
+"toggleLayer" .. &LAYERID :COMMAND
+"touchpad" .. &BIN__ID178 :BIN__ID177
+"touchpad" .. &BIN__ID185 :BIN__ID184
+"touchpad" .. &BIN__ID190 :BIN__ID189
+"touchpad" .. &BIN__ID195 :BIN__ID194
+"touchpad" .. &BIN__ID200 :BIN__ID199
+"touchpad" .. &BIN__ID205 :BIN__ID204
+"touchpad" .. &BIN__ID210 :BIN__ID209
+"touchpad" .. &BIN__ID215 :BIN__ID214
+"touchpad" .. &BIN__ID220 :BIN__ID219
+"touchpad" .. &BIN__ID225 :BIN__ID224
+"touchpad" .. &BIN__ID230 :BIN__ID229
+"touchpad" .. &BIN__ID235 :BIN__ID234
+"touchpad" .. &BIN__ID240 :BIN__ID239
+"touchpad" .. &BIN__ID245 :BIN__ID244
+"touchpad" .. &BIN__ID250 :BIN__ID249
+"touchpad" .. &BIN__ID255 :BIN__ID254
+"touchpad" .. &BIN__ID260 :BIN__ID259
+"touchpad" :MODULEID
+"trackball" .. &BIN__ID178 :BIN__ID177
+"trackball" .. &BIN__ID185 :BIN__ID184
+"trackball" .. &BIN__ID190 :BIN__ID189
+"trackball" .. &BIN__ID195 :BIN__ID194
+"trackball" .. &BIN__ID200 :BIN__ID199
+"trackball" .. &BIN__ID205 :BIN__ID204
+"trackball" .. &BIN__ID210 :BIN__ID209
+"trackball" .. &BIN__ID215 :BIN__ID214
+"trackball" .. &BIN__ID220 :BIN__ID219
+"trackball" .. &BIN__ID225 :BIN__ID224
+"trackball" .. &BIN__ID230 :BIN__ID229
+"trackball" .. &BIN__ID235 :BIN__ID234
+"trackball" .. &BIN__ID240 :BIN__ID239
+"trackball" .. &BIN__ID245 :BIN__ID244
+"trackball" :MODULEID
+"trackpoint" .. &BIN__ID178 :BIN__ID177
+"trackpoint" .. &BIN__ID185 :BIN__ID184
+"trackpoint" .. &BIN__ID190 :BIN__ID189
+"trackpoint" .. &BIN__ID195 :BIN__ID194
+"trackpoint" .. &BIN__ID200 :BIN__ID199
+"trackpoint" .. &BIN__ID205 :BIN__ID204
+"trackpoint" .. &BIN__ID210 :BIN__ID209
+"trackpoint" .. &BIN__ID215 :BIN__ID214
+"trackpoint" .. &BIN__ID220 :BIN__ID219
+"trackpoint" .. &BIN__ID225 :BIN__ID224
+"trackpoint" .. &BIN__ID230 :BIN__ID229
+"trackpoint" .. &BIN__ID235 :BIN__ID234
+"trackpoint" .. &BIN__ID240 :BIN__ID239
+"trackpoint" .. &BIN__ID245 :BIN__ID244
+"trackpoint" :MODULEID
+"transitive" :BNF__ID148
+"transitive" .. &BNF__ID148 :BNF__ID148
+"transitive" .. &BNF__ID148 .. &BNF__ID149 :BIN__ID394
+"transitive" .. &BNF__ID149 :BIN__ID394
+"transitive" :BNF__ID150
+"transitive" .. &BNF__ID150 :BNF__ID150
+"transitive" .. &BNF__ID150 .. &BNF__ID151 :BIN__ID395
+"transitive" .. &BNF__ID151 :BIN__ID395
+"transitive" :CONDITION_ITER_ID87
+"transitive" :CONDITION_ITER_ID90
+"transitive" :IFSHORTCUT_OPTIONS
+"triggerByMouse" .. &BOOL :BIN__ID294
+"triggerByPress" .. &BOOL :BIN__ID284
+"triggerByRelease" .. &BOOL :BIN__ID289
+"true" .. &BIN__ID173 :BIN__ID172
+"true" .. ")" :BIN__ID393
+"true" .. &BIN__ID403 :BIN__ID402
+"true" .. &BIN__ID406 :BIN__ID405
+"true" .. ")" :BIN__ID408
+"true" .. ")" :BIN__ID409
+"true" :BOOL
+"true" :COMMAND_GROUP_ID19
+"true" :EXPRESSION
+"true" .. &LRE__ID419 .. &BIN__ID173 :BIN__ID172
+"true" .. &LRE__ID419 .. ")" :BIN__ID393
+"true" .. &LRE__ID419 .. &BIN__ID403 :BIN__ID402
+"true" .. &LRE__ID419 .. &BIN__ID406 :BIN__ID405
+"true" .. &LRE__ID419 .. ")" :BIN__ID408
+"true" .. &LRE__ID419 .. ")" :BIN__ID409
+"true" .. &LRE__ID419 :EXPRESSION
+"true" :VALUE
+"t" :SHORTCUT
+"t" :SHORTCUT_TAG_ID135
+"u" .. &ACTION :BIN__ID358
+"u" :BIN__ID167
+"u" :BIN__ID168
+"u" .. &BIN__ID377 :BIN__ID376
+"u" :BIN__ID394
+"u" :BIN__ID395
+"u" :BNF__ID149
+"u" .. &BNF__ID149 :BIN__ID394
+"u" .. &BNF__ID149 :BNF__ID149
+"u" :BNF__ID151
+"u" .. &BNF__ID151 :BIN__ID395
+"u" .. &BNF__ID151 :BNF__ID151
+"u" :CONDITION_ITER_ID88
+"u" :CONDITION_ITER_ID91
+"u" :KEYID
+"u" :KEYID_ABBREV
+"u" :KEYID_TAG_ID137
+"undo" :BNF__ID147
+"undo" .. &BNF__ID147 :BNF__ID147
+"undo" :COMMAND_ITER_ID37
+"undo" :SCANCODE
+"undo" :SCANCODE_ABBREV
+"undo" :SCANCODE_TAG_ID132
+"undo" :SHORTCUT
+"undo" :SHORTCUT_TAG_ID134
+"untoggleLayer" :BIN__ID157
+"untoggleLayer" .. &BNF__ID140 :BIN__ID157
+"untoggleLayer" .. &BNF__ID140 :BODY
+"untoggleLayer" :BODY
+"untoggleLayer" :COMMAND
+"up" .. &ACTION :BIN__ID353
+"upArrow" :BNF__ID147
+"upArrow" .. &BNF__ID147 :BNF__ID147
+"upArrow" :COMMAND_ITER_ID37
+"upArrow" :SCANCODE
+"upArrow" :SCANCODE_ABBREV
+"upArrow" :SCANCODE_TAG_ID132
+"upArrow" :SHORTCUT
+"upArrow" :SHORTCUT_TAG_ID134
+"up" :BNF__ID147
+"up" .. &BNF__ID147 :BNF__ID147
+"up" :COMMAND_ITER_ID37
+"up" :DIRECTION
+"up" :DIRECTION_GROUP_ID116
+"up" :SCANCODE
+"up" :SCANCODE_ABBREV
+"up" :SCANCODE_TAG_ID132
+"up" :SHORTCUT
+"up" :SHORTCUT_TAG_ID134
+"v" .. &ACTION :BIN__ID358
+"validateUserConfig" :BIN__ID157
+"validateUserConfig" .. &BNF__ID140 :BIN__ID157
+"validateUserConfig" .. &BNF__ID140 :BODY
+"validateUserConfig" :BODY
+"validateUserConfig" :COMMAND
+"<value>" :COMMAND_TAG_ID35
+"." .. &VARIABLE_EXPANSION_TAG_ID121 :BIN__ID400
+"<var name>" :COMMAND_TAG_ID21
+"<var name>" .. &COMMAND_TAG_ID22 :BIN__ID170
+"<var name>" :COMMAND_TAG_ID34
+"<var name>" .. &COMMAND_TAG_ID35 :BIN__ID174
+"v" :BIN__ID167
+"v" :BIN__ID168
+"v" .. &BIN__ID377 :BIN__ID376
+"v" :BIN__ID394
+"v" :BIN__ID395
+"v" :BNF__ID149
+"v" .. &BNF__ID149 :BIN__ID394
+"v" .. &BNF__ID149 :BNF__ID149
+"v" :BNF__ID151
+"v" .. &BNF__ID151 :BIN__ID395
+"v" .. &BNF__ID151 :BNF__ID151
+"v" :CONDITION_ITER_ID88
+"v" :CONDITION_ITER_ID91
+"v" :KEYID
+"v" :KEYID_ABBREV
+"v" :KEYID_TAG_ID137
+"volumeDown" :BNF__ID147
+"volumeDown" .. &BNF__ID147 :BNF__ID147
+"volumeDown" :COMMAND_ITER_ID37
+"volumeDown" :SCANCODE
+"volumeDown" :SCANCODE_ABBREV
+"volumeDown" :SCANCODE_TAG_ID132
+"volumeDown" :SHORTCUT
+"volumeDown" :SHORTCUT_TAG_ID134
+"volumeUp" :BNF__ID147
+"volumeUp" .. &BNF__ID147 :BNF__ID147
+"volumeUp" :COMMAND_ITER_ID37
+"volumeUp" :SCANCODE
+"volumeUp" :SCANCODE_ABBREV
+"volumeUp" :SCANCODE_TAG_ID132
+"volumeUp" :SHORTCUT
+"volumeUp" :SHORTCUT_TAG_ID134
+"w" .. &ACTION :BIN__ID358
+"w" :BIN__ID167
+"w" :BIN__ID168
+"w" .. &BIN__ID377 :BIN__ID376
+"w" :BIN__ID394
+"w" :BIN__ID395
+"w" :BNF__ID149
+"w" .. &BNF__ID149 :BIN__ID394
+"w" .. &BNF__ID149 :BNF__ID149
+"w" :BNF__ID151
+"w" .. &BNF__ID151 :BIN__ID395
+"w" .. &BNF__ID151 :BNF__ID151
+"w" :CONDITION_ITER_ID88
+"w" :CONDITION_ITER_ID91
+"while" .. &BIN__ID171 :BIN__ID157
+"while" .. &BIN__ID171 .. &BNF__ID140 :BIN__ID157
+"while" .. &BIN__ID171 .. &BNF__ID140 :BODY
+"while" .. &BIN__ID171 :BODY
+"while" .. &BIN__ID171 :COMMAND
+"w" :KEYID
+"w" :KEYID_ABBREV
+"w" :KEYID_TAG_ID137
+"write" .. &STRING :BIN__ID157
+"write" .. &STRING .. &BNF__ID140 :BIN__ID157
+"write" .. &STRING .. &BNF__ID140 :BODY
+"write" .. &STRING :BODY
+"write" .. &STRING :COMMAND
+"x" .. &ACTION :BIN__ID358
+"x" :BIN__ID167
+"x" :BIN__ID168
+"x" .. &BIN__ID377 :BIN__ID376
+"x" :BIN__ID394
+"x" :BIN__ID395
+"x" :BNF__ID149
+"x" .. &BNF__ID149 :BIN__ID394
+"x" .. &BNF__ID149 :BNF__ID149
+"x" :BNF__ID151
+"x" .. &BNF__ID151 :BIN__ID395
+"x" .. &BNF__ID151 :BNF__ID151
+"xceleration" .. &COMMAND_TAG_ID40 :BIN__ID196
+"x" :CONDITION_ITER_ID88
+"x" :CONDITION_ITER_ID91
+"x" :KEYID
+"x" :KEYID_ABBREV
+"x" :KEYID_TAG_ID137
+"y" .. &ACTION :BIN__ID358
+"y" :BIN__ID167
+"y" :BIN__ID168
+"y" .. &BIN__ID377 :BIN__ID376
+"y" :BIN__ID394
+"y" :BIN__ID395
+"y" :BNF__ID149
+"y" .. &BNF__ID149 :BIN__ID394
+"y" .. &BNF__ID149 :BNF__ID149
+"y" :BNF__ID151
+"y" .. &BNF__ID151 :BIN__ID395
+"y" .. &BNF__ID151 :BNF__ID151
+"y" :CONDITION_ITER_ID88
+"y" :CONDITION_ITER_ID91
+"yield" :BIN__ID157
+"yield" .. &BNF__ID140 :BIN__ID157
+"yield" .. &BNF__ID140 :BODY
+"yield" :BODY
+"yield" :COMMAND
+"y" :KEYID
+"y" :KEYID_ABBREV
+"y" :KEYID_TAG_ID137
+"z" .. &ACTION :BIN__ID358
+"z" :BIN__ID167
+"z" :BIN__ID168
+"z" .. &BIN__ID377 :BIN__ID376
+"z" :BIN__ID394
+"z" :BIN__ID395
+"z" :BNF__ID149
+"z" .. &BNF__ID149 :BIN__ID394
+"z" .. &BNF__ID149 :BNF__ID149
+"z" :BNF__ID151
+"z" .. &BNF__ID151 :BIN__ID395
+"z" .. &BNF__ID151 :BNF__ID151
+"z" :CONDITION_ITER_ID88
+"z" :CONDITION_ITER_ID91
+"z" :KEYID
+"z" :KEYID_ABBREV
+"z" :KEYID_TAG_ID137
+"zoomMac" .. &BIN__ID352 :BIN__ID351
+"zoomMac" :NAVIGATION_MODE
+"zoomMac" :NAVIGATION_MODE_CUSTOM
+"zoom" :NAVIGATION_MODE
+"zoomPc" .. &BIN__ID352 :BIN__ID351
+"zoomPc" :NAVIGATION_MODE
+"zoomPc" :NAVIGATION_MODE_CUSTOM

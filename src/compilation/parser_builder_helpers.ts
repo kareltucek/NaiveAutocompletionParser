@@ -1,5 +1,14 @@
 import { RuleCompiler } from './rule_compiler'
-import { ReferencableRule } from '../shared/rules';
+import { SequenceRule } from '../shared/rules';
+import { Grammar } from '../shared/grammar';
+import { IO } from '../repl/io';
+import { BinaryFormTransformation } from '../transforms/binary_form_transform';
+import { BnfTransform } from '../transforms/bnf_transform';
+import { NullableRuleElimination } from '../transforms/nullable_elimination_transform';
+import { UnitRuleElimination } from '../transforms/unit_rule_elimination';
+import { LeftRecursionElimination } from '../transforms/left_recursion_elimination';
+import { NoOpRuleElimination } from '../transforms/no_op_rule_elimination';
+import { GnfTransform } from '../transforms/gnf_transform';
 
 export class ParserBuilderHelpers {
     static chunkGrammar(code: string): string[] {
@@ -32,20 +41,20 @@ export class ParserBuilderHelpers {
     };
 
     
-    static processOneRule(name: string, ruleString: string, tokenizationRegex: RegExp): ReferencableRule[] {
+    static processOneRule(name: string, ruleString: string, tokenizationRegex: RegExp): SequenceRule[] {
         let tokenizedRule = this.tokenizeRule(ruleString, tokenizationRegex);
         let compiledRules = RuleCompiler.compileRule(name, tokenizedRule);
         return compiledRules;
     }
 
-    static processGrammar(grammarCode: string, overridenRules: Set<string>, tokenizerRegex: RegExp): ReferencableRule[] {
+    static processGrammar(grammarCode: string, overridenRules: Set<string>, tokenizerRegex: RegExp): SequenceRule[] {
         let chunkedRules = ParserBuilderHelpers
             .chunkGrammar(grammarCode)
             .filter(it => it != '')
         let compiledRules = chunkedRules
             .flatMap(ruleString => {
                 let tokens: string[] = this.tokenizeRule(ruleString, tokenizerRegex)
-                let res: ReferencableRule[] = new Array<ReferencableRule>();
+                let res: SequenceRule[] = new Array<SequenceRule>();
                 if (tokens.length > 1) {
                     let name = tokens[0];
                     let rule = tokens.slice(2);
@@ -56,5 +65,26 @@ export class ParserBuilderHelpers {
                 return res
             })
         return compiledRules
+    }
+
+    static performTransformsMaybe(grammar: Grammar, io: IO | undefined): Grammar {
+        let performTransforms: boolean = true;
+        if (io) {
+            io.setCommandContext("Perform transforms?")
+            io.write("Perform standard transformations? (y)")
+            let answer = io.ask("? ", true)
+            if (answer != "y") {
+                performTransforms = false;
+            }
+        }
+
+        if (performTransforms) {
+            return grammar
+                .bind(BnfTransform.transform)
+                .bind(NullableRuleElimination.transform) 
+                .bind(GnfTransform.transform)
+        } else {
+            return grammar;
+        }
     }
 }

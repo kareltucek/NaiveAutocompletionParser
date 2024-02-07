@@ -21,8 +21,8 @@ function extractGrammar(referenceManualBody: string): string[] {
     return grammarText;
 }
 
-function buildParser(grammarText: string): Parser {
-    let parser = new ParserBuilder()
+function buildParserBuilder(grammarText: string): ParserBuilder {
+    let parserBuilder = new ParserBuilder()
         .setTokenizerRegex(tokenizerRegex)
         .addRule(grammarText)
         .overrideRuleWithConstantString("CODE_BLOCK", "{")
@@ -37,15 +37,55 @@ function buildParser(grammarText: string): Parser {
         .overrideRuleWithConstantString("STRING", "'<literal string>'")
         .overrideRuleWithRegex("IDENTIFIER", '[a-zA-Z0-9_]*')
         .overrideRuleWithConstantString("IDENTIFIER", "<[a-zA-Z0-9_]*>")
-        .build()
-    return parser;
+    return parserBuilder;
+}
+
+function testingParserBuilder(): ParserBuilder {
+    let simplifiedGrammar = `
+    BODY = COMMENT
+    BODY = [LABEL:] COMMAND [COMMENT]
+    COMMENT = //<comment>
+    COMMAND = [CONDITION|MODIFIER]* COMMAND
+    CONDITION = {ifShortcut | ifNotShortcut} [IFSHORTCUT_OPTIONS]* [KEYID]+
+    CONDITION = {ifGesture | ifNotGesture} [IFSHORTCUT_OPTIONS]* [KEYID]+
+    IFSHORTCUT_OPTIONS = noConsume | transitive | anyOrder | orGate | timeoutIn <time in ms (INT)> | cancelIn <time in ms(INT)>
+    OPERATOR = + | - | * | / | % | < | > | <= | >= | == | != | && | ||
+    VARIABLE_EXPANSION = $<variable name> | $<config value name> | $currentAddress | $thisKeyId | $queuedKeyId.<queue index (INT)> | $keyId.KEYID_ABBREV
+    EXPRESSION = (EXPRESSION) | INT | BOOL | FLOAT | VARIABLE_EXPANSION | EXPRESSION OPERATOR EXPRESSION | !EXPRESSION | min(EXPRESSION [, EXPRESSION]+) | max(EXPRESSION [, EXPRESSION]+)
+    PARENTHESSED_EXPRESSION = (EXPRESSION)
+    INT = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | [0-9]+ | -[0-9]+
+    BOOL = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | 0 | 1
+    FLOAT = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | [0-9]*.[0-9]+ | -FLOAT
+    VALUE = INT | BOOL | FLOAT
+    IDENTIFIER = [a-zA-Z_][a-zA-Z0-9_]*
+    CHAR = <any nonwhite ascii char>
+    LABEL = <label (IDENTIFIER)>
+    ACTION = { macro MACROID | keystroke SHORTCUT | none }
+    SCANCODE = <en-US character(CHAR)> | <scancode abbreviation(SCANCODE_ABBREV)>
+    KEYID = <numeric keyid (INT)> | <keyid abbreviation(KEYID_ABBREV)>
+    KEYID_ABBREV = a | q | w | e | r | t | y | u | i | o | p | a | s | d | f | g | h | j | k | l | z | x | c | v | b | n | m
+    `;
+    // let simplifiedGrammar = `
+    // BODY = AA [BB]* [CC]+
+    // AA = a
+    // BB = b
+    // CC = c
+    // `;
+    let builder = new ParserBuilder()
+        .setTokenizerRegex(tokenizerRegex)
+        .addRule(simplifiedGrammar);
+    return builder;
+}
+
+function buildUhkParserBuilder(referenceManualBody: string): ParserBuilder {
+    let grammarText = extractGrammar(referenceManualBody);
+    let builder = buildParserBuilder(grammarText.join("\n"));
+    // let builder = testingParserBuilder();
+    return builder;
 }
 
 export function buildUhkParser(referenceManualBody: string): Parser {
-    let grammarText = extractGrammar(referenceManualBody);
-    let parser = buildParser(grammarText.join("\n"));
-    // let parser = buildParser(simplifiedGrammar);
-    return parser
+    return buildUhkParserBuilder(referenceManualBody).build();
 }
 
 export function retrieveUhkGrammar(): Promise<string> {
@@ -56,8 +96,8 @@ export function retrieveUhkGrammar(): Promise<string> {
 
 export function startUhkCli() {
     retrieveUhkGrammar().then(testGrammar => {
-        let parser = buildUhkParser(testGrammar)
-        Cli.launch(parser);
+        let builder = buildUhkParserBuilder(testGrammar)
+        Cli.launch(builder);
     })
 }
 
@@ -66,5 +106,5 @@ const args = process.argv.slice(2);
 if (args[0] && args[0] == 'start') {
     startUhkCli();
 } else if (args[0] && args[0] != '') {
-    console.log("You can start the cli with `start` argument. E.g., `node file.js start`.") 
+    console.log("You can start the cli with `start` argument. E.g., `node file.js start`.")
 }

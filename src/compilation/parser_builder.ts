@@ -1,12 +1,16 @@
 import { ParserBuilderHelpers } from './parser_builder_helpers'
-import { ReferencableRule, SequenceRule } from '../shared/rules';
+import { SequenceRule } from '../shared/rules';
 import { groupBy } from '../shared/utils'
 import { Grammar } from '../shared/grammar';
 import { Parser } from '../parsing/parser';
+import { BnfTransform } from '../transforms/bnf_transform';
+import { BinaryFormTransformation } from '../transforms/binary_form_transform';
+import { NullableRuleElimination } from '../transforms/nullable_elimination_transform';
+import { IO } from '../repl/io';
 
 export class ParserBuilder {
     grammarString: string = "";
-    overrides: ReferencableRule[] = new Array<ReferencableRule>;
+    overrides: SequenceRule[] = new Array<SequenceRule>;
     overridenNames: Set<string> = new Set<string>();
     tokenizerRegex: RegExp = RegExp('');
 
@@ -42,15 +46,12 @@ export class ParserBuilder {
         return this;
     }
 
-    build(): Parser {
-        let grammar = new Grammar;
-        let regularRules: ReferencableRule[] = ParserBuilderHelpers.processGrammar(this.grammarString, this.overridenNames, this.tokenizerRegex);
-        let overrideRules: ReferencableRule[] = [...this.overrides.values()].flat();
-        let allRules = [...regularRules, ...overrideRules]
-        let grouped = groupBy(allRules, rule => rule.name);
+    build(io: IO | undefined = undefined): Parser {
+        let regularRules: SequenceRule[] = ParserBuilderHelpers.processGrammar(this.grammarString, this.overridenNames, this.tokenizerRegex);
+        let overrideRules: SequenceRule[] = [...this.overrides.values()].flat();
+        let grammar = Grammar.of([...regularRules, ...overrideRules]);
+        let transformedGrammar = ParserBuilderHelpers.performTransformsMaybe(grammar, io);
 
-        grammar.rules = new Map(Object.entries(grouped));
-
-        return new Parser(grammar);
+        return new Parser(transformedGrammar);
     }
 }

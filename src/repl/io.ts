@@ -71,8 +71,11 @@ export class IO {
         return this.map.get(this.questionHash()) ?? "";
     }
 
-    question(q: string, applyDefault: boolean = false): string {
+    ask(q: string, applyDefault: boolean = false): string {
         let answer = "";
+        if (applyDefault) {
+            console.log("Default: " + this.defaultAnswer());
+        }
         if (promptSync) {
             answer = promptSync(q) ?? "";
         } else {

@@ -1,31 +1,25 @@
 import * as regexPatterns from '../shared/constants'
-import { Rule, ReferencableRule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } from '../shared/rules'
+import { Rule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } from '../shared/rules'
 import { Stackable, StackToken, StackRule } from './stackables'
 import { IterationType } from '../shared/iteration_type';
-
+import { RuleNamer } from '../shared/rule_namer';
 
 export class RuleCompiler {
-    newRules: ReferencableRule[] = new Array<ReferencableRule>();
+    newRules: SequenceRule[] = new Array<SequenceRule>();
     stack: Stackable[] = new Array<Stackable>();
     tokens: string[]
     idx: number = 0;
-    static nameIdx: number = 0;
 
     constructor(toks: string[]) {
         this.tokens = toks;
         this.idx = 0;
-        this.newRules = new Array<ReferencableRule>();
+        this.newRules = new Array<SequenceRule>();
         this.stack = new Array<Stackable>();
-    }
-
-    newName(base: string, tag: string): string {
-        let id = RuleCompiler.nameIdx++;
-        return base.toUpperCase() + "_" + tag.toUpperCase() + "_" + "ID" + id;
     }
 
     processHumanDescription(baseName: string, token: string): Stackable {
         let m = token.match(regexPatterns.strictHumanRegex);
-        let ruleName = this.newName(baseName, "TAG");
+        let ruleName = RuleNamer.newName(baseName, "TAG");
         this.newRules.push(new SequenceRule(ruleName, [new ConstantRule("<" + m![1].trim() + ">")]));
         this.newRules.push(new SequenceRule(ruleName, [new RuleRef(m![2])]));
         return new StackRule(new RuleRef(ruleName));
@@ -106,7 +100,7 @@ export class RuleCompiler {
     }
 
     squashIteration(baseName: string, tag: string, type: IterationType, stopperToken: string) {
-        let ruleName = this.newName(baseName, tag);
+        let ruleName = RuleNamer.newName(baseName, tag);
         this.squashSequence();
         this.squashChoice(ruleName);
         if (this.isStringAt(this.stack.length - 1, stopperToken)) {
@@ -117,7 +111,7 @@ export class RuleCompiler {
         this.stack.push(new StackRule(new IterationRule(ruleName, type)));
     }
 
-    compile(name: string): ReferencableRule[] {
+    compile(name: string): SequenceRule[] {
         while (this.idx < this.tokens.length) {
             switch (this.tokens[this.idx]) {
                 case "|":
@@ -189,7 +183,7 @@ export class RuleCompiler {
         return "[" + values + "]"
     }
 
-    static compileRule(name: string, tokens: string[]): ReferencableRule[] {
+    static compileRule(name: string, tokens: string[]): SequenceRule[] {
         let compiler = new RuleCompiler(tokens);
         return compiler.compile(name);
     }

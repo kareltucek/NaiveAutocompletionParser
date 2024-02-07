@@ -37,12 +37,15 @@ export class ParserEngine {
                     io.write(note);
                 }
                 io.write(pointers[0].toStringAsPath(expression));
-                io.question("");
+                io.ask("");
             }
         }
     }
+    
+    static steps = 0;
 
     static progressPointer(grammar: Grammar, expression: string, p: PointerStack, interestingBeyond: number, io: IO | undefined): PointerStack[] {
+        ParserEngine.steps++;
         const whitespaceRegex = new RegExp('\\s');
         while (whitespaceRegex.test(expression[p.stringPosition])) {
             p.stringPosition++;
@@ -68,10 +71,13 @@ export class ParserEngine {
     }
 
     static matchRules(grammar: Grammar, expression: string, mp: PointerStack[], io: IO | undefined = undefined): PointerStack[] {
+        ParserEngine.steps = 0;
+        let cycles = 0;
         let interestingBeyond = this.determineInterestingPositions(expression);
         let complete = mp.filter(it => it.complete);
         let incomplete = mp.filter(it => !it.complete);
         while (incomplete.length > 0) {
+            cycles++;
             let minPosition = Math.min(...incomplete.map(it => it.stringPosition));
             let needProgression = incomplete.filter(it => it.stringPosition == minPosition);
             let dontNeedProgression = incomplete.filter(it => it.stringPosition != minPosition);
@@ -80,6 +86,7 @@ export class ParserEngine {
             complete = [...complete, ...progressed.filter(it => it.complete)];
             incomplete = deduplicate([...dontNeedProgression, ...progressed.filter(it => !it.complete)]);
         }
+        console.log(ParserEngine.steps + " steps in " + cycles + " cycles, that is " + (ParserEngine.steps / cycles) + " per cycle.");
         return complete;
     }
 
