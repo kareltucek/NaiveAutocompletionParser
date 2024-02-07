@@ -2,7 +2,7 @@ import { PointerStack, Pointer } from "../parsing/pointers";
 import { MatchResult, MatchOutcome } from "../parsing/match_results";
 import { Grammar } from "./grammar";
 import { IterationType } from "./iteration_type";
-import { markPointersAsConsumed, escapeRegex } from "./utils";
+import { escapeRegex, markPointersAsConsumed } from "./utils";
 import { strictIdentifierRegex, maxRecursionDepth } from "./constants";
 import { IO } from "../repl/io";
 import { RuleMath } from "./rule_math";
@@ -42,7 +42,7 @@ export class RegexRule implements Rule {
     }
 
     match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult {
-        let res = expression.substring(pointer.stringPosition).match(this.regex)
+        let res = expression.match(this.regex)
         if (res) {
             // pop me from stack and increment string position
             let newStack = pointer.stack.slice(0, pointer.stack.length - 1);
@@ -81,8 +81,7 @@ export class ConstantRule implements Rule {
     }
 
     match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult {
-        //todo: can we optimize the substring out?
-        if (expression.substring(pointer.stringPosition).match(this.regex)) {
+        if (expression.match(this.regex)) {
             // pop me from stack and increment string position
             let newStack = pointer.stack.slice(0, pointer.stack.length - 1);
             let markedStack = markPointersAsConsumed(newStack);
@@ -251,8 +250,7 @@ export class SequenceRule implements Rule {
         let sequence = this.rules
             .map(it => it.toString())
             .join(" .. ")
-        // return this.name + ": " + sequence
-        return sequence + " :" + this.name;
+        return this.name + ": " + sequence
     }
 
     toStringAsPath(isLeaf: boolean, index: number, offset: number): StringPathResult {

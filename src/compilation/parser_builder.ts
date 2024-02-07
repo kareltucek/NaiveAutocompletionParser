@@ -4,8 +4,6 @@ import { groupBy } from '../shared/utils'
 import { Grammar } from '../shared/grammar';
 import { Parser } from '../parsing/parser';
 import { BnfTransform } from '../transforms/bnf_transform';
-import { BinaryFormTransformation } from '../transforms/binary_form_transform';
-import { NullableRuleElimination } from '../transforms/nullable_elimination_transform';
 import { IO } from '../repl/io';
 
 export class ParserBuilder {

@@ -1,13 +1,12 @@
 import { Grammar } from "../shared/grammar";
-import { Rule, ConstantRule } from "../shared/rules";
-import { nonterminalRegex, strictIdentifierRegex, globalCompletionRegex, continueRegex } from "../shared/constants";
+import { ConstantRule } from "../shared/rules";
+import { strictIdentifierRegex, globalCompletionRegex, continueRegex } from "../shared/constants";
 import { PointerStack, Pointer } from "./pointers";
 import { MatchOutcome, MatchResult } from "./match_results";
 import { Suggestion } from "./suggestion";
 import { deduplicate } from "../shared/utils";
 import { IO } from "../repl/io";
 import { RuleRef } from "../shared/rules";
-import exp from "constants";
 
 export class ParserEngine {
     static startingPointers(rule: string): PointerStack[] {
@@ -46,10 +45,6 @@ export class ParserEngine {
 
     static progressPointer(grammar: Grammar, expression: string, p: PointerStack, interestingBeyond: number, io: IO | undefined): PointerStack[] {
         ParserEngine.steps++;
-        const whitespaceRegex = new RegExp('\\s');
-        while (whitespaceRegex.test(expression[p.stringPosition])) {
-            p.stringPosition++;
-        }
         let validPointers: PointerStack[] = [];
         let currentRule = p.stack[p.stack.length - 1].rule;
         let res = currentRule.match(expression, p, grammar, io);
@@ -72,6 +67,7 @@ export class ParserEngine {
 
     static matchRules(grammar: Grammar, expression: string, mp: PointerStack[], io: IO | undefined = undefined): PointerStack[] {
         ParserEngine.steps = 0;
+        const whitespaceRegex = new RegExp('\\s');
         let cycles = 0;
         let interestingBeyond = this.determineInterestingPositions(expression);
         let complete = mp.filter(it => it.complete);
@@ -81,7 +77,18 @@ export class ParserEngine {
             let minPosition = Math.min(...incomplete.map(it => it.stringPosition));
             let needProgression = incomplete.filter(it => it.stringPosition == minPosition);
             let dontNeedProgression = incomplete.filter(it => it.stringPosition != minPosition);
-            let progressed = needProgression.flatMap(it => ParserEngine.progressPointer(grammar, expression, it, interestingBeyond, io));
+
+
+            let whites = 0;
+            while (whitespaceRegex.test(expression[minPosition+whites])) {
+                whites++;
+            }
+            let shortExpression = expression.substring(minPosition+whites);
+
+            let progressed = needProgression.flatMap(it => {
+                it.stringPosition += whites;
+                return ParserEngine.progressPointer(grammar, shortExpression, it, interestingBeyond, io );
+            });
 
             complete = [...complete, ...progressed.filter(it => it.complete)];
             incomplete = deduplicate([...dontNeedProgression, ...progressed.filter(it => !it.complete)]);

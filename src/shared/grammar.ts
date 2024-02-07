@@ -60,7 +60,7 @@ export class Grammar {
     bind(transform: (grammar: Grammar) => Grammar): Grammar {
         let res = transform(this);
         let size = this.allRules().length;
-        console.log("Size of grammar is " + size);
+        console.log("Size of grammar after transformation is " + size);
         return res;
     }
 

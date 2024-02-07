@@ -2,12 +2,8 @@ import { RuleCompiler } from './rule_compiler'
 import { SequenceRule } from '../shared/rules';
 import { Grammar } from '../shared/grammar';
 import { IO } from '../repl/io';
-import { BinaryFormTransformation } from '../transforms/binary_form_transform';
 import { BnfTransform } from '../transforms/bnf_transform';
 import { NullableRuleElimination } from '../transforms/nullable_elimination_transform';
-import { UnitRuleElimination } from '../transforms/unit_rule_elimination';
-import { LeftRecursionElimination } from '../transforms/left_recursion_elimination';
-import { NoOpRuleElimination } from '../transforms/no_op_rule_elimination';
 import { GnfTransform } from '../transforms/gnf_transform';
 
 export class ParserBuilderHelpers {
