@@ -37,6 +37,7 @@ function strict(pattern: string): string {
 }
 
 
+export let stackTrimming = true;
 export let maxRecursionDepth = 1;
 export let strictRegexRegex: RegExp = new RegExp(strict(regexPattern));
 export let strictHumanRegex: RegExp = new RegExp(strict(humanPattern));

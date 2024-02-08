@@ -21,7 +21,7 @@ export class Grammar {
     }
 
     ruleHash(rule: SequenceRule): string {
-        return rule.name + '\n' + rule.firstChar ?? '';
+        return rule.name + '\n' + (rule.firstChar ?? '');
     }
 
     getRule(key: string, lookahead: string | undefined = undefined): SequenceRule[] {
@@ -33,7 +33,9 @@ export class Grammar {
             return this.rules.get(key) ?? new Array<SequenceRule>();
         } else {
             if (this.cache) {
-                return this.cache.get(key + "\n" + lookahead) ?? [];
+                let looked = this.cache.get(key + "\n" + lookahead) ?? [];
+                let anonymous = this.cache.get(key + '\n') ?? [];
+                return [...looked, ...anonymous];
             } else {
                 return (this.rules.get(key) ?? new Array<SequenceRule>())
                     .filter((rule: any) => lookahead == rule.firstChar || rule.firstChar == undefined);

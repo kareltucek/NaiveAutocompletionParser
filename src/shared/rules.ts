@@ -19,6 +19,7 @@ class StringPathResult {
 
 export interface Rule {
     match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult;
+    canTrim(idx: number, consumedSomething: boolean): boolean;
     toString(): string;
     toStringAsPath(isLeaf: boolean, index: number, offset: number): StringPathResult;
 };
@@ -52,6 +53,10 @@ export class RegexRule implements Rule {
         } else {
             return new MatchResult([pointer], MatchOutcome.Failed)
         }
+    }
+
+    canTrim(idx: number, consumedSomething: boolean): boolean {
+        return consumedSomething;
     }
 }
 
@@ -92,6 +97,10 @@ export class ConstantRule implements Rule {
             // fail
             return new MatchResult([pointer], MatchOutcome.Failed)
         }
+    }
+
+    canTrim(idx: number, consumedSomething: boolean): boolean {
+        return consumedSomething;
     }
 }
 
@@ -184,6 +193,10 @@ export class RuleRef implements Rule {
             )
         }
         return new MatchResult([pointer], MatchOutcome.Failed);
+    }
+
+    canTrim(idx: number, consumedSomething: boolean): boolean {
+        return idx == 1 && consumedSomething;
     }
 }
 
@@ -288,6 +301,10 @@ export class SequenceRule implements Rule {
             let newStack = new PointerStack(newBase, pointer.stringPosition, pointer.complete);
             return new MatchResult([newStack], MatchOutcome.Progressing)
         }
+    }
+
+    canTrim(idx: number, consumedSomething: boolean): boolean {
+        return idx == this.rules.length && consumedSomething;
     }
 }
 
@@ -421,5 +438,9 @@ export class IterationRule implements Rule {
         }
 
         return new MatchResult(results, MatchOutcome.Progressing);
+    }
+
+    canTrim(idx: number, consumedSomething: boolean): boolean {
+        return false;
     }
 }

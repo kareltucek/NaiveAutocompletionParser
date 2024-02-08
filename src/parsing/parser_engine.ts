@@ -3,7 +3,7 @@ import { ConstantRule } from "../shared/rules";
 import { PointerStack, Pointer } from "./pointers";
 import { MatchOutcome, MatchResult } from "./match_results";
 import { Suggestion } from "./suggestion";
-import { deduplicate } from "../shared/utils";
+import { deduplicate, deduplicateSuggestions } from "../shared/utils";
 import { IO } from "../cli/io";
 import { RuleRef } from "../shared/rules";
 import { Parser } from "./parser";
@@ -65,6 +65,11 @@ export class ParserEngine {
         }
     }
 
+    static simplifyState(pointers: PointerStack[]): PointerStack[] {
+        pointers.map( it => it.trim() )
+        return deduplicate(pointers);
+    }
+
     static matchRules(parser: Parser, grammar: Grammar, expression: string, mp: PointerStack[], io: IO): PointerStack[] {
         ParserEngine.steps = 0;
         const whitespaceRegex = new RegExp('\\s');
@@ -72,7 +77,9 @@ export class ParserEngine {
         let interestingBeyond = this.determineInterestingPositions(expression, parser.identifierRegex);
         let complete = mp.filter(it => it.complete);
         let incomplete = mp.filter(it => !it.complete);
+        let simplified = incomplete;
         while (incomplete.length > 0) {
+            incomplete = simplified;
             let minPosition = Math.min(...incomplete.map(it => it.stringPosition));
             let needProgression = incomplete.filter(it => it.stringPosition == minPosition);
             let dontNeedProgression = incomplete.filter(it => it.stringPosition != minPosition);
@@ -89,7 +96,8 @@ export class ParserEngine {
             });
 
             complete = [...complete, ...progressed.filter(it => it.complete)];
-            incomplete = deduplicate([...dontNeedProgression, ...progressed.filter(it => !it.complete)]);
+            incomplete = [...dontNeedProgression, ...progressed.filter(it => !it.complete)];
+            simplified = this.simplifyState(incomplete);
 
             io.debug("Parsing cycle: " + cycles + " living pointers: " + incomplete.length);
             cycles++;
@@ -121,7 +129,7 @@ export class ParserEngine {
                 return [];
             }
         })
-        return deduplicate(suggestions)
-        .sort((a,b) => a.suggestion.localeCompare(b.suggestion));
+        return deduplicateSuggestions(suggestions)
+            .sort((a, b) => a.suggestion.localeCompare(b.suggestion));
     }
 }

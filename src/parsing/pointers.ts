@@ -14,6 +14,10 @@ export class Pointer {
     toString(): string {
         return "Pointer(" + this.idx + ") -> " + this.rule.toString();
     }
+
+    canTrim(): boolean {
+        return this.rule.canTrim(this.idx, this.consumedSomething);
+    }
 }
 
 export class PointerStack {
@@ -47,5 +51,13 @@ export class PointerStack {
 
     stackTracke(): string {
         return this.stack.map(it => it.toString()).join("\n")
+    }
+
+    trim(): PointerStack {
+        let newStart = 0;
+        while (newStart < this.stack.length && this.stack[newStart].canTrim()) {
+            newStart++;
+        }
+        return new PointerStack(this.stack.slice(newStart), this.stringPosition, this.complete);
     }
 }

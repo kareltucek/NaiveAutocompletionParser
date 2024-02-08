@@ -1,6 +1,7 @@
 import { Pointer } from '../parsing/pointers';
 import _ from 'lodash';
 import { RuleRef, SequenceRule, ConstantRule, Rule } from './rules';
+import { Suggestion } from '../parsing/suggestion';
 
 export function groupByAsRecord<T, K extends keyof any>(arr: T[], key: (i: T) => K) {
     return arr.reduce(
@@ -15,6 +16,14 @@ export function groupByAsRecord<T, K extends keyof any>(arr: T[], key: (i: T) =>
 export function groupBy<T, K extends keyof any>(arr: T[], key: (i: T) => K): Map<string, T[]> {
     let record: Record<K, T[]> = groupByAsRecord(arr, key);
     return new Map(Object.entries(record));
+}
+
+const suggestionComparator: _.Comparator<Suggestion> = (a, b) => {
+    return a.suggestion == b.suggestion && a.overlap == b.overlap;
+};
+
+export function deduplicateSuggestions(array: Suggestion[]): Suggestion[] {
+    return _.uniqWith(array, suggestionComparator);
 }
 
 export function deduplicate<T>(array: T[]): T[] {
