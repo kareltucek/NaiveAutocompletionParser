@@ -99,7 +99,7 @@ export function retrieveUhkGrammar(): Promise<string> {
 
 export function startUhkCli(ioProvider: IOProvider) {
     retrieveUhkGrammar().then(testGrammar => {
-        let io = new IO(Config.Interactive, ioProvider);
+        let io = new IO(Config.default, ioProvider);
         let builder = buildUhkParserBuilder(testGrammar, io);
         Cli.launch(builder, io);
     })

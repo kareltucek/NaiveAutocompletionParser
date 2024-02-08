@@ -5,6 +5,5 @@ export class Config {
         this.interactive = interactive;
     }
 
-    static Interactive = new Config(true);
-    static Noninteractive = new Config(false);
+    static default = new Config(false);
 }

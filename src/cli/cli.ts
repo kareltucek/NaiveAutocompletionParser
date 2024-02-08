@@ -21,12 +21,12 @@ export class Cli {
             if (cmd.startsWith("help")) {
                 io.write("Available commands:")
                 io.write("  <string to complete>")
+                io.write("  eval <rule name> <string to match to>")
+                io.write("  exit")
                 io.write("  help")
                 io.write("  rules [<pattern to search>]")
-                io.write("  eval <rule name> <string to match to>")
-                io.write("  walk <rule name> <string to match to>")
                 io.write("  transform { bnf | gnf | nre }")
-                io.write("  exit")
+                io.write("  walk <rule name> <string to match to>")
             } else if (cmd.startsWith("rules")) {
                 let pattern = cmd.replace(new RegExp('rules *'), "");
                 parser.grammar.rules.forEach(rules =>
@@ -43,6 +43,7 @@ export class Cli {
                 let expression = m![3];
                 parser.complete(expression, nonterminal).forEach(suggestion => io.write("  " + expression + suggestion.suggestion.substring(suggestion.overlap)))
             } else if (cmd.startsWith("walk")) {
+                io.config.interactive = true;
                 let m = cmd.match(new RegExp('([^ ]+) +([^ ]+) (.*)'));
                 let command = m![1];
                 let nonterminal = m![2];
@@ -51,6 +52,7 @@ export class Cli {
                 let suggestions = parser.complete(expression, nonterminal);
                 io.hr();
                 suggestions.forEach(suggestion => io.write("  " + expression + suggestion.suggestion.substring(suggestion.overlap)));
+                io.config.interactive = false;
             } else if (cmd.startsWith("transform bnf")) {
                 parser.setGrammar(parser.grammar.bind(BnfTransform.transform, io));
             } else if (cmd.startsWith("transform nre")) {

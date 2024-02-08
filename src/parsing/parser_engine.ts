@@ -24,7 +24,7 @@ export class ParserEngine {
         return Math.min(pos, expression.length - 2);
     }
 
-    static reportPointerStep(expression: string, pointers: PointerStack[], io: IO | undefined, note: string | undefined) {
+    static reportPointerStep(expression: string, pointers: PointerStack[], io: IO, note: string | undefined) {
         if (io && io.config.interactive) {
             if (pointers.length == 0) {
                 io.warn("got zero pointers!");
@@ -43,7 +43,7 @@ export class ParserEngine {
     
     static steps = 0;
 
-    static progressPointer(grammar: Grammar, expression: string, p: PointerStack, interestingBeyond: number, io: IO | undefined): PointerStack[] {
+    static progressPointer(grammar: Grammar, expression: string, p: PointerStack, interestingBeyond: number, io: IO): PointerStack[] {
         ParserEngine.steps++;
         let validPointers: PointerStack[] = [];
         let currentRule = p.stack[p.stack.length - 1].rule;
@@ -73,11 +73,9 @@ export class ParserEngine {
         let complete = mp.filter(it => it.complete);
         let incomplete = mp.filter(it => !it.complete);
         while (incomplete.length > 0) {
-            cycles++;
             let minPosition = Math.min(...incomplete.map(it => it.stringPosition));
             let needProgression = incomplete.filter(it => it.stringPosition == minPosition);
             let dontNeedProgression = incomplete.filter(it => it.stringPosition != minPosition);
-
 
             let whites = 0;
             while (whitespaceRegex.test(expression[minPosition+whites])) {
@@ -92,6 +90,9 @@ export class ParserEngine {
 
             complete = [...complete, ...progressed.filter(it => it.complete)];
             incomplete = deduplicate([...dontNeedProgression, ...progressed.filter(it => !it.complete)]);
+
+            io.debug("Parsing cycle: " + cycles + " living pointers: " + incomplete.length);
+            cycles++;
         }
         io.debug(ParserEngine.steps + " steps in " + cycles + " cycles, that is " + (ParserEngine.steps / cycles) + " per cycle.");
         return complete;

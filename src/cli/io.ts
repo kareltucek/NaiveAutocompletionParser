@@ -3,7 +3,7 @@ import { IOProvider } from './io_provider';
 import { AnswerCache } from './answer_cache';
 
 export class IO {
-    static dummy = new IO(Config.Noninteractive, IOProvider.dummy);
+    static dummy = new IO(Config.default, IOProvider.dummy);
 
     private ioProvider: IOProvider;
 
