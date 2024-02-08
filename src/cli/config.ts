@@ -6,5 +6,5 @@ export class Config {
     }
 
     static Interactive = new Config(true);
-    static Noninteractive = new Config(true);
+    static Noninteractive = new Config(false);
 }
