@@ -79,6 +79,7 @@ export class ParserBuilderHelpers {
                 .bind(BnfTransform.transform)
                 .bind(NullableRuleElimination.transform) 
                 .bind(GnfTransform.transform)
+                .fillCache()
         } else {
             return grammar;
         }

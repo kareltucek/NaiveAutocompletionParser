@@ -3,6 +3,7 @@ import { groupBy, rulesEqual } from "./utils";
 import { AddedRules } from "./added_rules";
 
 export class Grammar {
+    cache: Map<string, SequenceRule[]> | undefined = undefined;
     rules: Map<string, SequenceRule[]> = new Map<string, SequenceRule[]>();
 
     constructor (rules: SequenceRule[]) {
@@ -13,15 +14,29 @@ export class Grammar {
         return new Grammar(rules);
     }
 
+    fillCache(): Grammar {
+        this.cache = groupBy(this.allRules(), rule => this.ruleHash(rule));
+        return this;
+    }
+
+    ruleHash(rule: SequenceRule): string {
+        return rule.name + '\n' + rule.firstChar ?? '';
+    }
+
     getRule(key: string, lookahead: string | undefined = undefined): SequenceRule[] {
+
         if (lookahead == '') {
             lookahead = undefined;
         }
         if (lookahead == undefined) {
             return this.rules.get(key) ?? new Array<SequenceRule>();
         } else {
-            return (this.rules.get(key) ?? new Array<SequenceRule>())
-                .filter((rule: any) => lookahead == rule.firstChar || rule.firstChar == undefined);
+            if (this.cache) {
+                return this.cache.get(key + "\n" + lookahead) ?? [];
+            } else {
+                return (this.rules.get(key) ?? new Array<SequenceRule>())
+                    .filter((rule: any) => lookahead == rule.firstChar || rule.firstChar == undefined);
+            }
         }
     }
 
