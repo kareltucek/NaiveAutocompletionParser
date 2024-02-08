@@ -1,5 +1,5 @@
 ### Motivation
-This is a naive LL parser that takes an EBNF (Extended Backus-Naur Form) grammar and a partial expression, and produces possible completions by running all possible expansion paths of the grammar. We use a strongly customized form of an ebnf grammar, tailored for human readability. The Parser allows overriding selected rules, so it is possible to use the same (human-readability-adjusted, and partially informal) grammar as a documentation for the user, and then the same grammar (just with some overriden rules) for the actual autocompletion.
+This is an LL parser that takes an EBNF (Extended Backus-Naur Form) grammar and a partial expression, and produces possible completions by running all possible expansion paths of the grammar. We use a strongly customized notation of the ebnf grammar, tailored for human readability. The Parser allows overriding selected rules, so it is possible to use the same (human-readability-adjusted, and partially informal) grammar as a documentation for the user, and then the same grammar (just with some overriden rules) for the actual autocompletion.
 
 This was written mainly for the UHK macro language. It may or may not be usable for other projects - depending on how much you are willing to content yourself with our ebnf notation or deep diving into the code.
 
@@ -103,9 +103,7 @@ We currently use the simple academic approach of converting the ebnf into normal
 2) eliminate nullable rules
 3) convert the non-nullable BNF into a GNF (Griebach Normal Form)
 
-We leave out most CNF (Chomsky Normal Form) conversion steps though, as they don't much practical sense in non-academic setup. (Although we should probably convert the grammar into binary form in order to make sure that nullable elimination doesn't go exponential.)
-
-While this is the academic *proof oriented* approach, it might not be the best practical approach as it generates huge grammar.
+We leave out most CNF conversion steps though, as they don't much practical sense in a non-academic setup. (Although we should probably convert the grammar into binary form in order to make sure that nullable elimination doesn't go exponential.)
 
 ### Usage
 
@@ -117,7 +115,7 @@ From commandline, you can:
 git clone https://github.com/kareltucek/naive-autocompletion-parser.git
 cd naive-autocompletion-parser
 tsc                              # compile the project
-node dist/cli/launch.js start    # start the repl
+node dist/cli/launch.js          # start the repl
 help                             # see available commands
 ```
 

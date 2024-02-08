@@ -25,9 +25,11 @@ function extractGrammar(referenceManualBody: string): string[] {
 }
 
 function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
+
     let parserBuilder = new ParserBuilder(io)
         .setGrammarTokenPattern(grammarTokenRegex)
         .addRule(grammarText)
+        // .addRule(simplifiedGrammar)
         .overrideRuleWithConstantString("CODE_BLOCK", "{")
         .overrideRuleWithConstantString("COMMENT", "//<comment>")
         .overrideRuleWithRegex("COMMENT", "//.*")
@@ -38,44 +40,55 @@ function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
         .overrideRuleWithConstantString("INT", "<[-]?[0-9]+>")
         .overrideRuleWithConstantString("STRING", "\"<interpolated string>\"")
         .overrideRuleWithConstantString("STRING", "'<literal string>'")
-        .overrideRuleWithRegex("IDENTIFIER", '[a-zA-Z0-9_]*')
-        .overrideRuleWithConstantString("IDENTIFIER", "<[a-zA-Z0-9_]*>")
+        .overrideRuleWithRegex("IDENTIFIER", '[a-zA-Z][a-zA-Z0-9_]*')
+        .overrideRuleWithConstantString("IDENTIFIER", "<[a-zA-Z][a-zA-Z0-9_]*>")
     return parserBuilder;
 }
 
 function testingParserBuilder(io: IO): ParserBuilder {
+
     let simplifiedGrammar = `
     BODY = COMMENT
     BODY = [LABEL:] COMMAND [COMMENT]
     COMMENT = //<comment>
     COMMAND = [CONDITION|MODIFIER]* COMMAND
-    CONDITION = {ifShortcut | ifNotShortcut} [IFSHORTCUT_OPTIONS]* [KEYID]+
-    CONDITION = {ifGesture | ifNotGesture} [IFSHORTCUT_OPTIONS]* [KEYID]+
-    IFSHORTCUT_OPTIONS = noConsume | transitive | anyOrder | orGate | timeoutIn <time in ms (INT)> | cancelIn <time in ms(INT)>
-    OPERATOR = + | - | * | / | % | < | > | <= | >= | == | != | && | ||
-    VARIABLE_EXPANSION = $<variable name> | $<config value name> | $currentAddress | $thisKeyId | $queuedKeyId.<queue index (INT)> | $keyId.KEYID_ABBREV
-    EXPRESSION = (EXPRESSION) | INT | BOOL | FLOAT | VARIABLE_EXPANSION | EXPRESSION OPERATOR EXPRESSION | !EXPRESSION | min(EXPRESSION [, EXPRESSION]+) | max(EXPRESSION [, EXPRESSION]+)
+    COMMAND = setVar <var name (IDENTIFIER)> <value (PARENTHESSED_EXPRESSION)>
     PARENTHESSED_EXPRESSION = (EXPRESSION)
-    INT = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | [0-9]+ | -[0-9]+
-    BOOL = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | 0 | 1
-    FLOAT = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | [0-9]*.[0-9]+ | -FLOAT
-    VALUE = INT | BOOL | FLOAT
     IDENTIFIER = [a-zA-Z_][a-zA-Z0-9_]*
-    CHAR = <any nonwhite ascii char>
-    LABEL = <label (IDENTIFIER)>
-    ACTION = { macro MACROID | keystroke SHORTCUT | none }
-    SCANCODE = <en-US character(CHAR)> | <scancode abbreviation(SCANCODE_ABBREV)>
-    KEYID = <numeric keyid (INT)> | <keyid abbreviation(KEYID_ABBREV)>
-    KEYID_ABBREV = a | q | w | e | r | t | y | u | i | o | p | a | s | d | f | g | h | j | k | l | z | x | c | v | b | n | m
     `;
+
     // let simplifiedGrammar = `
-    // BODY = AA [BB]* [CC]+
-    // AA = a
+    // BODY = COMMENT
+    // BODY = [LABEL:] COMMAND [COMMENT]
+    // COMMENT = //<comment>
+    // COMMAND = [CONDITION|MODIFIER]* COMMAND
+    // CONDITION = {ifShortcut | ifNotShortcut} [IFSHORTCUT_OPTIONS]* [KEYID]+
+    // CONDITION = {ifGesture | ifNotGesture} [IFSHORTCUT_OPTIONS]* [KEYID]+
+    // IFSHORTCUT_OPTIONS = noConsume | transitive | anyOrder | orGate | timeoutIn <time in ms (INT)> | cancelIn <time in ms(INT)>
+    // OPERATOR = + | - | * | / | % | < | > | <= | >= | == | != | && | ||
+    // VARIABLE_EXPANSION = $<variable name> | $<config value name> | $currentAddress | $thisKeyId | $queuedKeyId.<queue index (INT)> | $keyId.KEYID_ABBREV
+    // EXPRESSION = (EXPRESSION) | INT | BOOL | FLOAT | VARIABLE_EXPANSION | EXPRESSION OPERATOR EXPRESSION | !EXPRESSION | min(EXPRESSION [, EXPRESSION]+) | max(EXPRESSION [, EXPRESSION]+)
+    // PARENTHESSED_EXPRESSION = (EXPRESSION)
+    // INT = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | [0-9]+ | -[0-9]+
+    // BOOL = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | 0 | 1
+    // FLOAT = PARENTHESSED_EXPRESSION | VARIABLE_EXPANSION | [0-9]*.[0-9]+ | -FLOAT
+    // VALUE = INT | BOOL | FLOAT
+    // IDENTIFIER = [a-zA-Z_][a-zA-Z0-9_]*
+    // CHAR = <any nonwhite ascii char>
+    // LABEL = <label (IDENTIFIER)>
+    // ACTION = { macro MACROID | keystroke SHORTCUT | none }
+    // SCANCODE = <en-US character(CHAR)> | <scancode abbreviation(SCANCODE_ABBREV)>
+    // KEYID = <numeric keyid (INT)> | <keyid abbreviation(KEYID_ABBREV)>
+    // KEYID_ABBREV = a | q | w | e | r | t | y | u | i | o | p | a | s | d | f | g | h | j | k | l | z | x | c | v | b | n | m
+    // `;
+
+    // let simplifiedGrammar = `
+    // BODY = a <first label(BB)> <second label(CC)>
     // BB = b
     // CC = c
     // `;
+
     let builder = new ParserBuilder(io)
-        .setGrammarTokenPattern(grammarTokenRegex)
         .addRule(simplifiedGrammar);
     return builder;
 }
