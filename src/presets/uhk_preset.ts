@@ -24,11 +24,24 @@ function extractGrammar(referenceManualBody: string): string[] {
     return grammarText;
 }
 
+function composeConfigValueNameRules(grammarText: string): string {
+    let setRuleRegex = new RegExp('^ *COMMAND *= *set +([^ ]+) +');
+    let valueRules = grammarText
+        .split(new RegExp('[\n\r]+'))
+        .map ( it => it.match(setRuleRegex))
+        .filter( it => it && it[1] && it[1] != '')
+        .map ( it => "CONFIG_VALUE_NAME = " + it!![1]);
+    let valueRule = "VARIABLE_EXPANSION = $CONFIG_VALUE_NAME";
+    return [...valueRules, valueRule].join("\n")
+
+}
+
 function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
 
     let parserBuilder = new ParserBuilder(io)
         .setGrammarTokenPattern(grammarTokenRegex)
         .addRule(grammarText)
+        .addRule(composeConfigValueNameRules(grammarText))
         // .addRule(simplifiedGrammar)
         .overrideRuleWithConstantString("CODE_BLOCK", "{")
         .overrideRuleWithConstantString("COMMENT", "//<comment>")
