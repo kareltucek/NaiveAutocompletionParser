@@ -36,7 +36,10 @@ export class ParserEngine {
                     io.write(note);
                 }
                 io.write(pointers[0].toStringAsPath(expression));
-                io.ask("");
+                let res = io.ask("");
+                if (res == 'q') {
+                    throw "user commanded us to quit ¯\\_(ツ)_/¯";
+                }
             }
         }
     }

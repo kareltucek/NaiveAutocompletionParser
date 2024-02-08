@@ -18,7 +18,7 @@ class StringPathResult {
 }
 
 export interface Rule {
-    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult;
+    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult;
     canTrim(idx: number, consumedSomething: boolean): boolean;
     toString(): string;
     toStringAsPath(isLeaf: boolean, index: number, offset: number): StringPathResult;
@@ -42,7 +42,7 @@ export class RegexRule implements Rule {
         );
     }
 
-    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult {
+    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult {
         let res = expression.match(this.regex)
         if (res) {
             // pop me from stack and increment string position
@@ -85,7 +85,7 @@ export class ConstantRule implements Rule {
         );
     }
 
-    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult {
+    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult {
         if (expression.match(this.regex)) {
             // pop me from stack and increment string position
             let newStack = pointer.stack.slice(0, pointer.stack.length - 1);
@@ -144,22 +144,34 @@ export class RuleRef implements Rule {
         return similarNonexpandedAncestorsFound <= maxRecursionDepth;
     }
 
-    askToFilterRules(rules: Rule[], io: IO | undefined): Rule[] {
-        if (io && io.config.interactive && rules.length > 1) {
+    askToFilterRules(rules: Rule[], grammar: Grammar, io: IO): Rule[] {
+        if (io.config.interactive && rules.length > 1) {
             let question = "Which rule should I expand?"
             let options = rules
-                .map((rule, index) => index + ": " + rule.toString())
+                .flatMap((rule, index) => { 
+                    let firstLine = [index + ": " + rule.toString()]
+                    let expansions: string[] = [];
+                    if (rule instanceof SequenceRule && rule.firstRef()) {
+                        expansions = grammar.getRule(rule.firstRef()!!)
+                            .map(it => "        " + it.toString());
+                    }
+                    return [...firstLine, ...expansions];
+                })
                 .join("\n")
             io.write(question);
             io.write(options);
-            let result = io.ask("? ", true);
-            return [rules[Number(result)]];
+            let answerString = io.ask("? ", true);
+            if (answerString == 'q') {
+                return [];
+            }
+            let answer = parseInt(answerString);
+            return [rules[answer]];
         } else {
             return rules;
         }
     }
 
-    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult {
+    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult {
         let myPointer = pointer.stack[pointer.stack.length-1]
         let base = pointer.stack.slice(0, pointer.stack.length - 1);
 
@@ -167,7 +179,7 @@ export class RuleRef implements Rule {
             if (this.canExpandMyself(base)) {
                 let lookahead = expression.substring(0, 1);
                 let allPossibleRules = grammar.getRule(this.ref, lookahead)
-                let newPointers = this.askToFilterRules(allPossibleRules, io).map(rule =>
+                let newPointers = this.askToFilterRules(allPossibleRules, grammar, io).map(rule =>
                     new PointerStack(
                         [
                             ...base, 
@@ -285,7 +297,7 @@ export class SequenceRule implements Rule {
         )
     }
 
-    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult {
+    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult {
         let myPointer = pointer.stack[pointer.stack.length - 1]
 
         if (myPointer.idx < this.rules.length) {
@@ -348,7 +360,7 @@ export class IterationRule implements Rule {
         );
     }
 
-    askToFilterRules(expansions: IterationExpansions, io: IO | undefined): IterationExpansions {
+    askToFilterRules(expansions: IterationExpansions, io: IO): IterationExpansions {
         let possibleChoices = 0 +
             Number(expansions.pushChildWithMe) +
             Number(expansions.pushChildWithoutMe) +
@@ -364,7 +376,11 @@ export class IterationRule implements Rule {
             if (expansions.pushChildWithMe) {
                 io.write("3: More");
             } 
-            let answer = parseInt(io.ask("? ", true));
+            let answerString = io.ask("? ", true);
+            if (answerString == 'q') {
+                return new IterationExpansions();
+            }
+            let answer = parseInt(answerString);
             expansions.pushJustBase = expansions.pushJustBase && answer == 1;
             expansions.pushChildWithoutMe = expansions.pushChildWithoutMe && answer == 2;
             expansions.pushChildWithMe = expansions.pushChildWithMe && answer == 3;
@@ -374,7 +390,7 @@ export class IterationRule implements Rule {
         }
     }
 
-    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO | undefined): MatchResult {
+    match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult {
         let myPointer = pointer.stack[pointer.stack.length - 1]
 
         let expand = new IterationExpansions();

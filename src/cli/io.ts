@@ -36,9 +36,6 @@ export class IO {
             console.log("Default: " + this.answerCache.defaultAnswer());
         }
         answer = this.ioProvider.ask(q) ?? "";
-        if (!answer) {
-            console.warn("Warning: interactive shell expected, but current environment does not seem to provide it!");
-        }
         if (applyDefault) {
             answer = this.answerCache.applyDefault(answer);
         }

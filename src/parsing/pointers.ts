@@ -32,8 +32,7 @@ export class PointerStack {
     }
 
     toStringAsPath(expression: string): string {
-        let expressionLine = expression + "\n" +
-            " ".repeat(this.stringPosition) + "^" + "\n";
+        let expressionLine = expression + "\n";
 
         let offset = 0;
         let accumulator: string[] = [];
