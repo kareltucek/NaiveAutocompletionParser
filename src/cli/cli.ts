@@ -48,7 +48,7 @@ export class Cli {
                 let nonterminal = m![2];
                 let expression = m![3];
                 io.answerCache.setCommandContext(nonterminal + ":" + expression);
-                let suggestions = parser.complete(expression, nonterminal, io);
+                let suggestions = parser.complete(expression, nonterminal);
                 io.hr();
                 suggestions.forEach(suggestion => io.write("  " + expression + suggestion.suggestion.substring(suggestion.overlap)));
             } else if (cmd.startsWith("transform bnf")) {

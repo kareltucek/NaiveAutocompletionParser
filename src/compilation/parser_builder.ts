@@ -76,6 +76,7 @@ export class ParserBuilder {
         let transformedGrammar = ParserBuilderHelpers.performTransformsMaybe(grammar, this.io);
 
         return new Parser(
+            this.io,
             transformedGrammar,
             this.continueWithRegex,
             this.continueAfterRegex,
