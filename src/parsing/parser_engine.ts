@@ -65,7 +65,7 @@ export class ParserEngine {
         }
     }
 
-    static matchRules(parser: Parser, grammar: Grammar, expression: string, mp: PointerStack[], io: IO | undefined = undefined): PointerStack[] {
+    static matchRules(parser: Parser, grammar: Grammar, expression: string, mp: PointerStack[], io: IO): PointerStack[] {
         ParserEngine.steps = 0;
         const whitespaceRegex = new RegExp('\\s');
         let cycles = 0;
@@ -93,7 +93,7 @@ export class ParserEngine {
             complete = [...complete, ...progressed.filter(it => it.complete)];
             incomplete = deduplicate([...dontNeedProgression, ...progressed.filter(it => !it.complete)]);
         }
-        console.log(ParserEngine.steps + " steps in " + cycles + " cycles, that is " + (ParserEngine.steps / cycles) + " per cycle.");
+        io.debug(ParserEngine.steps + " steps in " + cycles + " cycles, that is " + (ParserEngine.steps / cycles) + " per cycle.");
         return complete;
     }
 

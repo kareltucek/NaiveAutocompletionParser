@@ -37,7 +37,7 @@ export class IO {
         }
         answer = this.ioProvider.ask(q) ?? "";
         if (!answer) {
-            console.log("Warning: interactive shell expected, but current environment does not seem to provide it!");
+            console.warn("Warning: interactive shell expected, but current environment does not seem to provide it!");
         }
         if (applyDefault) {
             answer = this.answerCache.applyDefault(answer);

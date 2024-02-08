@@ -30,8 +30,6 @@ export class Parser {
         let completePhrases = ParserEngine.tryApplyMatchedRules(this, expression, matchedRules);
         const endTime = new Date().getTime();
 
-        console.log("time: " + (endTime - startTime));
-
         return completePhrases;
     }
 
