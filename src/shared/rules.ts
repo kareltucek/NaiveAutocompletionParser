@@ -4,7 +4,7 @@ import { Grammar } from "./grammar";
 import { IterationType } from "./iteration_type";
 import { escapeRegex, markPointersAsConsumed } from "./utils";
 import { strictIdentifierRegex, maxRecursionDepth } from "./constants";
-import { IO } from "../repl/io";
+import { IO } from "../cli/io";
 import { RuleMath } from "./rule_math";
 
 class StringPathResult {
@@ -136,7 +136,7 @@ export class RuleRef implements Rule {
     }
 
     askToFilterRules(rules: Rule[], io: IO | undefined): Rule[] {
-        if (io && rules.length > 1) {
+        if (io && io.config.interactive && rules.length > 1) {
             let question = "Which rule should I expand?"
             let options = rules
                 .map((rule, index) => index + ": " + rule.toString())
@@ -336,7 +336,7 @@ export class IterationRule implements Rule {
             Number(expansions.pushChildWithMe) +
             Number(expansions.pushChildWithoutMe) +
             Number(expansions.pushJustBase);
-        if (io && possibleChoices > 1) {
+        if (io && io.config.interactive && possibleChoices > 1) {
             io.write("How should iteration be expanded?");
             if (expansions.pushJustBase) {
                 io.write("1: Zero");

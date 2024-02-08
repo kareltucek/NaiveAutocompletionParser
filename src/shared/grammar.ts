@@ -1,6 +1,7 @@
 import { Rule, SequenceRule } from "./rules";
 import { groupBy, rulesEqual } from "./utils";
 import { AddedRules } from "./added_rules";
+import { IO } from "../cli/io";
 
 export class Grammar {
     cache: Map<string, SequenceRule[]> | undefined = undefined;
@@ -72,10 +73,12 @@ export class Grammar {
         return Grammar.of(result.flat())
     }
 
-    bind(transform: (grammar: Grammar) => Grammar): Grammar {
+    bind(transform: (grammar: Grammar) => Grammar, io: IO | undefined): Grammar {
         let res = transform(this);
         let size = this.allRules().length;
-        console.log("Size of grammar after transformation is " + size);
+        if (io) {
+            io.debug("Size of grammar after transformation is " + size);
+        }
         return res;
     }
 

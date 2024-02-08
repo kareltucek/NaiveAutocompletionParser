@@ -1,12 +1,12 @@
 import { Grammar } from "../shared/grammar";
 import { ConstantRule } from "../shared/rules";
-import { strictIdentifierRegex, globalCompletionRegex, continueRegex } from "../shared/constants";
 import { PointerStack, Pointer } from "./pointers";
 import { MatchOutcome, MatchResult } from "./match_results";
 import { Suggestion } from "./suggestion";
 import { deduplicate } from "../shared/utils";
-import { IO } from "../repl/io";
+import { IO } from "../cli/io";
 import { RuleRef } from "../shared/rules";
+import { Parser } from "./parser";
 
 export class ParserEngine {
     static startingPointers(rule: string): PointerStack[] {
@@ -15,9 +15,9 @@ export class ParserEngine {
         return [ new PointerStack([pointer], 0) ];
     }
 
-    static determineInterestingPositions(expression: string): number {
+    static determineInterestingPositions(expression: string, identifierRegex: RegExp): number {
         let pos = expression.length;
-        while (pos > 0 && strictIdentifierRegex.test(expression.substring(pos - 1))) {
+        while (pos > 0 && identifierRegex.test(expression.substring(pos - 1))) {
             pos--;
         }
 
@@ -25,11 +25,11 @@ export class ParserEngine {
     }
 
     static reportPointerStep(expression: string, pointers: PointerStack[], io: IO | undefined, note: string | undefined) {
-        if (io) {
+        if (io && io.config.interactive) {
             if (pointers.length == 0) {
-                io.write("got zero pointers!");
+                io.warn("got zero pointers!");
             } else if (pointers.length > 1) {
-                io.write("got multiple pointers!");
+                io.warn("got multiple pointers!");
             } else if (pointers.length == 1) {
                 io.hr();
                 if (note) {
@@ -65,11 +65,11 @@ export class ParserEngine {
         }
     }
 
-    static matchRules(grammar: Grammar, expression: string, mp: PointerStack[], io: IO | undefined = undefined): PointerStack[] {
+    static matchRules(parser: Parser, grammar: Grammar, expression: string, mp: PointerStack[], io: IO | undefined = undefined): PointerStack[] {
         ParserEngine.steps = 0;
         const whitespaceRegex = new RegExp('\\s');
         let cycles = 0;
-        let interestingBeyond = this.determineInterestingPositions(expression);
+        let interestingBeyond = this.determineInterestingPositions(expression, parser.identifierRegex);
         let complete = mp.filter(it => it.complete);
         let incomplete = mp.filter(it => !it.complete);
         while (incomplete.length > 0) {
@@ -97,7 +97,7 @@ export class ParserEngine {
         return complete;
     }
 
-    static tryApplyMatchedRules(expression: string, pointers: PointerStack[]): Suggestion[] {
+    static tryApplyMatchedRules(parser: Parser, expression: string, pointers: PointerStack[]): Suggestion[] {
         let suggestions = pointers.flatMap(pointer => {
             let top = pointer.stack[pointer.stack.length - 1]
             if (top.rule instanceof ConstantRule) {
@@ -108,12 +108,11 @@ export class ParserEngine {
                 } else if (
                     pointer.stringPosition == expression.length
                     && (expression == ''
-                        || expression[expression.length - 1].match(globalCompletionRegex)
-                        || lastToken[0].match(continueRegex)
-                        // || pointer.isSubWhitePath()
+                        || expression[expression.length - 1].match(parser.continueAfterRegex)
+                        || lastToken[0].match(parser.continueWithRegex)
                     )
                 ) {
-                    return [new Suggestion(lastToken, remainingText.length)]
+                    return [new Suggestion(lastToken, remainingText.length, pointer)]
                 } else {
                     return [];
                 }

@@ -1,7 +1,10 @@
-import { ParserBuilder } from "./compilation/parser_builder";
-import { Parser } from "./parsing/parser";
-import { Cli } from "./repl/cli";
-import { tokenizerRegex } from "./shared/constants";
+import { ParserBuilder } from "../compilation/parser_builder";
+import { Parser } from "../parsing/parser";
+import { Cli } from "../cli/cli";
+import { grammarTokenRegex } from "../shared/constants";
+import { Config } from "../cli/config";
+import { IOProvider } from "../cli/io_provider";
+import { IO } from "../cli/io";
 
 
 function extractGrammar(referenceManualBody: string): string[] {
@@ -21,9 +24,9 @@ function extractGrammar(referenceManualBody: string): string[] {
     return grammarText;
 }
 
-function buildParserBuilder(grammarText: string): ParserBuilder {
-    let parserBuilder = new ParserBuilder()
-        .setTokenizerRegex(tokenizerRegex)
+function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
+    let parserBuilder = new ParserBuilder(io)
+        .setGrammarTokenPattern(grammarTokenRegex)
         .addRule(grammarText)
         .overrideRuleWithConstantString("CODE_BLOCK", "{")
         .overrideRuleWithConstantString("COMMENT", "//<comment>")
@@ -40,7 +43,7 @@ function buildParserBuilder(grammarText: string): ParserBuilder {
     return parserBuilder;
 }
 
-function testingParserBuilder(): ParserBuilder {
+function testingParserBuilder(io: IO): ParserBuilder {
     let simplifiedGrammar = `
     BODY = COMMENT
     BODY = [LABEL:] COMMAND [COMMENT]
@@ -71,21 +74,21 @@ function testingParserBuilder(): ParserBuilder {
     // BB = b
     // CC = c
     // `;
-    let builder = new ParserBuilder()
-        .setTokenizerRegex(tokenizerRegex)
+    let builder = new ParserBuilder(io)
+        .setGrammarTokenPattern(grammarTokenRegex)
         .addRule(simplifiedGrammar);
     return builder;
 }
 
-function buildUhkParserBuilder(referenceManualBody: string): ParserBuilder {
+function buildUhkParserBuilder(referenceManualBody: string, io: IO): ParserBuilder {
     let grammarText = extractGrammar(referenceManualBody);
-    let builder = buildParserBuilder(grammarText.join("\n"));
-    // let builder = testingParserBuilder();
+    let builder = buildParserBuilder(grammarText.join("\n"), io);
+    // let builder = testingParserBuilder(io);
     return builder;
 }
 
-export function buildUhkParser(referenceManualBody: string): Parser {
-    return buildUhkParserBuilder(referenceManualBody).build();
+export function buildUhkParser(referenceManualBody: string, io = IO.dummy): Parser {
+    return buildUhkParserBuilder(referenceManualBody, io).build();
 }
 
 export function retrieveUhkGrammar(): Promise<string> {
@@ -94,9 +97,10 @@ export function retrieveUhkGrammar(): Promise<string> {
     return res
 }
 
-export function startUhkCli() {
+export function startUhkCli(ioProvider: IOProvider) {
     retrieveUhkGrammar().then(testGrammar => {
-        let builder = buildUhkParserBuilder(testGrammar)
-        Cli.launch(builder);
+        let io = new IO(Config.Interactive, ioProvider);
+        let builder = buildUhkParserBuilder(testGrammar, io);
+        Cli.launch(builder, io);
     })
 }

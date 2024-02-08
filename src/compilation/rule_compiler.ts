@@ -3,14 +3,17 @@ import { Rule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } f
 import { Stackable, StackToken, StackRule } from './stackables'
 import { IterationType } from '../shared/iteration_type';
 import { RuleNamer } from '../shared/rule_namer';
+import { IO } from '../cli/io';
 
 export class RuleCompiler {
+    io: IO;
     newRules: SequenceRule[] = new Array<SequenceRule>();
     stack: Stackable[] = new Array<Stackable>();
-    tokens: string[]
+    tokens: string[];
     idx: number = 0;
 
-    constructor(toks: string[]) {
+    constructor(toks: string[], io: IO) {
+        this.io = io;
         this.tokens = toks;
         this.idx = 0;
         this.newRules = new Array<SequenceRule>();
@@ -64,7 +67,7 @@ export class RuleCompiler {
         }
 
         if (start == this.stack.length) {
-            console.log("expected sequence, not found anything?");
+            this.io.warn("expected sequence, not found anything?");
         }
 
         let newRule = new SequenceRule();
@@ -106,7 +109,7 @@ export class RuleCompiler {
         if (this.isStringAt(this.stack.length - 1, stopperToken)) {
             this.stack.pop();
         } else {
-            console.log("expected " + stopperToken + " on top of stack!");
+            this.io.warn("expected " + stopperToken + " on top of stack!");
         }
         this.stack.push(new StackRule(new IterationRule(ruleName, type)));
     }
@@ -183,8 +186,8 @@ export class RuleCompiler {
         return "[" + values + "]"
     }
 
-    static compileRule(name: string, tokens: string[]): SequenceRule[] {
-        let compiler = new RuleCompiler(tokens);
+    static compileRule(name: string, tokens: string[], io: IO): SequenceRule[] {
+        let compiler = new RuleCompiler(tokens, io);
         return compiler.compile(name);
     }
 }

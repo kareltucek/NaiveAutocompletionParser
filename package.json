@@ -1,11 +1,12 @@
 {
   "name": "naive-autocompletion-parser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Naive EBNF LL Autocompletion parser.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [ 
-      "dist" 
+      "dist",
+      "!dist/**/launch.*"
   ],
   "type": "commonjs",
   "repository": {
@@ -21,9 +22,6 @@
     "@types/lodash": "^4.14.202",
     "@types/prompt-sync": "^4.2.3",
     "prompt-sync": "^4.2.0"
-  },
-  "scripts": {
-    "prepare": "node ./build_helpers/pre_publish.js"
   },
   "author": "Karel Tuček",
   "license": "MIT"

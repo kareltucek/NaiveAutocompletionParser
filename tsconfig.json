@@ -17,9 +17,5 @@
   },
   "include": [
     "src/**/*"
-  ],
-  "exclude": [
-    "src/repl/node_agnostic.js",
-    "src/repl/node_agnostic.d.ts"
   ]
 }
