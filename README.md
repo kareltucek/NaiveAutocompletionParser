@@ -1,11 +1,11 @@
 ### Motivation
-This is a naive LL parser that takes an EBNF (Extended Backus-Naur Form) grammar and a partial expression, and produces possible completions by running all possible expansion paths of the grammar. We use a strongly customized form of an ebnf grammar, tailored for human readability. The Parser allows overriding selected rules, so it is possible to use the same (human-readability-adjusted, and partially informal) grammar as a documentation for the user, and then the same grammar (just with some overriden rules) for actual autocompletion.
+This is a naive LL parser that takes an EBNF (Extended Backus-Naur Form) grammar and a partial expression, and produces possible completions by running all possible expansion paths of the grammar. We use a strongly customized form of an ebnf grammar, tailored for human readability. The Parser allows overriding selected rules, so it is possible to use the same (human-readability-adjusted, and partially informal) grammar as a documentation for the user, and then the same grammar (just with some overriden rules) for the actual autocompletion.
 
-This was written mainly for the UHK macro language. Originally I attempted to write it in a generic fashion, but some aspects of the UHK grammar soaked through as assumptions, so if you want to use this... be prepared to either have to dive deep into the code (which however is not long - around 1000 lines), or to use our ebnf notation.
+This was written mainly for the UHK macro language. It may or may not be usable for other projects - depending on how much you are willing to content yourself with our ebnf notation or deep diving into the code.
 
 ### Example
 
-Simplified example of the actual UHK grammar:
+Simplified example using an excerpt of the actual UHK grammar:
 
 ```
 import { ParserBuilder } from 'naive-autocompletion-parser'
@@ -50,8 +50,7 @@ SCANCODE_ABBREV = enter | escape | backspace | tab | space | minusAndUnderscore 
 MACRONAME = <macro name (IDENTIFIER)>
 `;
 
-let parser = new ParserBuilder()
-    .setTokenizerRegex(tokenizerRegex)
+let parser = new ParserBuilder(IO.dummy)
     .addRule(grammarText)
     .overrideRuleWithConstantString("CODE_BLOCK", "{")
     .overrideRuleWithConstantString("COMMENT", "//<comment>")
@@ -98,9 +97,15 @@ Cli.launch(parser);
 
 ### Efficiency
 
-Acceptable on small and unambiguous grammars that don't require deep expansions of left-recursive rules. (For convenience a rule can expand to itself, but is never allowed to be expanded multiple times on the same path unless some token was matched along the path.) On ambiguous grammars, poor performance is to be expected.
+We currently use the simple academic approach of converting the ebnf into normal forms. Specifically:
 
-Also, we do not transform the grammar into normal forms and yet prevent infinite left recursion, so nothing prevents you from shootin yourself in your foot. (Hey, the word "naive" is right in the name!)
+1) convert EBNF (Extended Backus Naur Form) into a standard BNF (i.e., replace iteration rules)
+2) eliminate nullable rules
+3) convert the non-nullable BNF into a GNF (Griebach Normal Form)
+
+We leave out most CNF (Chomsky Normal Form) conversion steps though, as they don't much practical sense in non-academic setup. (Although we should probably convert the grammar into binary form in order to make sure that nullable elimination doesn't go exponential.)
+
+While this is the academic *proof oriented* approach, it might not be the best practical approach as it generates huge grammar.
 
 ### Usage
 
@@ -112,7 +117,8 @@ From commandline, you can:
 git clone https://github.com/kareltucek/naive-autocompletion-parser.git
 cd naive-autocompletion-parser
 tsc                              # compile the project
-node dist/uhk_preset.js start    # start the repl
+node dist/cli/launch.js start    # start the repl
+help                             # see available commands
 ```
 
 Or from your project you can:
@@ -124,5 +130,5 @@ npm install naive-autocompletion-parser
 and then
 
 ```
-import { ParserBuilder, Cli, startUhkCli } from 'naive-autocompletion-parser'
+import { ParserBuilder } from 'naive-autocompletion-parser'
 ```
