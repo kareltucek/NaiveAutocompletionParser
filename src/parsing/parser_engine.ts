@@ -111,10 +111,6 @@ export class ParserEngine {
         return complete;
     }
 
-    static orderSuggestions(suggestions: Suggestion[]): Suggestion[] {
-        return suggestions.sort((a, b) => a.suggestion.localeCompare(b.suggestion));
-    }
-
     static tryApplyMatchedRules(parser: Parser, expression: string, pointers: PointerStack[]): Suggestion[] {
         let suggestions = pointers.flatMap(pointer => {
             let top = pointer.stack[pointer.stack.length - 1]
@@ -139,6 +135,6 @@ export class ParserEngine {
                 return [];
             }
         })
-        return deduplicateSuggestions(suggestions)
+        return deduplicateSuggestions(suggestions);
     }
 }

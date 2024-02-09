@@ -63,6 +63,13 @@ function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
         .overrideRuleWithConstantString("MODMASK", "RG")
         .overrideRuleWithConstantString("MODMASK", "LC")
         .overrideRuleWithConstantString("MODMASK", "RC")
+        .overrideRuleWithConstantString("MODMASK", "i")
+        .overrideRuleWithConstantString("MODMASK", "o")
+        .overrideRuleWithConstantString("MODMASK", "s")
+        .overrideRuleWithConstantString("MODMASK", "p")
+        .overrideRuleWithConstantString("MODMASK", "t")
+        .overrideRuleWithConstantString("MODMASK", "r")
+        .overrideRuleWithConstantString("MODMASK", "h")
     return parserBuilder;
 }
 
