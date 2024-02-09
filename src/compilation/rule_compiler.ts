@@ -10,9 +10,11 @@ export class RuleCompiler {
     newRules: SequenceRule[] = new Array<SequenceRule>();
     stack: Stackable[] = new Array<Stackable>();
     tokens: string[];
+    name: string;
     idx: number = 0;
 
-    constructor(toks: string[], io: IO) {
+    constructor(toks: string[], name:string, io: IO) {
+        this.name = name;
         this.io = io;
         this.tokens = toks;
         this.idx = 0;
@@ -23,13 +25,13 @@ export class RuleCompiler {
     processHumanDescription(baseName: string, token: string): Stackable {
         let m = token.match(regexPatterns.strictHumanRegex);
         let ruleName = RuleNamer.newName(baseName, "TAG");
-        this.newRules.push(new SequenceRule(ruleName, [new ConstantRule("<" + m![1].trim() + ">")]));
+        this.newRules.push(new SequenceRule(ruleName, [new ConstantRule("<" + m![1].trim() + ">", this.name)]));
         this.newRules.push(new SequenceRule(ruleName, [new RuleRef(m![2])]));
         return new StackRule(new RuleRef(ruleName));
     }
 
     processSimpleHumanDescription(token: string): Stackable {
-        return new StackRule(new ConstantRule(token));
+        return new StackRule(new ConstantRule(token, this.name));
     }
 
     isSequenceableAt(idx: number): boolean {
@@ -165,7 +167,7 @@ export class RuleCompiler {
                         this.stack.push(new StackRule(new RuleRef(this.tokens[this.idx])));
                         this.idx++;
                     } else {
-                        this.stack.push(new StackRule(new ConstantRule(this.tokens[this.idx])));
+                        this.stack.push(new StackRule(new ConstantRule(this.tokens[this.idx], this.name)));
                         this.idx++;
                     }
             }
@@ -187,7 +189,7 @@ export class RuleCompiler {
     }
 
     static compileRule(name: string, tokens: string[], io: IO): SequenceRule[] {
-        let compiler = new RuleCompiler(tokens, io);
+        let compiler = new RuleCompiler(tokens, name, io);
         return compiler.compile(name);
     }
 }

@@ -116,8 +116,9 @@ export class ParserEngine {
             if (top.rule instanceof ConstantRule) {
                 let remainingText = expression.substring(pointer.stringPosition)
                 let lastToken = (top.rule as ConstantRule).token;
+                let lastOriginRule = (top.rule as ConstantRule).origRule;
                 if (lastToken.startsWith(remainingText) && pointer.stringPosition != expression.length) {
-                    return [new Suggestion(lastToken, remainingText.length)]
+                    return [new Suggestion(lastToken, lastOriginRule, remainingText.length)]
                 } else if (
                     pointer.stringPosition == expression.length
                     && (expression == ''
@@ -125,7 +126,7 @@ export class ParserEngine {
                         || lastToken[0].match(parser.continueWithRegex)
                     )
                 ) {
-                    return [new Suggestion(lastToken, remainingText.length, pointer)]
+                    return [new Suggestion(lastToken, lastOriginRule, remainingText.length, pointer)]
                 } else {
                     return [];
                 }

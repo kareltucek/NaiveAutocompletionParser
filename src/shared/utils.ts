@@ -19,7 +19,7 @@ export function groupBy<T, K extends keyof any>(arr: T[], key: (i: T) => K): Map
 }
 
 const suggestionComparator: _.Comparator<Suggestion> = (a, b) => {
-    return a.suggestion == b.suggestion && a.overlap == b.overlap;
+    return a.suggestion == b.suggestion && a.overlap == b.overlap && a.originRule == a.originRule;
 };
 
 export function deduplicateSuggestions(array: Suggestion[]): Suggestion[] {

@@ -66,9 +66,11 @@ export class RegexRule implements Rule {
 export class ConstantRule implements Rule {
     token: string;
     regex: RegExp;
+    origRule: string;
 
-    constructor(t: string) {
+    constructor(t: string, origin: string) {
         this.token = t;
+        this.origRule = origin;
         let escapedString = escapeRegex(t)
         if (t.match(strictIdentifierRegex)) {
             this.regex = new RegExp("^.\\b" + escapedString + "\\b");
@@ -286,7 +288,7 @@ export class SequenceRule implements Rule {
     static fromConstant(n: string, r: string): SequenceRule {
         let newRule = new SequenceRule();
         newRule.name = n;
-        newRule.rules.push(new ConstantRule(r));
+        newRule.rules.push(new ConstantRule(r, n));
         if (r.length > 0) {
             newRule.firstChar = r.substring(0, 1);
         }

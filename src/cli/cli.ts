@@ -69,7 +69,7 @@ export class Cli {
                 parser.setGrammar(parser.grammar.bind(GnfTransform.transform, io));
             } else {
                 parser.complete(cmd, "BODY").forEach(suggestion => {
-                    io.write("  " + cmd + suggestion.suggestion.substring(suggestion.overlap));
+                    io.write("  " + cmd + suggestion.label().substring(suggestion.overlap));
                 })
             }
         }
