@@ -101,7 +101,8 @@ We currently use the simple academic approach of converting the ebnf into normal
 
 1) convert EBNF (Extended Backus Naur Form) into a standard BNF (i.e., replace iteration rules)
 2) eliminate nullable rules
-3) convert the non-nullable BNF into a GNF (Griebach Normal Form)
+3) unify common prefixes
+4) convert the non-nullable BNF into a GNF (Griebach Normal Form)
 
 We leave out most CNF conversion steps though, as they don't much practical sense in a non-academic setup. (Although we should probably convert the grammar into binary form in order to make sure that nullable elimination doesn't go exponential.)
 

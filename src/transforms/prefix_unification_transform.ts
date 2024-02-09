@@ -1,9 +1,11 @@
 import { Grammar } from "../shared/grammar";
-import { IterationType } from "../shared/iteration_type";
+import { IterationType } from "../shared/rules/iteration_type";
 import { RuleMath } from "../shared/rule_math";
 import { RuleNamer } from "../shared/rule_namer";
-import { IterationRule, Rule, SequenceRule, RuleRef, ConstantRule } from "../shared/rules";
 import { AddedRules } from "../shared/added_rules";
+import { SequenceRule } from "../shared/rules/sequence_rule";
+import { ConstantRule } from "../shared/rules/constant_rule";
+import { RuleRef } from "../shared/rules/rule_ref";
 
 export class PrefixUnificationTransform {
     private static ruleHash(rule: SequenceRule): string {

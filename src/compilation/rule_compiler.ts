@@ -1,9 +1,13 @@
 import * as regexPatterns from '../shared/constants'
-import { Rule, RuleRef, RegexRule, ConstantRule, SequenceRule, IterationRule } from '../shared/rules'
 import { Stackable, StackToken, StackRule } from './stackables'
-import { IterationType } from '../shared/iteration_type';
+import { IterationType } from '../shared/rules/iteration_type';
 import { RuleNamer } from '../shared/rule_namer';
 import { IO } from '../cli/io';
+import { SequenceRule } from '../shared/rules/sequence_rule';
+import { ConstantRule } from '../shared/rules/constant_rule';
+import { RuleRef } from '../shared/rules/rule_ref';
+import { IterationRule } from '../shared/rules/iteration_rule';
+import { RegexRule } from '../shared/rules/regex_rule';
 
 export class RuleCompiler {
     io: IO;

@@ -20,7 +20,7 @@ export class Suggestion {
     label(): string {
         const allignAt = 25;
         if ( this.suggestion.length >= allignAt ) {
-            return this.suggestion + " (" + this.originRule.toLocaleLowerCase().replace("_", " ") + ")";
+            return this.suggestion + " (" + this.originRule.toLocaleLowerCase().replace(new RegExp("_", "g"), " ") + ")";
         } else {
             return this.suggestion + " ".repeat(allignAt - this.suggestion.length) + "(" + this.originRule.toLocaleLowerCase().replace("_", " ") + ")";
         }

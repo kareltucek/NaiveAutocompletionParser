@@ -1,7 +1,8 @@
 import { Grammar } from "../shared/grammar";
-import { ConstantRule, RuleRef, RegexRule, SequenceRule } from "../shared/rules";
 import { AddedRules } from "../shared/added_rules";
 import { RuleNamer } from "../shared/rule_namer";
+import { RuleRef } from "../shared/rules/rule_ref";
+import { SequenceRule } from "../shared/rules/sequence_rule";
 
 // input: bnf form
 // output: (nullable) sequences of references

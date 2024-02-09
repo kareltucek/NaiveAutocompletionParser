@@ -1,11 +1,12 @@
 import { Grammar } from "../shared/grammar";
-import { IterationType } from "../shared/iteration_type";
+import { IterationType } from "../shared/rules/iteration_type";
 import { RuleMath } from "../shared/rule_math";
 import { RuleNamer } from "../shared/rule_namer";
-import { IterationRule, Rule, SequenceRule, RuleRef } from "../shared/rules";
 import { AddedRules } from "../shared/added_rules";
 import { groupBy } from "../shared/utils";
 import { first } from "lodash";
+import { SequenceRule } from "../shared/rules/sequence_rule";
+import { RuleRef } from "../shared/rules/rule_ref";
 
 export class GnfTransform {
     static isNoOpRule(rule: SequenceRule) {

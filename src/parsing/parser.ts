@@ -26,12 +26,16 @@ export class Parser {
         this.identifierRegex = identifierRegex
     }
 
-    complete(expression: string, rule: string): Suggestion[] {
+    complete(expression: string, rule: string, io: IO | undefined = undefined): Suggestion[] {
         const startTime = new Date().getTime();
         let mp = ParserEngine.startingPointers(rule);
         let matchedRules = ParserEngine.matchRules(this, this.grammar, expression, mp, this.io);
         let completePhrases = ParserEngine.tryApplyMatchedRules(this, expression, matchedRules);
         const endTime = new Date().getTime();
+
+        if (io) {
+            io.debug("Query took " + (endTime - startTime) + " ms.");
+        }
 
         return completePhrases;
     }

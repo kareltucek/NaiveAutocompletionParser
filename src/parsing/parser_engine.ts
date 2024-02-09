@@ -1,12 +1,13 @@
 import { Grammar } from "../shared/grammar";
-import { ConstantRule } from "../shared/rules";
+import { Rule } from "../shared/rules/rule_interface";
 import { PointerStack, Pointer } from "./pointers";
 import { MatchResult } from "./match_results";
 import { Suggestion } from "./suggestion";
 import { deduplicate, deduplicateSuggestions } from "../shared/utils";
 import { IO } from "../cli/io";
-import { RuleRef } from "../shared/rules";
 import { Parser } from "./parser";
+import { RuleRef } from "../shared/rules/rule_ref";
+import { ConstantRule } from "../shared/rules/constant_rule";
 
 export class ParserEngine {
     static startingPointers(rule: string): PointerStack[] {
@@ -110,6 +111,10 @@ export class ParserEngine {
         return complete;
     }
 
+    static orderSuggestions(suggestions: Suggestion[]): Suggestion[] {
+        return suggestions.sort((a, b) => a.suggestion.localeCompare(b.suggestion));
+    }
+
     static tryApplyMatchedRules(parser: Parser, expression: string, pointers: PointerStack[]): Suggestion[] {
         let suggestions = pointers.flatMap(pointer => {
             let top = pointer.stack[pointer.stack.length - 1]
@@ -135,6 +140,5 @@ export class ParserEngine {
             }
         })
         return deduplicateSuggestions(suggestions)
-            .sort((a, b) => a.suggestion.localeCompare(b.suggestion));
     }
 }

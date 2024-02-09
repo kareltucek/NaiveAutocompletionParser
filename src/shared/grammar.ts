@@ -1,8 +1,9 @@
-import { ConstantRule, Rule, SequenceRule } from "./rules";
 import { groupBy, rulesEqual } from "./utils";
 import { AddedRules } from "./added_rules";
 import { IO } from "../cli/io";
 import { GrammarLookupResult } from "../shared/grammar_lookup_result";
+import { SequenceRule } from "./rules/sequence_rule";
+import { ConstantRule } from "./rules/constant_rule";
 
 export class Grammar {
     isInGnf: boolean = false;

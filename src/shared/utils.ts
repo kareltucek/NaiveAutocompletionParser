@@ -1,7 +1,10 @@
 import { Pointer } from '../parsing/pointers';
 import _ from 'lodash';
-import { RuleRef, SequenceRule, ConstantRule, Rule } from './rules';
 import { Suggestion } from '../parsing/suggestion';
+import { Rule } from './rules/rule_interface';
+import { RuleRef } from './rules/rule_ref';
+import { ConstantRule } from './rules/constant_rule';
+import { SequenceRule } from './rules/sequence_rule';
 
 export function groupByAsRecord<T, K extends keyof any>(arr: T[], key: (i: T) => K) {
     return arr.reduce(

@@ -1,5 +1,4 @@
 import { RuleCompiler } from './rule_compiler'
-import { SequenceRule } from '../shared/rules';
 import { Grammar } from '../shared/grammar';
 import { IO } from '../cli/io';
 import { BnfTransform } from '../transforms/bnf_transform';
@@ -7,6 +6,7 @@ import { NullableRuleElimination } from '../transforms/nullable_elimination_tran
 import { GnfTransform } from '../transforms/gnf_transform';
 import * as constants from '../shared/constants';
 import { PrefixUnificationTransform } from '../transforms/prefix_unification_transform';
+import { SequenceRule } from '../shared/rules/sequence_rule';
 
 export class ParserBuilderHelpers {
     static chunkGrammar(code: string): string[] {

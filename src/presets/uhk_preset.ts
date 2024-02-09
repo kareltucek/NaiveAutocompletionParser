@@ -1,6 +1,6 @@
 import { ParserBuilder } from "../compilation/parser_builder";
 import { Parser } from "../parsing/parser";
-import { Cli } from "../cli/cli";
+import { Interpretter } from "../cli/interpretter";
 import { grammarTokenRegex } from "../shared/constants";
 import { Config } from "../cli/config";
 import { IOProvider } from "../cli/io_provider";
@@ -132,6 +132,6 @@ export function startUhkCli(ioProvider: IOProvider) {
     retrieveUhkGrammar().then(testGrammar => {
         let io = new IO(Config.default, ioProvider);
         let builder = buildUhkParserBuilder(testGrammar, io);
-        Cli.launch(builder, io);
+        Interpretter.launch(builder, io);
     })
 }

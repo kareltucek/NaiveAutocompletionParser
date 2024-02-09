@@ -9,7 +9,7 @@ import { IOProvider } from "./io_provider";
 
 export class ExitCommand {}
 
-export class Cli {
+export class Interpretter {
     static launch(parserBuilder: ParserBuilder, io: IO) {
         let parser = parserBuilder.build();
 
@@ -68,8 +68,8 @@ export class Cli {
             } else if (cmd.startsWith("transform gnf")) {
                 parser.setGrammar(parser.grammar.bind(GnfTransform.transform, io));
             } else {
-                parser.complete(cmd, "BODY").forEach(suggestion => {
-                    io.write("  " + cmd + suggestion.label().substring(suggestion.overlap));
+                parser.complete(cmd, "BODY", io).forEach(suggestion => {
+                    io.write("  " + cmd + suggestion.suggestion.substring(suggestion.overlap));
                 })
             }
         }

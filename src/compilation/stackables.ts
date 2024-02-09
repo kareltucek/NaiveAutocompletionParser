@@ -1,4 +1,4 @@
-import { Rule, SequenceRule, RuleRef, RegexRule, ConstantRule, IterationRule } from '../shared/rules'
+import { Rule } from "../shared/rules/rule_interface";
 
 export interface Stackable { }
 
