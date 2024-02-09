@@ -2,8 +2,8 @@ import { ParserBuilder } from "../compilation/parser_builder";
 
 
 let regexPattern: string = '/([^/\\\\]|\\\\.|\\\\\\\\)+/';
-let nonterminalPattern: string = '[A-Z][A-Z0-9_]+';
-let identifierPattern: string = '[a-zA-Z]+[a-zA-Z0-9_]*';
+let nonterminalPattern: string = '[A-Z_][A-Z0-9_]*';
+let identifierPattern: string = '[a-zA-Z_][a-zA-Z0-9_]*';
 let humanPattern: string = '<([^<>|]*)\\((' + nonterminalPattern + ')\\)>';
 let simpleHumanPattern: string = '<[^<>|]+>';
 
@@ -44,6 +44,7 @@ export let strictHumanRegex: RegExp = new RegExp(strict(humanPattern));
 export let strictSimpleHumanRegex: RegExp = new RegExp(strict(simpleHumanPattern));
 export let strictNonterminalRegex: RegExp = new RegExp(strict(nonterminalPattern));
 export let strictIdentifierRegex: RegExp = new RegExp(strict(identifierPattern));
+export let identifierRegex: RegExp = new RegExp(identifierPattern);
 export let continueAfterRegex: RegExp = new RegExp(continueAfterPattern)
 export let continueWithRegex: RegExp = new RegExp(continueWithPattern)
 export let nonterminalRegex: RegExp = new RegExp(nonterminalPattern);

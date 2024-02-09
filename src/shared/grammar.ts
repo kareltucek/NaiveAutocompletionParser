@@ -1,9 +1,11 @@
-import { Rule, SequenceRule } from "./rules";
+import { ConstantRule, Rule, SequenceRule } from "./rules";
 import { groupBy, rulesEqual } from "./utils";
 import { AddedRules } from "./added_rules";
 import { IO } from "../cli/io";
+import { GrammarLookupResult } from "../shared/grammar_lookup_result";
 
 export class Grammar {
+    isInGnf: boolean = false;
     cache: Map<string, SequenceRule[]> | undefined = undefined;
     rules: Map<string, SequenceRule[]> = new Map<string, SequenceRule[]>();
 
@@ -15,32 +17,41 @@ export class Grammar {
         return new Grammar(rules);
     }
 
+    computeIsInGnf(): boolean {
+        let result = this.allRules().find(it => !(it.rules[0] instanceof ConstantRule));
+        return !(result != undefined);
+    }
+
     fillCache(): Grammar {
         this.cache = groupBy(this.allRules(), rule => this.ruleHash(rule));
+        this.isInGnf = this.computeIsInGnf();
         return this;
     }
 
     ruleHash(rule: SequenceRule): string {
-        return rule.name + '\n' + (rule.firstChar ?? '');
+        if (rule.rules[0] && rule.rules[0] instanceof ConstantRule) {
+            return rule.name + '\n' + rule.rules[0].token;
+        } else {
+            return rule.name;
+        }
     }
 
-    getRule(key: string, lookahead: string | undefined = undefined): SequenceRule[] {
-
-        if (lookahead == '') {
-            lookahead = undefined;
-        }
-        if (lookahead == undefined) {
-            return this.rules.get(key) ?? new Array<SequenceRule>();
+    getRuleByLookahead(key: string, lookahead: string): GrammarLookupResult {
+        if (this.cache) {
+            return GrammarLookupResult.of(
+                this.cache.get(key + '\n' + lookahead) ?? [],
+                this.cache.get(key) ?? [],
+            )
         } else {
-            if (this.cache) {
-                let looked = this.cache.get(key + "\n" + lookahead) ?? [];
-                let anonymous = this.cache.get(key + '\n') ?? [];
-                return [...looked, ...anonymous];
-            } else {
-                return (this.rules.get(key) ?? new Array<SequenceRule>())
-                    .filter((rule: any) => lookahead == rule.firstChar || rule.firstChar == undefined);
-            }
+            return GrammarLookupResult.of(
+                [],
+                this.rules.get(key) ?? [],
+            )
         }
+    }
+
+    getRule(key: string): SequenceRule[] {
+        return this.rules.get(key) ?? new Array<SequenceRule>();
     }
 
     addRule(rule: SequenceRule) {

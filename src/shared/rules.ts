@@ -1,11 +1,13 @@
 import { PointerStack, Pointer } from "../parsing/pointers";
-import { MatchResult, MatchOutcome } from "../parsing/match_results";
-import { Grammar } from "./grammar";
+import { MatchResult } from "../parsing/match_results";
+import { Grammar} from "./grammar";
 import { IterationType } from "./iteration_type";
 import { escapeRegex, markPointersAsConsumed } from "./utils";
 import { strictIdentifierRegex, maxRecursionDepth } from "./constants";
 import { IO } from "../cli/io";
 import { RuleMath } from "./rule_math";
+import * as constants from "../shared/constants"
+import { GrammarLookupResult } from "./grammar_lookup_result";
 
 class StringPathResult {
     str: string;
@@ -28,7 +30,8 @@ export class RegexRule implements Rule {
     regex: RegExp;
 
     constructor(r: RegExp) {
-        this.regex = r;
+        let modified = r.source.replace(new RegExp('^\\^'), '');
+        this.regex = new RegExp(`^.${modified}`);
     }
 
     toString(): string {
@@ -48,10 +51,10 @@ export class RegexRule implements Rule {
             // pop me from stack and increment string position
             let newStack = pointer.stack.slice(0, pointer.stack.length - 1);
             let markedStack = markPointersAsConsumed(newStack);
-            let newPointer = new PointerStack(markedStack, pointer.stringPosition + res[0].length);
-            return new MatchResult([newPointer], MatchOutcome.Matched);
+            let newPointer = new PointerStack(markedStack, pointer.stringPosition + res[0].length - 1);
+            return new MatchResult([newPointer], [], []);
         } else {
-            return new MatchResult([pointer], MatchOutcome.Failed)
+            return new MatchResult([], [], [pointer]);
         }
     }
 
@@ -68,9 +71,9 @@ export class ConstantRule implements Rule {
         this.token = t;
         let escapedString = escapeRegex(t)
         if (t.match(strictIdentifierRegex)) {
-            this.regex = new RegExp("^\\b" + escapedString + "\\b");
+            this.regex = new RegExp("^.\\b" + escapedString + "\\b");
         } else {
-            this.regex = new RegExp("^" + escapedString + "");
+            this.regex = new RegExp("^." + escapedString + "");
         }
     }
 
@@ -92,10 +95,10 @@ export class ConstantRule implements Rule {
             let markedStack = markPointersAsConsumed(newStack);
             let newPointer = new PointerStack(markedStack, pointer.stringPosition + this.token.length);
 
-            return new MatchResult([newPointer], MatchOutcome.Matched);
+            return new MatchResult([newPointer], [], []);
         } else {
             // fail
-            return new MatchResult([pointer], MatchOutcome.Failed)
+            return new MatchResult([], [], [pointer]);
         }
     }
 
@@ -144,7 +147,7 @@ export class RuleRef implements Rule {
         return similarNonexpandedAncestorsFound <= maxRecursionDepth;
     }
 
-    askToFilterRules(rules: Rule[], grammar: Grammar, io: IO): Rule[] {
+    askToFilterRules(rules: SequenceRule[], grammar: Grammar, io: IO): SequenceRule[] {
         if (io.config.interactive && rules.length > 1) {
             let question = "Which rule should I expand?"
             let options = rules
@@ -171,29 +174,69 @@ export class RuleRef implements Rule {
         }
     }
 
+    expandRules(rules: SequenceRule[], pointer: PointerStack, myPointer: Pointer, matchedFirstToken: boolean): PointerStack[] {
+        let base = pointer.stack.slice(0, pointer.stack.length - 1);
+
+        return rules.map(rule => {
+            let tokenLength = matchedFirstToken && rule.rules[0] instanceof ConstantRule ? rule.rules[0].token.length : 0;
+            let newPointerStack = [
+                    ...base,
+                    new Pointer(myPointer.rule, 1),
+                    new Pointer(rule, matchedFirstToken ? 1 : 0),
+                ];
+            return new PointerStack(
+                matchedFirstToken ? markPointersAsConsumed(newPointerStack) : newPointerStack,
+                pointer.stringPosition + tokenLength,
+                pointer.complete
+            )
+        }
+        )
+    }
+
     match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult {
         let myPointer = pointer.stack[pointer.stack.length-1]
         let base = pointer.stack.slice(0, pointer.stack.length - 1);
 
         if (myPointer.idx == 0) {
-            if (this.canExpandMyself(base)) {
-                let lookahead = expression.substring(0, 1);
-                let allPossibleRules = grammar.getRule(this.ref, lookahead)
-                let newPointers = this.askToFilterRules(allPossibleRules, grammar, io).map(rule =>
-                    new PointerStack(
-                        [
-                            ...base, 
-                            new Pointer(myPointer.rule, 1),
-                            new Pointer(rule, 0),
-                        ],
-                        pointer.stringPosition,
-                        pointer.complete
-                    )
-                )
-                return new MatchResult(newPointers, MatchOutcome.Progressing);
+            if (grammar.isInGnf || this.canExpandMyself(base)) {
+                let lookaheadMatch = expression.match(new RegExp(`^.(${constants.identifierRegex.source})`));
+                let lookupResult: GrammarLookupResult;
+
+                if (lookaheadMatch && lookaheadMatch[1] != '') {
+                    lookupResult = grammar.getRuleByLookahead(this.ref, lookaheadMatch[1]);
+                } else {
+                    lookupResult = GrammarLookupResult.of([], grammar.getRule(this.ref));
+                }
+
+                if (io.config.interactive) {
+                    let pickedRuleMaybe = this.askToFilterRules([...lookupResult.matchingRules, ...lookupResult.maybeMatchingRules], grammar, io);
+                    if (pickedRuleMaybe.length == 0) {
+                        return new MatchResult([],[],[]);
+                    } else if (lookupResult.matchingRules.find(it => it == pickedRuleMaybe[0])) {
+                        return new MatchResult(
+                            this.expandRules(pickedRuleMaybe, pointer, myPointer, true),
+                            [],
+                            []
+                        );
+                    } else {
+                        return new MatchResult(
+                            [],
+                            this.expandRules(pickedRuleMaybe, pointer, myPointer, false),
+                            []
+                        );
+                    }
+                } else {
+                    let matchedExpandedPointers = this.expandRules(lookupResult.matchingRules, pointer, myPointer, true);
+                    let nonmatchedExpandedPointers = this.expandRules(lookupResult.maybeMatchingRules, pointer, myPointer, false);
+
+                    return new MatchResult(matchedExpandedPointers, nonmatchedExpandedPointers, []);
+                }
             }
         } else {
+            // pop me from stack
+            let base = pointer.stack.slice(0, pointer.stack.length - 1);
             return new MatchResult(
+                [],
                 [
                     new PointerStack(
                         [...base],
@@ -201,10 +244,10 @@ export class RuleRef implements Rule {
                         pointer.complete
                     )
                 ],
-                MatchOutcome.Progressing
+                []
             )
         }
-        return new MatchResult([pointer], MatchOutcome.Failed);
+        return new MatchResult([], [], [pointer]);
     }
 
     canTrim(idx: number, consumedSomething: boolean): boolean {
@@ -217,19 +260,19 @@ export class SequenceRule implements Rule {
     firstChar: string | undefined = undefined;
     rules: Rule[] = new Array();
 
-    constructor (name: string = "", rules: Rule[] = new Array()) {
+    constructor(name: string = "", rules: Rule[] = new Array()) {
         this.name = name;
         this.rules = rules;
         if (
-            rules.length > 0 
-            && rules[0] instanceof ConstantRule 
+            rules.length > 0
+            && rules[0] instanceof ConstantRule
             && (rules[0] as ConstantRule).token.length > 0
         ) {
             this.firstChar = (rules[0] as ConstantRule).token.substring(0, 1);
         }
     }
 
-    static of (name: string = "", rules: Rule[] = new Array()): SequenceRule {
+    static of(name: string = "", rules: Rule[] = new Array()): SequenceRule {
         return new SequenceRule(name, rules);
     }
 
@@ -265,9 +308,9 @@ export class SequenceRule implements Rule {
 
 
     flatMap(transform: (rule: Rule) => Rule[][]): SequenceRule[] {
-        let arrayOfOptions: Rule[][][] = this.rules.map( rule => transform(rule));
+        let arrayOfOptions: Rule[][][] = this.rules.map(rule => transform(rule));
         let ruleSequences = RuleMath.produce(arrayOfOptions);
-        let namedRules = ruleSequences.map ( sequence => new SequenceRule(this.name, sequence))
+        let namedRules = ruleSequences.map(sequence => new SequenceRule(this.name, sequence))
         return namedRules
     }
 
@@ -280,18 +323,18 @@ export class SequenceRule implements Rule {
 
     toStringAsPath(isLeaf: boolean, index: number, offset: number): StringPathResult {
         if (!isLeaf) {
-            index = index-1;
+            index = index - 1;
         }
 
         let sequence = this.rules
             .slice(0, index)
             .map(it => it.toString())
-        let fakeResult = this.name + ": " + [ ...sequence, ""].join(" .. ")
+        let fakeResult = this.name + ": " + [...sequence, ""].join(" .. ")
         const anyChar = new RegExp(".", "g")
         let padding = " ".repeat(offset)
         let firstLine = padding + this.toString();
         let secondLine = padding + fakeResult.replace(anyChar, " ") + "^";
-        return new StringPathResult (
+        return new StringPathResult(
             firstLine,
             secondLine.length - 1
         )
@@ -306,12 +349,12 @@ export class SequenceRule implements Rule {
             newBase.push(new Pointer(myPointer.rule, myPointer.idx + 1, myPointer.consumedSomething));
             newBase.push(new Pointer(this.rules[myPointer.idx], 0));
             let newStack = new PointerStack(newBase, pointer.stringPosition, pointer.complete);
-            return new MatchResult([newStack], MatchOutcome.Progressing)
+            return new MatchResult([], [newStack], []);
         } else {
             // pop me from stack
             let newBase = pointer.stack.slice(0, pointer.stack.length - 1)
             let newStack = new PointerStack(newBase, pointer.stringPosition, pointer.complete);
-            return new MatchResult([newStack], MatchOutcome.Progressing)
+            return new MatchResult([], [newStack], []);
         }
     }
 
@@ -337,7 +380,7 @@ export class IterationRule implements Rule {
     }
 
     determineTypeOperator() {
-        switch(this.iterationType) {
+        switch (this.iterationType) {
             case IterationType.ZeroOrOne:
                 return "?";
             case IterationType.ZeroOrMore:
@@ -369,13 +412,13 @@ export class IterationRule implements Rule {
             io.write("How should iteration be expanded?");
             if (expansions.pushJustBase) {
                 io.write("1: Zero");
-            } 
+            }
             if (expansions.pushChildWithoutMe) {
                 io.write("2: One");
-            } 
+            }
             if (expansions.pushChildWithMe) {
                 io.write("3: More");
-            } 
+            }
             let answerString = io.ask("? ", true);
             if (answerString == 'q') {
                 return new IterationExpansions();
@@ -453,7 +496,7 @@ export class IterationRule implements Rule {
             )
         }
 
-        return new MatchResult(results, MatchOutcome.Progressing);
+        return new MatchResult([], results, []);
     }
 
     canTrim(idx: number, consumedSomething: boolean): boolean {

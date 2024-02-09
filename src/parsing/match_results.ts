@@ -1,17 +1,13 @@
 import { PointerStack } from "./pointers";
 
-export enum MatchOutcome {
-    Failed,
-    Matched,
-    Progressing,
-}
-
 export class MatchResult {
-    newPointers: PointerStack[];
-    outcome: MatchOutcome
+    matched: PointerStack[] = [];
+    progressing: PointerStack[] = [];
+    failed: PointerStack[] = [];
 
-    constructor(np: PointerStack[], mo: MatchOutcome) {
-        this.newPointers = np;
-        this.outcome = mo;
+    constructor(matched: PointerStack[], progressing: PointerStack[], failed: PointerStack[]) {
+        this.matched = matched;
+        this.progressing = progressing;
+        this.failed = failed;
     }
 }

@@ -37,7 +37,6 @@ function composeConfigValueNameRules(grammarText: string): string {
 }
 
 function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
-
     let parserBuilder = new ParserBuilder(io)
         .setGrammarTokenPattern(grammarTokenRegex)
         .addRule(grammarText)
@@ -55,19 +54,25 @@ function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
         .overrideRuleWithConstantString("STRING", "'<literal string>'")
         .overrideRuleWithRegex("IDENTIFIER", '[a-zA-Z][a-zA-Z0-9_]*')
         .overrideRuleWithConstantString("IDENTIFIER", "<[a-zA-Z][a-zA-Z0-9_]*>")
+        .overrideRuleWithRegex("MODMASK", "\\b([LR]?[CSAG]|[ios]|[trhp])+")
+        .overrideRuleWithConstantString("MODMASK", "LS")
+        .overrideRuleWithConstantString("MODMASK", "RS")
+        .overrideRuleWithConstantString("MODMASK", "LA")
+        .overrideRuleWithConstantString("MODMASK", "RA")
+        .overrideRuleWithConstantString("MODMASK", "LG")
+        .overrideRuleWithConstantString("MODMASK", "RG")
+        .overrideRuleWithConstantString("MODMASK", "LC")
+        .overrideRuleWithConstantString("MODMASK", "RC")
     return parserBuilder;
 }
 
 function testingParserBuilder(io: IO): ParserBuilder {
 
     let simplifiedGrammar = `
-    BODY = COMMENT
-    BODY = [LABEL:] COMMAND [COMMENT]
-    COMMENT = //<comment>
-    COMMAND = [CONDITION|MODIFIER]* COMMAND
-    COMMAND = setVar <var name (IDENTIFIER)> <value (PARENTHESSED_EXPRESSION)>
-    PARENTHESSED_EXPRESSION = (EXPRESSION)
-    IDENTIFIER = [a-zA-Z_][a-zA-Z0-9_]*
+    A = a B
+    A = a C
+    B = b
+    C = c
     `;
 
     // let simplifiedGrammar = `

@@ -7,6 +7,8 @@ import { GnfTransform } from "../transforms/gnf_transform";
 import { Config } from "./config";
 import { IOProvider } from "./io_provider";
 
+export class ExitCommand {}
+
 export class Cli {
     static launch(parserBuilder: ParserBuilder, io: IO) {
         let parser = parserBuilder.build();
@@ -43,16 +45,22 @@ export class Cli {
                 let expression = m![3];
                 parser.complete(expression, nonterminal).forEach(suggestion => io.write("  " + expression + suggestion.suggestion.substring(suggestion.overlap)))
             } else if (cmd.startsWith("walk")) {
-                io.config.interactive = true;
-                let m = cmd.match(new RegExp('([^ ]+) +([^ ]+) (.*)'));
-                let command = m![1];
-                let nonterminal = m![2];
-                let expression = m![3];
-                io.answerCache.setCommandContext(nonterminal + ":" + expression);
-                let suggestions = parser.complete(expression, nonterminal);
-                io.hr();
-                suggestions.forEach(suggestion => io.write("  " + expression + suggestion.suggestion.substring(suggestion.overlap)));
-                io.config.interactive = false;
+                try {
+                    io.config.interactive = true;
+                    let m = cmd.match(new RegExp('([^ ]+) +([^ ]+) (.*)'));
+                    let command = m![1];
+                    let nonterminal = m![2];
+                    let expression = m![3];
+                    io.answerCache.setCommandContext(nonterminal + ":" + expression);
+                    let suggestions = parser.complete(expression, nonterminal);
+                    io.hr();
+                    suggestions.forEach(suggestion => io.write("  " + expression + suggestion.suggestion.substring(suggestion.overlap)));
+                    io.config.interactive = false;
+                } catch(e) {
+                    if (!(e instanceof ExitCommand)) {
+                        throw e;
+                    }
+                }
             } else if (cmd.startsWith("transform bnf")) {
                 parser.setGrammar(parser.grammar.bind(BnfTransform.transform, io));
             } else if (cmd.startsWith("transform nre")) {

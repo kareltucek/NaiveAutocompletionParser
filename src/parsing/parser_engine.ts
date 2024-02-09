@@ -1,7 +1,7 @@
 import { Grammar } from "../shared/grammar";
 import { ConstantRule } from "../shared/rules";
 import { PointerStack, Pointer } from "./pointers";
-import { MatchOutcome, MatchResult } from "./match_results";
+import { MatchResult } from "./match_results";
 import { Suggestion } from "./suggestion";
 import { deduplicate, deduplicateSuggestions } from "../shared/utils";
 import { IO } from "../cli/io";
@@ -46,30 +46,31 @@ export class ParserEngine {
     
     static steps = 0;
 
-    static progressPointer(grammar: Grammar, expression: string, p: PointerStack, interestingBeyond: number, io: IO): PointerStack[] {
-        ParserEngine.steps++;
+    static progressPointer(grammar: Grammar, expression: string, p: PointerStack, interestingBeyond: number, io: IO, depth: number = 0): PointerStack[] {
+        if (p.stringPosition < interestingBeyond) {
+            ParserEngine.steps++;
+        }
         let validPointers: PointerStack[] = [];
         let currentRule = p.stack[p.stack.length - 1].rule;
         let res = currentRule.match(expression, p, grammar, io);
-        switch (res.outcome) {
-            case MatchOutcome.Failed:
-                this.reportPointerStep(expression, [p], io, "Failed when matching:")
-                return res.newPointers
-                    .filter(it => it.stringPosition >= interestingBeyond)
-                    .map(it => new PointerStack(it.stack, it.stringPosition, true));
-            case MatchOutcome.Progressing:
-                validPointers = res.newPointers.filter(it => it.stack.length > 0)
-                this.reportPointerStep(expression, validPointers, io, "Progressed:");
-                return validPointers.flatMap(it => ParserEngine.progressPointer(grammar, expression, it, interestingBeyond, io));
-            case MatchOutcome.Matched:
-                validPointers = res.newPointers.filter(it => it.stack.length > 0)
-                this.reportPointerStep(expression, res.newPointers, io, "Matched:");
-                return validPointers
-        }
+        return [
+            ...res.matched
+                .filter(it => it.stack.length > 0)
+                .map(it => { this.reportPointerStep(expression, [it], io, "Progressed"); return it })
+                ,
+            ...res.progressing
+                .filter(it => it.stack.length > 0)
+                .map(it => {this.reportPointerStep(expression, [it], io, "Progressed"); return it})
+                .flatMap(it => ParserEngine.progressPointer(grammar, expression, it, interestingBeyond, io, depth+1)),
+            ...res.failed
+                .map(it => {this.reportPointerStep(expression, [p], io, "Failed when matching:"); return it})
+                .filter(it => it.stringPosition >= interestingBeyond)
+                .map(it => new PointerStack(it.stack, it.stringPosition, true))
+        ]
     }
 
     static simplifyState(pointers: PointerStack[]): PointerStack[] {
-        pointers.map( it => it.trim() )
+        pointers.map(it => it.trim())
         return deduplicate(pointers);
     }
 
@@ -88,14 +89,14 @@ export class ParserEngine {
             let dontNeedProgression = incomplete.filter(it => it.stringPosition != minPosition);
 
             let whites = 0;
-            while (whitespaceRegex.test(expression[minPosition+whites])) {
+            while (whitespaceRegex.test(expression[minPosition + whites])) {
                 whites++;
             }
-            let shortExpression = expression.substring(minPosition+whites);
+            let shortExpression = (" " + expression).substring(minPosition + whites);
 
             let progressed = needProgression.flatMap(it => {
                 it.stringPosition += whites;
-                return ParserEngine.progressPointer(grammar, shortExpression, it, interestingBeyond, io );
+                return ParserEngine.progressPointer(grammar, shortExpression, it, interestingBeyond, io);
             });
 
             complete = [...complete, ...progressed.filter(it => it.complete)];

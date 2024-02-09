@@ -6,6 +6,7 @@ import { BnfTransform } from '../transforms/bnf_transform';
 import { NullableRuleElimination } from '../transforms/nullable_elimination_transform';
 import { GnfTransform } from '../transforms/gnf_transform';
 import * as constants from '../shared/constants';
+import { PrefixUnificationTransform } from '../transforms/prefix_unification_transform';
 
 export class ParserBuilderHelpers {
     static chunkGrammar(code: string): string[] {
@@ -79,6 +80,7 @@ export class ParserBuilderHelpers {
             return grammar
                 .bind(BnfTransform.transform, io)
                 .bind(NullableRuleElimination.transform, io) 
+                .bind(PrefixUnificationTransform.transform, io)
                 .bind(GnfTransform.transform, io)
                 .fillCache()
         } else {
