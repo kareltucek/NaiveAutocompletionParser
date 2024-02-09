@@ -104,7 +104,11 @@ We currently use the simple academic approach of converting the ebnf into normal
 3) unify common prefixes
 4) convert the non-nullable BNF into a GNF (Griebach Normal Form)
 
-We leave out most CNF conversion steps though, as they don't much practical sense in a non-academic setup. (Although we should probably convert the grammar into binary form in order to make sure that nullable elimination doesn't go exponential.)
+We leave out most CNF conversion steps though, as they don't have much practical sense in a non-academic setup. (Admittedly, we should probably convert the grammar into a binary form in order to make sure that nullable elimination doesn't go exponential.)
+
+Generally, efficiency is relatively good. On our grammar, one consumed token takes around 30 stack operations, and tokens are looked up in a normal Map. 
+
+There is still a room for improvement, as we are not using a lexer... which means that regex rules are costly, as they are (naively) matched one by one at the moment.
 
 ### Usage
 

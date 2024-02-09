@@ -5,6 +5,7 @@ import { Rule } from './rules/rule_interface';
 import { RuleRef } from './rules/rule_ref';
 import { ConstantRule } from './rules/constant_rule';
 import { SequenceRule } from './rules/sequence_rule';
+import * as constants from './constants';
 
 export function groupByAsRecord<T, K extends keyof any>(arr: T[], key: (i: T) => K) {
     return arr.reduce(
@@ -60,4 +61,15 @@ export function rulesEqual(a: Rule, b: Rule) {
         return true;
     }
     return false;
+}
+
+ export function tryConvertRegexToConstant(regex: RegExp): string | undefined {
+    let source = regex.source;
+    if (constants.constantRegexRegex.test(source)) {
+        let unescapedSource = source.replace(new RegExp('\\\\(.)', 'g'), "$1");
+        if (escapeRegex(unescapedSource) == source) {
+            return unescapedSource;
+        }
+    }
+    return undefined;
 }

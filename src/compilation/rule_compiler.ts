@@ -165,7 +165,7 @@ export class RuleCompiler {
                     } else if (regexPatterns.strictRegexRegex.test(this.tokens[this.idx])) {
                         let regexString = this.tokens[this.idx].substring(1, this.tokens[this.idx].length - 1);
                         let regex = new RegExp(regexString);
-                        this.stack.push(new StackRule(new RegexRule(regex)));
+                        this.stack.push(new StackRule(RegexRule.from(regex, this.name)));
                         this.idx++;
                     } else if (regexPatterns.strictNonterminalRegex.test(this.tokens[this.idx])) {
                         this.stack.push(new StackRule(new RuleRef(this.tokens[this.idx])));

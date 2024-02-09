@@ -4,8 +4,11 @@ import { IO } from "../../cli/io";
 import { MatchResult } from "../../parsing/match_results";
 import { PointerStack } from "../../parsing/pointers";
 import { Grammar } from "../grammar";
-import { markPointersAsConsumed } from "../utils";
+import { escapeRegex, markPointersAsConsumed, tryConvertRegexToConstant } from "../utils";
 import { Rule } from "./rule_interface";
+import * as constants from "../constants"
+import { ConstantRule } from "./constant_rule";
+
 
 export class RegexRule implements Rule {
     regex: RegExp;
@@ -13,6 +16,15 @@ export class RegexRule implements Rule {
     constructor(r: RegExp) {
         let modified = r.source.replace(new RegExp('^\\^'), '');
         this.regex = new RegExp(`^.${modified}`);
+    }
+
+    static from(r: RegExp, originRule: string): Rule {
+        let maybeConstantString = tryConvertRegexToConstant(r);
+        if (maybeConstantString) {
+            return new ConstantRule(maybeConstantString, originRule);
+        } else {
+            return new RegexRule(r);
+        }
     }
 
     toString(): string {

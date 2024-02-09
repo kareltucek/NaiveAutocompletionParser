@@ -33,7 +33,7 @@ export class SequenceRule implements Rule {
     static fromRegex(n: string, r: RegExp): SequenceRule {
         let newRule = new SequenceRule();
         newRule.name = n;
-        newRule.rules.push(new RegexRule(r));
+        newRule.rules.push(RegexRule.from(r, n));
         return newRule;
     }
 

@@ -6,6 +6,7 @@ let nonterminalPattern: string = '[A-Z_][A-Z0-9_]*';
 let identifierPattern: string = '[a-zA-Z_][a-zA-Z0-9_]*';
 let humanPattern: string = '<([^<>|]*)\\((' + nonterminalPattern + ')\\)>';
 let simpleHumanPattern: string = '<[^<>|]+>';
+let constantRegexPattern: string = '^([^\\\\]|\\\\.|\\\\\\\\)+$';
 
 // anything can be suggested right after these chars
 let continueAfterPattern: string = '[\\.\\$\\(\\ \\-]';
@@ -49,4 +50,5 @@ export let continueAfterRegex: RegExp = new RegExp(continueAfterPattern)
 export let continueWithRegex: RegExp = new RegExp(continueWithPattern)
 export let nonterminalRegex: RegExp = new RegExp(nonterminalPattern);
 export let grammarTokenRegex: RegExp = new RegExp(grammarTokenPattern);
+export let constantRegexRegex: RegExp = new RegExp(constantRegexPattern);
 export let applyTransformsWithoutAsking: boolean = true;
