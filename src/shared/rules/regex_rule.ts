@@ -1,13 +1,11 @@
 
+import { StringPathResult } from "./string_path_result";
 import { IO } from "../../cli/io";
 import { MatchResult } from "../../parsing/match_results";
-import { Pointer, PointerStack } from "../../parsing/pointers";
-import { strictIdentifierRegex } from "../constants";
+import { PointerStack } from "../../parsing/pointers";
 import { Grammar } from "../grammar";
-import { escapeRegex, markPointersAsConsumed } from "../utils";
-import { IterationType } from "./iteration_type";
+import { markPointersAsConsumed } from "../utils";
 import { Rule } from "./rule_interface";
-import { RuleRef } from "./rule_ref";
 
 export class RegexRule implements Rule {
     regex: RegExp;

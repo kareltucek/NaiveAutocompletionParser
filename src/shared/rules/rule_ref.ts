@@ -1,12 +1,11 @@
-
+import { StringPathResult } from "./string_path_result";
 import { IO } from "../../cli/io";
 import { MatchResult } from "../../parsing/match_results";
 import { Pointer, PointerStack } from "../../parsing/pointers";
 import { maxRecursionDepth, strictIdentifierRegex } from "../constants";
 import { Grammar } from "../grammar";
-import { escapeRegex, markPointersAsConsumed } from "../utils";
+import { markPointersAsConsumed } from "../utils";
 import { ConstantRule } from "./constant_rule";
-import { IterationType } from "./iteration_type";
 import { Rule } from "./rule_interface";
 import { SequenceRule } from "./sequence_rule";
 import * as constants from "../constants";

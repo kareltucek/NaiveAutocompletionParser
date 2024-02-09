@@ -1,3 +1,4 @@
+import { StringPathResult } from "./string_path_result";
 import { IO } from "../../cli/io";
 import { MatchResult } from "../../parsing/match_results";
 import { Pointer, PointerStack } from "../../parsing/pointers";

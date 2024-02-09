@@ -1,5 +1,4 @@
-
-class StringPathResult {
+export class StringPathResult {
     str: string;
     offset: number;
 
