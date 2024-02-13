@@ -9,7 +9,7 @@ let simpleHumanPattern: string = '<[^<>|]+>';
 let constantRegexPattern: string = '^([^\\\\]|\\\\.|\\\\\\\\)+$';
 
 // anything can be suggested right after these chars
-let continueAfterPattern: string = '[\\.\\$\\(\\ \\-]';
+let continueAfterPattern: string = '[\\.\\$\\(\\ \\-\\+\\*\\/\\%\\=\\<\\>]';
 
 // these characters can be suggested after any chars
 let continueWithPattern: string = '[\\. ]';

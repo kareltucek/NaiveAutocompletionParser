@@ -41,6 +41,7 @@ function buildParserBuilder(grammarText: string, io: IO): ParserBuilder {
         .setGrammarTokenPattern(grammarTokenRegex)
         .addRule(grammarText)
         .addRule(composeConfigValueNameRules(grammarText))
+        .addRule("CHAR = /./")
         // .addRule(simplifiedGrammar)
         .overrideRuleWithConstantString("CODE_BLOCK", "{")
         .overrideRuleWithConstantString("COMMENT", "//<comment>")
