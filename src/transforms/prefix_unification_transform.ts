@@ -8,6 +8,7 @@ import { ConstantRule } from "../shared/rules/constant_rule";
 import { RuleRef } from "../shared/rules/rule_ref";
 import { deduplicate, groupByAsMap, mapOf } from "../shared/utils";
 import { Rule } from "../shared/rules/rule_interface";
+import { RegexRule } from "../shared/rules/regex_rule";
 
 class RuleRecord {
     firstRule: Rule;
@@ -41,6 +42,8 @@ export class PrefixUnificationTransform {
             return rule.name + "\n" + (firstRule as ConstantRule).token;
         } else if (firstRule instanceof RuleRef) {
             return rule.name + "\n&" + (firstRule as RuleRef).ref;
+        } else if (firstRule instanceof RegexRule) {
+            return rule.name + "\n/" + (firstRule as RegexRule).regex.source + "/";
         } else {
             return "";
         }
@@ -55,7 +58,7 @@ export class PrefixUnificationTransform {
             return false;
         }
         let firstRule = rule.rules[0];
-        return firstRule instanceof ConstantRule || firstRule instanceof RuleRef;
+        return firstRule instanceof ConstantRule || firstRule instanceof RuleRef || firstRule instanceof RegexRule;
     }
 
     private static makePrefixIndex(rules: SequenceRule[]): Map<string, RuleRecord> {
