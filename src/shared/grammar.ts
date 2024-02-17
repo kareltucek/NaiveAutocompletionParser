@@ -1,4 +1,4 @@
-import { groupBy, rulesEqual } from "./utils";
+import { groupByAsMap, rulesEqual } from "./utils";
 import { AddedRules } from "./added_rules";
 import { IO } from "../cli/io";
 import { GrammarLookupResult } from "../shared/grammar_lookup_result";
@@ -13,7 +13,7 @@ export class Grammar {
     rules: Map<string, SequenceRule[]> = new Map<string, SequenceRule[]>();
 
     constructor (rules: SequenceRule[]) {
-        this.rules = groupBy(rules, rule => rule.name);
+        this.rules = groupByAsMap(rules, rule => rule.name);
     }
 
     static of (rules: SequenceRule[]) {
@@ -28,7 +28,7 @@ export class Grammar {
     }
 
     fillCache(): Grammar {
-        this.cache = groupBy(this.allRules(), rule => this.ruleHash(rule));
+        this.cache = groupByAsMap(this.allRules(), rule => this.ruleHash(rule));
         this.isInGnf = this.computeIsInGnf();
         return this;
     }

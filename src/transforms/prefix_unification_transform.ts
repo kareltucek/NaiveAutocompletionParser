@@ -6,64 +6,165 @@ import { AddedRules } from "../shared/added_rules";
 import { SequenceRule } from "../shared/rules/sequence_rule";
 import { ConstantRule } from "../shared/rules/constant_rule";
 import { RuleRef } from "../shared/rules/rule_ref";
+import { deduplicate, groupByAsMap, mapOf } from "../shared/utils";
+import { Rule } from "../shared/rules/rule_interface";
+
+class RuleRecord {
+    firstRule: Rule;
+    hash: string;
+    oldRuleName: string;
+    newRuleName: string;
+    expandsToOne: boolean;
+    expandsToMore: boolean;
+
+    constructor(
+        firstRule: Rule,
+        hash: string,
+        oldRuleName: string,
+        newRuleName: string,
+        expandsToOne: boolean,
+        expandsToMore: boolean,
+    ) {
+        this.firstRule = firstRule;
+        this.hash = hash;
+        this.oldRuleName = oldRuleName;
+        this.newRuleName = newRuleName;
+        this.expandsToOne = expandsToOne;
+        this.expandsToMore = expandsToMore;
+    }
+}
 
 export class PrefixUnificationTransform {
     private static ruleHash(rule: SequenceRule): string {
-        return rule.name + "\n" + (rule.rules[0] as ConstantRule).token;
+        let firstRule = rule.rules[0];
+        if (firstRule instanceof ConstantRule) {
+            return rule.name + "\n" + (firstRule as ConstantRule).token;
+        } else if (firstRule instanceof RuleRef) {
+            return rule.name + "\n&" + (firstRule as RuleRef).ref;
+        } else {
+            return "";
+        }
     }
 
-    private static makePrefixIndex(grammar: Grammar): Map<string, string> {
-        grammar = grammar.fillCache();
-        let ruleHashes = grammar
-            .allRules()
-            .filter(rule => rule.rules.length > 0 && rule.rules[0] instanceof ConstantRule)
-            .map(rule => PrefixUnificationTransform.ruleHash(rule))
-        let duplicitRuleHashes = ruleHashes
-            .filter(hash => {
-                let array = hash.split("\n");
-                return grammar.getRuleByLookahead(array[0], array[1]).matchingRules.length > 1;
+    private static parentRuleOfHash(hash: string): string {
+        return hash.split("\n")[0];
+    }
+
+    private static eligibleForUnification(rule: SequenceRule): boolean {
+        if (rule.rules.length == 0) {
+            return false;
+        }
+        let firstRule = rule.rules[0];
+        return firstRule instanceof ConstantRule || firstRule instanceof RuleRef;
+    }
+
+    private static makePrefixIndex(rules: SequenceRule[]): Map<string, RuleRecord> {
+        let duplicitRuleHashes =
+            rules
+                .filter(rule => PrefixUnificationTransform.eligibleForUnification(rule))
+                .map(rule => PrefixUnificationTransform.ruleHash(rule));
+        let allRuleHashes = deduplicate(duplicitRuleHashes);
+        let rulesByHash = groupByAsMap(rules, it => PrefixUnificationTransform.ruleHash(it));
+        let newRuleRecords = allRuleHashes
+            .flatMap(hash => {
+                let hashesRules = rulesByHash.get(hash) ?? [];
+                if (hashesRules.length < 2) {
+                    return [];
+                } else {
+                    let expandsToOne: boolean = hashesRules.find(it => it.rules.length == 1) != undefined;
+                    let expandsToMore: boolean = hashesRules.find(it => it.rules.length > 1) != undefined;
+                    let parentRuleName: string = PrefixUnificationTransform.parentRuleOfHash(hash)
+                    let record: RuleRecord = {
+                        firstRule: rulesByHash.get(hash)!![0].rules[0],
+                        hash: hash,
+                        oldRuleName: parentRuleName,
+                        newRuleName: RuleNamer.newName(parentRuleName, "PUT"),
+                        expandsToOne: expandsToOne,
+                        expandsToMore: expandsToMore,
+                    }
+                    return [
+                        record
+                    ];
+                }
             })
-        let newRulePairs: [string, string][] = duplicitRuleHashes
-            .map(hash => {
-                let array = hash.split("\n");
-                return [hash, RuleNamer.newName(array[0], "PUT")]
-            });
-        return new Map(newRulePairs);
+        return mapOf(newRuleRecords, it => it.hash);
     }
 
-    private static makeNewRules(grammar: Grammar, expansionIndex: Map<string, string>): SequenceRule[] {
+    private static makeNewRulePrefixes(expansionIndex: Map<string, RuleRecord>): SequenceRule[] {
         return Array.from(expansionIndex.entries())
-            .map(entry => {
-                let hashArray = entry[0].split("\n");
-                let originalRuleName = hashArray[0];
-                let firstToken = hashArray[1];
-                let newRuleName = entry[1];
-                let firstRule = grammar.getRuleByLookahead(originalRuleName, firstToken).matchingRules[0].rules[0];
-                return new SequenceRule(
+            .flatMap(entry => {
+                let record = entry[1];
+                let originalRuleName = record.oldRuleName;
+                let newRuleName = record.newRuleName;
+                let firstRule = record.firstRule;
+
+                let emptySuffixRule = new SequenceRule(
+                    originalRuleName,
+                    [firstRule]
+                )
+                let nonEmptySuffixRule = new SequenceRule(
                     originalRuleName,
                     [firstRule, new RuleRef(newRuleName)]
                 )
+
+                return [
+                    ...(record.expandsToOne ? [emptySuffixRule] : []),
+                    ...(record.expandsToMore ? [nonEmptySuffixRule] : [])
+                ]
             });
     }
 
-    private static transformRule(rule: SequenceRule, expansionIndex: Map<string, string>): SequenceRule {
-        if (expansionIndex.has(PrefixUnificationTransform.ruleHash(rule))) {
-            let newName = expansionIndex.get(PrefixUnificationTransform.ruleHash(rule))!!;
-            return new SequenceRule(
-                newName,
-                rule.rules.slice(1)
+    private static makeNewRuleSuffixes(allRules: SequenceRule[], expansionIndex: Map<string, RuleRecord>): AddedRules<SequenceRule[]> {
+        let newRules = allRules
+            .map(rule => {
+                if (expansionIndex.has(PrefixUnificationTransform.ruleHash(rule))) {
+                    let ruleRecord = expansionIndex.get(PrefixUnificationTransform.ruleHash(rule))!!;
+                    if (rule.rules.length == 1) {
+                        return AddedRules.of(
+                            [],
+                            []
+                        );
+                    } else {
+                        return AddedRules.of(
+                            [],
+                            [
+                                new SequenceRule(
+                                    ruleRecord.newRuleName,
+                                    rule.rules.slice(1)
+                                )
+                            ]
+                        );
+                    }
+                } else {
+                    return AddedRules.of(
+                        [rule],
+                        []
+                    )
+                }
+            }
             );
-        } else {
-            return rule;
+        return AddedRules.ofArray(newRules)
+            .flatMap(it => AddedRules.of(it.flat()));
+    }
+
+    static deepTransform(rulesToTransform: SequenceRule[]): SequenceRule[] {
+        if (rulesToTransform.length == 0) {
+            return [];
         }
-    }   
+
+        let expansionIndex = PrefixUnificationTransform.makePrefixIndex(rulesToTransform);
+
+        let newRulePrefixes = PrefixUnificationTransform.makeNewRulePrefixes(expansionIndex);
+        let ruleSuffixes = PrefixUnificationTransform.makeNewRuleSuffixes(rulesToTransform, expansionIndex);
+
+        return [
+            ...newRulePrefixes, 
+            ...ruleSuffixes.item, 
+            ...PrefixUnificationTransform.deepTransform(ruleSuffixes.newRules)
+        ];
+    }
 
     static transform(grammar: Grammar): Grammar {
-        let expansionIndex = PrefixUnificationTransform.makePrefixIndex(grammar);
-
-        let newRules = PrefixUnificationTransform.makeNewRules(grammar, expansionIndex);
-        let ruleSuffixes = grammar.allRules().map( rule => PrefixUnificationTransform.transformRule(rule, expansionIndex));
-
-        return Grammar.of([...newRules, ...ruleSuffixes]);
+        return Grammar.of(PrefixUnificationTransform.deepTransform(grammar.allRules()));
     }
 }

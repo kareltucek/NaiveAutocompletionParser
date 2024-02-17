@@ -17,7 +17,7 @@ export function groupByAsRecord<T, K extends keyof any>(arr: T[], key: (i: T) =>
     );
 }
 
-export function groupBy<T, K extends keyof any>(arr: T[], key: (i: T) => K): Map<string, T[]> {
+export function groupByAsMap<T, K extends keyof any>(arr: T[], key: (i: T) => K): Map<string, T[]> {
     let record: Record<K, T[]> = groupByAsRecord(arr, key);
     return new Map(Object.entries(record));
 }
@@ -40,6 +40,14 @@ export function markPointersAsConsumed(pointers: Pointer[]): Pointer[] {
 
 export function escapeRegex(s: string) {
     return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+export function mapOf<T, H>(elems: T[], hash: (e: T) => H): Map<H, T> {
+    const map = new Map<H, T>();
+    elems.forEach(e => {
+        map.set(hash(e), e);
+    });
+    return map;
 }
 
 export function rulesEqual(a: Rule, b: Rule) {
