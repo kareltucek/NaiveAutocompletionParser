@@ -4,6 +4,8 @@ import { IO } from "../cli/io";
 import { GrammarLookupResult } from "../shared/grammar_lookup_result";
 import { SequenceRule } from "./rules/sequence_rule";
 import { ConstantRule } from "./rules/constant_rule";
+import { RegexRule } from "./rules/regex_rule";
+import { Rule } from "./rules/rule_interface";
 
 export class Grammar {
     isInGnf: boolean = false;
@@ -19,8 +21,10 @@ export class Grammar {
     }
 
     computeIsInGnf(): boolean {
-        let result = this.allRules().find(it => !(it.rules[0] instanceof ConstantRule));
-        return !(result != undefined);
+        let isRegexRule = (it: SequenceRule) => (it.rules[0] instanceof RegexRule);
+        let isConstantRule = (it: SequenceRule) => (it.rules[0] instanceof ConstantRule);
+        let result = this.allRules().find(it => !isConstantRule(it) && !isRegexRule(it));
+        return result == undefined;
     }
 
     fillCache(): Grammar {
@@ -89,9 +93,10 @@ export class Grammar {
 
     bind(transform: (grammar: Grammar) => Grammar, io: IO | undefined): Grammar {
         let res = transform(this);
-        let size = this.allRules().length;
+        let size = res.allRules().length;
+        let gnf = res.isInGnf ? " and is in gnf." : "";
         if (io) {
-            io.debug("Size of grammar after transformation is " + size);
+            io.debug("Size of grammar after transformation is " + size + gnf);
         }
         return res;
     }

@@ -1,17 +1,17 @@
-import { Config } from './config';
+import { IOConfig } from './io_config';
 import { IOProvider } from './io_provider';
 import { AnswerCache } from './answer_cache';
 
 export class IO {
-    static dummy = new IO(Config.default, IOProvider.dummy);
+    static dummy = new IO(IOConfig.default, IOProvider.dummy);
 
     private ioProvider: IOProvider;
 
-    config: Config;
+    config: IOConfig;
     answerCache: AnswerCache;
 
     constructor(
-        config: Config,
+        config: IOConfig,
         ioProvider: IOProvider
     ) {
         this.answerCache = new AnswerCache(ioProvider);

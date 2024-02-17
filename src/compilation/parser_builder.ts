@@ -3,7 +3,7 @@ import { Grammar } from '../shared/grammar';
 import { Parser } from '../parsing/parser';
 import { IO } from '../cli/io';
 import * as constants from '../shared/constants';
-import { Config } from '../cli/config';
+import { IOConfig } from '../cli/io_config';
 import { IOProvider } from '../cli/io_provider';
 import { unescapeLeadingUnderscores } from 'typescript';
 import { SequenceRule } from '../shared/rules/sequence_rule';

@@ -4,7 +4,7 @@ import { ParserBuilder } from "../compilation/parser_builder";
 import { BnfTransform } from "../transforms/bnf_transform";
 import { NullableRuleElimination } from "../transforms/nullable_elimination_transform";
 import { GnfTransform } from "../transforms/gnf_transform";
-import { Config } from "./config";
+import { IOConfig } from "./io_config";
 import { IOProvider } from "./io_provider";
 
 export class ExitCommand {}
