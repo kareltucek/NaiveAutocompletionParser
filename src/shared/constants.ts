@@ -1,6 +1,3 @@
-import { ParserBuilder } from "../compilation/parser_builder";
-
-
 let regexPattern: string = '/([^/\\\\]|\\\\.|\\\\\\\\)+/';
 let nonterminalPattern: string = '[A-Z_][A-Z0-9_]*';
 let identifierPattern: string = '[a-zA-Z_][a-zA-Z0-9_]*';

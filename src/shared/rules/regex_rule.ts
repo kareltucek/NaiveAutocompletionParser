@@ -4,9 +4,8 @@ import { IO } from "../../cli/io";
 import { MatchResult } from "../../parsing/match_results";
 import { PointerStack } from "../../parsing/pointers";
 import { Grammar } from "../grammar";
-import { escapeRegex, markPointersAsConsumed, tryConvertRegexToConstant } from "../utils";
+import { markPointersAsConsumed, tryConvertRegexToConstant } from "../utils";
 import { Rule } from "./rule_interface";
-import * as constants from "../constants"
 import { ConstantRule } from "./constant_rule";
 
 

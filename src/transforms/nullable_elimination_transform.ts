@@ -1,6 +1,5 @@
 import { Grammar } from "../shared/grammar";
 import { AddedRules } from "../shared/added_rules";
-import { RuleNamer } from "../shared/rule_namer";
 import { RuleRef } from "../shared/rules/rule_ref";
 import { SequenceRule } from "../shared/rules/sequence_rule";
 

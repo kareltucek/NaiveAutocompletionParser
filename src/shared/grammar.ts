@@ -5,7 +5,6 @@ import { GrammarLookupResult } from "../shared/grammar_lookup_result";
 import { SequenceRule } from "./rules/sequence_rule";
 import { ConstantRule } from "./rules/constant_rule";
 import { RegexRule } from "./rules/regex_rule";
-import { Rule } from "./rules/rule_interface";
 
 export class Grammar {
     isInGnf: boolean = false;

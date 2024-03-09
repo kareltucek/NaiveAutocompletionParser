@@ -1,6 +1,5 @@
 import { Grammar } from "../shared/grammar";
 import { IterationType } from "../shared/rules/iteration_type";
-import { RuleMath } from "../shared/rule_math";
 import { RuleNamer } from "../shared/rule_namer";
 import { AddedRules } from "../shared/added_rules";
 import { Rule } from "../shared/rules/rule_interface";

@@ -1,4 +1,3 @@
-import { IOConfig } from './io_config';
 import { IOProvider } from './io_provider';
 
 export class AnswerCache {

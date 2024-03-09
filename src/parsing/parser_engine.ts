@@ -1,7 +1,6 @@
 import { Grammar } from "../shared/grammar";
 import { Rule } from "../shared/rules/rule_interface";
 import { PointerStack, Pointer } from "./pointers";
-import { MatchResult } from "./match_results";
 import { Suggestion } from "./suggestion";
 import { deduplicate, deduplicateSuggestions } from "../shared/utils";
 import { IO } from "../cli/io";

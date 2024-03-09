@@ -2,7 +2,6 @@ import { Grammar } from "../shared/grammar";
 import { Suggestion } from "./suggestion";
 import { ParserEngine } from "./parser_engine";
 import { IO } from "../cli/io";
-import { continueAfterRegex, continueWithRegex } from "../shared/constants";
 
 
 export class Parser {
