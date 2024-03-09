@@ -1,15 +1,15 @@
-import { StringPathResult } from "./string_path_result";
-import { IO } from "../../cli/io";
-import { MatchResult } from "../../parsing/match_results";
-import { Pointer, PointerStack } from "../../parsing/pointers";
-import { maxRecursionDepth, strictIdentifierRegex } from "../constants";
-import { Grammar } from "../grammar";
-import { markPointersAsConsumed } from "../utils";
-import { ConstantRule } from "./constant_rule";
-import { Rule } from "./rule_interface";
-import { SequenceRule } from "./sequence_rule";
-import * as constants from "../constants";
-import { GrammarLookupResult } from "../grammar_lookup_result";
+import { StringPathResult } from "./string_path_result.js";
+import { IO } from "../../cli/io.js";
+import { MatchResult } from "../../parsing/match_results.js";
+import { Pointer, PointerStack } from "../../parsing/pointers.js";
+import { maxRecursionDepth } from "../constants.js";
+import { Grammar } from "../grammar.js";
+import { markPointersAsConsumed } from "../utils.js";
+import { ConstantRule } from "./constant_rule.js";
+import { Rule } from "./rule_interface.js";
+import { SequenceRule } from "./sequence_rule.js";
+import * as constants from "../constants.js";
+import { GrammarLookupResult } from "../grammar_lookup_result.js";
 
 export class RuleRef implements Rule {
     ref: string;

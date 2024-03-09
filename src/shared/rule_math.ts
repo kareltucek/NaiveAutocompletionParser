@@ -1,4 +1,4 @@
-import { Rule } from "./rules/rule_interface"
+import { Rule } from "./rules/rule_interface";
 
 export class RuleMath {
     static multiply(bases: Rule[][], continuations: Rule[][]): Rule[][] {

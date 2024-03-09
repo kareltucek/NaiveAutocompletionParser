@@ -1,11 +1,11 @@
-import { Grammar } from "../shared/grammar";
-import { IterationType } from "../shared/rules/iteration_type";
-import { RuleNamer } from "../shared/rule_namer";
-import { AddedRules } from "../shared/added_rules";
-import { Rule } from "../shared/rules/rule_interface";
-import { IterationRule } from "../shared/rules/iteration_rule";
-import { SequenceRule } from "../shared/rules/sequence_rule";
-import { RuleRef } from "../shared/rules/rule_ref";
+import { Grammar } from "../shared/grammar.js";
+import { IterationType } from "../shared/rules/iteration_type.js";
+import { RuleNamer } from "../shared/rule_namer.js";
+import { AddedRules } from "../shared/added_rules.js";
+import { Rule } from "../shared/rules/rule_interface.js";
+import { IterationRule } from "../shared/rules/iteration_rule.js";
+import { SequenceRule } from "../shared/rules/sequence_rule.js";
+import { RuleRef } from "../shared/rules/rule_ref.js";
 
 export class BnfTransform {
     private static expandChild(rule: Rule): AddedRules<Rule> {

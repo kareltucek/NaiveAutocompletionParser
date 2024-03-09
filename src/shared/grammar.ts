@@ -1,10 +1,10 @@
-import { groupByAsMap, rulesEqual } from "./utils";
-import { AddedRules } from "./added_rules";
-import { IO } from "../cli/io";
-import { GrammarLookupResult } from "../shared/grammar_lookup_result";
-import { SequenceRule } from "./rules/sequence_rule";
-import { ConstantRule } from "./rules/constant_rule";
-import { RegexRule } from "./rules/regex_rule";
+import { groupByAsMap, rulesEqual } from "./utils.js";
+import { AddedRules } from "./added_rules.js";
+import { IO } from "../cli/io.js";
+import { GrammarLookupResult } from "../shared/grammar_lookup_result.js";
+import { SequenceRule } from "./rules/sequence_rule.js";
+import { ConstantRule } from "./rules/constant_rule.js";
+import { RegexRule } from "./rules/regex_rule.js";
 
 export class Grammar {
     isInGnf: boolean = false;

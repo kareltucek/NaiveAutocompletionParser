@@ -1,7 +1,7 @@
-import { Grammar } from "../shared/grammar";
-import { RuleNamer } from "../shared/rule_namer";
-import { SequenceRule } from "../shared/rules/sequence_rule";
-import { RuleRef } from "../shared/rules/rule_ref";
+import { Grammar } from "../shared/grammar.js";
+import { RuleNamer } from "../shared/rule_namer.js";
+import { SequenceRule } from "../shared/rules/sequence_rule.js";
+import { RuleRef } from "../shared/rules/rule_ref.js";
 
 export class GnfTransform {
     static isNoOpRule(rule: SequenceRule) {

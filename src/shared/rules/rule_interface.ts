@@ -1,8 +1,8 @@
-import { IO } from "../../cli/io";
-import { MatchResult } from "../../parsing/match_results";
-import { PointerStack } from "../../parsing/pointers";
-import { Grammar } from "../grammar";
-import { StringPathResult } from "./string_path_result";
+import { IO } from "../../cli/io.js";
+import { MatchResult } from "../../parsing/match_results.js";
+import { PointerStack } from "../../parsing/pointers.js";
+import { Grammar } from "../grammar.js";
+import { StringPathResult } from "./string_path_result.js";
 
 export interface Rule {
     match(expression: string, pointer: PointerStack, grammar: Grammar, io: IO): MatchResult;

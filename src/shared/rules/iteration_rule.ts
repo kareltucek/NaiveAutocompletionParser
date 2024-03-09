@@ -1,11 +1,11 @@
-import { StringPathResult } from "./string_path_result";
-import { IO } from "../../cli/io";
-import { MatchResult } from "../../parsing/match_results";
-import { Pointer, PointerStack } from "../../parsing/pointers";
-import { Grammar } from "../grammar";
-import { IterationType } from "./iteration_type";
-import { Rule } from "./rule_interface";
-import { RuleRef } from "./rule_ref";
+import { StringPathResult } from "./string_path_result.js";
+import { IO } from "../../cli/io.js";
+import { MatchResult } from "../../parsing/match_results.js";
+import { Pointer, PointerStack } from "../../parsing/pointers.js";
+import { Grammar } from "../grammar.js";
+import { IterationType } from "./iteration_type.js";
+import { Rule } from "./rule_interface.js";
+import { RuleRef } from "./rule_ref.js";
 
 
 class IterationExpansions {

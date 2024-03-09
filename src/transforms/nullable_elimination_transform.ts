@@ -1,7 +1,7 @@
-import { Grammar } from "../shared/grammar";
-import { AddedRules } from "../shared/added_rules";
-import { RuleRef } from "../shared/rules/rule_ref";
-import { SequenceRule } from "../shared/rules/sequence_rule";
+import { Grammar } from "../shared/grammar.js";
+import { AddedRules } from "../shared/added_rules.js";
+import { RuleRef } from "../shared/rules/rule_ref.js";
+import { SequenceRule } from "../shared/rules/sequence_rule.js";
 
 // input: bnf form
 // output: (nullable) sequences of references

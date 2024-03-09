@@ -1,4 +1,4 @@
-import { IOProvider } from './io_provider';
+import { IOProvider } from './io_provider.js';
 
 export class AnswerCache {
     static fileName: string = "/tmp/naive_ebnf_parser_state.json";

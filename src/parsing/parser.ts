@@ -1,7 +1,7 @@
-import { Grammar } from "../shared/grammar";
-import { Suggestion } from "./suggestion";
-import { ParserEngine } from "./parser_engine";
-import { IO } from "../cli/io";
+import { Grammar } from "../shared/grammar.js";
+import { Suggestion } from "./suggestion.js";
+import { ParserEngine } from "./parser_engine.js";
+import { IO } from "../cli/io.js";
 
 
 export class Parser {

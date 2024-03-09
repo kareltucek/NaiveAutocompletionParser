@@ -1,4 +1,4 @@
-import { SequenceRule } from "./rules/sequence_rule";
+import { SequenceRule } from "./rules/sequence_rule.js";
 
 export class AddedRules<T> {
     item: T;

@@ -1,10 +1,10 @@
-import { ParserBuilder } from "../compilation/parser_builder";
-import { Parser } from "../parsing/parser";
-import { Interpretter } from "../cli/interpretter";
-import { grammarTokenRegex } from "../shared/constants";
-import { IOConfig } from "../cli/io_config";
-import { IOProvider } from "../cli/io_provider";
-import { IO } from "../cli/io";
+import { ParserBuilder } from "../compilation/parser_builder.js";
+import { Parser } from "../parsing/parser.js";
+import { Interpretter } from "../cli/interpretter.js";
+import { grammarTokenRegex } from "../shared/constants.js";
+import { IOConfig } from "../cli/io_config.js";
+import { IOProvider } from "../cli/io_provider.js";
+import { IO } from "../cli/io.js";
 
 
 function extractGrammar(referenceManualBody: string): string[] {

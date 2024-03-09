@@ -1,6 +1,6 @@
-import { IOConfig } from './io_config';
-import { IOProvider } from './io_provider';
-import { AnswerCache } from './answer_cache';
+import { IOConfig } from './io_config.js';
+import { IOProvider } from './io_provider.js';
+import { AnswerCache } from './answer_cache.js';
 
 export class IO {
     static dummy = new IO(IOConfig.default, IOProvider.dummy);

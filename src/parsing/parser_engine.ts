@@ -1,12 +1,11 @@
-import { Grammar } from "../shared/grammar";
-import { Rule } from "../shared/rules/rule_interface";
-import { PointerStack, Pointer } from "./pointers";
-import { Suggestion } from "./suggestion";
-import { deduplicate, deduplicateSuggestions } from "../shared/utils";
-import { IO } from "../cli/io";
-import { Parser } from "./parser";
-import { RuleRef } from "../shared/rules/rule_ref";
-import { ConstantRule } from "../shared/rules/constant_rule";
+import { Grammar } from "../shared/grammar.js";
+import { PointerStack, Pointer } from "./pointers.js";
+import { Suggestion } from "./suggestion.js";
+import { deduplicate, deduplicateSuggestions } from "../shared/utils.js";
+import { IO } from "../cli/io.js";
+import { Parser } from "./parser.js";
+import { RuleRef } from "../shared/rules/rule_ref.js";
+import { ConstantRule } from "../shared/rules/constant_rule.js";
 
 export class ParserEngine {
     static startingPointers(rule: string): PointerStack[] {

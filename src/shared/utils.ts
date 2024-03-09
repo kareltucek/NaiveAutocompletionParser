@@ -1,11 +1,11 @@
-import { Pointer } from '../parsing/pointers';
+import { Pointer } from '../parsing/pointers.js';
 import _ from 'lodash';
-import { Suggestion } from '../parsing/suggestion';
-import { Rule } from './rules/rule_interface';
-import { RuleRef } from './rules/rule_ref';
-import { ConstantRule } from './rules/constant_rule';
-import { SequenceRule } from './rules/sequence_rule';
-import * as constants from './constants';
+import { Suggestion } from '../parsing/suggestion.js';
+import { Rule } from './rules/rule_interface.js';
+import { RuleRef } from './rules/rule_ref.js';
+import { ConstantRule } from './rules/constant_rule.js';
+import { SequenceRule } from './rules/sequence_rule.js';
+import * as constants from './constants.js';
 
 export function groupByAsRecord<T, K extends keyof any>(arr: T[], key: (i: T) => K) {
     return arr.reduce(

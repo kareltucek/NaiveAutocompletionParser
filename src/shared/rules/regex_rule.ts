@@ -1,12 +1,11 @@
-
-import { StringPathResult } from "./string_path_result";
-import { IO } from "../../cli/io";
-import { MatchResult } from "../../parsing/match_results";
-import { PointerStack } from "../../parsing/pointers";
-import { Grammar } from "../grammar";
-import { markPointersAsConsumed, tryConvertRegexToConstant } from "../utils";
-import { Rule } from "./rule_interface";
-import { ConstantRule } from "./constant_rule";
+import { StringPathResult } from "./string_path_result.js";
+import { IO } from "../../cli/io.js";
+import { MatchResult } from "../../parsing/match_results.js";
+import { PointerStack } from "../../parsing/pointers.js";
+import { Grammar } from "../grammar.js";
+import { markPointersAsConsumed, tryConvertRegexToConstant } from "../utils.js";
+import { Rule } from "./rule_interface.js";
+import { ConstantRule } from "./constant_rule.js";
 
 
 export class RegexRule implements Rule {

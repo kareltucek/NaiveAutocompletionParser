@@ -1,4 +1,4 @@
-import { SequenceRule } from "./rules/sequence_rule";
+import { SequenceRule } from "./rules/sequence_rule.js";
 
 export class GrammarLookupResult {
     matchingRules: SequenceRule[] = [];

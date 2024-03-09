@@ -1,13 +1,13 @@
-import { StringPathResult } from "./string_path_result";
-import { IO } from "../../cli/io";
-import { MatchResult } from "../../parsing/match_results";
-import { Pointer, PointerStack } from "../../parsing/pointers";
-import { Grammar } from "../grammar";
-import { RuleMath } from "../rule_math";
-import { ConstantRule } from "./constant_rule";
-import { RegexRule } from "./regex_rule";
-import { Rule } from "./rule_interface";
-import { RuleRef } from "./rule_ref";
+import { StringPathResult } from "./string_path_result.js";
+import { IO } from "../../cli/io.js";
+import { MatchResult } from "../../parsing/match_results.js";
+import { Pointer, PointerStack } from "../../parsing/pointers.js";
+import { Grammar } from "../grammar.js";
+import { RuleMath } from "../rule_math.js";
+import { ConstantRule } from "./constant_rule.js";
+import { RegexRule } from "./regex_rule.js";
+import { Rule } from "./rule_interface.js";
+import { RuleRef } from "./rule_ref.js";
 
 export class SequenceRule implements Rule {
     name: string = "";

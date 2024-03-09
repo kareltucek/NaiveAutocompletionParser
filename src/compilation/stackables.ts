@@ -1,4 +1,4 @@
-import { Rule } from "../shared/rules/rule_interface";
+import { Rule } from "../shared/rules/rule_interface.js";
 
 export interface Stackable { }
 

@@ -1,4 +1,3 @@
-
 export class IOProvider {
     healthy: boolean = false;
     ask: (q: string) => string | undefined = q => "";

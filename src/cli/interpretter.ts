@@ -1,8 +1,8 @@
-import { IO } from "./io";
-import { ParserBuilder } from "../compilation/parser_builder";
-import { BnfTransform } from "../transforms/bnf_transform";
-import { NullableRuleElimination } from "../transforms/nullable_elimination_transform";
-import { GnfTransform } from "../transforms/gnf_transform";
+import { IO } from "./io.js";
+import { ParserBuilder } from "../compilation/parser_builder.js";
+import { BnfTransform } from "../transforms/bnf_transform.js";
+import { NullableRuleElimination } from "../transforms/nullable_elimination_transform.js";
+import { GnfTransform } from "../transforms/gnf_transform.js";
 
 export class ExitCommand {}
 

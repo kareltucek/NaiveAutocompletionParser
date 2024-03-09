@@ -1,9 +1,9 @@
-import { ParserBuilderHelpers } from './parser_builder_helpers'
-import { Grammar } from '../shared/grammar';
-import { Parser } from '../parsing/parser';
-import { IO } from '../cli/io';
-import * as constants from '../shared/constants';
-import { SequenceRule } from '../shared/rules/sequence_rule';
+import { ParserBuilderHelpers } from './parser_builder_helpers.js';
+import { Grammar } from '../shared/grammar.js';
+import { Parser } from '../parsing/parser.js';
+import { IO } from '../cli/io.js';
+import * as constants from '../shared/constants.js';
+import { SequenceRule } from '../shared/rules/sequence_rule.js';
 
 export class ParserBuilder {
     io: IO;

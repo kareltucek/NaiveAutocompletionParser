@@ -1,5 +1,5 @@
-import { startUhkCli } from "../presets/uhk_preset";
-import { IOProvider } from "./io_provider";
+import { startUhkCli } from "../presets/uhk_preset.js";
+import { IOProvider } from "./io_provider.js";
 import promptSync from 'prompt-sync';
 import fs from 'fs';
 

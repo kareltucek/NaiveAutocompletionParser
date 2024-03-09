@@ -1,4 +1,4 @@
-import { PointerStack } from "./pointers";
+import { PointerStack } from "./pointers.js";
 
 export class Suggestion {
     suggestion: string;

@@ -1,13 +1,13 @@
-import * as regexPatterns from '../shared/constants'
-import { Stackable, StackToken, StackRule } from './stackables'
-import { IterationType } from '../shared/rules/iteration_type';
-import { RuleNamer } from '../shared/rule_namer';
-import { IO } from '../cli/io';
-import { SequenceRule } from '../shared/rules/sequence_rule';
-import { ConstantRule } from '../shared/rules/constant_rule';
-import { RuleRef } from '../shared/rules/rule_ref';
-import { IterationRule } from '../shared/rules/iteration_rule';
-import { RegexRule } from '../shared/rules/regex_rule';
+import * as regexPatterns from '../shared/constants.js';
+import { Stackable, StackToken, StackRule } from './stackables.js';
+import { IterationType } from '../shared/rules/iteration_type.js';
+import { RuleNamer } from '../shared/rule_namer.js';
+import { IO } from '../cli/io.js';
+import { SequenceRule } from '../shared/rules/sequence_rule.js';
+import { ConstantRule } from '../shared/rules/constant_rule.js';
+import { RuleRef } from '../shared/rules/rule_ref.js';
+import { IterationRule } from '../shared/rules/iteration_rule.js';
+import { RegexRule } from '../shared/rules/regex_rule.js';
 
 export class RuleCompiler {
     io: IO;

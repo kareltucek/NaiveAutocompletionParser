@@ -1,12 +1,12 @@
-import { Grammar } from "../shared/grammar";
-import { RuleNamer } from "../shared/rule_namer";
-import { AddedRules } from "../shared/added_rules";
-import { SequenceRule } from "../shared/rules/sequence_rule";
-import { ConstantRule } from "../shared/rules/constant_rule";
-import { RuleRef } from "../shared/rules/rule_ref";
-import { deduplicate, groupByAsMap, mapOf } from "../shared/utils";
-import { Rule } from "../shared/rules/rule_interface";
-import { RegexRule } from "../shared/rules/regex_rule";
+import { Grammar } from "../shared/grammar.js";
+import { RuleNamer } from "../shared/rule_namer.js";
+import { AddedRules } from "../shared/added_rules.js";
+import { SequenceRule } from "../shared/rules/sequence_rule.js";
+import { ConstantRule } from "../shared/rules/constant_rule.js";
+import { RuleRef } from "../shared/rules/rule_ref.js";
+import { deduplicate, groupByAsMap, mapOf } from "../shared/utils.js";
+import { Rule } from "../shared/rules/rule_interface.js";
+import { RegexRule } from "../shared/rules/regex_rule.js";
 
 class RuleRecord {
     firstRule: Rule;
