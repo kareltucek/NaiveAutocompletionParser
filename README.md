@@ -119,6 +119,7 @@ From commandline, you can:
 ```
 git clone https://github.com/kareltucek/naive-autocompletion-parser.git
 cd naive-autocompletion-parser
+npm install                      # install dependencies
 tsc                              # compile the project
 node dist/cli/launch.js          # start the repl
 help                             # see available commands
